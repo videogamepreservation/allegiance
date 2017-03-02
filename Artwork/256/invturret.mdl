@@ -1,0 +1,10 @@
+use "inventorypart";
+
+InventoryLine = ImagePane(ImportImage("inventorylinebkgndbmp", false),
+    [
+	  (ImagePane(ImportImage("invturreticonbmp", true), []), Point(5, 5)),
+      (StringPane(partkey, Color(1,1,1), Point(12, 12)), Point(23, 5)),
+      //(StringPane(partlocation, Color(1,1,1), Point(16, 12)), Point(47, 5)),
+      (StringPane(GetName(gunner, OnEveryFrame), Color(1,1,1), Point(82, 12)), Point(35,5))
+    ]
+  );

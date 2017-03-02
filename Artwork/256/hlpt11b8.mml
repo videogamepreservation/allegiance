@@ -1,0 +1,68 @@
+<Font|promptFont>TURRETS<Font|smallFont><p><p>
+
+<Bullet|hlpbullet|Turret AC Mk1<p><p>
+
+Bomber turret mounted particle weapon good against Fighter-class ships.<p><p>
+
+Damage -- 12<p>
+Rate -- 15<p>
+Signature -- 200<p>
+Range -- 1500<p>
+Speed -- 1000<p>
+Defense Bonus -- NA><p><p>
+
+<Bullet|hlpbullet|Turret AC Mk2 -- $5000<p><p>
+
+Bomber turret-mounted particle weapon good against Fighter-class ships.<p><p>
+
+Damage -- 15<p>
+Rate -- 15<p>
+Signature -- 200<p>
+Range -- 1500<p>
+Speed -- 1000<p>
+Defense Bonus -- NA><p><p>
+
+<Bullet|hlpbullet|Turret AC Mk3 -- <p><p>
+
+Bomber turret-mounted particle weapon good against Fighter-class ships.<p><p>
+
+Damage -- <p>
+Rate -- <p>
+Signature -- <p>
+Range -- <p>
+Speed -- <p>
+Defense Bonus -- ><p><p>
+
+
+<Bullet|hlpbullet|SkyCap Turret Mk1 -- $5000<p><p>
+
+Gunship-, Frigate-, and Cruiser-mounted particle weapon with area damage explosives.<p><p>
+
+Damage -- <p>
+Rate --  <p>
+Signature -- <p>
+Range --  <p>
+Speed -- <p>
+Defense Bonus -- ><p><p>
+
+<Bullet|hlpbullet|SkyCap Turret Mk2 -- $5000<p>
+Gunship-, Frigate-, and Cruiser-mounted particle weapon with area damage explosives.<p><p>
+
+Damage -- 0<p>
+Rate -- 4<p>
+Signature -- 200<p>
+Range -- 2000<p>
+Speed -- 1000<p>
+Defense Bonus -- NA><p><p>
+
+<Bullet|hlpbullet|SkyCap Turret Mk3 -- $5000<p><p>
+
+Gunship-, Frigate-, and Cruiser-mounted particle weapon with area damage explosives.<p><p>
+
+Damage -- 0<p>
+Rate -- 6   <p>
+Signature -- 200<p>
+Range -- 2000 <p>
+Speed -- 1000<p>
+Defense Bonus -- NA><p><p>
+

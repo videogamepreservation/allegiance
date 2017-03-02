@@ -1,0 +1,84 @@
+//////////////////////////////////////////////////////////////////////////////
+//
+// Virtual Key Codes
+//
+//////////////////////////////////////////////////////////////////////////////
+
+KeyBackspace      = 0x08;
+KeyTab            = 0x09;
+
+KeyEnter          = 0x0d;
+
+KeyShift          = 0x10;
+KeyControl        = 0x11;
+KeyAlt            = 0x12;
+keyPause          = 0x13;
+KeyCapsLock       = 0x14;
+
+KeyEscape         = 0x1b;
+
+KeySpace          = 0x20;
+KeyPageUp         = 0x21;
+KeyPageDown       = 0x22;
+KeyEnd            = 0x23;
+KeyHome           = 0x24;
+KeyLeft           = 0x25;
+KeyUp             = 0x26;
+KeyRight          = 0x27;
+KeyDown           = 0x28;
+
+KeyInsert         = 0x2D;
+KeyDelete         = 0x2E;
+
+KeyNumPad0        = 0x60;
+KeyNumPad1        = 0x61;
+KeyNumPad2        = 0x62;
+KeyNumPad3        = 0x63;
+KeyNumPad4        = 0x64;
+KeyNumPad5        = 0x65;
+KeyNumPad6        = 0x66;
+KeyNumPad7        = 0x67;
+KeyNumPad8        = 0x68;
+KeyNumPad9        = 0x69;
+KeyNumPadMultiply = 0x6a;
+KeyNumPadPlus     = 0x6b;
+KeyNumPadEnter    = 0x6c;
+KeyNumPadMinus    = 0x6d;
+KeyNumPadDecimal  = 0x6e;
+KeyNumPadDivide   = 0x6f;
+KeyF1             = 0x70;
+KeyF2             = 0x71;
+KeyF3             = 0x72;
+KeyF4             = 0x73;
+KeyF5             = 0x74;
+KeyF6             = 0x75;
+KeyF7             = 0x76;
+KeyF8             = 0x77;
+KeyF9             = 0x78;
+KeyF10            = 0x79;
+KeyF11            = 0x7a;
+KeyF12            = 0x7b;
+
+KeyNumLock        = 0x90;
+KeyScrollLock     = 0x91;
+
+KeyLeftShift      = 0xa0;
+KeyRightShift     = 0xa1;
+KeyLeftControl    = 0xa2;
+KeyRightControl   = 0xa3;
+KeyLeftAlt        = 0xa4;
+KeyRightAlt       = 0xa5;
+
+KeySemiColon      = 0xba;
+KeyEquals         = 0xbb;
+KeyComma          = 0xbc;
+KeyMinus          = 0xbd;
+KeyPeriod         = 0xbe;
+KeyForwardSlash   = 0xbf;
+
+KeyApostrophe     = 0xc0;
+
+KeyLeftSquare     = 0xdb;
+KeyBackSlash      = 0xdc;
+KeyRightSquare    = 0xdd;
+KeyQuote          = 0xde;

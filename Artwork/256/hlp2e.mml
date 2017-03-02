@@ -1,0 +1,78 @@
+<Font|promptFont>GAMES LIST<Font|smallFont><p><p>
+
+The Games List displays all games on Allegiance servers found based on the type of connection
+you made.<p><p>
+
+<Bullet|hlpbullet|If you are playing in the Allegiance Zone, then the games shown are
+Allegiance Zone events and games for Allegiance Zone subscribers.><p><p>
+
+<Bullet|hlpbullet|If you are playing a free game, then the games shown are free games played
+across the Internet on servers registered with the MSN Gaming Zone.><p><p>
+
+<Bullet|hlpbullet|If you are playing a LAN game, then the games shown are
+games found on your LAN, but not that the LAN games list does not
+show all of the game parameters described below. To see the game
+settings for a LAN game, you must first join the game, and then
+click <Font|smallBoldFont>Game Settings<Font|smallFont> in the
+<Main|hlp2h|Team Lobby.>><p><p>
+
+The Games List is automatically updated at regular intervals and is also refreshed every
+time you return to the list from another screen.<p><p>
+
+The <Main|hlp2e1|Find> and <Main|hlp2e2|Filter> features allow you to quickly narrow the Games
+List to either a specific game or a list of games with or without certain parameters.<p><p>
+
+<Font|smallBoldFont>Access --<Font|smallFont>Provides two sets of
+information on the game's current status. The first icon indicates whether
+or not the game is locked by the owner or the teams are full and you
+can't join a team. If the teams are full, you can still enter the Team
+Lobby. The second icon indicates whether or not the game has
+started.<p><p>
+
+<Font|smallBoldFont>Name --<Font|smallFont>Shows the name of the game. This name
+will default to the game owner's name, but the owner can modify the name.<p><p>
+
+<Font|smallBoldFont>Game Time --<Font|smallFont>Shows how long the game
+has been running.<p><p>
+
+<Font|smallBoldFont>Skill Levels --<Font|smallFont>Shows the desired skill
+levels wanted in the game. This provides a more equal game balance among the
+players. In Allegiance Zone games skill levels are enforced, whereas
+in non-Allegiance Zone games they're not. Skill levels settings
+range from Novice Only and Expert Only to No Novice to Any.<p><p>
+
+<Font|smallBoldFont>Teams --<Font|smallFont>Shows the number of teams allowed in the game. The
+minimum is 2 teams, with a maximum of 6 per game for simultaneous play.<p><p>
+
+<Font|smallBoldFont>Min --<Font|smallFont>Shows the minimum number of players allowed per team.<p><p>
+
+<Font|smallBoldFont>Max --<Font|smallFont>Shows the maximum number of players allowed per team.<p><p>
+
+<Font|smallBoldFont>Players --<Font|smallFont>Shows the number of occupied player slots and the
+total slots in the game.<p><p>
+
+<Font|smallBoldFont>Style --<Font|smallFont>As Allegiance supports various creator-defined games,
+shows the various icons that represent the game's parameters. The first icons indicate the game's
+<Main|hlp2i1|win condition(s).> If the game is a Zone Arena game, a squad
+game, or your squad is playing in that game,
+those icons indicating such will appear next. The final icon, a pie graphic, indicates the following game-style
+parameters: the tech tree is on (blue), player statistics count in the Allegiance Zone persistent
+rankings (green), and players have limited lives during the game (yellow).<p><p>
+
+<Font|promptFont>Join Game<Font|smallFont><p><p>
+
+Click <Font|smallBoldFont>Join Game<Font|smallFont> to join the game you
+selected in the Games List. If you are allowed, you'll be taken to the game's
+Team Lobby. Here you'll usually be able to select the team you wish to
+play for.<p><p>
+
+If you are playing a free game on a server registered with the MSN Gaming Zone and are the
+first player to join this game, then you automatically become the game's owner and can set
+all of the game settings. For detail on owning a game, access Connect & Start:
+<Main|hlp2f|Creating a Game.><p><p>
+
+<Font|promptFont>Create Game<Font|smallFont><p><p>
+
+Click <Font|smallBoldFont>Create Game<Font|smallFont> to create a new game and display the
+Team Lobby. This button is only available if you are playing on the Allegiance Zone. For more
+detail on creating a game, access Connect & Start: <Main|hlp2f|Creating a Game.>

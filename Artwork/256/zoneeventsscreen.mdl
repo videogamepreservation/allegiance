@@ -1,0 +1,96 @@
+use "gamepanes";
+use "font";
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Event Screen
+//
+/////////////////////////////////////////////////////////////////////////////
+
+//
+// Main buttons
+//
+
+backButtonPane           = SoundButtonPane(ImportImage("btneventsplayzonebmp", true), ButtonNormal, false, negativeButtonClickSoundId);
+
+//
+// event list pane
+//
+
+eventsScrollBar  = ScrollBarPane(Point(16, 256));
+eventsColumns    = [100, 200, 300, 584];
+eventsListPane   = ListWithScrollBarPane(Point(579, 252), eventsScrollBar);
+
+
+//
+// Description pane
+//
+
+descriptionFont           = smallFont;
+descriptionColor          = white;
+descriptionHighlightColor = red;
+descriptionPageScrollBar = ScrollBarPane(Point(16, 173));
+descriptionPage          = PagePane(Point(584, 173), descriptionPageScrollBar);
+signUpButtonPane         = ButtonPane(ImportImage("btnsignupbmp", true), ButtonNormal, false);
+
+
+//
+// Titles
+//
+
+yellowText          = Color(0.878, 0.573, 0);
+whiteText           = Color(1, 1, 1);
+titlePane           = StringPane("ZONE EVENTS", yellowText,  Point(200, 30), JustifyLeft, titleFont);
+captionPane         = StringPane("REVIEW THE SCHEDULE OF UPCOMING ZONE EVENTS", whiteText, Point(800, 17), JustifyLeft, promptFont);
+
+
+//
+// Rollover tips
+//
+
+hoverSite = HoverSite(0);
+
+hoverString =
+    SwitchString(
+        HoverSiteGetID(hoverSite),
+        emptyString,
+        [
+            ( 1, "Return to Allegiance Zone screen."),
+            ( 2, "See a list of games currently available on the Allegiance Zone."),
+            ( 3, "Access the statistics of the currently selected player."),
+            ( 4, "Access the statistics of all Allegiance squads."),
+            ( 5, "Connect to the Allegiance Web page on the MSN Gaming Zone."),
+            ( 6, "The date the event will start."),
+            ( 7, "The time the event will start."),
+            ( 8, "The name of the event."),
+            ( 9, "A brief description of the event."),
+            (10, "A detailed description of the event."),
+            (11, "Connect to the Allegiance Zone Web page to sign up for this event.")
+        ]
+    );
+
+hoverImage = StringImage(JustifyLeft, 230, smallFont, white, hoverString);
+hoverPane  = AnimatedImagePaneRect(hoverImage, Rect(0, -35, 230, 0));
+
+
+//
+// The background and control positions
+//
+
+screen =
+    ScreenPane(
+        ImportImage("zoneeventsscreenbmp", false),
+        [
+            (titlePane,                 Point( 30,   7)),
+            (captionPane,               Point(100,  37)),
+            (descriptionPageScrollBar,  Point(679, 329)),
+            (HoverPane(hoverSite,  10,  descriptionPage),           Point( 95,  329)),
+            (eventsScrollBar,           Point(679,  54)),
+            (HoverPaneColumns(hoverSite, 6, eventsListPane,   eventsColumns), Point(95, 58)),
+            (HoverPane(hoverSite,  11, signUpButtonPane),   Point(703, 364)),
+
+            (HoverPane(hoverSite,  1, backButtonPane),              Point(24, 523)),
+
+            (hoverPane, Point( 555, 550))             
+        ]
+    );

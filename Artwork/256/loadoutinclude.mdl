@@ -1,0 +1,18 @@
+use "loadoutdata";
+
+//
+// Equipment types.  These must match IGC.
+//
+
+equipmentTypeMine        = -4;
+equipmentTypeNone        = -3;
+equipmentTypeTurret      = -2;
+equipmentTypeCargo       = -1;
+equipmentTypeChaff       =  0;
+equipmentTypeWeapon      =  1;
+equipmentTypeMagazine    =  2;
+equipmentTypeDispenser   =  3;
+equipmentTypeShield      =  4;
+equipmentTypeCloak       =  5;
+equipmentTypePack        =  6;
+equipmentTypeAfterburner =  7;

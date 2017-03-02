@@ -1,0 +1,333 @@
+use "effect";
+use "font";
+use "gamepanes";
+use "squadsscreendata";
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Squads Screen
+//
+/////////////////////////////////////////////////////////////////////////////
+
+//
+// Normal buttons
+//
+
+zoneclubButtonPane = ButtonPane(ImportImage("btneventsplayzonebmp", true), ButtonNormal, false);
+leaderboardButtonPane = ButtonPane(ImportImage("btnzone2leaderbmp", true), ButtonNormal, false);
+playerProfileButtonPane = ButtonPane(ImportImage("btnzone2playerprofilebmp", true), ButtonNormal, false);
+// gamesButtonPane = ButtonPane(ImportImage("btnzone2gamesbmp", false), ButtonNormal, false);
+webButtonPane = ButtonPane(ImportImage("btnzone2webbmp", true), ButtonNormal, false);
+squadFindButtonPane = ButtonPane(ImportImage("btnfindsquadbmp", false), ButtonNormal, false);
+
+topButtonPane  = ButtonPane(ImportImage("btnsquadsgototopbmp", false), ButtonNormal, false);
+prevButtonPane = ButtonPane(ImportImage("btnsquadascendbmp", false), ButtonNormal, false);
+nextButtonPane = ButtonPane(ImportImage("btnsquaddescendbmp", false), ButtonNormal, false);
+
+editsquadButtonPane = ButtonPane(ImportImage("btnsquadeditsquadbmp", false), ButtonNormal, false);
+rejectButtonPane = ButtonPane(ImportImage("btnsquadrejectbmp", false), ButtonNormal, false);
+acceptButtonPane = ButtonPane(ImportImage("btnsquadacceptbmp", false), ButtonNormal, false);
+commissionButtonPane = ButtonPane(ImportImage("btnsquadcommissionbmp", false), ButtonNormal, false);
+demoteButtonPane = ButtonPane(ImportImage("btnsquaddemotebmp", false), ButtonNormal, false);
+transfercontrolButtonPane = ButtonPane(ImportImage("btnsquadtransfercontrolbmp", false), ButtonNormal, false);
+requestjoinButtonPane = ButtonPane(ImportImage("btnsquadrequestjoinbmp", false), ButtonNormal, false);
+cancelrequestButtonPane = ButtonPane(ImportImage("btnsquadcancelrequestbmp", false), ButtonNormal, false);
+quitsquadButtonPane = ButtonPane(ImportImage("btnsquadquitsquadbmp", false), ButtonNormal, false);
+createsquadButtonPane = ButtonPane(ImportImage("btnsquadcreatesquadbmp", false), ButtonNormal, false);
+logButtonPane = ButtonPane(ImportImage("btnsquadlogbmp", false), ButtonNormal, false);
+applyButtonPane = ButtonPane(ImportImage("btnsquadapplybmp", false), ButtonNormal, false); // when editing a squad, this shows up
+URLButtonPane = ButtonPane(ImportImage("btnsquadurlbmp", false), ButtonNormal, false);
+
+//
+// Icons
+//
+
+ownerImage = ImportImage("iconsquadownerbmp", false);
+ASLImage = ImportImage("iconsquadaslbmp", false);
+PendingImage = ImportImage("iconsquadpendingbmp", false);
+RejectedImage = ImportImage("iconsquadrejectedbmp", false);
+MemberImage = ImportImage("iconsquadmemberbmp", false);
+BootedImage = ImportImage("iconsquadbootedbmp", false);
+QuitImage = ImportImage("iconsquadquitbmp", false);
+
+
+hoverSite = HoverSite(0);
+
+//
+//  Tabs
+//
+
+squadTabHeaderTextColor			= Color(1, 1, 1);
+squadSelectedTabHeaderTextColor = Color(1, 0, 0);
+
+tabColumns = [114, 228, 342];
+
+squadTabPane = ButtonBarPane(ImportImage("tabsquadsbmp", false), ButtonNormalCheckBox, tabColumns, false);
+squadTabAll = StringImage(JustifyCenter, 100, largeFont,  squadTabHeaderTextColor, squadTabAllStr);
+squadTabMy = StringImage(JustifyCenter, 100, largeFont,  squadTabHeaderTextColor, squadTabMyStr);
+squadTabDudeX = StringImage(JustifyCenter, 100, largeFont,  squadTabHeaderTextColor, squadTabDudeXStr);
+
+squadTabPaneImage = 
+    PaneImage(
+        HoverPaneColumns(hoverSite, 43, squadTabPane, tabColumns),
+        false, 
+        false
+    );
+
+squadTabImage =
+    GroupImage(
+        [
+            UndetectableImage(TranslateImage(squadTabAll,		    Point(5, 29))),
+            UndetectableImage(TranslateImage(squadTabMy,		    Point(120,29))),
+            UndetectableImage(TranslateImage(squadTabDudeX,		    Point(230,29))),
+            squadTabPaneImage
+        ]
+    );
+
+
+
+//
+// Squads listbox
+//
+
+
+squadsColumns    = [53, 186, 242, 295, 348];
+squadsListHeader = ButtonBarPane(ImportImage("headersquadsbmp", false), Button3State, squadsColumns, false);
+squadsScrollBar  = ScrollBarPane(Point(20, 297));
+squadsListPane   = ListWithScrollBarPane(Point(348, 298), squadsScrollBar);
+squadSelectColor = Color(1, 0, 0);
+
+
+
+//
+// Squad Description Area (used for creating squads, displaying details about them, and editing them)
+//
+
+squadNameEditPane = EditPane(Point(271, 19), smallFont);
+squadDescriptionEditPane = EditPane(Point(240, 15), smallFont);
+squadURLEditPane = EditPane(Point(208, 15), smallFont);
+squadFindPane = EditPane(Point(87, 15), smallFont);
+
+
+squadDetailsTextColor = Color(1, 1, 1);
+
+rankingStringPane       = StringPane("", squadDetailsTextColor, Point(50, 13), JustifyLeft, smallFont);
+rankStringPane          = StringPane("", squadDetailsTextColor, Point(150,13), JustifyLeft, smallFont);
+winsAndLossesStringPane = StringPane("", squadDetailsTextColor, Point(50, 13), JustifyLeft, smallFont);
+inceptionDateStringPane = StringPane("", squadDetailsTextColor, Point(50, 13), JustifyLeft, smallFont);
+
+// do image for description when in read-only mode
+descriptionStringImage = StringImage(JustifyLeft, 235, medVerdana,  Color(1, 1, 1), descriptionStr);
+descriptionPane =  AnimatedImagePane(PaneImage(BlackPane(AnimatedImagePaneRect(descriptionStringImage, Rect(0, -75, 250, 0))), false, true));
+
+//
+// Players listbox
+//
+
+playersColumns    = [80, 135, 204, 258];
+playersListHeader = ButtonBarPane(ImportImage("headersquadplayersbmp", false), Button3State, playersColumns, false);
+playersScrollBar  = ScrollBarPane(Point(15, 151));
+playersListPane   = ListWithScrollBarPane(Point(254, 156), playersScrollBar);
+playerSelectColor = Color(1, 0, 0);
+
+
+civComboPane = StringComboPane(Point(80, 21), Point(80, 21), smallFont, Color(1, 1, 1));
+
+CivNames = ["None", "Bios", "GigaCorp", "Iron Coalition", "Belters", "Rixian Unity"];
+
+CivIDs = [ -1, 35, 18, 25, 101, 201]; // keep in sync with database and with CivNames; -1 means Any/None
+
+
+//
+// Rollover tips
+//
+
+hoverString =
+    SwitchString(
+        HoverSiteGetID(hoverSite),
+        "",
+        [
+            ( 1, "Return to the Allegiance Zone screen."),
+            ( 2, "See a list of games on the Allegiance Zone."),
+            ( 3, "Access the statistics of the currently selected player."),
+            ( 4, "Access current selected player's location on Leaderboard."),
+            ( 5, "Connect to the MSN Gaming Zone Allegiance Page through your browser."),
+            ( 6, "View the previous 20 squads."),
+            ( 7, "View the next 20 squads."),
+            ( 8, "Reject the selected player from the squad."),
+            ( 9, "Accept the selected player as a squad member."),
+            (10, "Commission the selected player."),
+            (11, "Demote the selected player."),
+            (12, "Transfer control of the squad to the selected player."),
+            (13, "Send a request to join the selected squad."),
+            (14, "Cancel your request to join the selected squad."),
+            (15, "Cancel your membership in the selected squad."),
+            (16, "Create a new squad."),
+            (17, "Shows the squad's name."),
+            (18, "Describes the squad."),
+            (19, "Shows the squad's Web site URL."),
+            (20, "Your squad's ranking among all other squads."),
+            (21, "Shows the squad's overall ranking."),
+            (22, "Shows how many wins and losses the squad has acquired over its history."),
+            (23, "Shows the date the squad was created."),
+            (24, "View the squad owner's log."),
+            (25, "Go to the squad's Web site if one exists."),
+            (26, "Go to the top of the Squad Selection list."),
+            (27, "Enter a squad name, and then press ENTER or click the arrow."),
+            (28, "Squad Affiliation"),
+            (29, "Shows the squad's faction. If you are the squad owner, click to select a faction."),
+			(30, "Edit and apply your squad profile."),
+			(31, "Double-click a player name to see his squads."),
+			(32, "Save squad changes."),
+			(33, "Activates squad edit mode."),
+
+            // squads list
+            
+            (34, "Shows the squad's current ranking."),
+            (35, "Shows the squad's name."),
+            (36, "Shows the squad's overall score."),
+            (37, "Shows how many wins the squad has acquired over its history."),
+            (38, "Shows how many losses the squad has acquired over its history."),
+
+            // players list
+
+            (39, "Shows the player's name."),
+            (40, "Shows the player's current rank."),
+            (41, "Shows the player's position within the squad."),
+            (42, "Shows the date on which the player joined the squad."),
+
+            // squad tabs
+            
+            (43, "Displays all squads on the Allegiance Zone."),
+            (44, "Displays only squads that you are a member of."),
+            (45, "Displays only squads that the selected player is a member of.")
+        ]
+    );
+
+hoverImage = StringImage(JustifyLeft, 250, smallFont, white, hoverString);
+hoverPane  = AnimatedImagePaneRect(hoverImage, Rect(0, -35, 250, 0));
+
+//                       
+// History Dialog 
+//
+
+historyScrollBar  = ScrollBarPane(Point(300, 135));
+
+historyListPane   = StringListWithScrollBarPane(Point(300, 135), historyScrollBar, largeFont, Color(1, 0, 0));
+
+//historyListPane   = ListWithScrollBarPane(Point(300, 150), historyScrollBar);
+
+historyOkButtonPane = ButtonPane(ImportImage("btnokbmp", true), ButtonNormal, false);
+
+historyDialog =
+        (
+            ImagePane(
+                ImportImage("squadhistorydialogbmp", false),
+                [
+                    (historyListPane,                  Point(80,50)),
+                    (historyScrollBar,                 Point(400,50)),
+                    (historyOkButtonPane,              Point(330,200))
+                ]
+            )
+        );
+
+//
+// Titles
+//
+
+yellowText			= Color(0.878, 0.573, 0);
+whiteText			= Color(1, 1, 1);
+titlePane			= StringPane("SQUAD PROFILES / EDITOR", yellowText,	Point(400, 30), JustifyLeft, titleFont);
+captionPane         = StringPane("SELECT A SQUAD IN THE LIST BELOW TO VIEW FURTHER INFORMATION", whiteText, Point(800, 30), JustifyLeft, promptFont);
+
+
+
+
+
+//
+// The background and control positions
+//
+
+screen =
+    ScreenPane(
+        ImportImage("squadsscreenbmp", false),
+        [
+			(titlePane,					Point(15, 15)),
+			(captionPane,				Point(75, 50)),
+
+            (HoverPane(hoverSite,  1, zoneclubButtonPane		), Point(24, 523)),
+			(HoverPane(hoverSite,  3, playerProfileButtonPane	), Point(104, 523)),
+            (HoverPane(hoverSite,  4, leaderboardButtonPane		), Point(184, 523)),
+			(HoverPane(hoverSite,  5, webButtonPane				), Point(264, 523)),
+            
+
+            (HoverPane(hoverSite, 26, topButtonPane  			), Point(252, 116)),
+            (HoverPane(hoverSite,  6, prevButtonPane			), Point(31, 463)),
+            (HoverPane(hoverSite,  7, nextButtonPane			), Point(31, 487)),
+
+		    //
+			// Place squad owner buttons...
+			//
+            
+
+            (HoverPane(hoverSite,  9, acceptButtonPane			), Point(701, 352)),
+			(HoverPane(hoverSite,  8, rejectButtonPane			), Point(701, 374)),
+            (HoverPane(hoverSite, 10, commissionButtonPane		), Point(701, 396)),
+            (HoverPane(hoverSite, 11, demoteButtonPane			), Point(701, 418)),
+            (HoverPane(hoverSite, 12, transfercontrolButtonPane	), Point(701, 440)),
+
+			//
+			// Place buttons available for everyone
+			//
+            (HoverPane(hoverSite, 13, requestjoinButtonPane		), Point(701, 158)),
+            (HoverPane(hoverSite, 14, cancelrequestButtonPane	), Point(701, 180)),
+            (HoverPane(hoverSite, 15, quitsquadButtonPane		), Point(701, 202)),
+            (HoverPane(hoverSite, 16, createsquadButtonPane		), Point(701, 224)),
+			(HoverPane(hoverSite, 24, logButtonPane				), Point(701, 246)),
+//			(HoverPane(hoverSite, 32, applyButtonPane           ), Point(701, 268)), // 
+//			(HoverPane(hoverSite, 33, editsquadButtonPane       ), Point(701, 268)), // it seems you can't have two hover panes on each other
+			(applyButtonPane,					       			   Point(701, 268)), 
+			(editsquadButtonPane,								   Point(701, 268)), 
+
+			//
+			// Place Tab 
+			//
+			(AnimatedImagePaneRect(squadTabImage, Rect(0, 0, 350, 35)),  Point(59,  80)),
+            //(squadTabPane,  Point(21,  80)),
+
+			//
+			// Place Squads Listbox
+			//
+            (HoverPaneColumns(hoverSite, 34, squadsListHeader, squadsColumns), Point( 20, 137)),
+            (squadsListPane,   Point( 20, 158)),
+            (squadsScrollBar,  Point(370, 160)),
+
+			//
+			// Place Squad Description-Related Stuff 
+			//
+            (HoverPane(hoverSite, 17, squadNameEditPane				), Point(540, 138)),
+            (HoverPane(hoverSite, 18, squadDescriptionEditPane		), Point(436, 261)), // editable version
+            (HoverPane(hoverSite, 18, descriptionPane		        ), Point(436, 261)), // read-only version
+            (HoverPane(hoverSite, 19, squadURLEditPane				), Point(436, 225)),
+            (HoverPane(hoverSite, 29, civComboPane                  ), Point(594, 161)),
+            (HoverPane(hoverSite, 27, squadFindPane	      			), Point(281, 479)),
+            (HoverPane(hoverSite, 27, squadFindButtonPane 			), Point(370, 471)),
+
+//            (HoverPane(hoverSite, 20, rankingStringPane				), Point(528, 179)),
+            (HoverPane(hoverSite, 21, rankStringPane				), Point(528, 179)),
+            (HoverPane(hoverSite, 22, winsAndLossesStringPane		), Point(528, 195)),
+            (HoverPane(hoverSite, 23, inceptionDateStringPane		), Point(528, 210)),
+            
+             
+            (HoverPane(hoverSite, 25, URLButtonPane					), Point(653, 221)),
+
+            (hoverPane, Point( 550, 555)), // place the text
+
+			//
+			// Place Players Listbox
+
+            (HoverPaneColumns(hoverSite, 39, playersListHeader, playersColumns), Point(428,  360)),
+            (HoverPane(hoverSite, 31, playersListPane					), Point(428,  381)),
+            (playersScrollBar,  Point(685,  383))
+        ]
+    );

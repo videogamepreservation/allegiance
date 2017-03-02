@@ -1,0 +1,25 @@
+use "SlideshowData";
+use "sounddef";
+use "font";
+use "gamepanes";
+
+
+//----------------------------------------------------------
+// some more common images
+//----------------------------------------------------------
+hangar_background = ImportImage ("hangarbmp", false);
+circle_overlay = ImportImage ("tm_slide_circle_overlaybmp", true);
+
+//----------------------------------------------------------
+// all the slides in a list
+//----------------------------------------------------------
+slides =
+[
+	// tm_2_01
+	// In this mission, you will receive a basic introduction to 
+	// your controls and heads-up display and do a little bit of 
+	// flying.
+    (GroupImage ([TranslateImage (circle_overlay, Point (360, 285)), hangar_background]), tm_slide_2_01SoundId)
+];
+
+//----------------------------------------------------------

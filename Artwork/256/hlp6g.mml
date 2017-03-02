@@ -1,0 +1,35 @@
+<Font|promptFont>MINING<Font|smallFont><p><p>
+
+Vital to the economics of your team is mining Helium3 asteroids for income.<p><p>
+
+Each team receives one miner at the beginning of a tech tree game, and as many as four
+miners per team can be built. As soon as the game begins, the commander or investor should
+immediately begin building more miners. If there is a Helium3 (He3) asteroid in the team's
+home sector, a new miner will automatically go to that asteroid and start mining.<p><p>
+
+Only one miner can mine an He3 asteroid at a time. It will mine at that asteroid until its
+inner containment field is full, it is commanded to go elsewhere, another miner approaches
+that asteroid, or too many enemies in the sector scare it off.<p><p>
+
+A miner will return to the base closest to the asteroid it is mining. When
+the miner docks at any base, its cargo is transformed into money for the team.<p><p>
+
+Once an He3 asteroid is depleted of He3, a miner will automatically go to
+the next He3 asteroid in the same sector. If a miner cannot find any He3
+asteroids, it will become idle for a time before returning to the nearest base.
+It will issue a message stating that there is no He3 to be found. In this
+case, the commander should use the expanded Map display to locate a
+neutral sector with He3 asteroids, and then command the miner to go mine an
+asteroid in that sector.<p><p>
+
+One of the most important responsibilities of the commander is the protection of miners. A
+miner should never be without a nearby escort or bodyguard, as an attack on mining operations
+can cripple a team's progress. Miners left idle are particularly vulnerable and should be
+diligently micromanaged to avoid attack. Along these lines, keeping
+an eye out for enemy mining operations and carrying out surprise
+attacks is a solid way to beat down the enemy through economic ruin.<p><p>
+
+The shields and armor of a miner are not very strong, and a miner will flee for base once it
+has lost 75% of its shields. If a miner is waiting for its chance to mine an asteroid and it
+is attacked, it will head for the base once its shields drop to 50%. Once at base, it
+will stay docked until all enemies are out of scan range.

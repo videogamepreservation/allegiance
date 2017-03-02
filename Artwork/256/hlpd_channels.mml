@@ -1,0 +1,6 @@
+<Font|smallBoldFont>Communications Channel:<Font|smallFont> <Font|smallBoldFont>All<Font|smallFont>
+will send your chat to all players in the game. <Font|smallBoldFont>Team<Font|smallFont> will
+send your chat to the team specified by number.
+<Font|smallBoldFont>Command<Font|smallFont> will send
+your chat to your commander. A sector name will send your chat to all
+players in the sector specified by name.

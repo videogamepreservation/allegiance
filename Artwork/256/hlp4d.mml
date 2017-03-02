@@ -1,0 +1,175 @@
+<Font|promptFont>COMMAND VIEW<Font|smallFont><p><p>
+
+Command view is one of the most spectacular aspects to Allegiance.
+When watching the ongoing saga of a multiplayer game, it is amazing to
+realize that the ships are actual online combatants twisting and fighting
+for survival, not just small prerendered graphics from another me-too real-time
+strategy game. Command view provides an omniscient view of the battle and
+the gaming environment as they unfold real-time before you.<p><p>
+
+<Font|smallBoldFont>To access Command view<Font|smallFont><p><p>
+
+<Bullet|hlpbullet|Press F3.><p><p>
+
+<Bullet|hlpblank|Press SHIFT+F3 to access the alternative Command view.><p><p>
+
+Command view can be accessed while flying or at any station
+hangar. The difference between accessing Command view while
+flying and at a station hangar is that you can only see the
+current sector you are in while flying. At the station hangar,
+you can look through all sectors that you and your team have located. If you are flying
+when accessing Command view, your ship will have a special icon that looks
+like the silhouette of an eye so you can always tell which ship is
+yours.<p><p>
+
+It is in Command view that the commander will spend most of his time.
+The interface of this display allows the commander to provide the strategy
+needed for his team to win the game.<p><p>
+
+At the upper center of Command view, your chat messages will appear. You
+will receive not only chat messages from your team but also status messages from your
+automated stations, miners, and constructors. For details on chatting, access Gameplay:
+Communications: <Main|hlp6k1|Chat.><p><p>
+
+<Font|promptFont>Main Display<Font|smallFont><p><p>
+
+The main display is where all the action is. What you see happening in this display
+is happening real-time in the game. All objects are actually rendered as you'd see them
+in the Combat HUD, but the scale and icons make it easier to recognize
+ships and objects. The grid pattern makes it easier for you to see the
+plane of space. The lines that stretch from the grid plane in the sectors to the
+various objects represent the three-dimensional distance of the objects to the plane.<p><p>
+
+To move about the view, use your mouse cursor. Move the cursor to an
+outside edge of the Command view display to scroll the screen in that
+direction. To zoom the view in and out, use the + and - keys on
+your numeric keypad.<p><p>
+
+All icons in Command view have an item associated with them on your
+screen. These are the same icons used in the Combat HUD for
+peripheral radar. For a list of the peripheral radar icons, see the
+Allegiance Survival Guide that came with your game.<p><p>
+
+<Font|promptFont>Command Bar<Font|smallFont><p><p>
+
+The Command bar lets you quickly select and command the various
+ships and utility craft that are under your command.<p><p>
+
+<Font|smallBoldFont>Selecting Command Recipients<Font|smallFont><p><p>
+
+To command, first you select a recipient, either yourself, a single ship,
+all ships in your sector, your complete team, or just a specific wing.<p><p>
+
+There are three ways to select the recipient(s):<p><p>
+
+<Bullet|hlpbullet|Click the player's icon in the Command
+view display.><p><p>
+
+<Bullet|hlpbullet|Click <Font|smallBoldFont>Self,<Font|smallFont>
+<Font|smallBoldFont>Sector,<Font|smallFont>
+<Font|smallBoldFont>Team,<Font|smallFont>
+<Font|smallBoldFont>All,<Font|smallFont> or
+<Font|smallBoldFont>Wing<Font|smallFont> on the Command bar.><p><p>
+
+<Bullet|hlpbullet|Drag a box around the players you want to select.><p><p>
+
+To communicate with the recipient(s), begin typing in the displayed chat
+box, and then press ENTER. Your message will be sent as normal chat.<p><p>
+
+<Font|smallBoldFont>Commanding<Font|smallFont><p><p>
+
+Actually assigning commands to recipients is a quick three-step
+process -- and even quicker if you use a smart command.<p><p>
+
+<Font|smallBoldFont>To assign a smart command<Font|smallFont><p><p>
+
+<Bullet|hlpbullet|Click the item you want to command, and then right-click
+an objective.><p><p>
+
+<Bullet|hlpblank|For example, left-click a miner, and then right-click a Helium3 asteroid,
+and the miner will immediately begin to travel there and mine that asteroid. You can
+left-click a constructor, and then right-click the <Main|hlp6l|proper asteroid> you want
+to build on.><p><p>
+
+<Font|smallBoldFont>To assign a command<Font|smallFont><p><p>
+
+<Bullet|hlpimg1|Select the command recipient, as described in the
+preceding section, "Selecting Command Recipients, above.><p><p>
+
+<Bullet|hlpimg2|In the Command bar, left-click the command you want
+to give. (See below for a description of each of the commands in
+the Command bar.)><p><p>
+
+<Bullet|hlpimg3|Right-click the objective on which you want the
+command performed.><p><p>
+
+<Bullet|hlpblank|If the objective is in your current sector, right-click
+it in the main Command View display, and the recipients will
+receive their command. If the objective
+is in another sector, left-click the sector in the
+<Main|hlp4k|Map display> and then select the objective in the proper
+sector that is now
+displayed in Command view. All the recipients will receive the
+command and, once they accept the command, they'll automatically go
+into autopilot and travel to the new sector where the objective is.><p><p>
+
+If you wish to contact all of your forces in a specific sector, all you
+need to do is right-click on the sector map in the <Main|hlp4k|Map display.> This will bring
+up the command recipient as the sector name.
+You then proceed to give a command as normal. Any and all of your team
+participants in the sector will recieve the command.<p><p>
+
+There are several commands you can give to your teammates as
+well as to your miners, constructors, and mine and tower layers.<p><p>
+
+<Font|smallBoldFont>Attack --<Font|smallFont>Orders the command
+recipient to attack the selected objective. This command is given to
+fighting craft such as fighters and interceptors but not to scouts or
+repair or support craft.<p><p>
+
+<Font|smallBoldFont>Capture --<Font|smallFont>Orders the command
+recipient to capture the selected objective. When giving a Capture
+command, make sure the attack force has a troop transport, which is needed
+to board the enemy structure once that structure's shields are down.<p><p>
+
+<Font|smallBoldFont>Defend --<Font|smallFont>Orders the command
+recipient to defend a specific target such as a structure or a miner or
+builder.<p><p>
+
+<Font|smallBoldFont>Pick Up --<Font|smallFont>Orders the command
+recipient to retrieve the selected objective. This command is commonly
+used to to pick up a pilot in an eject pod or a piece of debris you want
+recovered.<p><p>
+
+<Font|smallBoldFont>Go To --<Font|smallFont>Orders the command
+recipient to go to the selected objective. This command is useful for
+gathering forces before an assault on an enemy sector.<p><p>
+
+There are three options for setting a Go To waypoint:<p><p>
+
+<Bullet|hlpbullet|Select the craft, click <Font|smallBoldFont>Go To,<Font|smallFont>, and then
+click a point in space.><p><p>
+
+<Bullet|hlpbullet|Left-click the craft you want to command, and then right-click a point in
+space.><p><p>
+
+<Bullet|hlpbullet|Press and hold the right mouse button while dragging your cursor, and then
+release the mouse button. This will allow you to move the mouse cursor to place a true 3D point
+in space.><p><p>
+
+<Font|smallBoldFont>Repair --<Font|smallFont>Orders a player to repair a
+structure or ship's hull. The commander usually has a best idea of who
+is need of repari and can help direct the player with the repair
+unit to the player who is in need of repair.<p><p>
+
+<Font|smallBoldFont>Join --<Font|smallFont>Orders a player to join a
+specific objective wing.<p><p>
+
+<Font|smallBoldFont>Mine --<Font|smallFont>Orders the selected miner
+to mine the selected Helium3 asteroid. This command allows you to
+direct miners where to go to keep them out of the path of the enemy.<p><p>
+
+<Font|smallBoldFont>Build --<Font|smallFont>Orders the selected
+builder to create its pending structure on the selected asteroid.
+If the builder requires a specific asteroid, sectors containing that
+asteroid will appear with a red border around them on the Map display.

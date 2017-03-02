@@ -1,0 +1,42 @@
+<Font|promptFont>PERIPHERAL RADAR<Font|smallFont><p><p>
+
+All icons in your peripheral radar have an item associated with them on your screen. This
+lets you identify the item, even if it is out of your field of view and
+off to the edge of your screen. The number  accompanying each icon is the item's
+distance from you in meters. When a craft such as a
+ship or miner is in your peripheral radar gutter, a health meter will also be displayed
+with the icon so you know the relative health of the craft.<p><p>
+
+By pressing the I key, you can cycle through three modes of peripheral
+radar: Default, which labels the items of most interest; All; and Target.
+
+Your peripheral radar is based on two factors: your scan range and
+the radar signature of the targets.<p><p>
+
+<Font|promptFont>Scan Range<Font|smallFont><p><p>
+
+Scan range is the range at which your ship will detect other objects.
+The greater the scan range, the farther out you will see the enemy.
+Scan ranges vary greatly from ship to ship. Just
+because you do not see them does not mean they do not
+see you.<p><p>
+
+The Detected by Enemy icon -- an eyeball on your HUD -- indicates
+that you are being scanned by an enemy.<p><p>
+
+<Font|promptFont>Signature<Font|smallFont><p><p>
+
+Signature is how visible your ship is to other ships. The higher your signature, the greater
+chance of your ship being seen by other ships. Items you carry on mount
+points of your ship will give you a higher signature, thus making it
+easier for the enemy to see you. Carrying certain equipment items,
+such as cloaks; not using your boosters; and not firing your guns or
+missiles will all lower your signature.<p><p>
+
+Some ships can have cloaks that make them nearly invisible. Other ships can have powerful
+shields, but the power is so
+strong that their signature is visible to several thousand meters.
+To utilize a cloak you may have equipped, press K. Remember that this
+will begin draining your energy as soon as you equip it. Keep an eye
+on your energy, as once its used up your cloak will shut off and
+you'll be very visible to any nearby enemies.

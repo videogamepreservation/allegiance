@@ -1,0 +1,11 @@
+use "console";
+
+InventoryLine = ImagePane(ImportImage("inventorylinebkgndbmp", false),
+    [
+      (StringPane(
+        ConcatinatedString(
+            "Observers: ",
+            NumberString(GetNumObservers(Me, OnEveryFrame))
+        ), Color(1,1,1), Point(148, 12)), Point(23, 5))
+    ]
+  );

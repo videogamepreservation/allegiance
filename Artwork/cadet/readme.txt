@@ -1,0 +1,1 @@
+This directory contains additional artwork neccessary for cadet.  This is not integrated into the build.  makeart.bat will build the additional artwork but it will need modification given your configuration.

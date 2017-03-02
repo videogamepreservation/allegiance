@@ -1,0 +1,94 @@
+<Font|promptFont>WEAPONS & EQUIPMENT<Font|smallFont><p><p>
+
+Each ship has a default loadout configuration that is appropriate
+for its ship class. You can completely modify the loadout if you desire.
+Keep an eye on the changes to your ship's performance envelope as you add
+new items and remove others. Dropping the additional booster fuel might
+save you some weight and give you slightly higher acceleration but, in the
+midst of a nasty firefight, having the extra booster fuel is all that
+might stand between your survival and an extremely slow eject pod.<p><p>
+
+Your ship loadout will allow you to
+modify most of the following Loadout categories:<p><p>
+
+<Bullet|hlpbullet|<Font|smallBoldFont>Weapons mounts<Font|smallFont>
+support only weapons, either ammo-based or energy-based.><p><p>
+
+<Bullet|hlpbullet|<Font|smallBoldFont>Missile bays<Font|smallFont> allow you to mount specific
+missiles on your chosen ship. Different ship classes have different
+missile options.><p><p>
+
+<Bullet|hlpbullet|<Font|smallBoldFont>Turret mounts<Font|smallFont> are
+available on most capital ships and bombers.><p><p>
+
+<Bullet|hlpbullet|<Font|smallBoldFont>Equipment slots<Font|smallFont> will
+vary from ship to ship. Each of the five equipment slots can support
+the ship with a different type of equipment: boosters, shields, cloaks,
+probes and mines, and countermeasures.><p><p>
+
+<Bullet|hlpbullet|<Font|smallBoldFont>Cargo bays<Font|smallFont> allow you to carry spare
+equipment that you may be able to mount while in-flight using your <Main|hlp4l|Inventory display>
+or equipment to deliver to other ships. Carrying expendable items such as
+ammo,
+fuel, probes, mines, missiles, and countermeasures makes the best use of
+your cargo bays.><p><p>
+
+A slot with a red circle with a line through it means that you
+do not have access to that slot. As you peruse through the various available ships,
+you'll notice that different classes of ships have different available
+slots. Slot Empty means you can load something into that ship's
+slot.<p><p>
+
+<Font|promptFont>Reviewing and Selecting Loadout Items<Font|smallFont><p><p>
+
+<Font|smallBoldFont>To see the description and statistics of an item
+currently loaded on your ship<Font|smallFont><p><p>
+
+<Bullet|hlpbullet|Pause your mouse cursor over the item you wish to see.><p><p>
+
+<Bullet|hlpblank|The item's statistics will be displayed at the bottom of
+the Loadout under Selected Item's Statistics.><p><p>
+
+<Font|smallBoldFont>To load a new item into a ship's slot<Font|smallFont><p><p>
+
+<Bullet|hlpbullet|Click and hold on the slot you wish to modify with the mouse cursor.
+You'll be provided with a drop-down menu that will display any and all items you can place
+into the slot. While continuing to hold the mouse button, drag the cursor over
+the item you wish to select and then release. This item will now be placed
+into the slot.><p><p>
+
+<Font|smallBoldFont>To reequip a ship's default loadout at any time<Font|smallFont><p><p>
+
+<Bullet|hlpbullet|Click <Font|smallBoldFont>Default
+Loadout.<Font|smallFont>><p><p>
+
+<Font|promptFont>Understanding Item Statistics<Font|smallFont><p><p>
+
+Each type of equipment you carry has its own statistics that affect not
+only your ship's performance but also its signature.<p><p>
+
+<Font|smallBoldFont>Weapon Stats --<Font|smallFont>Show
+damage, rate, signature, range, speed, and defense bonus.<p><p>
+
+<Font|smallBoldFont>Missile Stats --<Font|smallFont>Show hit damage,
+area damage, range, lock time, accuracy, and defense bonus.<p><p>
+
+<Font|smallBoldFont>Turret Stats --<Font|smallFont>Show
+damage, rate, signature, range, speed, and defense bonus.<p><p>
+
+The following equipment stats are shown if your current ship has the
+capability for the item.<p><p>
+
+<Font|smallBoldFont>Booster Stats --<Font|smallFont>Show maximum thrust,
+burn rate, signature, on rate, and mass.<p><p>
+
+<Font|smallBoldFont>Shield Stats --<Font|smallFont>Show
+particle, energy, signature, regen, hit points, and mass.<p><p>
+
+<Font|smallBoldFont>Cloak Stats --<Font|smallFont>Show cloaking, max mass, energy use,
+and mass.<p><p>
+
+<Font|smallBoldFont>Mine and Probe Stats --<Font|smallFont>Show scan
+range, hit points, signature, lifespan, and mass.<p><p>
+
+<Font|smallBoldFont>Countermeasure Stats --<Font|smallFont>Show strength, mass, and signature.

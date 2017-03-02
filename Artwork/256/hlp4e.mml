@@ -1,0 +1,76 @@
+<Font|promptFont>TEAM DISPLAY<Font|smallFont><p><p>
+
+The Team display provides information on your teammates as well as available information that has
+been discovered about your opponents during the course of the game. The only way to access
+Command view for every sector is from a station, so the Team display is a great way to find out
+the locations of all your teammates while flying.<p><p>
+
+<Font|smallBoldFont>To toggle the expanded or mini Team display<Font|smallFont><p><p>
+
+<Bullet|hlpbullet|Press F6 or SHIFT+F6.><p><p>
+
+<Bullet|hlpblank|The expand/collapse arrow in the upper-right corner of the Team display
+toggles the size of your Team display between expanded and mini. The mini Team display offers
+a simple drop-down menu at the top to select which team you would like to see team statistics
+on.><p><p>
+
+<Font|smallBoldFont>Selected Team --<Font|smallFont>Shows the name of the currently selected
+team. When the expanded Team display first appears, your team will be highlighted. To select
+another team to view, simply click it.<p><p>
+
+<Font|smallBoldFont>Pilot Callsign --<Font|smallFont>Shows the name
+of the pilot. The owner of the game (lightning icon) and the team leader
+(crown icon) of each team are also indicated.<p><p>
+
+<Font|smallBoldFont>Kills --<Font|smallFont>Shows how many kills the
+pilot has made in the game so far.<p><p>
+
+<Font|smallBoldFont>Deaths --<Font|smallFont>Shows how many times the
+pilot has died.<p><p>
+
+<Font|smallBoldFont>Sector --<Font|smallFont>Shows the current sector
+location of the pilot.<p><p>
+
+<Font|smallBoldFont>Ship --<Font|smallFont>Shows what the pilot is
+currently manning. A ship icon means the pilot is in a ship. A turret icon
+means he is in a turret on a ship. The eye icon means he is in
+Command view. A shovel icon indicates a miner.<p><p>
+
+<Font|smallBoldFont>Wing --<Font|smallFont>Shows the wing the pilot belongs to. You can change
+wings by selecting your player name, clicking and holding
+<Font|smallBoldFont>Change Wing,<Font|smallFont> and then selecting the
+wing you want to join.<p><p>
+
+<Font|smallBoldFont>Credits --<Font|smallFont>Shows the amount of money the pilot currently has.<p><p>
+
+<Font|smallBoldFont>Objective --<Font|smallFont>Shows the command that a
+pilot has accepted.<p><p>
+
+Along the bottom of the Team display are additional buttons that provide
+you with further team interaction.<p><p>
+
+<Font|smallBoldFont>Team Deposit/Stop Donating --<Font|smallFont>Makes
+continuous deposits of all your money to whomever you select, usually your
+team leader or investor.<p><p>
+
+<Font|smallBoldFont>Single Deposit --<Font|smallFont>Makes a single
+deposit in an amount you specify to whomever you select.<p><p>
+
+<Font|smallBoldFont>Take Me To --<Font|smallFont>Transports you, via
+Command view, to the selected player or computer-controlled ship, such as a constructor or
+miner. This will also work with any enemy teams you have encountered. If an enemy player is
+currently being observed by anyone on your team, even your probes, you can be
+taken directly to their position by selecting their name and then
+clicking <Font|smallBoldFont>Take Me To.<Font|smallFont><p><p>
+
+<Font|smallBoldFont>Change Wing --<Font|smallFont>Lets you join or
+change your current wing. You can change wings by selecting your player name, clicking and holding
+<Font|smallBoldFont>Change Wing<Font|smallFont>, and then selecting the
+wing you want to join. Different wings offer their own communications
+channel in chat mode.<p><p>
+
+The team leader also has an additional button.<p><p>
+
+<Font|smallBoldFont>Boot Pilot --<Font|smallFont>As team leader, you can
+boot a player from your team. Select the player you want to eject from the
+game, and then click <Font|smallBoldFont>Boot Pilot.<Font|smallFont>

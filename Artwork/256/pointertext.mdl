@@ -1,0 +1,9 @@
+use "model";
+object = 
+    TransformGeo(
+        TransformGeo(
+            ImportXFile("pointer", 0),
+            Rotate(Vector(1, 0, 0), Multiply(-0.5, pi))
+        ),
+        Scale(3)
+    );

@@ -1,0 +1,251 @@
+use "loadoutinclude";
+use "font";
+
+//////////////////////////////////////////////////////////////////////////////
+//
+// Shared Definitions
+//
+//////////////////////////////////////////////////////////////////////////////
+
+defaultPrefix = "l";
+cargoPrefix   = "l";
+
+cargoImage         = ImportImage("slotemptybmp",   true);
+weaponImage        = ImportImage("slotemptybmp",   true);
+magazineImage      = ImportImage("slotemptybmp",   true);
+dispenserImage     = ImportImage("slotemptybmp",   true);
+shieldImage        = ImportImage("slotemptybmp",   true);
+cloakImage         = ImportImage("slotemptybmp",   true);
+packImage          = ImportImage("slotemptybmp",   true);
+afterBurnerImage   = ImportImage("slotemptybmp",   true);
+chaffImage         = ImportImage("slotemptybmp",   true);
+
+color = white;
+font  = smallFont;
+width = 128;
+
+//
+// The default loadout will be used if there isn't a loadout definition for a certain hull
+//
+
+loadoutDefault =
+    [
+        // ( slot type, mount, bitmapPrefix, slot background, position)
+
+        (equipmentTypeWeapon,      0, defaultPrefix, weaponImage,      Point( 19,  33)),
+        (equipmentTypeWeapon,      1, defaultPrefix, weaponImage,      Point( 19,  72)),
+        (equipmentTypeWeapon,      2, defaultPrefix, weaponImage,      Point( 19, 110)),
+        (equipmentTypeWeapon,      3, defaultPrefix, weaponImage,      Point( 19, 150)),
+        (equipmentTypeTurret,      0, defaultPrefix, weaponImage,      Point( 19, 305)),
+        (equipmentTypeTurret,      1, defaultPrefix, weaponImage,      Point( 19, 344)),
+        (equipmentTypeTurret,      2, defaultPrefix, weaponImage,      Point( 19, 382)),
+        (equipmentTypeTurret,      3, defaultPrefix, weaponImage,      Point( 19, 420)),
+        (equipmentTypeMagazine,    0, defaultPrefix, magazineImage,    Point( 19, 226)),
+        (equipmentTypeAfterburner, 0, cargoPrefix,   afterBurnerImage, Point(651,  33)),
+        (equipmentTypeShield,      0, cargoPrefix,   shieldImage,      Point(651,  73)),
+        (equipmentTypeCloak,       0, cargoPrefix,   cloakImage,       Point(651, 110)),
+        (equipmentTypeDispenser,   0, cargoPrefix,   dispenserImage,   Point(651, 150)),
+        (equipmentTypeChaff,       0, cargoPrefix,   chaffImage,       Point(651, 188)),
+        (equipmentTypeCargo,       0, cargoPrefix,   cargoImage,       Point(651, 267)),
+        (equipmentTypeCargo,       1, cargoPrefix,   cargoImage,       Point(651, 305)),
+        (equipmentTypeCargo,       2, cargoPrefix,   cargoImage,       Point(651, 344)),
+        (equipmentTypeCargo,       3, cargoPrefix,   cargoImage,       Point(651, 383)),
+        (equipmentTypeCargo,       4, cargoPrefix,   cargoImage,       Point(651, 421))
+    ];
+
+
+//
+// Shared loadout definitions
+//
+
+
+//lightfighter = interceptor
+
+loadoutLightFighter =
+    [
+        (equipmentTypeWeapon,      0, defaultPrefix, weaponImage,      Point( 15,  14)),
+        (equipmentTypeWeapon,      1, defaultPrefix, weaponImage,      Point(142,  14)),
+        (equipmentTypeMagazine,    0, defaultPrefix, magazineImage,    Point(266,  14)),
+        (equipmentTypeAfterburner, 0, cargoPrefix,   afterBurnerImage, Point( 15,  56)),
+        (equipmentTypeShield,      0, cargoPrefix,   shieldImage,      Point( 15,  98)),
+        (equipmentTypeChaff,       0, cargoPrefix,   chaffImage,       Point( 15, 140)),
+        (equipmentTypeCargo,       0, cargoPrefix,   cargoImage,       Point( 18, 236)),
+        (equipmentTypeCargo,       1, cargoPrefix,   cargoImage,       Point( 78, 236)),
+        (equipmentTypeCargo,       2, cargoPrefix,   cargoImage,       Point(137, 236)),
+        (equipmentTypeCargo,       3, cargoPrefix,   cargoImage,       Point(196, 236)),
+        (equipmentTypeCargo,       4, cargoPrefix,   cargoImage,       Point(254, 236))
+    ];
+
+//loadoutLightFighterOverlay =
+//    GroupImage(
+//        [
+//            TranslateImage(
+//                StringImage(JustifyLeft, 128, font, color, gunner0),
+//                Point(15, 273) // y = geoSize.y - 14 + font.size.y
+//            )
+//        ]
+//    );
+    
+loadoutScout = 
+    [
+        (equipmentTypeWeapon,      0, defaultPrefix, weaponImage,      Point( 15,  14)),
+        (equipmentTypeAfterburner, 0, cargoPrefix,   afterBurnerImage, Point( 15,  56)),
+        (equipmentTypeShield,      0, cargoPrefix,   shieldImage,      Point( 15,  98)),
+        (equipmentTypeCloak,       0, cargoPrefix,   cloakImage,       Point( 15, 140)),
+        (equipmentTypeDispenser,   0, cargoPrefix,   dispenserImage,   Point( 15, 182)),
+        (equipmentTypeChaff,       0, cargoPrefix,   chaffImage,       Point( 78, 182)),
+        (equipmentTypeCargo,       0, cargoPrefix,   cargoImage,       Point( 18, 236)),
+        (equipmentTypeCargo,       1, cargoPrefix,   cargoImage,       Point( 78, 236)),
+        (equipmentTypeCargo,       2, cargoPrefix,   cargoImage,       Point(137, 236)),
+        (equipmentTypeCargo,       3, cargoPrefix,   cargoImage,       Point(196, 236)),
+        (equipmentTypeCargo,       4, cargoPrefix,   cargoImage,       Point(254, 236))
+    ];
+
+loadoutRecovery = 
+    [     
+        (equipmentTypeShield,      0, cargoPrefix,   shieldImage,      Point( 15,  56)),
+        (equipmentTypeDispenser,   0, cargoPrefix,   dispenserImage,   Point( 15,  98)),
+        (equipmentTypeChaff,       0, cargoPrefix,   chaffImage,       Point( 15, 140)),
+        (equipmentTypeCargo,       0, cargoPrefix,   cargoImage,       Point( 18, 236)),
+        (equipmentTypeCargo,       1, cargoPrefix,   cargoImage,       Point( 78, 236)),
+        (equipmentTypeCargo,       2, cargoPrefix,   cargoImage,       Point(137, 236)),
+        (equipmentTypeCargo,       3, cargoPrefix,   cargoImage,       Point(196, 236)),
+        (equipmentTypeCargo,       4, cargoPrefix,   cargoImage,       Point(254, 236))
+    ];
+
+loadoutRURecovery = 
+    [   (equipmentTypeAfterburner, 0, cargoPrefix,   afterBurnerImage, Point( 15,  56)),
+        (equipmentTypeShield,      0, cargoPrefix,   shieldImage,      Point( 15,  98)),
+        (equipmentTypeDispenser,   0, cargoPrefix,   dispenserImage,   Point( 15, 140)),
+        (equipmentTypeChaff,       0, cargoPrefix,   chaffImage,       Point( 15, 182)),
+        (equipmentTypeCargo,       0, cargoPrefix,   cargoImage,       Point( 18, 236)),
+        (equipmentTypeCargo,       1, cargoPrefix,   cargoImage,       Point( 78, 236)),
+        (equipmentTypeCargo,       2, cargoPrefix,   cargoImage,       Point(137, 236)),
+        (equipmentTypeCargo,       3, cargoPrefix,   cargoImage,       Point(196, 236)),
+        (equipmentTypeCargo,       4, cargoPrefix,   cargoImage,       Point(254, 236))
+    ];
+
+
+loadoutAssaultFighter = 
+    [
+        (equipmentTypeWeapon,      0, defaultPrefix, weaponImage,      Point( 15,  14)),
+        (equipmentTypeWeapon,      1, defaultPrefix, weaponImage,      Point(142,  14)),
+        (equipmentTypeWeapon,      2, defaultPrefix, weaponImage,      Point(266,  14)),
+        (equipmentTypeMagazine,    0, defaultPrefix, magazineImage,    Point(266,  47)),
+        (equipmentTypeAfterburner, 0, cargoPrefix,  afterBurnerImage, Point( 15,  56)),
+        (equipmentTypeShield,      0, cargoPrefix,   shieldImage,      Point( 15,  98)),
+        (equipmentTypeChaff,       0, cargoPrefix,   chaffImage,       Point( 15, 140)),
+        (equipmentTypeCargo,       0, cargoPrefix,   cargoImage,       Point( 18, 236)),
+        (equipmentTypeCargo,       1, cargoPrefix,   cargoImage,       Point( 78, 236)),
+        (equipmentTypeCargo,       2, cargoPrefix,   cargoImage,       Point(137, 236)),
+        (equipmentTypeCargo,       3, cargoPrefix,   cargoImage,       Point(196, 236)),
+        (equipmentTypeCargo,       4, cargoPrefix,   cargoImage,       Point(254, 236))
+    ];
+
+loadoutFrigate = 
+    [        
+        (equipmentTypeWeapon,      0, defaultPrefix, weaponImage,      Point( 15,  14)),
+        (equipmentTypeWeapon,      1, defaultPrefix, weaponImage,      Point(142,  14)),
+        (equipmentTypeWeapon,      2, defaultPrefix, weaponImage,      Point(266,  14)),
+        (equipmentTypeWeapon,      3, defaultPrefix, weaponImage,      Point(266,  47)),
+        (equipmentTypeMagazine,    0, defaultPrefix, magazineImage,    Point(142,  47)),
+        (equipmentTypeShield,      0, cargoPrefix,   shieldImage,      Point( 15,  56)),
+        (equipmentTypeDispenser,   0, cargoPrefix,   dispenserImage,   Point( 15,  98)),
+        (equipmentTypeChaff,       0, cargoPrefix,   chaffImage,       Point( 15, 140)),
+        (equipmentTypeCargo,       0, cargoPrefix,   cargoImage,       Point( 18, 236)),
+        (equipmentTypeCargo,       1, cargoPrefix,   cargoImage,       Point( 78, 236)),
+        (equipmentTypeCargo,       2, cargoPrefix,   cargoImage,       Point(137, 236)),
+        (equipmentTypeCargo,       3, cargoPrefix,   cargoImage,       Point(196, 236)),
+        (equipmentTypeCargo,       4, cargoPrefix,   cargoImage,       Point(254, 236))
+    ];
+
+loadoutAPC =
+    [
+        (equipmentTypeAfterburner, 0, cargoPrefix,   afterBurnerImage, Point( 15,  56)),
+        (equipmentTypeShield,      0, cargoPrefix,   shieldImage,      Point( 15,  98)),
+        (equipmentTypeChaff,       0, cargoPrefix,   chaffImage,       Point( 15, 140)),
+        (equipmentTypeCargo,       0, cargoPrefix,   cargoImage,       Point( 18, 236)),
+        (equipmentTypeCargo,       1, cargoPrefix,   cargoImage,       Point( 78, 236)),
+        (equipmentTypeCargo,       2, cargoPrefix,   cargoImage,       Point(137, 236)),
+        (equipmentTypeCargo,       3, cargoPrefix,   cargoImage,       Point(196, 236)),
+        (equipmentTypeCargo,       4, cargoPrefix,   cargoImage,       Point(254, 236))
+    ];
+
+loadoutTacticalFighter =
+    [
+        (equipmentTypeWeapon,      0, defaultPrefix, weaponImage,      Point( 15,  14)),
+        (equipmentTypeWeapon,      1, defaultPrefix, weaponImage,      Point(142,  14)),
+        (equipmentTypeMagazine,    0, defaultPrefix, magazineImage,    Point(266,  14)),
+        (equipmentTypeAfterburner, 0, cargoPrefix,   afterBurnerImage, Point( 15,  56)),
+        (equipmentTypeShield,      0, cargoPrefix,   shieldImage,      Point( 15,  98)),
+        (equipmentTypeCloak,       0, cargoPrefix,   cloakImage,       Point( 15, 140)),
+        (equipmentTypeDispenser,   0, cargoPrefix,   dispenserImage,   Point( 15, 182)),
+        (equipmentTypeChaff,       0, cargoPrefix,   chaffImage,       Point( 78, 182)),
+        (equipmentTypeCargo,       0, cargoPrefix,   cargoImage,       Point( 18, 236)),
+        (equipmentTypeCargo,       1, cargoPrefix,   cargoImage,       Point( 78, 236)),
+        (equipmentTypeCargo,       2, cargoPrefix,   cargoImage,       Point(137, 236)),
+        (equipmentTypeCargo,       3, cargoPrefix,   cargoImage,       Point(196, 236)),
+        (equipmentTypeCargo,       4, cargoPrefix,   cargoImage,       Point(254, 236))
+    ]; 
+          
+loadoutBomber =
+    [
+        (equipmentTypeWeapon,      0, defaultPrefix, weaponImage,      Point( 15,  14)),
+        (equipmentTypeWeapon,      1, defaultPrefix, weaponImage,      Point(142,  14)),
+        (equipmentTypeWeapon,      2, defaultPrefix, weaponImage,      Point(266,  14)),
+        (equipmentTypeWeapon,      3, defaultPrefix, weaponImage,      Point(266,  47)),
+        (equipmentTypeMagazine,    0, defaultPrefix, magazineImage,    Point(142,  47)),
+        (equipmentTypeAfterburner, 0, cargoPrefix,   afterBurnerImage, Point( 15,  56)),
+        (equipmentTypeShield,      0, cargoPrefix,   shieldImage,      Point( 15,  98)),
+        (equipmentTypeChaff,       0, cargoPrefix,   chaffImage,       Point( 15, 140)),
+        (equipmentTypeCargo,       0, cargoPrefix,   cargoImage,       Point( 18, 236)),
+        (equipmentTypeCargo,       1, cargoPrefix,   cargoImage,       Point( 78, 236)),
+        (equipmentTypeCargo,       2, cargoPrefix,   cargoImage,       Point(137, 236)),
+        (equipmentTypeCargo,       3, cargoPrefix,   cargoImage,       Point(196, 236)),
+        (equipmentTypeCargo,       4, cargoPrefix,   cargoImage,       Point(254, 236))
+
+    ];
+   
+//
+// There should be one loadout per hull type
+//
+
+loadout8  = loadoutDefault; //loadoutLightFighter;
+loadout12 = loadoutDefault; //loadoutLightFighter;
+loadout48 = loadoutDefault; //loadoutLightFighter;
+
+loadout38 = loadoutDefault; //loadoutScout;
+loadout10 = loadoutDefault; //loadoutScout;
+loadout39 = loadoutDefault; //loadoutScout;
+
+loadout6  = loadoutDefault; //loadoutRecovery;
+loadout13 = loadoutDefault; //loadoutRecovery;
+loadout46 = loadoutDefault; //loadoutRURecovery;
+
+loadout7  = loadoutDefault; //loadoutAssaultFighter;
+loadout14 = loadoutDefault; //loadoutAssaultFighter;
+loadout2  = loadoutDefault; //loadoutAssaultFighter;
+
+loadout22 = loadoutDefault; //loadoutFrigate;
+loadout21 = loadoutDefault; //loadoutFrigate;
+loadout26 = loadoutDefault; //loadoutFrigate;
+
+loadout20 = loadoutDefault; //loadoutAPC;
+loadout41 = loadoutDefault; //loadoutAPC;
+loadout42 = loadoutDefault; //loadoutAPC;
+
+loadout1  = loadoutDefault; //loadoutTacticalFighter;
+loadout9  = loadoutDefault; //loadoutTacticalFighter;
+loadout11 = loadoutDefault; //loadoutTacticalFighter;
+
+loadout3 = loadoutDefault; //loadoutBomber;
+loadout4 = loadoutDefault; //loadoutBomber;
+loadout5 = loadoutDefault; //loadoutBomber;
+
+//
+// The following images will overlayed on top of the geo image, but underneath the slots
+//
+
+//loadout8overlay  = loadoutLightFighterOverlay;
+//loadout12overlay = loadoutLightFighterOverlay;
+//loadout48overlay = loadoutLightFighterOverlay;

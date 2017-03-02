@@ -1,0 +1,15 @@
+use "gamepanes";
+
+gameScreenMusicSound        = RedbookSound(AllegianceCD, 2);
+flightMusic1ASound          = RedbookSound(AllegianceCD, 3);
+flightMusic1BSound          = RedbookSound(AllegianceCD, 4);
+flightMusic1CSound          = RedbookSound(AllegianceCD, 5);
+deathMusicSound             = RedbookSound(AllegianceCD, 6);
+flightMusic2ASound          = RedbookSound(AllegianceCD, 7);
+flightMusic2BSound          = RedbookSound(AllegianceCD, 8);
+flightMusic2CSound          = RedbookSound(AllegianceCD, 9);
+flightMusic3ASound          = RedbookSound(AllegianceCD,10);
+flightMusic3BSound          = RedbookSound(AllegianceCD,11);
+flightMusic3CSound          = RedbookSound(AllegianceCD,12);
+gameOverLostMusicSound      = RedbookSound(AllegianceCD,13);
+gameOverWonMusicSound       = RedbookSound(AllegianceCD,14);

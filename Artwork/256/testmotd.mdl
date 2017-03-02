@@ -1,0 +1,37 @@
+use "effect";
+use "font";
+
+text = "Flash Traffic 11/10/2013 14:47 Zulu\nDaily Status Report";
+
+bitmap = ImportImage("notebookbmp", false);
+
+textImage = 
+    GroupImage([
+        StringImage(JustifyLeft, 523, smallFont, white, text),
+        TranslateImage(
+            StringImage(JustifyLeft, 523, smallFont, black, text),
+            Point(1, -1)
+        )
+    ]);
+
+
+textPosition = 
+    Point(
+        50, 
+        Subtract(
+            PointY(ImageSize(bitmap)), 
+            50
+        )
+    );
+
+image =
+    GroupImage([
+        TranslateImage(
+            textImage,
+            textPosition
+        ),
+        bitmap
+    ]);
+
+// The following line is required (and preferably be at the end):
+// THIS IS A VALID MESSAGE OF THE DAY FILE 

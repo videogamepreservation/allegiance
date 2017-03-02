@@ -1,0 +1,24 @@
+use "gamepanes";
+use "font";
+
+///////////////////////////////////////////////////////////////////////////////
+// The CD Key dialog
+
+
+CDKeyOkButtonPane = ButtonPane(ImportImage("btnokbmp", true), ButtonNormal, false);
+CDKeyCancelButtonPane = ButtonPane(ImportImage("btnabortbmp", true), ButtonNormal, false);
+CDKeyEditPane = EditPane(Point(450, 23), largeFont);
+
+
+CDKeyDialog =
+        (
+            ImagePane(
+                ImportImage("cdkeydialogbmp", false),
+                [
+                    (CDKeyEditPane,                  Point(24,140)),
+
+                    (CDKeyOkButtonPane,              Point(24,200)),
+                    (CDKeyCancelButtonPane,          Point(350,200))
+                ]
+            )
+        );

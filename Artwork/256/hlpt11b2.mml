@@ -1,0 +1,142 @@
+<Font|promptFont>FIGHTERS<Font|smallFont><p><p>
+
+<Bullet|hlpbullet|Fighter<p><p>
+
+Typically deployed for prolonged combat situations
+that require quick response and good range, this
+fighter has 3 weapon mounts, hardpoints for missiles,
+and an average scan range.<p><p>
+
+GigaCorp: GCFS Predator<p>
+Bios: JJ1A Hornet<p>
+Iron Coalition: F127 Sabre<p><p>
+
+The Fighter has the following statistics:<p><p>
+
+Max Speed -- 100 meters per second<p>
+Acceleration -- 18 meters per second<p>
+Turn Rate -- 60 degrees<p>
+Hit Points -- 300  <p>
+Energy -- 1600  <p>
+Scan Range -- 800 meters<p>
+Signature -- 175 <p>
+Armor Class -- Light><p><p>
+
+<Bullet|hlpbullet|Enhanced Fighter -- $5000<p><p>
+
+The enhanced fighter is a higher performance version of the basic fighter. It has a stronger
+performance envelope in nearly all apsects over the basic fighter.<p><p>
+
+GigaCorp: GCFF Annihilator<p>
+Bios: JJE Hornet<p>
+Iron Coalition: F128 Sabre<p><p>
+
+The enhanced fighter has the following statistics:<p><p>
+
+Max Speed -- 100 meters per second<p>
+Acceleration -- 17 meters per second<p>
+Turn Rate -- 60 degrees<p>
+Hit Points -- 350<p>
+Energy -- 1600<p>
+Scan Range -- 1600 meters<p>
+Signature -- 175<p>
+Armor Class -- Light><p><p>
+
+<Bullet|hlpbullet|Interceptor -- $7500<p><p>
+
+The interceptor is a better suited for sector defense. Its decent turn rate and good amount of
+hit points allwo it to handle incoming waves of fighters and bombers.<p><p>
+
+GigaCorp: GCFI Vindicator<p>
+Bios: SC 12 Salamander<p>
+Iron Coalition: HI2 Scimitar<p><p>
+
+The Interceptor has the following statistics:<p><p>
+
+Max Speed -- 60 meters per second<p>
+Acceleration -- 11 meters per second<p>
+Turn Rate -- 73 degrees<p>
+Hit Points -- 726<p>
+Energy -- 0<p>
+Scan Range -- 400 meters<p>
+Signature - 50<p>
+Armor Class - Medium><p><p>
+
+<Bullet|hlpbullet|Heavy Interceptor -- $10,000<p><p>
+
+This fast, short-range vessel is the most deadly of all fighters but
+hampered by its low fuel capacity, poor scan range, lack of
+shielding, and incompatibility with teleportation systems.<p><p>
+
+GigaCorp: GCFI Vindicator<p>
+Bios: SS13 Salamander<p>
+Iron Coalition: HI3 Scimitar<p><p>
+
+The Heavy Interceptor has the following statistics:<p><p>
+
+Max Speed -- 80 mps<p>
+Acceleration -- 13 mps<p>
+Turn Rate -- 73 degrees<p>
+Hit Points -- 908<p>
+Energy -- 0<p>
+Scan Range -- 500<p>
+Signature -- 50<p>
+Armor Class -- Medium><p><p>
+
+<Bullet|hlpbullet|Stealth Fighter<p><p>
+
+This more lightly armored combat craft is ideal for hit-and-run attacks. It has a low-sensor
+signature, the ability to cloak, and very high-end scanners. Its default role is miner and
+constructor interdiction.<p><p>
+
+GigaCorp: GCFS Predator<p>
+Bios: D11 Falcon<p>
+Iron Coalition: SF9 Rapier<p><p>
+
+The Stealth Fighter has the following statistics:<p><p>
+
+Max Speed -- 140 meters per second<p>
+Acceleration -- 31 meters per second<p>
+Turn Rate -- 61 degrees<p>
+Hit Points -- 182<p>
+Energy -- 1200<p>
+Scan Range -- 1600 meters<p>
+Signature -- 125<p>
+Armor Class -- Light><p><p>
+
+<Bullet|hlpbullet|Advanced Fighter -- $7500<p><p>
+
+Typically deployed for prolonged combat situations that require quick response and good range,
+this advanced version can carry special weapons for base attacks.<p><p>
+
+GigaCorp: GCFF Annihilator<p>
+Bios: JJA Hornet<p>
+Iron Coalition: F12 Battleaxe<p><p>
+
+The advanced fighter has the following statistics:<p><p>
+
+Max Speed -- 120 meters per second<p>
+Acceleration -- 21 meters per second<p>
+Turn Rate -- 73 degrees<p>
+Hit Points -- 544<p>
+Energy -- 2640<p>
+Scan Range -- 1100 meters<p>
+Signature -- 175<p>
+Armor Class -- Light><p><p>
+
+<Bullet|hlpbullet|Advanced Stealth Fighter -- $10,000<p><p>
+
+GigaCorp: GCFS Predator<p>
+Bios:  D12 Falcon<p>
+Iron Coalition: SF 10 Rapier<p><p>
+
+The advanced Stealth Fighter has the following statistics:<p><p>
+
+Max Speed -- 160 meters per second<p>
+Acceleration -- 30 meters per second<p>
+Turn Rate -- 61 degrees<p>
+Hit Points -- 242<p>
+Energy -- 1452<p>
+Scan Range -- 2420 meters<p>
+Signature -- 175<p>
+Armor Class -- Light>

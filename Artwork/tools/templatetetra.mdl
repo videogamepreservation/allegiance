@@ -1,0 +1,16 @@
+//
+// The input source
+//
+
+frame = ModifiableNumber(initialFrame);
+
+object =
+    LODGeo(
+        ImportXFile("name.x", frame),
+        [
+            ( 64, ImportXFile("name_a", frame)),
+            ( 32, ImportXFile("name_b", frame)),
+            ( 16, ImportXFile("name_c", frame)),
+            (  8, ImportMDL("tetra.mdl", frame))
+        ]
+    );

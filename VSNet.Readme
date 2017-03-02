@@ -1,0 +1,36 @@
+// VS.Net 2003 port
+
+
+// 2/8/2004 - Kirth Gersen / KGJV / kgersen@hotmail.com
+// 
+// 1st "raw" attempt to get the sources compile under VS.Net 2003
+// created a project for major modules
+// tweaked some includes to accomodate compiler changes 
+
+// 2/12/2004 - Kirth Gersen / KGJV / kgersen@hotmail.com
+//
+// global changes:
+//   added /GR- option
+//   fixed runtime lib model
+// ZLib, Effect, Guids, Engine:
+//   tuned options (for Debug configuration)
+// Utility
+//   fixed error C2475 (see listwrappers.h)
+// mdlc:
+//   fixed code gen mode and linking. 
+//   successful port in Debug configuration. mdlc.exe tested ok.
+
+// 2/13/2004 - Kirth Gersen / KGJV / kgersen@hotmail.com
+// 
+// added xmunge project
+//   problem with d3drm.lib not found in VS.Net lib. Added path to d3drm.lib from DX7 (temporary fix) 
+// Zlib
+//	fixed 2 problems with zlib/zmath.h (FullMark's feedback)
+
+
+// TODO
+// finish porting some modules (like Club,cvh,...)
+// finish porting the various parameters of the makefiles in the projects properties (defines,includes, libs mainly)
+// add dependencies between projects
+// fix precompiled headers
+// find/rebuild missing files for AGC project (..\Test\Inc\ScrRun.idl, ..\Test\TCAtl\VersionInfoImpl.idl)

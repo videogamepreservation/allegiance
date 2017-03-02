@@ -1,0 +1,23 @@
+use "model";
+
+smallFont     = Win32Font("Verdana", 12, false, 0);
+smallBoldFont = Win32Font("Verdana", 12, true, 0);
+
+largeFont     = Win32Font("Verdana", 15, false, 0);
+largeBoldFont = Win32Font("Verdana", 15, true, 0);
+
+hugeFont      = Win32Font("Verdana", 24, false, 0);
+hugeBoldFont  = Win32Font("Verdana", 24, true, 0);
+
+smVerdana      = Win32Font("Verdana", 10, false, 0);
+medVerdana     = Win32Font("Verdana", 12, false, 0);
+medBoldVerdana = Win32Font("Verdana Bold", 13, false, 0);
+lgBoldVerdana  = Win32Font("Verdana Bold", 16, false, 0);
+
+smTahoma       = Win32Font("tahoma", 12, false, 0);
+
+titleFont      = Win32Font("Eurostile Bold", 18, false, 10);
+
+promptFont	   = Win32Font("Eurostile Bold", 12, false, 6);
+
+smEuro		= Win32Font("Eurostile", 10, false, 0);

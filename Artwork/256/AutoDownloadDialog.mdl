@@ -1,0 +1,72 @@
+use "effect";
+use "font";
+use "gamepanes";
+use "autodownloaddialogdata";
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AutoDownload Dialog
+//
+/////////////////////////////////////////////////////////////////////////////
+
+//
+// Guts
+//
+
+AutoDownloadAbortButton = ButtonPane(ImportImage("btnautodownloadabortbmp", true), ButtonNormal, false);
+
+AutoDownloadCurrentFileStringPane = StringPane("", Color(1, 1, 1), Point(220, 13), JustifyRight, smallFont);
+AutoDownloadApproxMinutes = StringPane("", Color(1, 1, 1), Point(120, 13), JustifyLeft, smallFont);
+
+AutoDownloadTopBarStringPane = StringPane("Retrieving File List", Color(1, 1, 1), Point(150, 13), JustifyLeft, smallFont);
+AutoDownloadMidBarStringPane = StringPane("Analyzing Local Version", Color(1, 1, 1), Point(150, 13), JustifyLeft, smallFont);
+AutoDownloadLowBarStringPane = StringPane("Downloading Updated Files", Color(1, 1, 1), Point(150, 13), JustifyLeft, smallFont);
+
+
+FileListGaugePane =
+GaugePane(
+    ImportImage("autodownloadgaugebmp", false),
+    FileListPercentDone,
+    Color(1, 0, 0),
+    Color(0, 1, 0)
+);
+
+VerifyGaugePane =
+GaugePane(
+    ImportImage("autodownloadgaugebmp", false),
+    VerifyPercentDone,
+    Color(1, 0, 0),
+    Color(0, 1, 0)
+);
+
+DownloadGaugePane =
+GaugePane(
+    ImportImage("autodownloadgaugebmp", false),
+    DownloadPercentDone,
+    Color(1, 0, 0),
+    Color(0, 1, 0)
+);
+
+
+//
+// AutoDownload Dialog
+//
+
+AutoDownloadDialog =
+        (
+            ImagePane(
+                ImportImage("autodownloaddialogbmp", false),
+                [
+                    (AutoDownloadCurrentFileStringPane,    Point(195,185)),
+                    (AutoDownloadApproxMinutes,            Point(100,185)),
+                    (FileListGaugePane,                    Point(91,68)),
+                    (VerifyGaugePane,                      Point(91,113)),
+                    (DownloadGaugePane,                    Point(91,158)),
+                    (AutoDownloadAbortButton,              Point(210,200)),
+                    (AutoDownloadTopBarStringPane,         Point(100,51)),
+                    (AutoDownloadMidBarStringPane,         Point(100,96)),
+                    (AutoDownloadLowBarStringPane,         Point(100,140))
+                ]
+            )
+        );
+

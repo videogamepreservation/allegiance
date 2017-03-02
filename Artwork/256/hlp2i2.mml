@@ -1,0 +1,94 @@
+<Font|promptFont>GAME OPTIONS<Font|smallFont><p><p>
+
+<Font|smallBoldFont>Number of Teams --<Font|smallFont>Shows how many teams are
+allowed in the game, from a minimum of 2 teams to a maximum of 6. The
+more teams there are to compete against, the more challenging the game.<p><p>
+
+<Font|smallBoldFont>Min Players per Team --<Font|smallFont>Shows the minimum
+number of players allowed per team.<p><p>
+
+<Font|smallBoldFont>Max Players per Team --<Font|smallFont>Shows the maximum
+number of players allowed per team.<p><p>
+
+<Font|smallBoldFont>Skill Levels --<Font|smallFont>Shows the skill levels
+required of players in this game. For example, <Font|smallBoldFont>No Novice<Font|smallFont>
+indicates to novice players that this game is likely beyond their skills and to veteran players
+that they will be challenged. In Allegiance Zone games, the Skill Levels setting is actually
+enforced via the database; in free games and private server games, the Skill Levels setting
+serves as only a suggestion to other players who may wish to join the game about the experience
+of the players in that game.<p><p>
+
+<Font|smallBoldFont>Player Lives --<Font|smallFont>Shows the number of lives
+allowed each player in this game.<p><p>
+
+<Font|smallBoldFont>Starting Money --<Font|smallFont>Shows the amount of money
+each team starts the game with. The more money each team starts with, the quicker the tech tree
+can be developed and the faster you may find yourself flying in -- and competing against -- capital
+ships and dealing with very advanced technology; however, this also will
+significantly detract from the strategy element of the game.<p><p>
+
+<Font|smallBoldFont>Total Money --<Font|smallFont>Shows the amount of money
+that can be earned from the universe's resources that are set randomly throughout the game map.
+The more money available in the universe, the quicker the tech tree can be developed.<p><p>
+
+<Font|smallBoldFont>Resources --<Font|smallFont>Shows how dense or scarce
+the universe's asteroids are. <Font|smallBoldFont>Plentiful<Font|smallFont>
+makes it easier to locate asteroids for constructing buildings and mining.
+<Font|smallBoldFont>Scarce<Font|smallFont> can result in intense conflicts with the other
+factions over the limited asteroids. For details on the asteroid types, access Gameplay:
+<Main|hlp6l|Building.><p><p>
+
+<Font|smallBoldFont>Map Type --<Font|smallFont>Shows the map type used in this game. The
+numerous types greatly enhance overall game customization. If you are the game owner, keep
+in mind your other game settings when selecting the map type, such as the number of teams and
+players allowed in your game. The map generated for the game will also automatically take
+these parameters into account, generating more sectors for larger groups of players,
+for example. Each map has a set pattern, but is otherwise random with respect to the placement
+of objects such as asteroids and planets. For detail on each map
+type, see Connect & Start: Game Settings: <Main|hlp2i3|Map Types.><p><p>
+
+<Font|smallBoldFont>Max Team Imbalance --<Font|smallFont>Shows
+what is allowed in the game as the maximum imbalance of player numbers
+among teams.<p><p>
+
+<Font|smallBoldFont>Stats Count --<Font|smallFont>Indicates whether or not all player statistics
+are saved in the Allegiance Zone database. Note that the game owner cannot select both Stats
+Count and Allow Defections in the same game. For details on player statistics, see Allegiance
+Zone: <Main|hlp3a|Leader Board> and Allegiance Zone: <Main|hlp3c|Player Profiles.> If this is not
+an Allegiance Zone game, this option will not be available.<p><p>
+
+<Font|smallBoldFont>Allow Defections --<Font|smallFont>Indicates whether or not players are
+allowed to quit one team and then join another in the same game. If defections are not allowed,
+then a player who quits a team will not be allowed back into the game. Note that the game owner
+cannot select both Allow Defections and Stats Count in the same game.<p><p>
+
+<Font|smallBoldFont>Allow Joiners --<Font|smallFont>Indicates whether or
+not players are allowed to join the game after it has started.<p><p>
+
+<Font|smallBoldFont>Squad Game --<Font|smallFont>Indicates whether or not this game is only for
+squads registered with the Allegiance Zone and that the results of the game will be saved in the
+Allegiance Zone database. In a squad game, only squad leaders and assistant squad leaders can
+be team leaders, and only members of their squad can join their team. Note that the game owner
+cannot select this option if he is not a squad leader or assistant squad leader. For details on
+squad profiles, see Allegiance Zone: <Main|hlp3b|Squad Profiles.> If this is not an Allegiance Zone
+game, this option will not be available.<p><p>
+
+<Font|smallBoldFont>Eject Pods --<Font|smallFont>Indicates whether or not
+a player may escape his ship using an eject pod and that he will
+automatically be transported back to his outpost if his ship is destroyed.<p><p>
+
+<Font|smallBoldFont>Allow Friendly Fire --<Font|smallFont>Indicates
+that both friend and foe will take damage from your weapons.<p><p>
+
+<Font|smallBoldFont>Invulnerable Stations --<Font|smallFont>Indicates
+whether or not outposts can be destroyed. Even if outposts cannot be
+destroyed, they can still be boarded and captured by another team.
+Note that the game owner cannot select both a Conquest win condition
+and Invulnerable Stations in the same game.<p><p>
+
+<Font|smallBoldFont>Development --<Font|smallFont>Indicates whether or not the game has a tech
+tree. No money and no resource management are necessary if there is not a tech tree. A
+game without a tech tree is good for focusing on dog-fighting.<p><p>
+
+<Font|smallBoldFont>Reveal Map --<Font|smallFont>Indicates that alephs will be visible in all
+sectors and the all sectors can be seen in the Map display when the game begins.

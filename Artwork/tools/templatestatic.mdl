@@ -1,0 +1,12 @@
+use "effect";
+
+frame = ModifiableNumber(initialFrame);
+
+object =
+    LODGeo(
+        ImportXFile("name.x", frame),
+        [
+            ( 64, ImportXFile("name_static", frame)),
+            (  8, ImportXFile("name-low",    frame))
+        ]
+    );

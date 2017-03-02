@@ -1,0 +1,71 @@
+<Font|promptFont>PLAYER PROFILES<Font|smallFont><p><p>
+
+The <Secondary|hlpd_playerprofdefault|Player Profiles screen> shows all information related to a
+specific player. This information includes the player's statistics, rank, any awards or medals
+the player may have received, and the points needed for the player to reach his next rank.<p><p>
+
+<Font|promptFont>Player Description<Font|smallFont><p><p>
+
+The description area displays the selected player's name and any squads that player belongs to.<p><p>
+
+<Font|smallBoldFont>To view the profile of a squad the player belongs to<Font|smallFont><p><p>
+
+<Bullet|hlpbullet|Select a squad in the <Font|smallBoldFont>Squad List<Font|smallFont> box, and
+then click <Font|smallBoldFont>Squad View.<Font|smallFont>><p><p>
+
+<Bullet|hlpblank|The Squad Profiles screen will appear with that
+player's name highlighted.><p><p>
+
+If the player profile you are viewing belongs to you, you can change your character's
+description.<p><p>
+
+<Font|smallBoldFont>To change your description<Font|smallFont><p><p>
+
+<Bullet|hlpbullet|Click <Font|smallBoldFont>Edit Profile,<Font|smallFont> type your description
+in the <Font|smallBoldFont>Character Description<Font|smallFont> box, and then click
+<Font|smallBoldFont>Enter Profile.<Font|smallFont>><p><p>
+
+<Font|promptFont>Player Statistics<Font|smallFont><p><p>
+
+All the player's statistics are displayed in the player statistics area.<p><p>
+
+You can filter the displayed statistics based on faction in the Playing For box.<p><p>
+
+<Font|smallBoldFont>Current Title --<Font|smallFont>Shows the player's title, earned through
+gaining achievement points. Titles do not have a direct impact on the game except to show
+you what experience the player you are fighting against may have and as a basis for
+rank-restricted events hosted on the Allegiance Zone.<p><p>
+
+<Font|smallBoldFont>Score --<Font|smallFont>Shows the player's overall rating out of all the
+players in the Allegiance Zone database.<p><p>
+
+<Font|smallBoldFont>Combat Rating --<Font|smallFont>Shows the player's combat rating. A player's
+combat rating is based on the player's number of kills and then modifed by the combat ratings of
+the opponents that were defeated in combat. If a player you kill has a higher combat rating than
+you, you'll get a higher jump in your combat rating as opposed to successfully destroying a player
+who has a combat rating of the same level as or lower than you. Also, to get credit for the
+kill, you need to do the most damage, not just get the final shot, to the enemy player.<p><p>
+
+<Font|smallBoldFont>Achievement Points --<Font|smallFont>Shows the player's points earned
+through accomplishing specific actions. These points are applied toward going up in the ranks
+of the Allegiance Zone. For the specific ranks, the points needed to earn the titles, and how
+to earn the points, go to http://www.zone.com/allegiance/ and click
+<Font|smallBoldFont>Strategy & Tips.<Font|smallFont> Here you will find all relative information
+on achievement points and ranks.<p><p>
+
+<Font|smallBoldFont>Promotion At --<Font|smallFont>Shows the number of achievement points the
+player needs to obtain the next title. For the specific ranks, the points needed to earn the
+titles, and how to earn the points, go to http://www.zone.com/allegiance/ and click
+<Font|smallBoldFont>Strategy & Tips.<Font|smallFont> Here you will find all relative information
+on achievement points and ranks.<p><p>
+
+<Font|promptFont>Awards<Font|smallFont><p><p>
+
+Some Allegiance Zone events will offer awards for participating in or winning them. If a
+player wins such an award, it is displayed in the awards area. If you want
+to see a name and description of the event for which the medal was awarded, click the
+medal.<p><p>
+
+To locate events in which medals may be awarded, check out the schedule for upcoming events on
+the Allegiance Zone by going to http://www.zone.com/allegiance/ and then clicking
+<Font|smallBoldFont>Schedule.<Font|smallFont>

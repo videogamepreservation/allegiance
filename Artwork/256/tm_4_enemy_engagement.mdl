@@ -1,0 +1,57 @@
+use "SlideshowData";
+use "sounddef";
+use "font";
+use "gamepanes";
+
+		// tm_4_slide_01
+		// The most important aspect of all our operations is the 
+		// collection of the resource Helium3. Drone miners tend to 
+		// the Helium3 asteroids located in deep space. When the 
+		// miners return safely, we can expand our operations, by 
+		// purchasing new equipment, ships, and stations. 
+
+		// tm_4_slide_02
+		// The protection of friendly mining units is imperative to 
+		// your survival in remote sectors of space. The elimination 
+		// of enemy miners is of obvious tactical benefit. 
+
+//----------------------------------------------------------
+// data for the text slide images
+//----------------------------------------------------------
+slide_background = ImportImage("tm_slide_backgroundbmp", false);
+
+slide_text_position = Point(150, 450);
+
+//----------------------------------------------------------
+// text slide 1
+//----------------------------------------------------------
+slide_text_1 = "The most important aspect of all our operations is the collection of the resource Helium3. Drone miners tend to the Helium3 asteroids located in deep space. When the miners return safely, we can expand our operations, by purchasing new equipment, ships, and stations.";
+slide_text_1_image = StringImage(JustifyLeft, 500, largeFont, white, slide_text_1);
+slide_1_image = GroupImage
+([
+    TranslateImage(slide_text_1_image, slide_text_position),
+    slide_background
+]);
+
+//----------------------------------------------------------
+// text slide 2
+//----------------------------------------------------------
+slide_text_2 = "The protection of friendly mining units is imperative to your survival in remote sectors of space. The elimination of enemy miners is of obvious tactical benefit.";
+slide_text_2_image = StringImage(JustifyLeft, 500, largeFont, white, slide_text_2);
+slide_2_image = GroupImage
+([
+    TranslateImage(slide_text_2_image, slide_text_position),
+    slide_background
+]);
+
+//----------------------------------------------------------
+// all the slides in a list
+//----------------------------------------------------------
+slides =
+[
+    // intro slides
+    (slide_1_image, tm_slide_4_01SoundId),
+    (slide_2_image, tm_slide_4_02SoundId)
+];
+
+//----------------------------------------------------------

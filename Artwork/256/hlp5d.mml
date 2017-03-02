@@ -1,0 +1,181 @@
+<Font|promptFont>OPTIONS<Font|smallFont><p><p>
+
+The options menu is accessible at any time by pressing the ESC key. From
+the
+options menu, you have access to the following option categories.<p><p>
+
+<Font|promptFont>Graphics Device<Font|smallFont><p><p>
+
+These options can be adjusted to make the game work optimally with your
+graphics device. Your current Allegiance graphics
+settings appear at the bottom of the menu. Note that these settings, with
+the exception of Brightness, are only in effect while flying in
+space.<p><p>
+
+<Font|smallBoldFont>To access the options for your graphics device<Font|smallFont><p><p>
+
+<Bullet|hlpbullet|Press ESC, D.><p><p>
+
+<Font|smallBoldFont>Brightness Up/Down -- <Font|smallFont>Click these
+options, or press the
+U or D key, to adjust to higher or lower brightness, respectively. If no
+change occurs, you are already at the highest or lowest brightness or your
+graphics device does not allow adjustment of this setting.<p><p>
+
+<Font|smallBoldFont>Higher/Lower Resolution -- <Font|smallFont>Click these
+options, or press the H or L key, to adjust to higher or lower resolution,
+respectively. If no
+change occurs, you are already at the highest or lowest resolution.<p><p>
+
+<Font|smallBoldFont>3D Acceleration -- <Font|smallFont>Click this
+option, or press the A key, to toggle your 3D acceleration on and
+off.<p><p>
+
+<Font|smallBoldFont>Secondary Device -- <Font|smallFont>Click this
+option, or
+press the S key, to toggle your secondary graphics device on and
+off.<p><p>
+
+At the bottom of this menu, you will see your current graphics
+device settings.<p><p>
+
+<Font|promptFont>Graphics Options<Font|smallFont><p><p>
+
+If you find your frame rate needs a boost, try turning off any one or
+combination of the game graphics options.<p><p>
+
+<Font|smallBoldFont>To access the options for game graphics<Font|smallFont><p><p>
+
+<Bullet|hlpbullet|Press ESC, O.><p><p>
+
+<Font|smallBoldFont>Environment -- <Font|smallFont>Click this option, or
+press the E key, to toggle the background environment
+on and off. Environmental graphics look great but are not necessary.<p><p>
+
+<Font|smallBoldFont>Posters -- <Font|smallFont>Click this option, or press
+the P key, to toggle poster
+items on and off. These are large background bitmap graphics such as nebulae and planets.<p><p>
+
+<Font|smallBoldFont>Debris -- <Font|smallFont>Click this option, or press
+the D key, to toggle general space debris on and off.<p><p>
+
+<Font|smallBoldFont>Stars -- <Font|smallFont>Click this option, or press
+the S key, to toggle the background stars on and off.<p><p>
+
+<Font|smallBoldFont>Strobes -- <Font|smallFont>Click this option, or press
+the R key, to toggle
+station and ship lights on and off. If you turn them off, you can still
+see
+the proper landing hangar by the color green inside the hangar bay.<p><p>
+
+<Font|smallBoldFont>Trails -- <Font|smallFont>Click this option, or press
+the T key, to toggle the
+trails of ships on and off. Note, however, that these trails are a great
+way
+to tell who is on your team quickly, as the trail color matches the team
+color.<p><p>
+
+<Font|smallBoldFont>Afterburner Smoke -- <Font|smallFont>Click this
+option, or press the A key, to toggle the exhaust of ships on and
+off.<p><p>
+
+<Font|smallBoldFont>Lens Flares -- <Font|smallFont>Click this option, or
+press the F key, to toggle lens flares on and off.<p><p>
+
+<Font|smallBoldFont>Bidirectional Lighting -- <Font|smallFont>Click this
+option, or press the B key, to toggle bidirectional
+lighting on and off. Bidirectional lighting is a dramatic second light source that adds a
+greater feeling of depth to objects, but it is not mandatory.<p><p>
+
+<Font|smallBoldFont>Style -- <Font|smallFont>Click this option, or press
+the H key, to toggle your HUD style between Normal and
+Software modes. Software is a good option if you want to try and improve your frame rate.<p><p>
+
+<Font|promptFont>Sound Options<Font|smallFont><p><p>
+
+<Font|smallBoldFont>To access the options for sound<Font|smallFont><p><p>
+
+<Bullet|hlpbullet|Press ESC, S.><p><p>
+
+<Font|smallBoldFont>Sound Quality -- <Font|smallFont>Click this option to
+cycle
+through the sound quality settings. Higher quality sound also means a
+heavier hit on your processor so you might want to reduce your sound
+quality to keep a good frame rate.<p><p>
+
+<Font|smallBoldFont>Sound Card Acceleration -- <Font|smallFont>Click
+this option to toggle your sound card's acceleration on and off. If you
+have any sound problems, try turning off the acceleration.<p><p>
+
+<Font|smallBoldFont>Music -- <Font|smallFont>Click this option to toggle
+background music on and off.<p><p>
+
+<Font|smallBoldFont>Music Volume -- <Font|smallFont>Click these
+options, or press the corresponding key, to increase (M) or decrease
+(N) music volume.<p><p>
+
+<Font|smallBoldFont>Sound Effect Volume -- <Font|smallFont>Click these
+options, or press the corresponding key, to increase (S) or decrease
+(A) the sound effects.<p><p>
+
+<Font|smallBoldFont>Voiceover Volume -- <Font|smallFont>Click these
+options, or press the corresponding key, to increase (V) or decrease (C)
+the voiceover in the training missions and the message stream chat.<p><p>
+
+<Font|promptFont>Game Options<Font|smallFont><p><p>
+
+<Font|smallBoldFont>To access input options<Font|smallFont><p><p>
+
+<Bullet|hlpbullet|Press ESC, G.><p><p>
+
+<Font|smallBoldFont>Censor Display -- <Font|smallFont>Click this option,
+or press the S key, to toggle between censoring and not censoring your
+messages. If you censor your messages, you will be protected from foul
+language.<p><p>
+
+<Font|smallBoldFont>Default View -- <Font|smallFont>Click this option,
+or press the K key, to set your default view to either Cockpit
+view or Chase view.<p><p>
+
+<Font|smallBoldFont>Filter Chats Sent to All -- <Font|smallFont>Click this
+option,
+or press the A key, to toggle between filtering and not filtering
+messages that are sent to all players in the game.<p><p>
+
+<Font|smallBoldFont>Filter Voice Commands -- <Font|smallFont>Click this
+option,
+or press the Q key, to toggle between filtering and not filtering all
+voice commands.<p><p>
+
+<Font|smallBoldFont>Filter Chats Sent from Lobby -- <Font|smallFont>Click
+this option,
+or press the F key, to toggle between filtering and not filtering all
+messages that come from players in the Team Lobby.<p><p>
+
+<Font|smallBoldFont>Control Response -- <Font|smallFont>Click this
+option, or press the L key, to toggle between Quadratic
+and Linear control response. If your joystick is too sensitive, try
+the quadratic response.<p><p>
+
+<Font|smallBoldFont>Dead Zone -- <Font|smallFont>Click this option,
+or press the Z key, to toggle between a normal and a large
+area around which your joystick is considered centered in the middle of your screen.<p><p>
+
+<Font|smallBoldFont>Virtual Joystick -- <Font|smallFont>Click this option,
+or press the J key, to toggle between using your mouse as a virtual and a
+nonvirtual joystick. <p><p>
+
+<Font|smallBoldFont>Y Axis -- <Font|smallFont>Click this option,
+or press the Y key, to toggle between a normal and a flipped Y axis
+on your joystick. When the Y axis is flipped, pushing the joystick
+forward will point the nose of your craft upward instead of
+downward.<p><p>
+
+<Font|smallBoldFont>Force Feedback -- <Font|smallFont>Click this option,
+or press the E key, to toggle between turning on and off the
+feedback on a joystick that has this feature.<p><p>
+
+<Font|smallBoldFont>Map Keys and Controls -- <Font|smallFont>Click or
+press C to
+<Main|hlp5c|adjust your input settings> in the Configure Controls dialog
+box.

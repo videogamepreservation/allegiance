@@ -1,0 +1,61 @@
+<Font|promptFont>JOYSTICK<Font|smallFont><p><p>
+
+<Font|smallBoldFont>Action				
+		Joystick<Font|smallFont><p>
+Pitch down					Stick forward<p>
+Pitch up						Stick back<p>
+Turn left						Stick left<p>
+Turn right					Stick right<p>
+Fire weapon					Button 1<p>
+Fire missile					Button 2<p>
+Fire boosters				Button 3 (hold)<p>
+Drop chaff					Button 4<p>
+Toggle directional lock	Button 5<p>
+Point of view				Hatswitch<p><p>
+
+<Font|smallBoldFont>To remap a joystick control<Font|smallFont><p><p>
+
+<Bullet|hlpimg1|On the Allegiance main menu, click
+<Font|smallBoldFont>Options.<Font|smallFont>><p><p>
+
+<Bullet|hlpblank|-or-><p><p>
+
+<Bullet|hlpblank|Any time during gameplay, press ESC, G, C.><p><p>
+
+<Bullet|hlpimg2|Double-click the action you want to reconfigure.><p><p>
+
+<Bullet|hlpblank|-or-><p><p>
+
+<Bullet|hlpblank|Click the action you want to reconfigure, and then
+press ENTER.><p><p>
+
+<Bullet|hlpimg3|To assign the action to a joystick control, press the
+desired joystick button or move the joystick in the direction you
+want.><p><p>
+
+<Bullet|hlpblank|If the control you selected is already
+mapped to another action and you
+decide you don't want to change it, press ESC. If you do want to change
+the control anyway, press ENTER, but then be sure you assign the other
+action with a new control.><p><p>
+
+<Bullet|hlpblank|To remove a mapping entirely from an action, press
+DELETE.><p><p>
+
+<Bullet|hlpimg4|To save your change(s), click
+<Font|smallBoldFont>Accept.<Font|smallFont>><p><p>
+
+<Bullet|hlpblank|-or-><p><p>
+
+<Bullet|hlpblank|To cancel your change(s) and keep all the previous
+mappings, click <Font|smallBoldFont>Reject.<Font|smallFont>><p><p>
+
+Note that if you want to reassign the hatswitch to another
+action (for example, thrusting), click the Hat entry, and then
+press ENTER to change the hatswitch focus to Hat as Buttons. Then
+find the actions you want to assign to the hatswitch directions and change
+as described above (in the thrusting example, assign each thrust direction
+to a hatswitch direction).<p><p>
+
+At any time, you can click <Font|smallBoldFont>Restore Defaults<Font|smallFont>
+to return all control mappings to their original settings.

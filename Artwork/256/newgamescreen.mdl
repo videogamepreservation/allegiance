@@ -1,0 +1,419 @@
+use "gamepanes";
+use "font";
+use "skilllevels";
+use "newgamescreendata";
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// New Game Screen
+//
+/////////////////////////////////////////////////////////////////////////////
+
+//
+// Title Text
+//
+
+yellowText          = Color(0.878, 0.573, 0);
+whiteText           = Color(1, 1, 1);
+titlePane           = StringPane("GAME SETTINGS", yellowText,  Point(250, 30), JustifyLeft, titleFont);
+captionPane         = StringPane("SELECT OR REVIEW THE CURRENT GAME SETTINGS", whiteText, Point(800, 30), JustifyLeft, promptFont);
+
+
+//
+// Hover info
+//
+
+hoverSite = HoverSite(0);
+
+//
+// Normal buttons
+//
+
+cancelButtonPane   = SoundButtonPane(ImportImage("btncancelchangesbmp",   true), ButtonNormal, false, negativeButtonClickSoundId);
+backButtonPane  = SoundButtonPane(ImportImage("btnbackbmp",   true), ButtonNormal, false, negativeButtonClickSoundId);
+createButtonPane = ButtonPane(ImportImage("btncreatebmp", false), ButtonNormal, false);
+
+//
+// Edit controls
+//
+
+gameNameEditPane   = EditPane(Point(268, 12), smallFont);
+gamePasswordEditPane   = EditPane(Point(128, 12), smallFont);
+
+//
+// Check boxes
+//
+
+checkImage = ImportImage("btncheckbmp", true);
+
+xcheck = 162;
+ycheck = 12;
+
+statsCountImage = ImportImage("checkstatscountbmp", true);
+statsCountCheckboxPane           = ButtonPane(checkImage, ButtonNormalCheckBox, true);
+statsCountPane = 
+    ImagePane(statsCountImage, [(statsCountCheckboxPane, Point(xcheck, ycheck))]);
+
+defectionsImage = ImportImage("checkdefectionsbmp", true);
+defectionsCheckboxPane           = ButtonPane(checkImage, ButtonNormalCheckBox, true);
+defectionsPane = 
+    ImagePane(defectionsImage, [(defectionsCheckboxPane, Point(xcheck, ycheck))]);
+
+joinersImage = ImportImage("checkjoinersbmp", true);
+joinersCheckboxPane           = ButtonPane(checkImage, ButtonNormalCheckBox, true);
+joinersPane = 
+    ImagePane(joinersImage, [(joinersCheckboxPane, Point(xcheck, ycheck))]);
+
+squadGameImage = ImportImage("checksquadgamebmp", true);
+squadGameCheckboxPane           = ButtonPane(checkImage, ButtonNormalCheckBox, true);
+squadGamePane = 
+    ImagePane(squadGameImage, [(squadGameCheckboxPane, Point(xcheck, ycheck))]);
+
+ejectPodsImage = ImportImage("checkejectpodsbmp", true);
+ejectPodsCheckboxPane           = ButtonPane(checkImage, ButtonNormalCheckBox, true);
+ejectPodsPane = 
+    ImagePane(ejectPodsImage, [(ejectPodsCheckboxPane, Point(xcheck, ycheck))]);
+
+friendlyFireImage = ImportImage("checkfriendlyfirebmp", true);
+friendlyFireCheckboxPane           = ButtonPane(checkImage, ButtonNormalCheckBox, true);
+friendlyFirePane = 
+    ImagePane(friendlyFireImage, [(friendlyFireCheckboxPane, Point(xcheck, ycheck))]);
+
+invulnerableStationsImage = ImportImage("checkinvulnerablestationsbmp", true);
+invulnerableStationsCheckboxPane           = ButtonPane(checkImage, ButtonNormalCheckBox, true);
+invulnerableStationsPane = 
+    ImagePane(invulnerableStationsImage, [(invulnerableStationsCheckboxPane, Point(xcheck, ycheck))]);
+
+developmentImage = ImportImage("checkdevelopmentbmp", true);
+developmentCheckboxPane           = ButtonPane(checkImage, ButtonNormalCheckBox, true);
+developmentPane = 
+    ImagePane(developmentImage, [(developmentCheckboxPane, Point(xcheck, ycheck))]);
+
+allowShipyardsImage = ImportImage("checkallowshipyardsbmp", true);
+allowShipyardsCheckboxPane = ButtonPane(checkImage, ButtonNormalCheckBox, true);
+allowShipyardsPane = 
+    ImagePane(allowShipyardsImage, [(allowShipyardsCheckboxPane, Point(xcheck, ycheck))]);
+
+showMapImage = ImportImage("checkshowmapbmp", true);
+showMapCheckboxPane           = ButtonPane(checkImage, ButtonNormalCheckBox, true);
+showMapPane = 
+    ImagePane(showMapImage, [(showMapCheckboxPane, Point(xcheck, ycheck))]);
+
+
+//
+// Countdown timer
+//
+TextColor       = Color(1, 1, 1);
+textCountdown   = StringPane("", TextColor, Point(90, 30), JustifyRight, titleFont);
+
+//
+// Combo boxes
+//
+
+xsize = 100;
+ysize = 20;
+size = Point(xsize, ysize);
+
+xcombo = 100;
+ycombo = 17;
+xcombo2 = 97;
+ycombo2 = 26;
+
+
+teamCountImage = ImportImage("comboteamcountbmp", true);
+teamCountComboPane           = StringComboPane(size, size, smallFont, TextColor);
+teamCountPane = 
+    ImagePane(teamCountImage, [(teamCountComboPane, Point(xcombo, ycombo))]);
+
+maxPlayersComboImage = ImportImage("combomaxplayersbmp", true);
+maxPlayersComboPane           = StringComboPane(size, size, smallFont, TextColor);
+maxPlayersCombo = 
+    ImagePane(maxPlayersComboImage, [(maxPlayersComboPane, Point(xcombo, ycombo))]);
+maxPlayersStringImage = ImportImage("stringmaxplayersbmp", true);
+maxPlayersStringPane           = StringPane("", TextColor, size, JustifyLeft, smallFont);
+maxPlayersString = 
+    ImagePane(maxPlayersStringImage, [(maxPlayersStringPane, Point(xcombo, ycombo))]);
+maxPlayersPane = SwitchPane(CanChooseMaxPlayers, [(maxPlayersCombo, 1), (maxPlayersString, 0)]);
+/*
+minPlayersStringImage = ImportImage("stringminplayersbmp", true);
+minPlayersStringPane           = StringPane("", TextColor, size, JustifyLeft, smallFont);
+minPlayersPane = 
+    ImagePane(minPlayersStringImage, [(minPlayersStringPane, Point(xcombo, ycombo))]);
+*/
+maxImbalanceImage = ImportImage("combomaximbalancebmp", true);
+maxImbalanceComboPane           = StringComboPane(size, size, smallFont, TextColor);
+maxImbalancePane = 
+    ImagePane(maxImbalanceImage, [(maxImbalanceComboPane, Point(xcombo, ycombo))]);
+
+connectivityImage = ImportImage("combomapconnectivitybmp", true);
+connectivityComboPane           = StringComboPane(size, size, smallFont, TextColor);
+connectivityPane = 
+    ImagePane(connectivityImage, [(connectivityComboPane, Point(xcombo, ycombo))]);
+
+skillLevelImage = ImportImage("comboskilllevelbmp", true);
+skillLevelComboPane           = StringComboPane(size, size, smallFont, TextColor);
+skillLevelPane = 
+    ImagePane(skillLevelImage, [(skillLevelComboPane, Point(xcombo, ycombo))]);
+
+livesImage = ImportImage("combolivesbmp", true);
+livesComboPane           = StringComboPane(size, size, smallFont, TextColor);
+livesPane = 
+    ImagePane(livesImage, [(livesComboPane, Point(xcombo, ycombo))]);
+
+startingMoneyImage = ImportImage("combostartingmoneybmp", true);
+startingMoneyComboPane           = StringComboPane(size, size, smallFont, TextColor);
+startingMoneyPane = 
+    ImagePane(startingMoneyImage, [(startingMoneyComboPane, Point(xcombo, ycombo))]);
+
+totalMoneyImage = ImportImage("combototalmoneybmp", true);
+totalMoneyComboPane           = StringComboPane(size, size, smallFont, TextColor);
+totalMoneyPane = 
+    ImagePane(totalMoneyImage, [(totalMoneyComboPane, Point(xcombo, ycombo))]);
+
+resourcesImage = ImportImage("comboresourcesbmp", true);
+resourcesComboPane           = StringComboPane(size, size, smallFont, TextColor);
+resourcesPane = 
+    ImagePane(resourcesImage, [(resourcesComboPane, Point(xcombo, ycombo))]);
+
+mapTypeImage = ImportImage("combomaptypebmp", true);
+mapTypeComboPane           = StringComboPane(size, size, smallFont, TextColor);
+mapTypeCombo = 
+    ImagePane(mapTypeImage, [(mapTypeComboPane, Point(xcombo, ycombo))]);
+mapTypeStringImage = ImportImage("combomaptypebmp", true);
+mapTypeStringPane           = StringPane("custom", TextColor, size, JustifyLeft, smallFont);
+mapTypeString = 
+    ImagePane(mapTypeStringImage, [(mapTypeStringPane, Point(xcombo, ycombo))]);
+mapTypePane = SwitchPane(IsCustomMap, [(mapTypeCombo, 0), (mapTypeString, 1)]);
+
+
+gameTypeImage = ImportImage("combogametypebmp", true);
+gameTypeComboPane           = StringComboPane(size, size, smallFont, TextColor);
+gameTypePane = 
+    ImagePane(gameTypeImage, [(gameTypeComboPane, Point(xcombo2, ycombo2))]);
+
+conquestBasesImage = ImportImage("comboconquestbmp", true);
+conquestBasesComboPane           = StringComboPane(size, size, smallFont, TextColor);
+conquestBasesPane = 
+    ImagePane(conquestBasesImage, [(conquestBasesComboPane, Point(xcombo2, ycombo2))]);
+
+territoryImage = ImportImage("comboterritorialbmp", true);
+territoryComboPane           = StringComboPane(size, size, smallFont, TextColor);
+territoryPane = 
+    ImagePane(territoryImage, [(territoryComboPane, Point(xcombo2, ycombo2))]);
+
+prosperityImage = ImportImage("comboprosperitybmp", true);
+prosperityComboPane           = StringComboPane(size, size, smallFont, TextColor);
+prosperityPane = 
+    ImagePane(prosperityImage, [(prosperityComboPane, Point(xcombo2, ycombo2))]);
+
+artifactCountImage = ImportImage("comboartifactcountbmp", true);
+artifactCountComboPane           = StringComboPane(size, size, smallFont, TextColor);
+artifactCountPane = 
+    ImagePane(artifactCountImage, [(artifactCountComboPane, Point(xcombo2, ycombo2))]);
+
+flagCountImage = ImportImage("comboflagcountbmp", true);
+flagCountComboPane           = StringComboPane(size, size, smallFont, TextColor);
+flagCountPane = 
+    ImagePane(flagCountImage, [(flagCountComboPane, Point(xcombo2, ycombo2))]);
+
+deathWatchKillsImage = ImportImage("combodeathwatchkillsbmp", true);
+deathWatchKillsComboPane           = StringComboPane(size, size, smallFont, TextColor);
+deathWatchKillsPane = 
+    ImagePane(deathWatchKillsImage, [(deathWatchKillsComboPane, Point(xcombo2, ycombo2))]);
+
+countdownTimeImage = ImportImage("combocountdowntimebmp", true);
+countdownTimeComboPane           = StringComboPane(size, size, smallFont, TextColor);
+countdownTimePane = 
+    ImagePane(countdownTimeImage, [(countdownTimeComboPane, Point(xcombo2, ycombo2))]);
+
+
+
+//
+// combobox contents and mappings to real values
+//
+
+// teamCount
+TeamCountNames = ["2", "3", "4", "5", "6"];
+TeamCountValues = [2, 3, 4, 5, 6];
+
+// maxPlayers
+MaxPlayersNames = ["1 - 6", "4 - 8", "5 - 10", "7 - 15", "10 - 20", "15 - 25", "20 - 30", "25 - 40", "35 - 50", "45 - 60", "55 - 70"];
+MaxPlayersValues = [6, 8, 10, 15, 20, 25, 30, 40, 50, 60, 70];
+MinPlayersValues = [1, 1,  1,  1,  1,  1,  1,  1,  1,  1,  1];
+
+// maxImbalance
+MaxImbalanceNames = ["1", "2", "N/A"];
+MaxImbalanceValues = [1,   2, 32767];
+
+// skill level
+GameSkillLevelNames = SkillLevelNames;
+GameSkillLevelMin = SkillLevelMin;
+GameSkillLevelMax = SkillLevelMax;
+
+// map type
+MapTypeNames = ["Single Ring", "Double Ring", "Pinwheel", "Diamond Ring", "Snowflake", "Split Bases", "Brawl", "Big Ring", "HiLo", "HiHigher", "Star", "InsideOut", "Grid", "EastWest", "LargeSplit"];
+MapTypeValues = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14];
+
+// connectivity
+ConnectivityNames = ["low", "medium", "high"];
+ConnectivityValues = [7, 2, 0];
+
+// lives
+LivesNames = ["Unlimited", "1", "2", "3", "4", "5", "10"];
+LivesValues = [32767, 0, 1, 2, 3, 4, 9];   //0x7fff == unlimited lives, otherwise == number of deaths before no regeneration
+
+// resources
+ResourcesNames = ["Very Scarce", "Scarce", "Normal", "Plentiful"];
+ResourcesNeutralMinable = [2, 2, 4, 4];
+ResourcesPlayerMinable =  [0, 1, 2, 2];
+ResourcesNeutralSpecial = [1, 1, 1, 2];
+ResourcesPlayerSpecial =  [0, 1, 1, 1];
+
+// total money
+TotalMoneyNames = ["Low", "Medium", "High", "Very High"];
+TotalMoneyValues = [0.75, 1.0, 1.25, 1.5];
+
+// starting money
+StartingMoneyNames = ["Low", "Medium", "High", "Very High"];
+StartingMoneyValues = [0.75, 1.0, 1.25, 1.5];
+
+// countdown time
+CountdownTimeNames = ["N/A", "10 min.", "20 min.", "30 min.", "1 hour", "2 hours", "3 hours", "4 hours", "5 hours", "6 hours"];
+CountdownTimeValues = [0, 10, 20, 30, 60, 120, 180, 240, 300, 360];
+
+// kills
+DeathWatchKillsNames = ["N/A", "5", "10", "20", "30", "40", "50", "60", "70", "80", "90", "100"];
+DeathWatchKillsValues = [0, 5, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100];
+
+// prosperity target
+ProsperityTargetNames = ["N/A", "Low", "Medium", "High"];
+ProsperityTargetValues = [0.0, 0.5, 0.75, 1.0];
+
+// artifacts to win
+ArtifactCountNames = ["N/A", "5", "10", "25"];
+ArtifactCountValues = [0, 5, 10, 25];
+
+// flags to win
+FlagCountNames = ["N/A", "5", "10", "25"];
+FlagCountValues = [0, 5, 10, 25];
+
+// conquest
+ConquestPercentNames = ["N/A", "100%"];
+ConquestPercentValues = [0, 100];
+
+// territorial
+TerritoryNames = ["N/A", "90%", "80%", "70%", "60%", "50%"];
+TerritoryValues = [100, 90, 80, 70, 60, 50];
+
+
+//
+// The hover info
+//
+
+hoverString =
+    SwitchString(
+        HoverSiteGetID(hoverSite),
+        "",
+        [
+            ( 1, "The name of the game."),
+            ( 2, "The number of teams allowed in the game."),
+            ( 3, "The minimum number of players allowed per team."),
+            ( 4, "The minimum and maximum number of players allowed per team."),
+            ( 5, "Skill levels required of players in this game."),
+            ( 6, "The type and size of map for the game."),
+            ( 7, "The number of lives each player has."),
+            ( 8, "How dense or scarce the universe's resources are."),
+            ( 9, "The amount of money that can be earned from the universe's resources."),
+            (10, "The amount of money each team starts the game with."),
+            (11, "The game has a time restraint, and the team with the most progress toward primary goals wins."),
+            (12, "The game is played until the specified number of kills is reached by one team."),
+            (13, "The game is played until the specified amount of money is reached by one team."),
+            (14, "The game is played until the specified number of artifacts is possessed by one team."),
+            (15, "The game is played until one team controls all of the remaining bases."),
+            (16, "If selected, players can use eject pods if their ship is destroyed."),
+            (17, "If selected, weapon fire will damage friend and foe."),
+            (18, "If selected, all player statistics will be saved in the Allegiance Zone database."),
+            (19, "If selected, players can quit one team and then join another in the same game."),
+            (20, "If selected, players can join a game after it has started."),
+            (21, "If selected, squad results will count in the Allegiance Zone database."),
+            (22, "If selected, outposts can be captured, but not destroyed."),
+            (23, "If selected, the game will have a developable tech tree."),
+            (24, "Cancel all settings and return to the Team Lobby."),
+            (25, "Accept all changes and return to the Team Lobby."),
+            (26, "A password that players need to enter and play the game."),
+            (27, "If selected, all alephs will be visible when the game starts."),
+            (28, "The game is played until the specified number of flags is possessed by one team."),
+            (29, "The general style of gameplay."),
+            (30, "The limit on how unbalanced the teams can be."),
+            (31, "The game is played until one team controls the specified percentage of sectors."),
+            (32, "Selects how well connected the sectors in the map are."),
+			(33, "Selects whether or not shipyards are allowed in the game.")
+        ]
+    );
+
+hoverImage = StringImage(JustifyLeft, 300, smallFont, white, hoverString);
+hoverPane  = AnimatedImagePaneRect(hoverImage, Rect(0, -30, 300, 0));
+
+//
+// The background and control positions
+//
+
+x1 = 77;
+x2 = 292;
+check = 507;
+
+
+screen =
+    ScreenPane(
+        ImportImage("newgamescreenbmp", false),
+        [
+            (textCountdown,                                              Point(700,  30)),
+            (titlePane, Point(5, 5)),
+            (captionPane, Point(30, 35)),
+            (HoverPane(hoverSite,  1, gameNameEditPane                ), Point( 96,  86)),
+            (HoverPane(hoverSite, 26, gamePasswordEditPane            ), Point(382, 86)),
+            (HoverPane(hoverSite, 25, createButtonPane                ), Point(563, 59)),
+            
+
+            (HoverPane(hoverSite, 29, gameTypePane                    ), Point( x1, 152)),
+            (HoverPane(hoverSite, 15, conquestBasesPane               ), Point( x1, 202)),
+            (HoverPane(hoverSite, 31, territoryPane                   ), Point( x1, 252)),
+            (HoverPane(hoverSite, 13, prosperityPane                  ), Point( x1, 302)),          
+            (HoverPane(hoverSite, 14, artifactCountPane               ), Point( x1, 352)),
+            (HoverPane(hoverSite, 28, flagCountPane                   ), Point( x1, 402)),
+            (HoverPane(hoverSite, 12, deathWatchKillsPane             ), Point( x1, 452)),          
+            (HoverPane(hoverSite, 11, countdownTimePane               ), Point( x1, 502)),          
+
+            (HoverPane(hoverSite,  2, teamCountPane                   ), Point( x2, 156)),
+            (HoverPane(hoverSite,  4, maxPlayersPane                  ), Point( x2, 196)),
+            //(HoverPane(hoverSite,  3, minPlayersPane                  ), Point( x2, 236)),
+            (HoverPane(hoverSite,  5, skillLevelPane                  ), Point( x2, 236)),
+            (HoverPane(hoverSite,  7, livesPane                       ), Point( x2, 276)),
+            (HoverPane(hoverSite, 10, startingMoneyPane               ), Point( x2, 316)),
+            (HoverPane(hoverSite,  9, totalMoneyPane                  ), Point( x2, 356)),
+            (HoverPane(hoverSite,  8, resourcesPane                   ), Point( x2, 396)),
+            (HoverPane(hoverSite,  6, mapTypePane                     ), Point( x2, 436)),
+            (HoverPane(hoverSite, 32, connectivityPane             ), Point( x2, 476)),
+            (HoverPane(hoverSite, 30, maxImbalancePane                ), Point( x2, 516)),
+
+            (HoverPane(hoverSite, 18, statsCountPane                  ), Point( check, 155)),
+            (HoverPane(hoverSite, 19, defectionsPane                  ), Point( check, 195)),
+            (HoverPane(hoverSite, 20, joinersPane                     ), Point( check, 235)),
+            (HoverPane(hoverSite, 21, squadGamePane                   ), Point( check, 275)),
+            (HoverPane(hoverSite, 16, ejectPodsPane                   ), Point( check, 315)),
+            (HoverPane(hoverSite, 17, friendlyFirePane                ), Point( check, 355)),
+            (HoverPane(hoverSite, 22, invulnerableStationsPane        ), Point( check, 395)),
+            (HoverPane(hoverSite, 23, developmentPane                 ), Point( check, 435)),
+            (HoverPane(hoverSite, 27, showMapPane                     ), Point( check, 475)),
+            (HoverPane(hoverSite, 33, allowShipyardsPane              ), Point( check, 515)),
+
+            (cancelButtonPane, Point( 17, 562)),
+            (backButtonPane, Point( 17, 562)),
+           
+            //
+            // hover info
+            //
+
+            (hoverPane, Point(500, 562))
+        ]
+    );

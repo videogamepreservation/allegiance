@@ -1,0 +1,153 @@
+<Font|promptFont>EQUIPMENT<Font|smallFont><p><p>
+
+<Bullet|hlpbullet|Booster Mk1<p><p>
+
+Max Thrust -- 900<p>
+Burn Rate -- 0<p>
+Signature -- 200<p>
+On Rate -- 1<p>
+Mass -- 2><p><p>
+
+<Bullet|hlpbullet|Small Sheild Mk1<p><p>
+
+Particle -- 150<p>
+Energy -- 150<p>
+Signature -- 50<p>
+Regeneration -- 2<p>
+Hit Points -- 150<p>
+Mass -- 2><p><p>
+
+<Bullet|hlpbullet|EWS Probe 1<p><p>
+
+Scan Range -- 0<p>
+Hit Points -- 0<p>
+Signature -- 0<p>
+Lifespan -- 0<p>
+Mass -- 1><p><p>
+
+<Bullet|hlpbullet|Proximity Fuse Mine<p><p>
+
+Scan Range -- 0<p>
+Hit Points -- 0<p>
+Signature -- 0<p>
+Lifespan -- 0<p>
+Mass -- ><p><p>
+
+<Bullet|hlpbullet|Countermeasures Mk1<p><p>
+
+Strength -- 0<p>
+Mass -- 0<p>
+Signature -- 0><p><p>
+
+<Bullet|hlpbullet|Nanite Repair System Mk 1<p><p>
+
+Damage -- 7<p>
+Rate -- 4<p>
+Signature -- 5<p>
+Range -- 400<p>
+Speed -- 400<p>
+Defense Bonus -- NA><p><p>
+
+<Bullet|hlpbullet|Ammo Pack<p><p>
+
+Quantity -- 800<p>
+Mass -- 1<p>
+Signature -- 1><p><p>
+
+<Bullet|hlpbullet|Booster Fuel<p><p>
+
+Quantity - 45<p>
+Mass - 1  <p>
+Signature - 1><p><p>
+
+<Bullet|hlpbullet|Nanite Repair Sys Mk2 -- $7500<p><p>
+
+Damage -- 15<p>
+Rate -- 4<p>
+Signature -- 5<p>
+Range -- 400<p>
+Speed -- 400><p><p>
+
+<Bullet|hlpbullet|Countermeasures Mk2 -- $5000 -- Upgraded<p><p>
+
+Supremacy Center must be built to get Countermeasures Mark 2.<p><p>
+
+Strength -- 0<p>
+Mass -- 0<p>
+Signature -- 0><p><p>
+
+<Bullet|hlpbullet|Booster Mk2 -- $5000<p><p>
+
+Max Thrust -- 900<p>
+Burn Rate -- 0<p>
+Signature -- 150<p>
+On Rate -- 1<p>
+Mass -- 2><p><p>
+
+<Bullet|hlpbullet|Booster Mk3 -- $5000<p><p>
+
+Max Thrust -- 1125<p>
+Burn Rate -- 0<p>
+Signature -- 150<p>
+On Rate -- 1<p>
+Mass -- 2 ><p><p>
+
+<Bullet|hlpbullet|Light Booster 1 -- $5000<p><p>
+
+Max Thrust -- 450<p>
+Burn Rate -- 0<p>
+Signature -- 150<p>
+On Rate -- 1<p>
+Mass -- 2 ><p><p>
+
+<Bullet|hlpbullet|Light Booster 2 -- $5000<p><p>
+
+Max Thrust -- 500<p>
+Burn Rate -- 0<p>
+Signature -- 100<p>
+On Rate -- 1<p>
+Mass -- 2><p><p>
+
+<Bullet|hlpbullet|Signature Cloak Mk1 -- $5000<p><p>
+
+Cloaking -- 1<p>
+Max Mass -- <p>
+Energy Use -- 100<p>
+Mass -- 3><p><p>
+
+<Bullet|hlpbullet|Teleport Probe -- $5000<p><p>
+
+Scan Range -- NA<p>
+Hit Points -- NA<p>
+Signature -- NA<p>
+Lifespan -- NA<p>
+Mass -- NA><p><p>
+
+<Bullet|hlpbullet|Signature Cloak Mk2 -- $5000<p><p>
+
+Cloaking  -- 1<p>
+Max Mass -- <p>
+Energy Use -- 100<p>
+Mass -- 3><p><p>
+
+<Bullet|hlpbullet|Heavy Cloak -- $5000<p><p>
+Cloaking   -- 1<p>
+Max Mass -- <p>
+Energy Use -- 150<p>
+Mass -- 10><p><p>
+
+<Bullet|hlpbullet|Large Shield 2 -- $5000<p><p>
+
+Particle -- 3000<p>
+Energy -- 3000<p>
+Signature -- 100<p>
+Regen -- 30<p>
+Hit Points -- 3000<p>
+Mass -- 50><p><p>
+
+<Bullet|hlpbullet|Heavy Countermeasures Mk2 -- $5000<p><p>
+Strength -- <p>
+Mass -- <p>
+Signature -- ><p><p>
+
+<Bullet|hlpbullet|Heavy Countermeasures Mk3 -- $5000>

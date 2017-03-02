@@ -1,0 +1,39 @@
+<Font|promptFont>ECONOMICS<Font|smallFont><p><p>
+
+Each team has a pool of money at the start of a tech tree game. The size of the pool can be
+defined by the game owner in the <Main|hlp2i2|Game Settings screen> at the
+beginning of the game.<p><p>
+
+<Font|promptFont>Earning Cash<Font|smallFont><p><p>
+
+About every minute, Central Command issues your team a small maintenance sum of money to keep
+your operation going based on the number of <Main|hlp6l|bases you have built.> Additional bases
+will yield even more money.<p><p>
+
+Pay is increased by the amount of <Main|hlp6g|Helium3 mined> and for each successful kill made
+by you or a teammate. Pay is decreased for each death suffered by you or a teammate.<p><p>
+
+When any station is captured, there is a one-time payment made to the capturing team equal to 1/4
+of the cost of the station that has been captured.<p><p>
+
+<Font|promptFont>Autodonating<Font|smallFont><p><p>
+
+When the game starts, all income is automatically donated to the team leader, or commander,
+but at any time before or during gameplay a player may select someone else to autodonate
+his paycheck to -- often, this will be an <Main|hlp6i|investor> chosen by the commander in
+the Team Lobby before the game starts. If there is no official investor, a player may even
+want to simply keep his paycheck for his own spending, but make
+sure your commander is aware of this.<p><p>
+
+<Font|smallBoldFont>To change the recipient of your paycheck<Font|smallFont><p><p>
+
+<Bullet|hlpimg1|To access the Team display, press F6 in the hangar or while in flight.><p><p>
+
+<Bullet|hlpimg2|To autodonate to another person on your team, click <Font|smallBoldFont>Stop
+Donating,<Font|smallFont> select the person you want to autodonate to, and then click
+<Font|smallBoldFont>Team Deposit.<Font|smallFont>><p><p>
+
+<Bullet|hlpblank|-or-><p><p>
+
+<Bullet|hlpblank|To keep your paycheck for yourself, click <Font|smallBoldFont>Stop
+Donating.<Font|smallFont>>

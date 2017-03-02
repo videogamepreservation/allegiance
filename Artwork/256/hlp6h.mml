@@ -1,0 +1,39 @@
+<Font|promptFont>WIN CONDITIONS<Font|smallFont><p><p>
+
+There are a number of win conditions, or game styles, in Allegiance. The game owner can select
+just one win condition or combine various win conditions to create unique games and allow the
+opportunity for many game styles to be tried. The win conditions are set in the Game Settings
+screen when creating a game.<p><p>
+
+<Font|smallBoldFont>Conquest --<Font|smallFont>The first team that owns
+all other enemy stations wins. If a Conquest game is played with a Countdown setting as well,
+whichever team makes the most progress toward the goal of Conquest by the time the Countdown
+has expired is the winner.<p><p>
+
+<Font|smallBoldFont>Countdown --<Font|smallFont>The winning team is based on the victory conditions
+picked for the game. The first conditions in the game state pane are the first tested to determine
+a winner, and so on in order of the conditions. Most number of kills and least number of deaths are
+always used if no other condition determines a winner.<p><p>
+
+<Font|smallBoldFont>Deathmatch --<Font|smallFont>The first team that reaches the specified
+number of kills as a total wins. The required kills can be set in increments from 5 to 100.<p><p>
+
+<Font|smallBoldFont>Prosperity --<Font|smallFont>The first team that gathers a specified
+amount of money wins. A Prosperity game means you need to invest your money in the Reinforcement
+tech item in your Investment display and then successfully develop it to win. Once you invest in
+the Reinforcement item, it is considered that the Reinforcements have come and you have won the
+game. The settings in the Game Settings screen are Low, Medium, and High. A Low setting is 50%
+of the standard money goal, Medium is 75% of the standard money goal, and High is 100% of
+the money goal.<p><p>
+
+<Font|smallBoldFont>Territory --<Font|smallFont>The game ends when one side has sole control of 75%
+of the map's sectors. Sole control is defined as having a station in the sector and the other side
+does not.<p><p>
+
+<Font|smallBoldFont>Artifacts --<Font|smallFont>The first team that retrieves the most artifacts
+scattered throughout neutral sectors and returns them to their bases wins.<p><p>
+
+<Font|smallBoldFont>Flags --<Font|smallFont>The first team that retrieves the specified number
+of enemy-colored flags and returns them to their own home sector wins. The flags are found in
+various sectors, usually enemy sectors. You want to return the flags that are not in the
+color of your team and protect the flags that are in your team's color.

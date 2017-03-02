@@ -1,0 +1,40 @@
+use "selection";
+
+TextColor = Color(1, 1, 1);
+
+SelectedObjectPane =
+        SelectModelPane(
+            ImagePane(
+                ImportImage("selpanebkgndbmp", false),
+                [
+                    (
+                        StringPane( 
+                            GetName(SelectedObject, OnSelectedObjectChange), 
+                            TextColor,
+                            Point(50,10)
+                        ),
+                        Point(3,21)
+                    ),
+                    (
+                        GaugePane( 
+                            ImportImage("hudgaugebmp", false),
+                            GetPercentShields(SelectedObject, OnEveryFrame), 
+                            Color(1, 0, 0),
+                            Color(0, 1, 0)
+                        ),
+                        Point(7,1)
+                    ),
+                    (
+                        GaugePane( 
+                            ImportImage("hudgaugebmp", false),
+                            GetPercentHitPoints(SelectedObject, OnEveryFrame), 
+                            Color(1, 0, 0),
+                            Color(0, 1, 0)
+                        ),
+                        Point(7,11)
+                    )
+
+                ]                    
+            ),
+            SelectedObject
+       );

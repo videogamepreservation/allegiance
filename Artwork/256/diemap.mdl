@@ -1,0 +1,103 @@
+use "mission";
+use "techtree";
+
+////////////////////////////////////////////////////////////////////////////////
+// cluster = CreateCluster(name, postername, screenx, screeny);
+
+nadir = CreateCluster("Nadir", "globe", 0, 0);
+
+
+////////////////////////////////////////////////////////////////////////////////
+// asteroid = CreateAsteroid(cluster, name, model, texture, mass, radius, hitpoints, ore, pos, caps);
+
+asteroidb01 =  CreateAsteroid(nadir, "Helium", "bgrnd50", "", 27000, 150, 2500, 0, Vector(0,500,0), []);
+asteroidb02 =  CreateAsteroid(nadir, "Helium", "bgrnd50", "", 27000, 150, 2500, 0, Vector(0,750,0), []);
+asteroidb03 =  CreateAsteroid(nadir, "Helium", "bgrnd50", "", 27000, 150, 2500, 0, Vector(0,1000,0), []);
+
+asteroide01 =  CreateAsteroid(nadir, "Helium", "bgrnd51", "", 27000, 150, 2500, 0, Vector(-1000,0,0), []);
+asteroide02 =  CreateAsteroid(nadir, "Helium", "bgrnd51", "", 27000, 150, 2500, 0, Vector(-1000,250,0), []);
+asteroide03 =  CreateAsteroid(nadir, "Helium", "bgrnd51", "", 27000, 150, 2500, 0, Vector(-1000,500,0), []);
+asteroide04 =  CreateAsteroid(nadir, "Helium", "bgrnd51", "", 27000, 150, 2500, 0, Vector(-1000,750,0), []);
+asteroide05 =  CreateAsteroid(nadir, "Helium", "bgrnd51", "", 27000, 150, 2500, 0, Vector(-1000,1000,0), []);
+asteroide06 =  CreateAsteroid(nadir, "Helium", "bgrnd51", "", 27000, 150, 2500, 0, Vector(-750,0,0), []);
+asteroide07 =  CreateAsteroid(nadir, "Helium", "bgrnd51", "", 27000, 150, 2500, 0, Vector(-750,500,0), []);
+asteroide08 =  CreateAsteroid(nadir, "Helium", "bgrnd51", "", 27000, 150, 2500, 0, Vector(-750,1000,0), []);
+asteroide09 =  CreateAsteroid(nadir, "Helium", "bgrnd51", "", 27000, 150, 2500, 0, Vector(-500,0,0), []);
+asteroide10 =  CreateAsteroid(nadir, "Helium", "bgrnd51", "", 27000, 150, 2500, 0, Vector(-500,500,0), []);
+asteroide11 =  CreateAsteroid(nadir, "Helium", "bgrnd51", "", 27000, 150, 2500, 0, Vector(-500,1000,0), []);
+
+asteroidi01 =  CreateAsteroid(nadir, "Helium", "bgrnd52", "", 27000, 150, 2500, 0, Vector(-1500,0,0), []);
+asteroidi02 =  CreateAsteroid(nadir, "Helium", "bgrnd52", "", 27000, 150, 2500, 0, Vector(-1500,250,0), []);
+asteroidi03 =  CreateAsteroid(nadir, "Helium", "bgrnd52", "", 27000, 150, 2500, 0, Vector(-1500,500,0), []);
+asteroidi04 =  CreateAsteroid(nadir, "Helium", "bgrnd52", "", 27000, 150, 2500, 0, Vector(-1500,750,0), []);
+asteroidi05 =  CreateAsteroid(nadir, "Helium", "bgrnd52", "", 27000, 150, 2500, 0, Vector(-1500,1000,0), []);
+
+asteroidd01 =  CreateAsteroid(nadir, "Helium", "bgrnd53", "", 27000, 150, 2500, 0, Vector(-2500,0,0), []);
+asteroidd02 =  CreateAsteroid(nadir, "Helium", "bgrnd53", "", 27000, 150, 2500, 0, Vector(-2500,250,0), []);
+asteroidd03 =  CreateAsteroid(nadir, "Helium", "bgrnd53", "", 27000, 150, 2500, 0, Vector(-2500,500,0), []);
+asteroidd04 =  CreateAsteroid(nadir, "Helium", "bgrnd53", "", 27000, 150, 2500, 0, Vector(-2500,750,0), []);
+asteroidd05 =  CreateAsteroid(nadir, "Helium", "bgrnd53", "", 27000, 150, 2500, 0, Vector(-2500,1000,0), []);
+asteroidd06 =  CreateAsteroid(nadir, "Helium", "bgrnd53", "", 27000, 150, 2500, 0, Vector(-2250,0,0), []);
+asteroidd07 =  CreateAsteroid(nadir, "Helium", "bgrnd53", "", 27000, 150, 2500, 0, Vector(-2000,250,0), []);
+asteroidd08 =  CreateAsteroid(nadir, "Helium", "bgrnd53", "", 27000, 150, 2500, 0, Vector(-2000,500,0), []);
+asteroidd09 =  CreateAsteroid(nadir, "Helium", "bgrnd53", "", 27000, 150, 2500, 0, Vector(-2000,750,0), []);
+asteroidd10 =  CreateAsteroid(nadir, "Helium", "bgrnd53", "", 27000, 150, 2500, 0, Vector(-2250,1000,0), []);
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////
+// region = CreateSphericalRegion(model, radius);
+
+regionb01 = CreateSphericalRegion(asteroidb01, 500);
+regionb02 = CreateSphericalRegion(asteroidb02, 500);
+regionb03 = CreateSphericalRegion(asteroidb03, 500);
+
+regione01 = CreateSphericalRegion(asteroide01, 500);
+regione02 = CreateSphericalRegion(asteroide02, 500);
+regione03 = CreateSphericalRegion(asteroide03, 500);
+regione04 = CreateSphericalRegion(asteroide04, 500);
+regione05 = CreateSphericalRegion(asteroide05, 500);
+regione06 = CreateSphericalRegion(asteroide06, 500);
+regione07 = CreateSphericalRegion(asteroide07, 500);
+regione08 = CreateSphericalRegion(asteroide08, 500);
+regione09 = CreateSphericalRegion(asteroide09, 500);
+regione10 = CreateSphericalRegion(asteroide10, 500);
+regione11 = CreateSphericalRegion(asteroide11, 500);
+
+regioni01 = CreateSphericalRegion(asteroidi01, 500);
+regioni02 = CreateSphericalRegion(asteroidi02, 500);
+regioni03 = CreateSphericalRegion(asteroidi03, 500);
+regioni04 = CreateSphericalRegion(asteroidi04, 500);
+regioni05 = CreateSphericalRegion(asteroidi05, 500);
+
+regiond01 = CreateSphericalRegion(asteroidd01, 500);
+regiond02 = CreateSphericalRegion(asteroidd02, 500);
+regiond03 = CreateSphericalRegion(asteroidd03, 500);
+regiond04 = CreateSphericalRegion(asteroidd04, 500);
+regiond05 = CreateSphericalRegion(asteroidd05, 500);
+regiond06 = CreateSphericalRegion(asteroidd06, 500);
+regiond07 = CreateSphericalRegion(asteroidd07, 500);
+regiond08 = CreateSphericalRegion(asteroidd08, 500);
+regiond09 = CreateSphericalRegion(asteroidd09, 500);
+regiond10 = CreateSphericalRegion(asteroidd10, 500);
+
+////////////////////////////////////////////////////////////////////////////////
+// stationType = CreateStationType(cluster, stationtype, pos, side);
+
+station1 = CreateStation(nadir, stDefault, Vector(0,0,0), 0);
+
+
+////////////////////////////////////////////////////////////////////////////////
+// ship = CreateDrone(cluster, position, name, dronetype, side, loadout);
+
+dtMining          = 0;
+dtTurret          = 1;
+dtWingman         = 2;
+dtBountyHunter    = 3;
+dtPirate          = 4;
+
+miner1 = CreateDrone(nadir, Vector(1000,0,600), "", dtMining, 0, loadoutMinerDrone);
+
+
+

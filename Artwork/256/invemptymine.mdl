@@ -1,0 +1,9 @@
+use "inventorypart";
+
+InventoryLine = ImagePane(ImportImage("inventorylinebkgndbmp", false),
+    [
+	  (ImagePane(ImportImage("invequipmenticonbmp", true), []), Point(5, 5)),
+      (StringPane(partkey, Color(0.75,0.75,0.75), Point(12, 12)), Point(23,5)),
+      (StringPane("<mine mount>", Color(0.75,0.75,0.75), Point(148, 12)), Point(35,5))
+    ]
+  );

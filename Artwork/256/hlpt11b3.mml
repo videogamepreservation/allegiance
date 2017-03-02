@@ -1,0 +1,66 @@
+<Font|promptFont>BOMBERS<Font|smallFont><p><p>
+
+<Bullet|hlpbullet|Bomber -- $7500<p><p>
+
+This large, lumbering craft is designed for base assault. It is
+vulnerable to enemies when flown without fighter or turret support.<p><p>
+
+GigaCorp: GCSB Interdictor<p>
+Bios: BC840 Dragonfly<p>
+Iron Coalition: B45 Crossbow<p><p>
+
+The bomber has the following statistics:<p><p>
+
+Max Speed -- 60 meters per second<p>
+Acceleration -- 9 meters per second<p>
+Turn Rate -- 20 degrees<p>
+Hit Points -- 800<p>
+Energy -- 0<p>
+Scan Range -- 1600 meters<p>
+Signature -- 325<p>
+Armor Class -- Medium<p>
+Turrets -- 2><p><p>
+
+<Bullet|hlpbullet|Heavy Bomber -- $7500<p><p>
+
+The Bomber in the Garrison must be researched first
+before the Heavy Bomber can be researched. The Heavy Bomber offers a
+slightly better top-end speed, good energy stores for energy
+weapons, a stronger hull, and a better scan range and turn rate.<p><p>
+
+GigaCorp: GCSB Interdictor<p>
+Bios: BC2 Mayfly<p>
+Iron Coalition: B46 Longbow<p><p>
+
+The Heavy Bomber has the following statistics:<p><p>
+
+Max Speed -- 75 meters per second<p>
+Acceleration -- 8 meters per second<p>
+Turn Rate -- 25 degrees<p>
+Hit Points -- 1200<p>
+Energy -- 2000<p>
+Scan Range -- 2000 meters<p>
+Signature - 325<p>
+Armor Class -- Medium><p><p>
+
+<Bullet|hlpbullet|Stealth Bomber -- $7500<p><p>
+
+Researching the Stealth Bomber makes the Stealth Bomber available in
+the Loadout. The cloakable Stealth bomber is essentially a modified stealth
+fighter with anti-base missile capability.<p><p>
+
+GigaCorp: GCFB Executioner<p>
+Bios: F1 Sparrow Hawk<p>
+Iron Coalition: SB1 Scythe<p><p>
+
+The Stealth Bomber has the following statistics:<p><p>
+
+Max Speed -- 80 meters per second<p>
+Acceleration -- 15 meters per second<p>
+Turn Rate -- 42 degrees<p>
+Hit Points -- 182<p>
+Energy -- 1452<p>
+Scan Range -- 2420 meters<p>
+Signature -- 225<p>
+Armor Class -- Light<p>
+Turrets -- 0>

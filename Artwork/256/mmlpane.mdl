@@ -1,0 +1,35 @@
+use "effect";
+use "font";
+
+//////////////////////////////////////////////////////////////////////////////
+//
+// Default values
+//
+//////////////////////////////////////////////////////////////////////////////
+
+helpFont           = smallFont;
+helpColor          = white;
+mainLinkColor      = red;
+secondaryLinkColor = Color(1, 0.65, 0.10);
+highlightColor     = yellow;
+
+//////////////////////////////////////////////////////////////////////////////
+//
+// The pane
+//
+//////////////////////////////////////////////////////////////////////////////
+
+mainPageScrollBar = ScrollBarPane(Point(16, 200));
+mainPage          = PagePane(Point(450, 220), mainPageScrollBar);
+//closeButton       = SoundButtonPane(ImportImage("btnclosepanebmp", true), ButtonNormal, false, negativeButtonClickSoundId);
+closeButton       = ButtonEffectPane(ImportImage("btnclosepanebmp", true), ButtonNormal, false);
+
+mmlPane =
+    ImagePane(
+        ImportImage("dialogbkgndbmp", false),
+        [
+            (mainPageScrollBar, Point(472, 30)),
+            (mainPage,          Point( 20, 15)),
+            (closeButton,       Point(470, 10))
+        ]
+    );

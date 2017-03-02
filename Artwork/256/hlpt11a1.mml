@@ -1,0 +1,89 @@
+<Font|promptFont>GARRISON<Font|smallFont><p><p>
+
+The Garrison is your starting base. This essential structure is your connection to your
+faction's headquarters. Although this structure offers only the fighter, scout, and bomber as
+well as basic mining development resources, its defense is essential for a team to prosper.<p><p>
+
+At the start of a tech tree game, you have the following items
+already developed through your Garrison:<p><p>
+
+<Bullet|hlpbullet|Scout><p>
+
+<Bullet|hlpbullet|Fighter><p>
+
+<Bullet|hlpbullet|PW Gattling Gun Mk 1><p>
+
+<Bullet|hlpbullet|EW Disruptor Blaster Mk 1><p>
+
+<Bullet|hlpbullet|SRM Dumbfire 1><p>
+
+<Bullet|hlpbullet|MRM Seeker Missile 1><p>
+
+<Bullet|hlpbullet|Booster Mk 1><p>
+
+<Bullet|hlpbullet|Small Shield Mk 1><p>
+
+<Bullet|hlpbullet|EWS Probe 1><p>
+
+<Bullet|hlpbullet|Proximity Fuse Mine><p>
+
+<Bullet|hlpbullet|Countermeasures Mk 1><p>
+
+<Bullet|hlpbullet|Nanite Repair System Mk 1><p>
+
+<Bullet|hlpbullet|Ammo Pack><p>
+
+<Bullet|hlpbullet|Booster Fuel><p>
+
+<Bullet|hlpbullet|Ship Enhanced Miner -- $5000><p>
+
+<Bullet|hlpbullet|Ship Enhanced Constructor -- $5000><p><p>
+
+Once you develop the bomber, you not only get the bomber but also some
+additional technology to support it:<p><p>
+
+<Bullet|hlpbullet|Ship Bomber -- $7500><p>
+
+<Bullet|hlpbullet|SRM Anti-Base Missile 1><p>
+
+<Bullet|hlpbullet|Turret AC Mk 1><p>
+
+<Bullet|hlpbullet|LRM Hunter Missile 1><p>
+
+<Bullet|hlpbullet|Upgrade Garrison -- $5000>
+
+<Bullet|hlpbullet|Build Miner -- $4000<p><p>
+
+You cannot have more than four miners working at any given time. They are extremely slow and weak
+and are
+easy pickings if left undefended.><p><p>
+
+ <Bullet|hlpbullet|Build Tower Layer -- $1000<p><p>
+
+A Tower Layer will
+place a Tower Turret wherever you designate. Once the Tower has been
+placed, it will automatically fire on any enemies that come within range.
+Towers have a limited lifespan of XX minutes.><p><p>
+
+<Bullet|hlpbullet|Build
+Mine Layer -- $3000><p><p>
+
+<Bullet|hlpbullet|Build Sentry Layer -- $1500<p><p>
+
+A Sentry Layer will
+place a Sentry Tower in a location designated by you. Thew Sentry Tower
+will locate any enemies within XXXX range. Sentry Towers have a limited
+lifespan as well as being totally undefended. They're great for neutral
+sectors and near alephs.><p><p>
+
+<Font|promptFont>Upgraded Garrison<Font|smallFont><p><p>
+
+<Bullet|hlpbullet|Ship Advanced Scout -- $7500><p>
+
+<Bullet|hlpbullet|Ship Heavy Bomber -- $7500><p>
+
+<Bullet|hlpbullet|Ship Gunship -- $7500><p>
+
+<Bullet|hlpbullet|Dev Nanite Repair 2 -- $7500><p>
+
+<Bullet|hlpbullet|Dev Countermeasure 2 -- $5000>

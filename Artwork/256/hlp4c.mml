@@ -1,0 +1,33 @@
+<Font|promptFont>COMBAT HUD<Font|smallFont><p><p>
+
+The Combat <Secondary|hlpd_HUD|HUD> is the same for all ships. The only
+difference you'll notice is the text color changes. This indicates which team you
+are on in that particular game.<p><p>
+
+<Font|smallBoldFont>To access the Combat HUD<Font|smallFont><p><p>
+
+<Bullet|hlpbullet|Press F2.><p><p>
+
+The sector you are currently in is shown in the upper-left corner of
+your Combat HUD. To see where this sector is in relation to other sectors,
+view the <Main|hlp4k|Map display.><p><p>
+
+At the upper center of the Combat HUD, your chat messages will appear. You will receive not only
+chat messages from your team but also status messages from your automated stations, miners,
+and constructors. For details on chatting, access Gameplay:
+Communications: <Main|hlp6k1|Chat.><p><p>
+
+Over the course of a game, you will receive command objectives from your commander, if your
+game has one. Pending and accepted commands are shown in the upper-left
+corner of your HUD.<p><p>
+
+When a commander gives you an objective, it appears in the message stream, and the Objective
+Pending icon appears in the upper-left corner. Once you accept that command, the Objective
+Accepted icon appears and you'll receive an Auto-Pilot Engaged audio
+cue.<p><p>
+
+For details on commanding, access In-Game Screens:
+<Main|hlp4d|Command View.><p><p>
+
+For details on accepting commands, access Gameplay:
+<Main|hlp6b|Pilot Roles.>

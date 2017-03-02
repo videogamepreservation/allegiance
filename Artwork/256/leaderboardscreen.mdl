@@ -1,0 +1,160 @@
+use "gamepanes";
+use "font";
+use "leaderboardscreendata";
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Leader Board Screen
+//
+/////////////////////////////////////////////////////////////////////////////
+
+//
+// Main buttons
+//
+
+backButtonPane          = SoundButtonPane(ImportImage("btneventsplayzonebmp", true), ButtonNormal, false, negativeButtonClickSoundId);
+squadsButtonPane = ButtonPane(ImportImage("btnzone2squadsbmp", true), ButtonNormal, false);
+playerProfile2ButtonPane = ButtonPane(ImportImage("btnzone2playerprofilebmp", true), ButtonNormal, false);
+// gamesButtonPane = ButtonPane(ImportImage("btnzone2gamesbmp", true), ButtonNormal, false);
+webButtonPane = ButtonPane(ImportImage("btnzone2webbmp", true), ButtonNormal, false);
+
+//
+// player stats pane
+//
+
+// civ filter
+civFilterComboPane = StringComboPane(
+    Point(140, 12), 
+    Point(140, 12), 
+    smallFont, 
+    Color(1, 1, 1)
+    );
+
+CivNames = ["All", "Bios", "Gigacorp", "Iron Coalition", "Belters", "Rixan Unity"];
+CivIDs = [ -1, 35, 18, 25, 101, 201]; // keep in sync with database and with CivNames; -1 means All
+CivBackgrounds = [ "bgallbmp", "bgbiosbmp", "bggigabmp", "bgironbmp", "bgbeltersbmp", "bgrixbmp" ]; 
+
+// the list itself
+statsHeaderColumns = [44, 135, 195, 257, 303, 348, 393, 428, 460, 495, 534, 573, 618, 656];
+statsListHeader = ButtonBarPane(ImportImage("leaderboardheaderbmp", false), Button3State, statsHeaderColumns, false);
+statsColumns    = [44, 135, 195, 257, 303, 348, 393, 428, 460, 495, 534, 573, 618, 656];
+statsListPane   = ListPane(Point(656, 338));
+topListPane     = ListPane(Point(656, 16));
+waterMarkPane   =
+    ImagePane(
+        civImage,
+        [ 
+         (
+            ImagePane(ImportImage("bggridbmp", true), 
+             [ 
+                (topListPane, Point(0, 0)) ,
+                (statsListPane, Point(0, 16)) 
+             ]), 
+            Point(0, 0)
+         )
+        ]
+    );
+
+findMeButtonPane        = ButtonPane(ImportImage("btnfindmebmp", true), ButtonNormal, false);
+topButtonPane           = ButtonPane(ImportImage("btngptotopbmp", true), ButtonNormal, false);
+playerProfileButtonPane = ButtonPane(ImportImage("btnplayerprofilebmp", true), ButtonNormal, false);
+squadProfileButtonPane  = ButtonPane(ImportImage("btnviewsquad3bmp", true), ButtonNormal, false);
+
+// scrolling buttons
+pageUpButtonPane       = ButtonPane(ImportImage("btnacsendbmp", true), ButtonNormal, false);
+pageDownButtonPane     = ButtonPane(ImportImage("btndescendbmp", true), ButtonNormal, false);
+
+
+
+//
+// searching controls
+//
+
+searchEditPane   = EditPane(Point(142, 16), largeFont);
+searchButtonPane = ButtonPane(ImportImage("btnfindplayerbmp", false), ButtonNormal, false);
+
+
+//
+// Titles
+//
+
+yellowText          = Color(0.878, 0.573, 0);
+whiteText           = Color(1, 1, 1);
+titlePane           = StringPane("LEADER BOARD", yellowText,    Point(200, 24), JustifyLeft, titleFont);
+captionPane         = StringPane("LISTS PERSONAL STANDINGS BY FACTION", whiteText, Point(800, 20), JustifyLeft, promptFont);
+
+
+//
+// Rollover tips
+//
+
+hoverSite = HoverSite(0);
+
+hoverString =
+    SwitchString(
+        HoverSiteGetID(hoverSite),
+        emptyString,
+        [
+            ( 1, "Returns to main menu."),
+            ( 2, "See a list of games for the Allegiance Zone."),
+            ( 3, "Access current selected player's Player Profile."),
+            ( 4, "Access the Squad Screen."),
+            ( 5, "Connect to the MSN Gaming Zone Allegiance Page through your browser."),
+            ( 6, "The player's current position."),
+            ( 7, "The player's name."),
+            ( 8, "The player's current rank."),
+            ( 9, "The player's score."),
+            (10, "The player's combat rating."),
+            (11, "The number of games of Allegiance that the player has played."),
+            (12, "The amount of time that the player has played Allegiance (hours:minutes)."),
+            (13, "The number times this player has commanded the winning team in a game."),
+            (14, "The number of wins for the player."),
+            (15, "The number of losses for the player."),
+            (16, "The total number of kills the player has."),
+            (17, "The total number of deaths the player has."),
+            (18, "The total number of base kills the player has."),
+            (19, "The total number of base captures the player has."),
+            (21, "Go to the top of the player list."),
+            (22, "Filter the leaderboard by faction selection."),
+            (23, "Show the previous 10 players."),
+            (24, "Show the next 10 players."),
+            (25, "Find the specified player in the leaderboard."),
+            (26, "Find your status in the leaderboard.")
+        ]
+    );
+
+hoverImage = StringImage(JustifyLeft, 244, smallFont, white, hoverString);
+hoverPane  = AnimatedImagePaneRect(hoverImage, Rect(0, -35, 245, 0));
+
+
+//
+// The background and control positions
+//
+
+screen =
+    ScreenPane(
+        ImportImage("leaderboardbgbmp", false),
+        [
+            (titlePane,                 Point( 15,  15)),
+            (captionPane,               Point( 75,  42)),
+            (HoverPaneColumns(hoverSite, 6, statsListHeader, statsHeaderColumns), Point(41, 83)),
+            (HoverPaneColumns(hoverSite, 6, waterMarkPane,   statsColumns), Point(41, 107)),
+            (HoverPane(hoverSite,  26, findMeButtonPane         ), Point(703, 159)),
+            (HoverPane(hoverSite,  21, topButtonPane            ), Point(703, 181)),
+            (HoverPane(hoverSite,   3, playerProfileButtonPane  ), Point(703, 202)),
+            (HoverPane(hoverSite,   4, squadProfileButtonPane   ), Point(703, 223)),
+            (HoverPane(hoverSite,  22, civFilterComboPane       ), Point(234, 67)),
+            (HoverPane(hoverSite,  23, pageUpButtonPane         ), Point(105, 463)),
+            (HoverPane(hoverSite,  24, pageDownButtonPane       ), Point(105, 488)),
+            (HoverPane(hoverSite,  25, searchEditPane           ), Point(442, 480)),
+            (HoverPane(hoverSite,  25, searchButtonPane         ), Point(584, 474)),
+
+            (HoverPane(hoverSite,  1, backButtonPane        ), Point(24, 523)),
+            (HoverPane(hoverSite,  3, playerProfile2ButtonPane  ), Point(104, 523)),
+            (HoverPane(hoverSite,  4, squadsButtonPane      ), Point(184, 523)),
+            (HoverPane(hoverSite,  5, webButtonPane             ), Point(264, 523)),
+
+            (hoverPane, Point( 555, 550))// place the text
+            
+        ]
+    );

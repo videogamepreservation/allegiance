@@ -1,0 +1,51 @@
+<Font|promptFont>INVENTORY DISPLAY<Font|smallFont><p><p>
+
+Your ship's inventory is configured in the <Main|hlp4b|Loadout screen> before you launch.
+This inventory is then accessible through the Inventory display while in flight.<p><p>
+
+<Font|smallBoldFont>To toggle the Inventory display<Font|smallFont><p><p>
+
+<Bullet|hlpbullet|Press F4.><p><p>
+
+Each item in the Inventory display has a corresponding number. To use an item, press its
+number on the keyboard. If the item is already mounted, it will immediately be available for
+use.<p><p>
+
+Some items, however, are stored in a cargo bay. If you find you are frequently running out of
+ammunition or booster fuel, carry spare ammunition or fuel in your cargo bays and they'll
+automatically reload when you run out.<p><p>
+
+Other items in your cargo bays must be manually mounted. To mount such an item, press its
+corresponding number, wait for a few moments as it loads onto a mount point, and then press its
+corresponding key to actually use it.<p><p>
+
+An example is the tower. You need to select the tower to mount it, and
+then press D to deploy it when you are in the location where you want
+it.<p><p>
+
+The statistics shown in the Inventory display are as follows.<p><p>
+
+<Font|smallBoldFont>Weapons --<Font|smallFont>Range in
+meters/damage per shot x shots per second.<p><p>
+
+<Font|smallBoldFont>Missiles --<Font|smallFont>Number left
+in current magazine/range in meters/damage.<p><p>
+
+<Font|smallBoldFont>Turrets --<Font|smallFont>Range in
+meters/damage per shot x shots per second. Turret gunner's name.<p><p>
+
+<Font|smallBoldFont>Expendables (Probes) --<Font|smallFont>Number remaining.<p><p>
+
+<Font|smallBoldFont>Countermeasures --<Font|smallFont>Number
+remaining.<p><p>
+
+<Font|smallBoldFont>Shields --<Font|smallFont>Shield
+strength/seconds until shields are regenerated.<p><p>
+
+<Font|smallBoldFont>Boosters --<Font|smallFont>Maximum speed
+(in meters per second) with full booster/seconds of fuel remaining.<p><p>
+
+<Font|smallBoldFont>Chaffs and towers --<Font|smallFont>Number left in current magazine.<p><p>
+
+<Font|smallBoldFont>Cloaks --<Font|smallFont>Percentage cloaked/time remaining before energy
+runs out.

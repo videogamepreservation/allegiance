@@ -1,0 +1,224 @@
+<html>
+
+<head>
+<title>Drone Documentation</title>
+<meta name="GENERATOR" content="Microsoft FrontPage 3.0">
+<meta name="Microsoft Border" content="none">
+<meta name="Microsoft Theme" content="safari 000">
+</head>
+
+<body background="file:///C:/Program%20Files/Microsoft%20FrontPage/themes/safari/"
+bgcolor="#000000" text="#CCCCCC" link="#CC9933" vlink="#999966" alink="#FFCC33">
+<!--mstheme--><font face="trebuchet ms, arial, helvetica"><font face="trebuchet ms, arial, helvetica"><!--mstheme--></font>
+
+<h2 align="center"><!--mstheme--><font face="trebuchet ms, arial, helvetica" color="#CCCC00"><big>Drone
+Documentation</big><!--mstheme--></font></h2>
+<!--mstheme--><font face="trebuchet ms, arial, helvetica">
+
+<p>&nbsp;</p>
+<b><u>
+
+<p>All drones</u></p>
+
+<p>STOP</b></p>
+
+<p>Syntax:<font color="#ff0000"> [dronename] stop</font></p>
+
+<p>Description: The drone stops whatever it is doing and returns to the default behavior.
+For turrets, this means firing at enemies. For most drones, they will just sit still.</p>
+
+<p><b>STATUS</b></p>
+
+<p>Syntax:<font color="#ff0000"> [dronename] status</font></p>
+
+<p>Description: The drone will respond via chat describing the action it is currently
+engaged in.</p>
+
+<p><b>&nbsp;</p>
+
+<p><strong>DESIGNATE BASE</strong></p>
+
+<p></b>Syntax: <font color="#ff0000">[dronename] designate base [object]!</font></p>
+
+<p><font color="#c0c0c0">Description: The drone will choose the designated object (base)
+as its point of return for repairs, trade, and amublence service.</font></p>
+
+<blockquote>
+  <blockquote>
+    <blockquote>
+      <blockquote>
+        <p>&nbsp;</p>
+      </blockquote>
+    </blockquote>
+  </blockquote>
+</blockquote>
+
+<p><b><u>&nbsp;</p>
+
+<p>Turret drone</u></p>
+
+<p>GOTO</b></p>
+
+<p>Syntax:<font color="#ff0000"> [dronename] goto [object]!</font></p>
+
+<p><b>&nbsp;</p>
+
+<p>FOLLOW</b></p>
+
+<p>Syntax: <font color="#ff0000">[dronename] follow [object]!</font></p>
+
+<p>Description: The turret drone will find the object, figure out a basic path to the
+object (avoiding obstacles) and try to match it&#146;s speed and velocity. The only
+difference is that the goto command will be considered completed when the drone reaches
+its target, and the follow will stay active.</p>
+
+<p><b>&nbsp;</p>
+
+<p>KILL</b></p>
+
+<p>Syntax: <font color="#ff0000">[dronename] kill [object]!</font></p>
+
+<p>Description: The drone will go and attack an object with its weapon until it is out of
+ammo, its shields are at less than 0%, or its hull integrity is less than 50%.&nbsp; The
+drone will follow the object wherever it goes.</p>
+
+<p><b>&nbsp;</p>
+
+<p>DEFEND</b></p>
+
+<p>Syntax: <font color="#ff0000">[dronename] defend [object]!</font></p>
+
+<p>Description: Defend this object using its primary weapon(s).&nbsp; Never let the object
+get out of its scan range, but pursue attackers to that point.&nbsp; Die defending if
+necessary.</p>
+
+<p>&nbsp;</p>
+
+<p><b><u>&nbsp;</p>
+
+<p>Mining drone</u></p>
+
+<p>GOTO</b></p>
+
+<p>Syntax: <font color="#ff0000">[dronename] goto [object]!</font></p>
+
+<p><b>&nbsp;</p>
+
+<p>FOLLOW</b></p>
+
+<p>Syntax: <font color="#ff0000">[dronename] follow [object]!</font></p>
+
+<p><b>&nbsp;</p>
+
+<p>MINE</b></p>
+
+<p>Syntax: <font color="#ff0000">[dronename] mine [object]!</font></p>
+
+<p>Description: The mining drone will decide whether the target is suitable to mine. If it
+is (a planet or an asteroid), then it will go to it, mine it (for the length specified by
+limit), and then find the closest friendly starbase that it can use to unload.</p>
+
+<p>If the target is a spacestation, then it will try to unload its resources at the
+starbase.</p>
+
+<p>If the target is not any of the above, then it will goto or follow the object as
+appropriate.</p>
+
+<p><b>&nbsp;</p>
+
+<p>KILL</b></p>
+
+<p>Syntax: <font color="#ff0000">[dronename] kill [object]!</font></p>
+
+<p>Description: The drone will go and attack an object with its weapon until it is out of
+ammo, its shields are at less than 0%, or its hull integrity is less than 50%.&nbsp; The
+drone will follow the object wherever it goes.</p>
+<b>
+
+<p>&nbsp;</p>
+
+<p><strong>SCOUT</strong></p>
+
+<p></b>Syntax: <font color="#ff0000">[dronename] scout [object]!</font><b></p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p><u>Wingman Drone</u></p>
+
+<p>GOTO</b></p>
+
+<p>Syntax: <font color="#ff0000">[dronename] goto [object]!</font></p>
+
+<p><font color="#ff0000">&nbsp;</font></p>
+<b>
+
+<p>FOLLOW</b></p>
+
+<p>Syntax: <font color="#ff0000">[dronename] follow [object]!</font></p>
+
+<p><font color="#ff0000">&nbsp;</font></p>
+<b>
+
+<p>DEFEND</b></p>
+
+<p>Syntax: <font color="#ff0000">[dronename] defend [object]!</font></p>
+
+<p>Description: Defend this object using its primary weapon(s).&nbsp; Never let the object
+get out of its scan range, but pursue attackers to that point.&nbsp; Die defending if
+necessary.</p>
+
+<p>&nbsp;</p>
+<b>
+
+<p>KILL</b></p>
+
+<p>Syntax: <font color="#ff0000">[dronename] kill [object]!</font></p>
+
+<p>Description: The drone will go and attack an object with its weapon until it is out of
+ammo, its shields are at less than 0%, or its hull integrity is less than 50%.&nbsp; The
+drone will follow the object wherever it goes.</p>
+
+<p>&nbsp;</p>
+
+<p><strong>PATROL</strong></p>
+
+<p>Syntax: <font color="#ff0000">[dronename] patrol [object]!</font></p>
+
+<p>Description: The drone will go from its current location to a specified arbitrary
+point, or other object, turn around and go back.&nbsp; If an enemy comes into range, then
+the drone will attack, but not go through an Aleph, instead it will return to patrol.</p>
+
+<p>&nbsp;</p>
+
+<p><strong>SCOUT</strong></p>
+
+<p>Syntax: <font color="#ff0000">[dronename] scout [object]!</font></p>
+
+<p><font color="#ff0000">&nbsp;</font></p>
+
+<p><strong>DISABLE</strong></p>
+
+<p>Syntax: [dronename] disable [object]!</p>
+
+<p>Description: Drone will knock the shields down on an object but not destroy it.</font></p>
+
+<p><font face="trebuchet ms, arial, helvetica">&nbsp;</font></p>
+
+<p><font face="trebuchet ms, arial, helvetica">&nbsp;</font></p>
+<font face="trebuchet ms, arial, helvetica"><b>
+
+<p><u>Bounty Hunter Drone</u></p>
+</b>
+
+<p><strong>KILL</strong></p>
+
+<p>Syntax: <font color="#ff0000">[dronename] kill [object]!</font></p>
+</font>
+
+<p>Description:&nbsp; Bounty Hunters will take one kill command and then ignore all other
+commands other than status.</p>
+<!--mstheme--></font>
+</body>
+</html>

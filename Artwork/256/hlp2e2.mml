@@ -1,0 +1,43 @@
+<Font|promptFont>FILTERING THE LIST<Font|smallFont><p><p>
+
+The Filter feature lets you determine what games will be displayed in the
+Games List. As there may be numerous game styles that you do not enjoy, this is an
+effective way to show only the games you want to play.<p><p>
+
+If you know the name of the game you are looking for, the easiest way
+to filter is by game name.<p><p>
+
+<Font|smallBoldFont>To find a specific game in the Games List<Font|smallFont><p><p>
+
+<Bullet|hlpimg1|In the Games List, click <Font|smallBoldFont>Filter.<Font|smallFont>><p><p>
+
+<Bullet|hlpimg2|Enter the game name in the <Font|smallBoldFont>Game Name<Font|smallFont> box,
+and then click <Font|smallBoldFont>OK.<Font|smallFont>><p><p>
+
+<Bullet|hlpblank|All games with that name will be displayed in the Games List.
+If the game with the name you have entered is not found, the Games List will be completely
+blank.><p><p>
+
+You can also filter the Games List by game styles and win conditions.<p><p>
+
+<Font|smallBoldFont>To filter the Games List by game parameters<Font|smallFont><p><p>
+
+<Bullet|hlpimg1|In the Games List, click <Font|smallBoldFont>Filter.<Font|smallFont>><p><p>
+
+<Bullet|hlpimg2|Under <Font|smallBoldFont>Mission Style<Font|smallFont> and
+<Font|smallBoldFont>Win Conditions,<Font|smallFont> click <Font|smallBoldFont>Yes<Font|smallFont>
+for any game parameters that you want to play, click <Font|smallBoldFont>No<Font|smallFont> for
+any that you do not want to play, and click <Font|smallBoldFont>Don't Care<Font|smallFont> for
+any that you aren't particular about, and then click <Font|smallBoldFont>OK.<Font|smallFont>><p><p>
+
+<Bullet|hlpblank|All games with the parameters you selected as
+Yes and Don't Care will be displayed in the Games List.><p><p>
+
+<Font|smallBoldFont>Mission Style --<Font|smallFont>Lets you filter the
+Games List for games based on the technology tree on or off, whether or
+not you are allowed limited lives, whether or not your player stats count, and
+whether or not you only want to play in special Zone games such as
+arenas and events.<p><p>
+
+<Font|smallBoldFont>Win Conditions --<Font|smallFont>Lets you filter the
+Games List for for your favorite, or least favorite, win conditions.

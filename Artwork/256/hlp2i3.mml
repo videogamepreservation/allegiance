@@ -1,0 +1,63 @@
+<Font|promptFont>MAP TYPES<Font|smallFont><p><p>
+
+<Font|smallBoldFont>Single Ring --<Font|smallFont>
+One neutral sector created per team, connected in a ring, so that
+you are always two jumps from your opponents. All starting sectors
+have two alephs, always leading to two neutral sectors.<p><p>
+
+<Font|smallBoldFont>Double Ring --<Font|smallFont>
+One neutral sector created per team, all connected. All sectors
+have four connecting alephs. With this intense map type, enemies
+are only one jump from your base, so things heat up quickly, with
+not much room to grow.<p><p>
+
+<Font|smallBoldFont>Pinwheel --<Font|smallFont>One
+neutral sector acting as a hub with spokes leading to one starting
+sector per team. The simple nature of this map makes it good for
+quick and dirty games.<p><p>
+
+<Font|smallBoldFont>Diamond Ring --<Font|smallFont>
+Two neutral sectors created per team. Starting sectors are always
+three jumps away from each other. This map has neutral sectors that
+see passthrough traffic, so don't expect hidden bases or mining
+operations to go undetected.<p><p>
+
+<Font|smallBoldFont>Snowflake --<Font|smallFont>A
+large-scale map with three neutral sectors created per team. Each
+neutral sector is connected to four others. Starting sectors have
+two connecting alephs and are always three jumps from each other.
+This map's central area is full of neutral sectors that typically
+will not see much passthrough traffic. This allows for a more
+slowly building game, with plenty of available resources.<p><p>
+
+<Font|smallBoldFont>Split Bases --<Font|smallFont>
+Two starting sectors per team at opposite ends of the map. Players
+must struggle to defend both assets from neighboring enemies. This
+makes for an intense game.<p><p>
+
+<Font|smallBoldFont>Brawl --<Font|smallFont>One
+large sector with no connecting neutral sectors. All teams start in
+close proximity.<p><p>
+
+<Font|smallBoldFont>Big Ring --<Font|smallFont>Two
+neutral sectors created per team, connected in a ring, so that you
+are always three jumps from your opponents. All starting sectors
+have two alephs, always leading to two neutral sectors.<p><p>
+
+<Font|smallBoldFont>HiLo --<Font|smallFont>This map
+style generates a long and a short route to your opponents.
+Starting sectors are separated by a four-jump and a two-jump route
+to enemy sectors. A central sector links to the short-route neutral
+sectors. Plenty of neutral sectors allow for expansion.<p><p>
+
+<Font|smallBoldFont>HiHigher --<Font|smallFont>A
+larger version of the HiLo map type. An outer ring with two
+neutral sectors between each starting sector provides an obvious
+attack path, while an inner ring with three neutral sectors
+between each team sector provides a path with much less through
+traffic for expansion or sneak attacks.<p><p>
+
+<Font|smallBoldFont>Star --<Font|smallFont>A large
+map with at least three neutral sectors between home sectors. The
+map becomes progressively more open and harder to defend as you
+approach the center.

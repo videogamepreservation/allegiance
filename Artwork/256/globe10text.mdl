@@ -1,0 +1,2 @@
+use "model";
+object = ImportXFile("globe10", 0);

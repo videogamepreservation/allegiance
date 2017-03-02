@@ -1,0 +1,75 @@
+<Font|promptFont>WIN GAME SCREEN<Font|smallFont><p><p>
+
+Upon completion of the game, the Win Game screen will appear. At the top
+of the screen, you will see either "You are victorious!" or "You have been
+defeated." You will also see the final event that took place that brought
+the game to an end and the name of the winning faction.<p><p>
+
+<Font|promptFont>Player Statistics Area<Font|smallFont><p><p>
+
+The player statistics area shows each player in the game and his individual
+statistics.<p><p>
+
+<Font|smallBoldFont>Place --<Font|smallFont>Shows the player's place in
+comparison to all other players who participated in the game. The
+color of the player's name indicates the team, or faction, that
+player was was a member of in the game.<p><p>
+
+<Font|smallBoldFont>Pilot --<Font|smallFont>Shows the name of the pilot.<p><p>
+
+<Font|smallBoldFont>Rank --<Font|smallFont>Shows the rank of the pilot.<p><p>
+
+<Font|smallBoldFont>Base Kills --<Font|smallFont>Shows the number
+of bases the pilot successfully destroyed.<p><p>
+
+<Font|smallBoldFont>Base Captures --<Font|smallFont>Shows the number of
+bases the pilot successfully captured.<p><p>
+
+<Font|smallBoldFont>Wins --<Font|smallFont>Shows the number of wins the player has so far.<p><p>
+
+<Font|smallBoldFont>Losses --<Font|smallFont>Shows the number of losses the player has so far.<p><p>
+
+<Font|smallBoldFont>Kills --<Font|smallFont>Shows the number of kills the player successfully
+made in this game.<p><p>
+
+<Font|smallBoldFont>Deaths --<Font|smallFont>Shows the number of times the player died during
+this game.<p><p>
+
+<Font|promptFont>Team Statistics Area<Font|smallFont><p><p>
+
+The team statistics area shows each team, or faction, and its team
+statistics.<p><p>
+
+<Font|smallBoldFont>Place --<Font|smallFont>Shows the team's place in comparison to
+all other teams that participated in the game.<p><p>
+
+<Font|smallBoldFont>Team Name --<Font|smallFont>Shows the name of the team.<p><p>
+
+<Font|smallBoldFont>Base Kills --<Font|smallFont>Shows the number of bases the
+team as a whole successfully destroyed.<p><p>
+
+<Font|smallBoldFont>Base Captures --<Font|smallFont>Shows the number of bases the
+team as a whole successfully captured.<p><p>
+
+<Font|smallBoldFont>Flags --<Font|smallFont>Shows the number of flags
+the team as a whole successfully captured and returned to its base.<p><p>
+
+<Font|smallBoldFont>Artifacts --<Font|smallFont>Shows the number of
+artifacts the team as a whole successfully captured and returned to its base.<p><p>
+
+<Font|smallBoldFont>Kills --<Font|smallFont>Shows the number of kills the team as a whole
+successfully made in the game.<p><p>
+
+<Font|smallBoldFont>Deaths --<Font|smallFont>Shows the number of
+times all team players died during the course of the game.<p><p>
+
+<Font|promptFont>Chat<Font|smallFont><p><p>
+
+To chat, begin typing, and then press ENTER or click <Font|smallBoldFont>Send<Font|smallFont>
+to send your message.<p><p>
+
+<Font|promptFont>Restart<Font|smallFont><p><p>
+
+Click <Font|smallBoldFont>Restart<Font|smallFont> to automatically take all players in the game
+back to the Team Lobby. Restart is only displayed for the game owner. Once
+in the Team Lobby, the game owner may adjust the game settings for the next game.

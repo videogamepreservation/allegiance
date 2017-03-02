@@ -1,0 +1,56 @@
+<Font|promptFont>CONFIGURE CONTROLS<Font|smallFont><p><p>
+
+The Configure Controls dialog box allows you to completely customize and
+remap your keyboard and joystick controls.<p><p>
+
+Be aware that the training missions will ignore any controls you reconfigure and use the
+default settings for your keyboard and joystick, not your customized ones, so you may wish
+to learn the game with the default controls first and then switch over to your new control
+settings.<p><p>
+
+<Font|smallBoldFont>To remap a control<Font|smallFont><p><p>
+
+<Bullet|hlpimg1|On the Allegiance main menu, click
+<Font|smallBoldFont>Options.<Font|smallFont>><p><p>
+
+<Bullet|hlpblank|-or-><p><p>
+
+<Bullet|hlpblank|Any time during gameplay, press ESC, G, C.><p><p>
+
+<Bullet|hlpimg2|Double-click the action you want to reconfigure.><p><p>
+
+<Bullet|hlpblank|-or-><p><p>
+
+<Bullet|hlpblank|Click the action you want to reconfigure, and then
+press ENTER.><p><p>
+
+<Bullet|hlpimg3|To assign the action to a keyboard control, press the
+desired key.><p><p>
+
+<Bullet|hlpblank|-or-><p><p>
+
+<Bullet|hlpblank|To assign the action to a joystick control, press the
+desired joystick button or move the joystick in the direction you
+want.><p><p>
+
+<Bullet|hlpblank|If the control you selected is already
+mapped to another action and you
+decide you don't want to change it, press ESC. If you do want to change
+the control anyway, press ENTER, but then be sure you assign the other
+action with a new control.><p><p>
+
+<Bullet|hlpblank|To remove a mapping entirely from an action, press
+DELETE.><p><p>
+
+<Bullet|hlpimg4|To save your change(s), click
+<Font|smallBoldFont>Accept.<Font|smallFont>><p><p>
+
+<Bullet|hlpblank|-or-><p><p>
+
+<Bullet|hlpblank|To cancel your change(s) and keep all the previous
+mappings, click <Font|smallBoldFont>Reject.<Font|smallFont>><p><p>
+
+At any time, you can click <Font|smallBoldFont>Restore Defaults<Font|smallFont>
+to return all control mappings to their original settings.<p><p>
+
+Note that ESC and F1 cannot be reconfigured.

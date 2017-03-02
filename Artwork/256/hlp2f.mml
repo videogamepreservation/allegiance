@@ -1,0 +1,60 @@
+<Font|promptFont>CREATING (OR SETTING) A GAME<Font|smallFont><p><p>
+
+There are numerous parameters you can choose when creating or setting a game. First, you need
+to understand the difference between creating and setting a game.<p><p>
+
+<Bullet|hlpbullet|If you are playing in the Allegiance Zone, you can create a game on an
+Allegiance Zone server. As the game creator, you establish all the settings for the game
+you created.><p><p>
+
+<Bullet|hlpbullet|If you are playing a free game on a server registered with the MSN Gaming
+Zone or a game on a server on your LAN, you can own a game that has
+already been created on that server. These games are owned by the first person to join them. If you are not the owner
+of one of these games and the owner leaves the server, then ownership of the game could be
+automatically transferred to you. As the game owner, you establish all the settings for the
+game you own.><p><p>
+
+<Font|smallBoldFont>To create or set a game<Font|smallFont><p><p>
+
+<Bullet|hlpimg1|If you are playing in the Allegiance Zone, click <Font|smallBoldFont>Create
+Game<Font|smallFont> in the Games List to display the Team Lobby, and then click
+<Font|smallBoldFont>Game Settings.<Font|smallFont>><p><p>
+
+<Bullet|hlpblank|-or-><p><p>
+
+<Bullet|hlpblank|If you are playing a free game on a server registered with the MSN Gaming
+Zone, select a game that no one has joined yet in the Games List, click
+<Font|smallBoldFont>Join Game<Font|smallFont> to display the Team Lobby, and then click
+<Font|smallBoldFont>Game Settings.<Font|smallFont>><p><p>
+
+<Bullet|hlpblank|-or-><p><p>
+
+<Bullet|hlpblank|If you are playing a game on your LAN, select a game in
+the Servers Found box, click <Font|smallBoldFont>Join<Font|smallFont> to
+display the Team Lobby, make sure you are the first person to "join" this game,
+and then click <Font|smallBoldFont>Game Settings.<Font|smallFont>><p><p>
+
+<Bullet|hlpblank|The <Main|hlp2i|Game Settings screen> appears.><p><p>
+
+<Bullet|hlpimg2|In the <Font|smallBoldFont>Mission Name<Font|smallFont>
+box, change the name of the game if you want.><p><p>
+
+<Bullet|hlpimg3|If you want to use the optional password feature, type a password in the
+<Font|smallBoldFont>Password<Font|smallFont> box.><p><p>
+
+<Bullet|hlpblank|Make sure that the players you want to play with have the password as well
+as the name of the game to look for.><p><p>
+
+<Bullet|hlpimg4|Under <Main|hlp2i1|Win Conditions,> select the win
+condition or combination of conditions you want for your game.><p><p>
+
+<Bullet|hlpblank|Selecting your win conditions gives you great control over the style of
+gameplay you want. You can mix and match win conditions for a variety of customization --
+for example, set a number under Artifacts combined with a number of kills under Deathmatch,
+and even add a time limit under Countdown.><p><p>
+
+<Bullet|hlpimg5|Under <Main|hlp2i2|Game Options,> select numerous
+specifics to further refine the game style you want.><p><p>
+
+<Bullet|hlpimg6|To accept all of your game settings changes and return to
+the Team Lobby, click <Font|smallBoldFont>Accept Changes.<Font|smallFont>>

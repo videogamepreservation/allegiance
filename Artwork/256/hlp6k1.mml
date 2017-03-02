@@ -1,0 +1,30 @@
+<Font|promptFont>CHAT<Font|smallFont><p><p>
+
+At the upper center of the Combat HUD and Command view as well as in any station, your chat
+messages appear in the message stream. You will receive not only chat messages from your team
+but also status messages from your automated stations, miners, and constructors.<p><p>
+
+You can scroll through the chat messages in the message stream by pressing
+the PAGE UP and PAGE DOWN keys.<p><p>
+
+<Font|smallBoldFont>To chat<Font|smallFont><p><p>
+
+<Bullet|hlpimg1|To activate the chat box, press ENTER.><p><p>
+
+<Bullet|hlpblank|The last recipient you chatted to will be shown in the recipient box to the
+left of the chat box.><p><p>
+
+<Bullet|hlpimg2|To change the current chat recipient to a
+specific <Secondary|hlpd_channels|communications channel,>
+press TAB to cycle through the channels.><p><p>
+
+<Bullet|hlpblank|-or-><p><p>
+
+<Bullet|hlpblank|To change the current chat recipient to a specific person, type the first few
+letters of the recipient's name in the chat box, and then press TAB to
+find the recipient.><p><p>
+
+<Bullet|hlpimg3|Type your message, and then press ENTER to send it.><p><p>
+
+<Bullet|hlpblank|The message will appear in the message stream with your name as the message
+sender.>

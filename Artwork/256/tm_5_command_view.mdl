@@ -1,0 +1,190 @@
+use "SlideshowData";
+use "sounddef";
+use "font";
+use "gamepanes";
+
+
+//----------------------------------------------------------
+// some more common images
+//----------------------------------------------------------
+hangar_background = ImportImage ("hangarbmp", false);
+circle_overlay = ImportImage ("tm_slide_circle_overlaybmp", true);
+
+slide_5_01 = ImportImage ("tm_slide_5_01bmp", false);
+slide_5_02 = ImportImage ("tm_slide_5_02bmp", false);
+slide_5_03 = ImportImage ("tm_slide_5_03bmp", false);
+slide_5_04 = ImportImage ("tm_slide_5_04bmp", false);
+slide_5_06 = ImportImage ("tm_slide_5_06bmp", false);
+slide_5_07 = ImportImage ("tm_slide_5_07bmp", false);
+slide_5_08 = ImportImage ("tm_slide_5_08bmp", false);
+slide_5_10 = ImportImage ("tm_slide_5_10bmp", false);
+slide_5_12 = ImportImage ("tm_slide_5_12bmp", false);
+slide_5_13 = ImportImage ("tm_slide_5_13bmp", false);
+slide_5_14 = ImportImage ("tm_slide_5_14bmp", false);
+slide_5_15 = ImportImage ("tm_slide_5_15bmp", false);
+slide_5_16 = ImportImage ("tm_slide_5_16bmp", false);
+slide_5_18 = ImportImage ("tm_slide_5_18bmp", false);
+slide_5_19 = ImportImage ("tm_slide_5_19bmp", false);
+slide_5_20 = ImportImage ("tm_slide_5_20bmp", false);
+slide_5_23 = ImportImage ("tm_slide_5_23bmp", false);
+slide_5_24 = ImportImage ("tm_slide_5_24bmp", false);
+slide_5_25 = ImportImage ("tm_slide_5_25bmp", false);
+
+//----------------------------------------------------------
+// all the slides in a list
+//----------------------------------------------------------
+slides =
+[
+	// tm_slide_5_01
+	// Clicking here, or pressing the F3 key, in the hangar takes 
+	// you to Command view.
+    (GroupImage ([TranslateImage (circle_overlay, Point (84, 188)), hangar_background]), tm_slide_5_01SoundId),
+
+	// tm_slide_5_02
+	// This is the sector overview. From here, you can see 
+	// everything that?s happening in this sector. If you are 
+	// piloting a ship, your view is limited to the sector that 
+	// your ship is in. In Command view, you can view all sectors.
+    (slide_5_01, tm_slide_5_02SoundId),
+
+	// tm_slide_5_03
+	// Use the mini Map display to choose which sector you want to 
+	// look at-- click the sector you want to view.
+    (GroupImage ([TranslateImage (circle_overlay, Point (47, 42)), slide_5_01]), tm_slide_5_03SoundId),
+
+	// tm_slide_5_04
+	// Notice that there?s Helium3 in this sector. You?ll want to 
+	// mine that ? but first you?ll have to buy a miner.
+    (GroupImage ([TranslateImage (circle_overlay, Point (115, 350)), slide_5_01]), tm_slide_5_04SoundId),
+
+	// tm_slide_5_05
+	// Click here, or press the F5 key, to bring up the 
+	// Investments display.
+    (GroupImage ([TranslateImage (circle_overlay, Point (542, 357)), hangar_background]), tm_slide_5_05SoundId),
+
+	// tm_slide_5_06
+	// This is the Investments display. This is where you buy new 
+	// technology, new ships, and constructors for expanding your 
+	// dominance. Consult the Help display or the Survival Card 
+	// for an overview of the technology tree.
+    (slide_5_02, tm_slide_5_06SoundId),
+
+	// tm_slide_5_07
+	// Here we?ve scrolled the list of items you can buy so that 
+	// the miner is visible. In this scenario, miners cost 4000 
+	// credits. We have enough, so we?ll go for it.
+    (slide_5_03, tm_slide_5_07SoundId),
+
+	// tm_slide_5_08
+	// Click the Buy button to buy the miner ?
+    (GroupImage ([TranslateImage (circle_overlay, Point (247, 78)), slide_5_04]), tm_slide_5_08SoundId),
+
+	// tm_slide_5_09
+	// ? and wait until it?s created.
+    (slide_5_06, tm_slide_5_09SoundId),
+
+	// tm_slide_5_10
+	// Miner reporting for duty.
+    (slide_5_07, droneReport4DutySoundId),
+
+	// tm_slide_5_11
+	// The miner will automatically go mine Helium3 if there are 
+	// Helium3 asteroids in secure sectors, but it may not pick 
+	// the best place to go. We?ll talk about how you can help the 
+	// miner perform better in a little bit. For now, let?s go 
+	// over buildings.
+    (slide_5_08, tm_slide_5_11SoundId),
+
+	// tm_slide_5_12
+	// After you mine for a while, you?ll accumulate some cash. 
+	// Building stations can also make cash available, but it?s 
+	// much faster to mine helium.
+    (GroupImage ([TranslateImage (circle_overlay, Point (247, 78)), slide_5_10]), tm_slide_5_12SoundId),
+
+	// tm_slide_5_13
+	// We?ll use that money to buy a new station that we can get 
+	// more technology from. Choose the station you would like to 
+	// construct and click the Invest button.
+    (slide_5_10, tm_slide_5_13SoundId),
+
+	// tm_slide_5_14
+	// After a few moments of preparation, the constructor will 
+	// launch from your main starbase.
+    (slide_5_12, tm_slide_5_14SoundId),
+
+	// tm_slide_5_15
+	// Now you have to tell the constructor where to build the new 
+	// station. Some stations require special asteroids to provide 
+	// the raw materials they need. Others can build on generic 
+	// asteroids. This Expansion Complex constructor requires a 
+	// uranium rock, a ?red rock? to build on. Refer to your 
+	// Survival Card for the special rocks needed by other 
+	// constructors.
+    (slide_5_13, tm_slide_5_15SoundId),
+
+	// tm_slide_5_16
+	// You click the constructor to highlight it. Notice that some 
+	// of the sectors in the Map display have a red circle around 
+	// them. These are sectors that have the special rock you need.
+    (slide_5_14, tm_slide_5_16SoundId),
+
+	// tm_slide_5_17
+	// With the constructor highlighted, you can right-click one 
+	// of the sectors with the mouse to order the constructor to 
+	// go there.
+    (slide_5_15, tm_slide_5_17SoundId),
+
+	// tm_slide_5_18
+	// Wait while the constructor navigates the fastest route. 
+	// Remember this is valuable and fragile cargo, so don?t send 
+	// it undefended.
+    (slide_5_16, tm_slide_5_18SoundId),
+
+	// tm_slide_5_19
+	// Now you?ll want to decide exactly where to build the 
+	// Expansion Complex.
+    (slide_5_18, tm_slide_5_19SoundId),
+
+	// tm_slide_5_20
+	// This is the Command bar. Ordering craft around is 
+	// accomplished by selecting them by left-clicking them, 
+	// left-clicking the command you want to give them, and then 
+	// right-clicking in space where you want them to go.
+    (GroupImage ([TranslateImage (circle_overlay, Point (654, 29)), slide_5_19]), tm_slide_5_20SoundId),
+
+	// tm_slide_5_21
+	// Here we want the constructor to build on the uranium rock, 
+	// so we left-click the constructor.
+    (GroupImage ([TranslateImage (circle_overlay, Point (243, 190)), slide_5_20]), tm_slide_5_21SoundId),
+
+	// tm_slide_5_22
+	// We left-click on the Build command.
+    (GroupImage ([TranslateImage (circle_overlay, Point (643, 23)), slide_5_20]), tm_slide_5_22SoundId),
+
+	// tm_slide_5_23
+	// Then we right-click the uranium asteroid. The constructor 
+	// proceeds to the rock and commences building.
+    (slide_5_23, tm_slide_5_23SoundId),
+
+	// tm_slide_5_24
+	// In many cases, ships will have default orders for different 
+	// kinds of targets. You can issue the smart order by 
+	// left-clicking the ship and then right-clicking where you 
+	// want it to go. This is faster than using the command bar, 
+	// but it may not always do exactly what you want.
+    (slide_5_24, tm_slide_5_24SoundId),
+
+	// tm_slide_5_25
+	// Notice that the Expansion Complex button in the Investments 
+	// display is now available, allowing you to buy the 
+	// technology there.
+    (slide_5_25, tm_slide_5_25SoundId),
+
+	// tm_slide_5_26
+	// Okay, I know that was a lot, and we still have more to 
+	// cover, but we?ll do the rest of this in an interactive 
+	// simulation. 
+    (hangar_background, tm_slide_5_26SoundId)
+];
+
+//----------------------------------------------------------

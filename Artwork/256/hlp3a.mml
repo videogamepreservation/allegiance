@@ -1,0 +1,80 @@
+<Font|promptFont>LEADER BOARD<Font|smallFont><p><p>
+
+The Leader Board lists the rankings of all Allegiance Zone players. If you came directly to the
+Leader Board from the Allegiance Zone screen or from the Player or Squad Profiles screen without
+any player or squad selected, the list will show your own player's name highlighted in the
+middle.<p><p>
+
+To filter the list based on a specific faction, select the faction in the
+<Font|smallBoldFont>Player Leaderboard For<Font|smallFont> box.<p><p>
+
+The default order of the Leader Board list is based on <Font|smallBoldFont>Score.<Font|smallFont>
+To reorder the list, click the heading in which you want the list to be ordered. A red arrow
+to the right of a heading indicates that category as the order the list is currently sorted
+in.<p><p>
+
+To move up or down the list quickly, click the <Font|smallBoldFont>Ascend<Font|smallFont>
+or <Font|smallBoldFont>Descend<Font|smallFont> button.<p><p>
+
+<Font|promptFont>Leader Board Statistics<Font|smallFont><p><p>
+
+<Font|smallBoldFont># --<Font|smallFont>Shows the player's position in the
+list of players based on the current sort order of the list.<p><p>
+
+<Font|smallBoldFont>Player Name --<Font|smallFont>Shows the player's Zone ID name.<p><p>
+
+<Font|smallBoldFont>Rank --<Font|smallFont>Shows the player's current rank title, based on
+his current score.<p><p>
+
+<Font|smallBoldFont>Score --<Font|smallFont>Shows the player's overall
+score, based primarily on the number of games the player has won but
+also on other factors such as number of kills made and games played.<p><p>
+
+<Font|smallBoldFont>Comb't Rating --<Font|smallFont>Shows the player's
+combat rating. A player's
+combat rating is based on the player's number of kills and then modified by the combat ratings of
+the opponents that were defeated in combat. If a player you kill has a higher combat rating
+than you, you'll get a higher jump in your combat rating as opposed to successfully destroying
+a player who has a combat rating of the same level as or lower than you. Also, to get credit for
+the kill, you need to do the most damage, not just get the final shot, to the enemy player.<p><p>
+
+<Font|smallBoldFont>Games Plyd. --<Font|smallFont>Shows the total number
+of games played by the player.<p><p>
+
+<Font|smallBoldFont>Time Plyd. --<Font|smallFont>Shows the amount
+of total time the player has played Allegiance on the Allegiance
+Zone, in hours:minutes.<p><p>
+
+<Font|smallBoldFont>W --<Font|smallFont>Shows how many games the player has won.<p><p>
+
+<Font|smallBoldFont>L --<Font|smallFont>Shows how many games the player has lost.<p><p>
+
+<Font|smallBoldFont>K --<Font|smallFont>Shows how many kills the player has successfully made.<p><p>
+
+<Font|smallBoldFont>D --<Font|smallFont>Shows how many times the player has died.<p><p>
+
+<Font|smallBoldFont>Base Kills --<Font|smallFont>Shows how many bases the player has destroyed.<p><p>
+
+<Font|smallBoldFont>Base Capt. --<Font|smallFont>Shows how many bases the player has captured.<p><p>
+
+<Font|promptFont>Finding Specific Players<Font|smallFont><p><p>
+
+<Font|smallBoldFont>To search for a player on the Leader Board<Font|smallFont><p><p>
+
+<Bullet|hlpbullet|In the <Font|smallBoldFont>Find Player<Font|smallFont> box, type the name of
+the player you are looking for, and then click the arrow or press ENTER.><p><p>
+
+<Bullet|hlpblank|If the list is sorted by Player Name, you can use
+a partial match to find the player you're looking for. If the list
+is sorted by any other category, you must type the complete name
+of the player you are looking for.><p><p>
+
+
+<Bullet|hlpblank|If the player is found in the Leader Board, the player name will be highlighted.
+If the player is not found, a message will indicate this.><p><p>
+
+<Font|smallBoldFont>To see a particular player profile<Font|smallFont><p><p>
+
+<Bullet|hlpbullet|On the Leader Board, click the player whose profile you want to see, and
+then click <Font|smallBoldFont>Player Profile.<Font|smallFont>>
+

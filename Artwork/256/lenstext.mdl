@@ -1,0 +1,4 @@
+use "model";
+lens30 = ImportXFile("lens30", 0);
+lens60 = ImportXFile("lens60", 0);
+lens90 = ImportXFile("lens90", 0);

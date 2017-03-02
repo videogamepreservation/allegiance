@@ -1,0 +1,11 @@
+use "model";
+object =
+    MaterialGeo(
+        ImportXFile("cube", 0),
+        Material(
+            Color(1, 0, 0),
+            Color(0, 0, 0),
+            Color(0, 0, 0),
+            0
+        )
+    );

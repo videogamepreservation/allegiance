@@ -1,0 +1,16 @@
+use "loadout";
+
+slots =
+    [
+        (SlotTypeWeapon,      0, defaultPrefix, weaponImage,         Point( 15,  14)),
+        (SlotTypeWeapon,      1, defaultPrefix, weaponImage,         Point(142,  14)),
+        (SlotTypeMagazine,    0, defaultPrefix, magazineImage,       Point(266,  14)),
+        (SlotTypeAfterburner, 0, cargoPrefix,   afterBurnerImage,    Point( 15,  56)),
+        (SlotTypeShield,      0, cargoPrefix,   shieldImage,         Point( 15,  98)),
+        (SlotTypeChaff,       0, cargoPrefix,   chaffImage,          Point( 15, 140)),
+        (SlotTypeCargo,       0, cargoPrefix,   cargoImage,          Point( 18, 236)),
+        (SlotTypeCargo,       1, cargoPrefix,   cargoImage,          Point( 78, 236)),
+        (SlotTypeCargo,       2, cargoPrefix,   cargoImage,          Point(137, 236)),
+        (SlotTypeCargo,       3, cargoPrefix,   cargoImage,          Point(196, 236)),
+        (SlotTypeCargo,       4, cargoPrefix,   cargoImage,          Point(254, 236))
+    ];

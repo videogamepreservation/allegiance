@@ -1,0 +1,24 @@
+<Font|promptFont>TARGET HUD<Font|smallFont><p><p>
+
+The target HUD is displayed directly under your central HUD when an object is targeted, no
+matter whether the object is friend or foe. This HUD shows information related to the
+target's status.<p><p>
+
+<Font|smallBoldFont>Shield --<Font|smallFont>Shows the current status of
+your target's shields.<p><p>
+
+<Font|smallBoldFont>Armor --<Font|smallFont>Shows how much damage the
+target has sustained. When armor is reduced to nothing, the target will be
+destroyed.<p><p>
+
+<Font|smallBoldFont>Speed --<Font|smallFont>Shows the speed of the
+targeted object. If you want to keep up with your target and stay right
+behind him, press the M key to match your target's speed.<p><p>
+
+<Font|smallBoldFont>Range --<Font|smallFont>Shows the range from you to
+the targeted object in meters.<p><p>
+
+<Font|smallBoldFont>Guns in Range --<Font|smallFont>Shows that the
+targeted object is within range of your guns. It will appear in the
+upper-left corner of the target HUD and is especially useful for
+turret gunners cycling through enemy ship targets.

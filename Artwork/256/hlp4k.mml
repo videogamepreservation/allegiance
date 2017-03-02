@@ -1,0 +1,94 @@
+<Font|promptFont>MAP DISPLAY<Font|smallFont><p><p>
+
+The Map display shows all sectors that your team has discovered so far.
+A line between two sectors means that an aleph connects them.
+Note that if the game owner selected Reveal Map in the Game Settings
+screen, all alephs will be revealed at the start of the game.<p><p>
+
+<Font|smallBoldFont>To toggle the mini or expanded Map
+display<Font|smallFont><p><p>
+
+<Bullet|hlpbullet|Press F7 or SHIFT+F7.><p><p>
+
+<Bullet|hlpblank|The expand/collapse arrow in the upper-right corner of
+the Map display toggles the size of your Map display between expanded and
+mini. The expanded Map display includes information on asteroids and mining operations.><p><p>
+
+<Font|smallBoldFont>The Sectors --<Font|smallFont>In the actual map of the
+Map display, color-coding and various border
+styles around the sectors indicate the current status of each sector.<p><p>
+
+<Bullet|hlpblank|<Font|smallBoldFont>Sector in a Team
+Color:<Font|smallFont>
+Indicates the team that has control of that sector.><p><p>
+
+<Bullet|hlpblank|<Font|smallBoldFont>Sector in Black:<Font|smallFont> Indicates that no team
+has control of that sector.><p><p>
+
+<Bullet|hlpblank|<Font|smallBoldFont>Gray Border:<Font|smallFont> Indicates the sector
+you are currently in.><p><p>
+
+<Bullet|hlpblank|<Font|smallBoldFont>Green Border:<Font|smallFont> Indicates
+that sector is the location of your command objective.><p><p>
+
+<Bullet|hlpblank|<Font|smallBoldFont>Red Nonflashing Border:<Font|smallFont> Indicates a
+sector that you can teleport to. When you access the Teleport display (F8) in the hangar,
+all sectors you can teleport to will appear with this border in the Map display. When you are
+in-flight and press and hold the R key, the sectors you can teleport to
+will appear with this border in the Map display; the sector you will
+teleport to will have a heavier red border. To change the sector
+you will teleport to, click the sector you want to teleport to
+while holding the R key; your teleport countdown will be reset.><p><p>
+
+<Bullet|hlpblank|Red nonflashing borders will also appear around
+sectors in the map that contain an asteroid that a selected constructor
+can build on. Likewise, as you roll your cursor over a building
+in the Investments display, sectors where it can currently be
+built will also appear with a red nonflashing border (the
+exception to this is any building that requires a generic
+asteroid).><p><p>
+
+<Bullet|hlpblank|<Font|smallBoldFont>Red Flashing Border:<Font|smallFont>
+Indicates that a conflict is currently underway in that sector.><p><p>
+
+<Bullet|hlpblank|<Font|smallBoldFont>Red Flashing Star Border:<Font|smallFont> Indicates
+that an enemy bomber is in that sector. This star border will alternately flash with a
+plain red border if the sector also has friendly fighters.><p><p>
+
+<Bullet|hlpblank|<Font|smallBoldFont>Yellow Flashing Star Border:<Font|smallFont> Indicates that
+one of your miners or constructors is at risk in that sector. This
+star border will alternately flash with a plain red border if the
+sector also has friendly fighters.><p><p>
+
+<Bullet|hlpblank|<Font|smallBoldFont>Red/Yellow Flashing Star Border:<Font|smallFont> Indicates
+that one of your stations is at risk in that sector.><p><p>
+
+<Font|smallBoldFont>Sector Name --<Font|smallFont>Pausing your mouse cursor over any sector
+in the Map display will display that sector's name at the top of the Map display. If you click
+a sector in the Map display while in the hangar, that sector will then become the sector shown
+in your Command view. If, as commander, you need to provide a command to a player and the
+command objective is in another sector, select the player, then the command in the Command bar,
+then the objective sector in the Map display, and finally the objective in
+the main Command view display.<p><p>
+
+<Font|smallBoldFont>Sector Icons --<Font|smallFont>The row of icons below
+the sector name indicates the types of craft and objects currently in that
+sector. For a list of these peripheral radar icons, see the Survival Card
+that game with your game.<p><p>
+
+<Font|smallBoldFont>Station Icons --<Font|smallFont>Beside each sector is an icon for each
+station you have located in that sector. This is limited to a maximum of 10 icons, even though
+you can have more than 10 stations in a given sector.<p><p>
+
+<Font|smallBoldFont>Player Icons --<Font|smallFont>A small dot near a sector represents a
+player in that sector. The color of the dot indicates the team the player belongs to.<p><p>
+
+<Font|smallBoldFont>Total Helium3 Amount --<Font|smallFont>(Expanded map) Shows the total
+amount of Helium3 that your team has mined within the selected sector.<p><p>
+
+<Font|smallBoldFont>Asteroids --<Font|smallFont>(Expanded map) Shows the number of each type
+of asteroid your team has located within the selected sector.<p><p>
+
+When the actual map becomes larger than the Map display can show, you can scroll the map. When you
+move your cursor off of a sector at the edge of the map, the cursor will turn into a hand, allowing
+you to "grab" the map by selecting the hand on the map and dragging it in the direction you want.

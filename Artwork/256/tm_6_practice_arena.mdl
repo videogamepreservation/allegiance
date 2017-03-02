@@ -1,0 +1,37 @@
+use "SlideshowData";
+use "sounddef";
+use "font";
+use "gamepanes";
+
+		// tm_slide_6_01
+		// Combat Practice Simulation. Try to kill at least one wave 
+		// of enemies to consider yourself ready for real combat.
+
+//----------------------------------------------------------
+// data for the text slide images
+//----------------------------------------------------------
+slide_background = ImportImage("tm_slide_backgroundbmp", false);
+
+slide_text_position = Point(150, 450);
+
+//----------------------------------------------------------
+// text slide 1
+//----------------------------------------------------------
+slide_text_1 = "Combat Practice Simulation.\n\nTry to kill at least one wave of enemies to consider yourself ready for real combat";
+slide_text_1_image = StringImage(JustifyLeft, 500, largeFont, white, slide_text_1);
+slide_1_image = GroupImage
+([
+    TranslateImage(slide_text_1_image, slide_text_position),
+    slide_background
+]);
+
+//----------------------------------------------------------
+// all the slides in a list
+//----------------------------------------------------------
+slides =
+[
+    // intro slides
+    (slide_1_image, tm_slide_6_01SoundId)
+];
+
+//----------------------------------------------------------

@@ -1,0 +1,33 @@
+<Font|promptFont>GAME STATE DISPLAY<Font|smallFont><p><p>
+
+The Game State display gives you the current state of the game in regard
+to the game's win condition settings.<p><p>
+
+<Font|smallBoldFont>To toggle the Game State display<Font|smallFont><p><p>
+
+<Bullet|hlpbullet|Press G.><p><p>
+
+For every win condition that was set in the game, there is a corresponding
+box in the Game State display.<p><p>
+
+<Font|smallBoldFont>Deathmatch --<Font|smallFont>States what you and your
+team need to accomplish to succeed at this win condition. Each team name and
+their current total kills, ejects, and deaths, as well as your own personal
+kill tally, are listed.<p><p>
+
+<Font|smallBoldFont>Conquest --<Font|smallFont>States what you and your
+team need to accomplish to succeed at this win condition. Each team name
+and their current percentage of station ownership are listed.<p><p>
+
+<Font|smallBoldFont>Prosperity --<Font|smallFont>States what you and
+your team need to invest in to succeed at this win condition.
+Each team name and their current percentage of investment toward
+the mandatory Reinforcement tech item are listed.<p><p>
+
+<Font|smallBoldFont>Artifacts --<Font|smallFont>States how many artifacts
+you and your team need to succeed at this win condition. Each team name
+and how many artifacts they currently own are listed.<p><p>
+
+<Font|smallBoldFont>Capture the Flag --<Font|smallFont>States how many
+flags you and your team need to succeed at this win condition. Each team
+name and how many flags they currently have captured are listed.

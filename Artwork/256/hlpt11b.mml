@@ -1,0 +1,33 @@
+<Font|promptFont>ITEMS<Font|smallFont><p><p>
+
+All items are developed through your Investments display. As you
+build new structures or upgrade structures, new items will become
+available and will be found under their appropriate structure tab in the
+Investments display.<p><p>
+
+In the Investments display, you'll see the following
+references before the name of the items:<p><p>
+
+<Bullet|hlpbullet|<Font|smallBoldFont>Build -- <Font|smallFont>This is a new structure.
+Creating a build item will launch a constructor that will then either attempt to build the
+structure on an available asteroid or wait for the commander to specify
+a building location.><p><p>
+
+<Bullet|hlpbullet|<Font|smallBoldFont>Upgrade -- <Font|smallFont>This will upgrade a current
+structure and give access to additional tech tree items through that structure's tech tree.><p><p>
+
+<Bullet|hlpbullet|<Font|smallBoldFont>Ship -- <Font|smallFont>This is a new ship class. Once
+it is researched, it will be available in the Loadout. Remember that capital ships can only
+be launched from Shipyards.><p><p>
+
+<Bullet|hlpbullet|<Font|smallBoldFont>Dev -- <Font|smallFont>Dev means develop. Development
+items are usually newer versions of items you already have access to. Once
+a newer item is upgraded, the original version is no longer available.><p><p>
+
+<Bullet|hlpbullet|<Font|smallBoldFont>EW/PW -- <Font|smallFont>EW stands for energy weapon
+and PW stands for particle weapon.><p><p>
+
+<Bullet|hlpbullet|<Font|smallBoldFont>SRM/MRM/LRM -- <Font|smallFont>S stands for short, M
+stands for medium,
+and L stands for long. R stands for ranged and M stands for
+missile.>

@@ -1,0 +1,168 @@
+use "effect";
+use "font";
+
+yellow = Color(0.878, 0.573, 0);
+researchColor = Color(1, 1, 1);
+zoneColor = Color(0.6, 0.6, 0.6);
+
+topMarginImage = StringImage(JustifyCenter, 450, hugeBoldFont, yellow, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
+
+researchImage = StringImage(JustifyCenter, 230, lgBoldVerdana, researchColor, "MICROSOFT ALLEGIANCE");
+basedImage    = StringImage(JustifyCenter, 230, medVerdana, researchColor, "Based on an original concept by Rick Rashid");
+lineImage	  = StringImage(JustifyCenter, 230, medVerdana, researchColor, "-------------------------------------------");
+
+researchCreditsImage =
+	GroupImage([
+		StringImage(JustifyCenter, 230, medBoldVerdana, researchColor, "Executive Producer"),
+		TranslateImage(StringImage(JustifyCenter, 230, medVerdana, researchColor, "Joel \"solap\" Dehlin"), Point(0, -15)),
+
+		TranslateImage(StringImage(JustifyCenter, 230, medBoldVerdana, researchColor, "Lead Game Designer & Art Director"), Point(0, -50)),
+		TranslateImage(StringImage(JustifyCenter, 230, medVerdana, researchColor, "Robert \"ribski\" Girling"), Point(0, -65)),
+		
+		TranslateImage(StringImage(JustifyLeft, 125, medBoldVerdana, researchColor, "Lead Developer"), Point(0, -95)),
+		TranslateImage(StringImage(JustifyLeft, 125, medVerdana, researchColor, "Curt \"dontmess\" Carpenter"), Point(0, -110)),
+
+		TranslateImage(StringImage(JustifyLeft, 125, medBoldVerdana, researchColor, "Test Manager"), Point(0, -140)),
+		TranslateImage(StringImage(JustifyLeft, 125, medVerdana, researchColor, "Mark \"bugman\" Snyder"), Point(0, -155)),
+
+		TranslateImage(StringImage(JustifyLeft, 125, medBoldVerdana, researchColor, "Designers"), Point(0, -185)),
+		TranslateImage(StringImage(JustifyLeft, 125, medVerdana, researchColor, "Robert \"ribski\" Girling \nDavid \"Tkela\" Pugh \nJoel \"solap\" Dehlin"), Point(0, -200)),
+		
+		TranslateImage(StringImage(JustifyLeft, 125, medBoldVerdana, researchColor, "3D Art Lead"), Point(0, -254)),
+		TranslateImage(StringImage(JustifyLeft, 125, medVerdana, researchColor, "Peter \"repete\" Arisman"), Point(0, -269)),
+
+		TranslateImage(StringImage(JustifyLeft, 125, medBoldVerdana, researchColor, "Artists"), Point(0, -295)),
+		TranslateImage(StringImage(JustifyLeft, 125, medVerdana, researchColor, "Rick \"GothicGrey\" Winter \nGordon Nealy \nJim Deal \nKaren Yamigawa \nDavid Choi \nJason Waskey \nIrvin Gee"), Point(0, -314)),
+		
+		TranslateImage(StringImage(JustifyLeft, 125, medBoldVerdana, researchColor, "Additional Developers"), Point(0,-416)),
+		TranslateImage(StringImage(JustifyLeft, 130, medVerdana, researchColor, "Bretton \"toast\" Wade \nMark \"Conan\" Currie \nJohn \"Taz\" Tasler\n Lee Dicks \"LilDixieCup\" Clark \nRuss Tendrake \nRick \"DocMach\" Rashid"), Point(0,-448)),
+
+		TranslateImage(StringImage(JustifyLeft, 125, medBoldVerdana, researchColor, "Training Mission Designers"), Point(0, -545)),
+		TranslateImage(StringImage(JustifyLeft, 125, medVerdana, researchColor, "Bretton \"toast\" Wade \nJoel \"solap\" Dehlin"), Point(0, -575)),
+		
+		TranslateImage(StringImage(JustifyLeft, 115, medBoldVerdana, researchColor, "Story Development"), Point(0, -620)),
+		TranslateImage(StringImage(JustifyLeft, 125, medVerdana, researchColor, "Eric Trautman \nTim O'Brien \nJames Maliszewski \nJohn Howard"), Point(0, -650)),
+
+		TranslateImage(StringImage(JustifyLeft, 125, medBoldVerdana, researchColor, "Developers"), Point(125, -95)),
+		TranslateImage(StringImage(JustifyLeft, 130, medVerdana, researchColor, "David \"Tkela\" Pugh \nMike \"Lordzilla\" Kerekes \nKendrick \"tesegar\" Shaw"), Point(125, -110)),
+
+		TranslateImage(StringImage(JustifyLeft, 125, medBoldVerdana, researchColor, "Testers"), Point(125, -158)),
+		TranslateImage(StringImage(JustifyLeft, 130, medVerdana, researchColor, "Mark \"DarthGrimm\" Grimm \nSlava \"luhb\" Mikhailiouk\nJohn \"Taz\" Tasler \nFarris Rashid \nMatt \"Grendel\" Lee"), Point(125, -173)),
+
+		TranslateImage(StringImage(JustifyLeft, 125, medBoldVerdana, researchColor, "UI Graphics Designer"), Point(125, -258)),
+		TranslateImage(StringImage(JustifyLeft, 125, medVerdana, researchColor, "Jonah Hudgins"), Point(125, -288)),
+
+		TranslateImage(StringImage(JustifyLeft, 125, medBoldVerdana, researchColor, "Unit Design"), Point(125, -311)),
+		TranslateImage(StringImage(JustifyLeft, 125, medVerdana, researchColor, "Eddie Smith \nTodd Downing \nRobert \"ribski\" Girling \nPeter \"repete\" Arisman"), Point(125, -326)),
+
+		TranslateImage(StringImage(JustifyLeft, 125, medBoldVerdana, researchColor, "Music"), Point(125, -390)),
+		TranslateImage(StringImage(JustifyLeft, 125, medVerdana, researchColor, "Gus Apostol \nJosh Helm"), Point(125, -407)),
+
+		TranslateImage(StringImage(JustifyLeft, 125, medBoldVerdana, researchColor, "Voice Talent"), Point(125, -449)),
+		TranslateImage(StringImage(JustifyLeft, 125, medVerdana, researchColor, "Craig English \nSusanna Burney \nJohn Armstrong \nLance Brodie \nDex Manley"), Point(125, -464)),
+
+		TranslateImage(StringImage(JustifyLeft, 125, medBoldVerdana, researchColor, "Special thanks to"), Point(125, -542)),
+		TranslateImage(StringImage(JustifyLeft, 125, medVerdana, researchColor, "Gene Ball, Don Gilette, Scott Wilson, Jonathan Fricke, James Hendergart, Jeff Fink, John Pella, Seth Rosenthal, Jordan Weisman, Reek Havok, Michael Warch, Hank Mauret, Daniel Robbins, Garret Loporto, David Stiner, Peter Comley and all the playtesters and Beta testers - You ROCK!"), Point(125, -556))
+	]);
+
+
+
+zoneCreditsImage = 
+	GroupImage([
+		StringImage(JustifyLeft, 160, lgBoldVerdana, zoneColor, "THE ZONE"),
+
+		TranslateImage(StringImage(JustifyLeft, 160, medBoldVerdana, zoneColor, "Program Manager"), Point(0, -30)),
+		TranslateImage(StringImage(JustifyLeft, 160, medVerdana, zoneColor, "Wes Yanagi"), Point(0, -45)),
+
+		TranslateImage(StringImage(JustifyLeft, 160, medBoldVerdana, zoneColor, "Test Lead"), Point(0, -63)),
+		TranslateImage(StringImage(JustifyLeft, 160, medVerdana, zoneColor, "Richard Rowan"), Point(0, -78)),
+
+		TranslateImage(StringImage(JustifyLeft, 160, medBoldVerdana, zoneColor, "Content/Writer"), Point(0, -96)),
+		TranslateImage(StringImage(JustifyLeft, 160, medVerdana, zoneColor, "Dave Hasle"), Point(0, -111)),
+	
+		TranslateImage(StringImage(JustifyLeft, 160, medBoldVerdana, zoneColor, "Marketing"), Point(0, -129)),
+		TranslateImage(StringImage(JustifyLeft, 160, medVerdana, zoneColor, "Eddie Ranchigoda"), Point(0, -144)),
+		
+		TranslateImage(StringImage(JustifyLeft, 160, medBoldVerdana, zoneColor, "Planning"), Point(0, -162)),
+		TranslateImage(StringImage(JustifyLeft, 160, medVerdana, zoneColor, "Jon Grande"), Point(0, -177)),
+	
+		TranslateImage(StringImage(JustifyLeft, 160, medBoldVerdana, zoneColor, "Product Support"), Point(0, -195)),
+		TranslateImage(StringImage(JustifyLeft, 160, medVerdana, zoneColor, "Steve Kastner"), Point(0, -210)),
+	
+		TranslateImage(StringImage(JustifyLeft, 160, medBoldVerdana, zoneColor, "Beta Coordinator"), Point(0, -228)),
+		TranslateImage(StringImage(JustifyLeft, 160, medVerdana, zoneColor, "Jamie Spiezio \nMatt \"Megaman\" Alderman"), Point(0, -243)),
+
+		TranslateImage(StringImage(JustifyLeft, 160, medBoldVerdana, zoneColor, "Special thanks to"), Point(0, -273)),
+		TranslateImage(StringImage(JustifyLeft, 160, medVerdana, zoneColor, "Matt Wilson, Adam Waalkes, Ed Fries, Stuart Moulder, Chris Di Cesare, Dave Steele, Craig Link, Terry Hostetler, Scott Tomlin, Dean Pachosa, John Smith, Bill Sundberg, David McMurray, Ravi Mehta, Ian Banks, and all members of ZOTPlay and Team Recon"), Point(0, -298)),
+
+		TranslateImage(StringImage(JustifyLeft, 160, lgBoldVerdana, zoneColor, "AAS USER EDUCATION"), Point(0, -412)),
+
+		TranslateImage(StringImage(JustifyLeft, 160, medBoldVerdana, zoneColor, "User Education Lead"), Point(0, -442)),
+		TranslateImage(StringImage(JustifyLeft, 160, medVerdana, zoneColor, "Jo Tyo"), Point(0, -457)),
+
+		TranslateImage(StringImage(JustifyLeft, 160, medBoldVerdana, zoneColor, "Editor"), Point(0, -475)),
+		TranslateImage(StringImage(JustifyLeft, 160, medVerdana, zoneColor, "Dana Fos"), Point(0, -490)),
+
+		TranslateImage(StringImage(JustifyLeft, 160, medBoldVerdana, zoneColor, "Print Designer"), Point(0, -508)),
+		TranslateImage(StringImage(JustifyLeft, 160, medVerdana, zoneColor, "JoAnne Williams"), Point(0, -523)),
+
+		TranslateImage(StringImage(JustifyLeft, 160, medBoldVerdana, zoneColor, "Help Developer"), Point(0, -541)),
+		TranslateImage(StringImage(JustifyLeft, 160, medVerdana, zoneColor, "Robbie Booth"), Point(0, -556)),
+
+		TranslateImage(StringImage(JustifyLeft, 160, medBoldVerdana, zoneColor, "Artists"), Point(0, -574)),
+		TranslateImage(StringImage(JustifyLeft, 170, medVerdana, zoneColor, "Lead - Doug Herring, Dale Cody,\nTodd Lubsen, Sandra Garavito"), Point(0, -589)),
+
+		TranslateImage(StringImage(JustifyLeft, 160, medBoldVerdana, zoneColor, "Localization"), Point(0, -619)),
+		TranslateImage(StringImage(JustifyLeft, 160, medVerdana, zoneColor, "Laurence Krzemien-Smith"), Point(0, -634)),
+
+		TranslateImage(StringImage(JustifyLeft, 160, medBoldVerdana, zoneColor, "Usability Testing"), Point(0, -652)),
+		TranslateImage(StringImage(JustifyLeft, 160, medVerdana, zoneColor, "Michael Medlock"), Point(0, -667)),
+
+		TranslateImage(StringImage(JustifyLeft, 160, lgBoldVerdana, zoneColor, "EBU AUDIO"), Point(0, -697)),
+		TranslateImage(StringImage(JustifyLeft, 160, medVerdana, zoneColor, "Jerry Schroeder \nDuane Decker"), Point(0, -717)),
+
+		TranslateImage(StringImage(JustifyLeft, 160, lgBoldVerdana, zoneColor, "Zone Testers"), Point(0, -747)),
+		TranslateImage(StringImage(JustifyLeft, 160, medVerdana, zoneColor, "Rich Bonny\nScott Murray\nMyong Yi\nBrian Lemon\nMark Fassett"), Point(0, -762)),
+
+		TranslateImage(StringImage(JustifyLeft, 160, lgBoldVerdana, zoneColor, "PSS Rep"), Point(0, -827)),
+		TranslateImage(StringImage(JustifyLeft, 160, medVerdana, zoneColor, "Greg Frankovic"), Point(0, -842))
+	]);
+
+researchHeadingImage = StringImage(JustifyCenter, 230, lgBoldVerdana, researchColor, "MS RESEARCH GAMES");
+
+lineBreaks = "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n";
+
+bottomMarginImage = StringImage(JustifyLeft, 450, medBoldVerdana, black, lineBreaks);
+
+textImage = 
+    GroupImage([
+		topMarginImage,
+        TranslateImage(researchImage,				Point(5, -130)),
+		TranslateImage(basedImage,					Point(5, -148)),
+		TranslateImage(lineImage,					Point(5, -163)),
+		TranslateImage(researchCreditsImage, Point(5, -228)),
+		
+		TranslateImage(zoneCreditsImage,			Point(280, -198)),
+
+        TranslateImage(bottomMarginImage,			Point(1, -1000)),
+        TranslateImage(researchHeadingImage,		Point(1, -198))
+	]);
+
+
+textPosition = 
+    Point(
+        6, 
+        Subtract(
+            PointY(ImageSize(textImage)), 
+            120
+        )
+    );
+
+image =
+    TranslateImage(
+        textImage,
+        textPosition
+    );
+
+
+

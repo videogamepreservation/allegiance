@@ -1,0 +1,26 @@
+<Font|promptFont>LAN GAMES<Font|smallFont><p><p>
+
+A LAN game is played on a server created on a <Secondary|hlpd_lan|LAN>
+that your machine is connected to. To play a LAN game, you are not required to be a
+member of the Allegiance Zone or have a <Secondary|hlpd_zoneid|Zone ID.><p><p>
+
+<Font|smallBoldFont>To connect to and join a LAN game<Font|smallFont><p><p>
+
+<Bullet|hlpimg1|On the Allegiance main menu, click
+<Font|smallBoldFont>LAN Games.<Font|smallFont>><p><p>
+
+<Bullet|hlpblank|The Find Server dialog box appears.><p><p>
+
+<Bullet|hlpimg2|To see all Allegiance servers set up on your LAN, click
+<Font|smallBoldFont>Find.<Font|smallFont>><p><p>
+
+<Bullet|hlpimg3|In the Servers Found box, select the game you want to
+join, and then click <Font|smallBoldFont>Join.<Font|smallFont>><p><p>
+
+<Bullet|hlpblank|The <Main|hlp2h|Team Lobby> appears. To see details on the game
+you joined, click <Font|smallBoldFont>Game Settings.<Font|smallFont>><p><p>
+
+The person who has been in the LAN game the longest is considered
+the game owner, or "creator," and will be able to set all the game
+settings. For detailed information on owning the game settings, access
+Connect & Start: <Main|hlp2f|Creating a Game.>

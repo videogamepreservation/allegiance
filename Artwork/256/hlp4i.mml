@@ -1,0 +1,60 @@
+<Font|promptFont>TELEPORT DISPLAY<Font|smallFont><p><p>
+
+Use the Teleport display to transport yourself quickly from one station to another or to
+board a ship as a turret gunner.<p><p>
+
+<Font|smallBoldFont>To access the Teleport display<Font|smallFont><p><p>
+
+<Bullet|hlpbullet|In the hangar, click the Teleport location, or press F8.><p><p>
+
+<Font|promptFont>Teleporting Between Stations<Font|smallFont><p><p>
+
+All stations have teleportation capability. Teleporting yourself, or ripcording, to another
+station before launching is a good way to get close to the action quickly. For immediate
+access to hotspots or to mining operations, or simply to establish a staging area for assaults
+on the enemy, building Teleportation Receivers is a worthy investment.<p><p>
+
+<Font|smallBoldFont>To teleport to any station or Transportation Receiver<Font|smallFont><p><p>
+
+<Bullet|hlpbullet|In the Teleport display, click the station you want to
+transport to, and then click <Font|smallBoldFont>Transfer/Board.<Font|smallFont>><p><p>
+
+<Bullet|hlpblank|-or-><p><p>
+
+<Bullet|hlpblank|In flight, press and hold the R key until you are
+transferred to the nearest station or Teleportation Receiver.><p><p>
+
+<Bullet|hlpblank|When you press and hold R, a countdown begins and
+all sectors that you can teleport to appear with a red border
+around them in the Map display. The sector you will teleport to has a
+thicker border. To change the sector you will teleport to, click that sector while
+holding down the R key. The countdown will begin again.><p><p>
+
+Note that interceptors, frigates, and miners and constructors do not have
+the ability to use Teleportation Receivers.<p><p>
+
+<Font|promptFont>Becoming a Turret Gunner<Font|smallFont><p><p>
+
+Playing as a turret gunner in the bomber or in a capital ship is an
+excellent way for a new Allegiance player to learn the game. For details
+on the role of the turret gunner, access Gameplay: <Main|hlp6j|The Turret Gunner.><p><p>
+
+<Font|smallBoldFont>To become a turret gunner<Font|smallFont><p><p>
+
+<Bullet|hlpbullet|In the Teleport display, click a ship that has a
+turret opening, and then click <Font|smallBoldFont>Transfer/Board.<Font|smallFont>><p><p>
+
+<Font|smallBoldFont>To remove yourself from a ship as a turret gunner<Font|smallFont><p><p>
+
+<Bullet|hlpbullet|In the Teleport display, click a station, and then
+click <Font|smallBoldFont>Transfer/Board.<Font|smallFont>><p><p>
+
+<Bullet|hlpblank|-or-><p><p>
+
+<Bullet|hlpblank|In the Loadout screen, click a ship you want to
+pilot, and then click <Font|smallBoldFont>Confirm Change.<Font|smallFont>><p><p>
+
+<Bullet|hlpblank|-or-><p><p>
+
+<Bullet|hlpblank|In flight, press CTRL+SHIFT+D, D, D to escape in an
+eject pod.>

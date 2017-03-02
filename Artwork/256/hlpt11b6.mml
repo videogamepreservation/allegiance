@@ -1,0 +1,166 @@
+<Font|smallBoldFont>WEAPONS<Font|smallFont><p><p>
+
+Generally, all weapons are optimized to damage certain types of ships.<p><p>
+
+<Bullet|hlpbullet|PW Gattling Gun Mk 1<p><p>
+
+A scout- and fighter-mounted particle weapon good against fighter-class
+ships.<p><p>
+
+Damage -- 3<p>
+Rate -- 10<p>
+Signature -- 200<p>
+Range -- 500 meters<p>
+Speed -- 500 meters per second<p>
+Defense Bonus - Medium><p><p>
+
+<Bullet|hlpbullet|EW Disruptor Blaster Mk 1<p><p>
+
+An energy weapon optimized to drop shields.<p><p>
+
+Damage -- 2<p>
+Rate -- 8<p>
+Signature -- 200<p>
+Range -- 625 meters<p>
+Speed -- 1250 meters per second<p>
+Defense Bonus -- Heavy><p><p>
+
+<Bullet|hlpbullet|PW Gattling Gun Mk2 -- $5000<p><p>
+
+A scout- and fighter-mounted particle weapon good against fighter-class ships.<p><p>
+
+Damage -- 4<p>
+Rate -- 10<p>
+Signature -- 200<p>
+Range -- 500 meters<p>
+Speed -- 500 meters per second<p>
+Defense Bonus -- Medium><p><p>
+
+<Bullet|hlpbullet|EW Disrupter Blaster Mk2 -- $5000<p><p>
+
+An energy weapon optimized to drop shields.<p><p>
+
+Damage -- 3<p>
+Rate -- 8<p>
+Signature -- 200<p>
+Range -- 625<p>
+Speed -- 1250<p>
+Defense Bonus -- Heavy><p><p>
+
+<Bullet|hlpbullet|EW Galvonic Blaster -- $5000<p><p>
+
+An Advanced Fighter-mounted energy weapon optimized against bases.<p><p>
+
+Damage -- 5<p>
+Rate -- 8<p>
+Signature -- 200<p>
+Range -- 938 meters<p>
+Speed -- 1250 meters<p>
+Defense Bonus -- Heavy Base><p><p>
+
+<Bullet|hlpbullet|PW Gattling Gun Mk3 -- $5000<p><p>
+
+Develops the Fighter/scout-mounted particle weapon, optimized for combat against ship hulls.<p><p>
+
+Damage -- 5<p>
+Rate -- 10<p>
+Signature -- 200<p>
+Range -- 600 meters<p>
+Speed -- 600 meters per second<p>
+Defense Bonus -- Medium><p><p>
+
+<Bullet|hlpbullet|EW Disrupter Blaster Mk3 -- $5000<p><p>
+
+Develops the Fighter-mounted advanced energy weapon, optimized for inflicting shield damage.<p><p>
+
+Damage -- 3<p>
+Rate -- 8<p>
+Signature -- 200<p>
+Range -- 625 meters<p>
+Speed -- 1250 meters per second<p>
+Defense Bonus -- Heavy><p><p>
+
+<Bullet|hlpbullet|Mini-Gun Mk2 -- $5000<p><p>
+
+Develops the Interceptor-mounted rapid-fire particle weapon, optimized for fighter-to-fighter
+combat.<p><p>
+
+Damage -- 5<p>
+Rate -- 12<p>
+Signature -- 200<p>
+Range -- 400 meters<p>
+Speed -- 500 meters per second<p>
+Defense Bonus -- Utility><p><p>
+
+<Bullet|hlpbullet|PW Chain Cannon Mk1 -- $5000><p><p>
+
+<Bullet|hlpbullet|PW Chain Cannon Mk2 -- $5000<p><p>
+
+An Interceptor-mounted particle weapon with explosive area effect.<p><p>
+
+Damage -- 15<p>
+Rate -- 4<p>
+Signature -- 200<p>
+Range -- 300 meters<p>
+Speed -- 500 meters per second<p>
+Defense Bonus -- Light><p><p>
+
+<Bullet|hlpbullet|Mini-Gun Mk3 -- $5000<p><p>
+
+An Interceptor-mounted particle weapon good against Fighter-class ships.<p><p>
+
+Damage -- 6<p>
+Rate -- 12<p>
+Signature -- 200<p>
+Range -- 400 meters<p>
+Speed -- 500 meters per second<p>
+Defense Bonus -- Utility><p><p>
+
+<Bullet|hlpbullet|Anti-Util Cannon Mk2 -- $5000<p><p>
+
+Develops the Stealth Fighter-mounted energy weapon, optimized for damage to utility craft
+such as miners and constructors.<p><p>
+
+Damage -- 6<p>
+Rate -- 6<p>
+Signature -- 200<p>
+Range -- 850 meters<p>
+Speed -- 1000 meters per second<p>
+Defense Bonus -- Light><p><p>
+
+
+<Bullet|hlpbullet|Sniper Rifle Mk1 -- $5000<p><p>
+
+Develops the Stealth Fighter-mounted energy weapon, optimized for
+low-signature, long-range attacks against ships.<p><p>
+
+Damage -- 4<p>
+Rate -- 8<p>
+Signature -- 50<p>
+Range -- 900 meters<p>
+Speed -- 1500 meters per second<p>
+Defense Bonus -- Super Heavy><p><p>
+
+<Bullet|hlpbullet|Anti-Util Cannon Mk3 -- $5000<p><p>
+
+Develops the Stealth Fighter-mounted energy weapon, optimized for
+damage to utility craft such as miners and constructors.<p><p>
+
+Damage -- 7<p>
+Rate -- 6<p>
+Signature -- 200<p>
+Range -- 850 meters<p>
+Speed -- 1000 meters per second<p>
+Defense Bonus -- Light><p><p>
+
+<Bullet|hlpbullet|Sniper Rifle Mk2 -- $5,000<p><p>
+
+Develops the Stealth fighter-mounted energy weapon, optimized for low-signature,
+long-range attacks against ships.<p><p>
+
+Damage -- 4<p>
+Rate -- 8<p>
+Signature -- 50<p>
+Range -- 1050 meters<p>
+Speed -- 1500 meters per second<p>
+Defense Bonus -- Super Heavy>

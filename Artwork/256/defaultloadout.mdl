@@ -1,0 +1,221 @@
+use "loadoutinclude";
+
+//////////////////////////////////////////////////////////////////////////////
+//
+// One default loadout per hull
+//
+//////////////////////////////////////////////////////////////////////////////
+
+loadout48 =  //IL Interceptor
+    [
+        // (equipmentType, Mount, PartTypeID)
+        (equipmentTypeShield,      0, 26),
+        (equipmentTypeAfterburner, 0, 23),
+        (equipmentTypeWeapon,      0, 33),
+        (equipmentTypeWeapon,      1, 33),
+        (equipmentTypeMagazine,    0, 41)
+    ];
+
+loadout12 =  //CW Interceptor
+    [
+        (equipmentTypeShield,      0, 26),
+        (equipmentTypeAfterburner, 0, 23),
+        (equipmentTypeWeapon,      0, 33),
+        (equipmentTypeWeapon,      1, 33),
+        (equipmentTypeMagazine,    0, 41)
+    ];
+
+loadout8 = //RUT Interceptor
+    [
+        (equipmentTypeShield,      0, 26),
+        (equipmentTypeAfterburner, 0, 23),
+        (equipmentTypeWeapon,      0,  1),
+        (equipmentTypeWeapon,      1,  1),
+        (equipmentTypeMagazine,    0, 41)
+    ];
+
+loadout38 = //IL Scout
+    [
+        (equipmentTypeShield,      0, 26),
+        (equipmentTypeAfterburner, 0, 23),
+        (equipmentTypeWeapon,      0, 33)
+    ];
+
+loadout10 = //CW Scout
+    [
+        (equipmentTypeShield,      0, 26),
+        (equipmentTypeAfterburner, 0, 23),
+        (equipmentTypeWeapon,      0, 33)
+    ];
+
+loadout39 = //Rix Scout
+    [
+        (equipmentTypeShield,      0, 26),
+        (equipmentTypeAfterburner, 0, 23),
+        (equipmentTypeWeapon,      0,  1)
+    ];
+
+loadout6 = //IL Recovery
+    [
+        (equipmentTypeShield,      0, 26)
+    ];
+
+loadout13 = //CW Recovery
+    [
+        (equipmentTypeShield,      0, 26)
+    ];
+
+loadout46 = //RU Recovery
+    [
+		(equipmentTypeAfterburner, 0, 23),
+        (equipmentTypeShield,      0, 26)
+    ];
+
+loadout7 = //IL Fighter
+    [
+        (equipmentTypeShield,      0, 26),
+        (equipmentTypeAfterburner, 0, 23),
+        (equipmentTypeWeapon,      0, 33),
+        (equipmentTypeWeapon,      1, 33),
+        (equipmentTypeWeapon,      2, 33),
+        (equipmentTypeMagazine,    0, 41)
+    ];
+
+loadout14 = //CW Fighter
+    [
+        (equipmentTypeShield,      0, 26),
+        (equipmentTypeAfterburner, 0, 23),
+        (equipmentTypeWeapon,      0, 33),
+        (equipmentTypeWeapon,      1, 33),
+        (equipmentTypeWeapon,      2, 33),
+        (equipmentTypeMagazine,    0, 41)
+    ];
+
+loadout2 = //RU Fighter
+    [
+        (equipmentTypeShield,      0, 26),
+        (equipmentTypeAfterburner, 0, 23),
+        (equipmentTypeWeapon,      0,  1),
+        (equipmentTypeWeapon,      1,  1),
+        (equipmentTypeWeapon,      2,  1),
+        (equipmentTypeMagazine,    0, 41)
+    ];
+
+loadout22 = //IL Frigate
+    [
+        (equipmentTypeShield,      0, 26),
+        (equipmentTypeWeapon,      0, 33),
+        (equipmentTypeWeapon,      1, 33),
+        (equipmentTypeWeapon,      2, 33),
+        (equipmentTypeWeapon,      3, 33),
+        (equipmentTypeMagazine,    0, 41)
+    ];
+
+loadout21 = //CW Frigate
+    [
+        (equipmentTypeShield,      0, 26),
+        (equipmentTypeWeapon,      0, 33),
+        (equipmentTypeWeapon,      1, 33),
+        (equipmentTypeWeapon,      2, 33),
+        (equipmentTypeWeapon,      3, 33),
+        (equipmentTypeMagazine,    0, 41)
+    ];
+
+loadout26 = //RU Frigate
+    [
+        (equipmentTypeShield,      0, 26),
+        (equipmentTypeWeapon,      0,  1),
+        (equipmentTypeWeapon,      1,  1),
+        (equipmentTypeWeapon,      2,  1),
+        (equipmentTypeWeapon,      3,  1),
+        (equipmentTypeMagazine,    0,  41)
+    ];
+
+loadout20 = //IL APC
+    [
+        (equipmentTypeShield,      0, 26),
+        (equipmentTypeAfterburner, 0, 23)
+    ];
+
+loadout41 = //CW APC
+    [
+        (equipmentTypeShield,      0, 26),
+        (equipmentTypeAfterburner, 0, 23)
+    ];
+
+loadout42 = //RU APC
+    [
+        (equipmentTypeShield,      0, 26),
+        (equipmentTypeAfterburner, 0, 23)
+    ];
+
+loadout1 = //IL Tactical Fighter
+    [
+        (equipmentTypeShield,      0, 26),
+        (equipmentTypeAfterburner, 0, 23),
+        (equipmentTypeWeapon,      0, 33),
+        (equipmentTypeWeapon,      1, 33),
+        (equipmentTypeMagazine,    0, 41)
+    ];
+
+loadout9 = //RU Tactical Fighter
+    [
+        (equipmentTypeShield,      0, 26),
+        (equipmentTypeAfterburner, 0, 23),
+        (equipmentTypeWeapon,      0,  1),
+        (equipmentTypeWeapon,      1,  1),
+        (equipmentTypeMagazine,    0, 41)
+    ];
+
+loadout11 = //CW Tactical Fighter
+    [
+        (equipmentTypeShield,      0, 26),
+        (equipmentTypeAfterburner, 0, 23),
+        (equipmentTypeWeapon,      0, 33),
+        (equipmentTypeWeapon,      1, 33),
+        (equipmentTypeMagazine,    0, 41)
+
+    ];
+
+loadout3 = //RU Bomber
+    [
+        (equipmentTypeShield,      0, 26),
+        (equipmentTypeAfterburner, 0, 23),
+        (equipmentTypeWeapon,      0,  1),
+        (equipmentTypeWeapon,      1,  1),
+        (equipmentTypeWeapon,      2,  1),
+        (equipmentTypeWeapon,      3,  1),
+        (equipmentTypeMagazine,    0, 41)
+    ];
+
+loadout4 = //CW Bomber
+    [
+        (equipmentTypeShield,      0, 26),
+        (equipmentTypeAfterburner, 0, 23),
+        (equipmentTypeWeapon,      0, 33),
+        (equipmentTypeWeapon,      1, 33),
+        (equipmentTypeWeapon,      2, 33),
+        (equipmentTypeWeapon,      3, 33),
+        (equipmentTypeMagazine,    0, 41)
+    ];
+
+loadout5 = //IL Bomber
+    [
+        (equipmentTypeShield,      0, 26),
+        (equipmentTypeAfterburner, 0, 23),
+        (equipmentTypeWeapon,      0, 33),
+        (equipmentTypeWeapon,      1, 33),
+        (equipmentTypeWeapon,      2, 33),
+        (equipmentTypeWeapon,      3, 33),
+        (equipmentTypeMagazine,    0, 41)
+
+    ];
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,22 @@
+use "SlideshowData";
+use "sounddef";
+use "font";
+use "gamepanes";
+
+		// tm_slide_4_post_01
+		// OK, Cadet, you?ve learned about sectors, alephs, and 
+		// utility craft such as miners and constructorsÿ. If you?re 
+		// up for officer duty, proceed to training mission 5, Command 
+		// View. If you?d rather stick it out as a pilot, proceed to 
+		// training mission 6, Practice Arena, for some tense combat 
+		// experience.
+
+//
+// The slides
+//
+
+slides =
+[
+    (ImportImage("hangarbmp", false), tm_slide_4_post_01SoundId)
+];
+

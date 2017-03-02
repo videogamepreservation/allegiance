@@ -1,0 +1,92 @@
+<Font|promptFont>CAPITAL SHIPS<Font|smallFont><p><p>
+
+<Bullet|hlpbullet|Sector Support Ship -- $7500<p><p>
+
+This support ship has incredible sensor suites.<p><p>
+
+GigaCorp: GCSS Regulator<p>
+Bios: FF 3 Monitor<p>
+Iron Coalition: SS 11 Morning Star<p><p>
+
+The Sector Support Ship has
+the following statistics:<p><p>
+
+Max Speed -- 132 meters per second<p>
+Acceleration -- 48 meters per second<p>
+Turn Rate -- 12 degrees<p>
+Hit Points -- 2420<p>
+Energy -- 2420<p>
+Scan Range -- 8712 meters<p>
+Signature -- 200<p>
+Armor Class -- Heavy<p>
+Turrets -- 0><p><p>
+
+<Bullet|hlpbullet|Destroyer -- $0000<p><p>
+
+This large, mainly defensive capitol ship can fire very long-range
+missiles at fighter-class craft. It has no turrets but has ripcord
+ability.<p><p>
+
+GigaCorp: GCFD Adjudicatora<p>
+Bios: GA11 Panther (Prowler)<p>
+Iron Coalition: D Balista<p><p>
+
+The Destroyer has
+the following statistics:<p><p>
+
+Max Speed -- meters per second<p>
+Acceleration -- meters per second<p>
+Turn Rate -- degrees<p>
+Hit Points -- <p>
+Energy -- <p>
+Scan Range -- meters<p>
+Signature -- <p>
+Armor Class -- <p>
+Turrets - 0><p><p>
+
+<Bullet|hlpbullet|Missile Frigate -- $0000<p><p>
+
+This ship is capable
+of carrying a great deal of missile ordnance to supplement multiple gun turrets. It is
+essentially a tougher version of the bomber, best used in the
+attack of bases.<p><p>
+
+GigaCorp: GCF Devastator<p>
+Bios: GCSMF Eradicator<p>
+Iron Coalition: MSR 4 Barracuda <p><p>
+
+The Missile Frigate has the following statistics:<p><p>
+
+Max Speed -- meters per second<p>
+Acceleration -- meters per second<p>
+Turn Rate -- degrees<p>
+Hit Points -- <p>
+Energy -- <p>
+Scan Range -- meters<p>
+Signature -- <p>
+Armor Class -- <p>
+Turrets -- ><p><p>
+
+<Bullet|hlpbullet|Ship Cruiser -- $15,000<p><p>
+
+Capable of carrying
+several turret gunners for defense, this capital ship can fire the
+largest and most deadly tactical nuke missiles, swiftly devastating
+enemy stations. <p><p>
+
+GigaCorp: GCF Devastator<p>
+Bios: DDR Eagle<p>
+Iron Coalition: CB3 Broadsword<p><p>
+
+The Cruiser has
+the following statistics:<p><p>
+
+Max Speed -- 120 meters per second<p>
+Acceleration -- 10 meters per second<p>
+Turn Rate -- 12 degrees<p>
+Hit Points -- 7260<p>
+Energy -- 1452<p>
+Scan Range -- 4356 meters<p>
+Signature -- 800<p>
+Armor Class -- Super Heavy<p>
+Turrets - 4>

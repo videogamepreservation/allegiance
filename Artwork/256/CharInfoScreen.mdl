@@ -1,0 +1,248 @@
+use "effect";
+use "font";
+use "charinfoscreendata";
+use "gamepanes";
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Zone Club Screen
+//
+/////////////////////////////////////////////////////////////////////////////
+
+//
+// Normal buttons
+//
+
+leaderboardButtonPane = ButtonPane(ImportImage("btnzone2leaderbmp", true), ButtonNormal, false);
+squadsButtonPane = ButtonPane(ImportImage("btnzone2squadsbmp", true), ButtonNormal, false);
+squads2ButtonPane = ButtonPane(ImportImage("btnzone2squads2bmp", false), ButtonNormal, false);
+zoneclubButtonPane = ButtonPane(ImportImage("btneventsplayzonebmp", true), ButtonNormal, false);
+
+// gamesButtonPane = ButtonPane(ImportImage("btnzone2gamesbmp", false), ButtonNormal, false);
+webButtonPane = ButtonPane(ImportImage("btnzone2webbmp", true), ButtonNormal, false);
+
+
+//
+// Character Name
+//
+characterNameEditPane = EditPane(Point(170, 25), largeFont);
+
+//
+// Description
+//
+descriptionEditPane = EditPane(Point(200, 20), largeFont);
+descriptionStrImage = StringImage(JustifyLeft, 325, smallFont,  Color(1, 1, 1), descriptionStr);
+descriptionPane = AnimatedImagePane(PaneImage(BlackPane(AnimatedImagePaneRect(descriptionStrImage, Rect(0, -75, 330, 0))), false, true));
+
+
+
+editButtonPane = ButtonPane(ImportImage("btnsquadeditsquadbmp", false), ButtonNormal, false);
+applyButtonPane = ButtonPane(ImportImage("btnsquadapplybmp", false), ButtonNormal, false);
+memberSinceImage = StringImage(JustifyLeft, 50, smallFont,  Color(1, 1, 1), memberSinceStr);
+
+size = Point(180, 21);
+
+civComboPane = StringComboPane(size, Point(150, 21), smallFont, Color(1, 1, 1));
+
+CivNames = ["All", "Bios", "Gigacorp", "Iron Coalition", "Belters", "Rixian Unity"];
+
+CivIDs = [ -1, 35, 18, 25, 101, 201]; // keep in sync with database and with CivNames; -1 means All
+
+
+
+//
+// Stats
+//
+statsTextColor = Color(1, 1, 1);
+
+rankImage              = StringImage(JustifyLeft, 150, smallFont, statsTextColor, rankStr);
+baseCapturesImage      = StringImage(JustifyLeft, 50, smallFont,  statsTextColor, baseCapturesStr);
+scoreImage             = StringImage(JustifyLeft, 50, smallFont,  statsTextColor, scoreStr);
+baseKillsImage         = StringImage(JustifyLeft, 50, smallFont,  statsTextColor, baseKillsStr);
+killsImage             = StringImage(JustifyLeft, 50, smallFont,  statsTextColor, killsStr);
+deathsImage            = StringImage(JustifyLeft, 50, smallFont,  statsTextColor, deathsStr);
+winsImage              = StringImage(JustifyLeft, 50, smallFont,  statsTextColor, winsStr);
+lossesImage            = StringImage(JustifyLeft, 50, smallFont,  statsTextColor, lossesStr);
+promotionAtImage       = StringImage(JustifyLeft, 50, smallFont,  statsTextColor, promotionAtStr);
+minutesPlayedImage     = StringImage(JustifyLeft, 50, smallFont,  statsTextColor, minutesPlayedStr);
+lastPlayedImage        = StringImage(JustifyLeft, 75, smallFont,  statsTextColor, lastPlayedStr);
+combatRatingImage      = StringImage(JustifyLeft, 50, smallFont,  statsTextColor, combatRatingStr);
+
+//squadsComboPane = StringComboPane(size, size, smallFont, Color(1, 1, 1));
+squadsScrollBar  = ScrollBarPane(Point(20, 40));
+squadsListPane   = StringListWithScrollBarPane(Point(110, 42), squadsScrollBar, smallFont, Color(1, 0, 0));
+
+
+
+statsPane =
+    AnimatedImagePane
+    (
+        GroupImage([
+                    TranslateImage(rankImage,             Point(135,-13)),
+					TranslateImage(scoreImage,            Point(135,-38)),	
+					TranslateImage(combatRatingImage,     Point(135,-60)),
+					TranslateImage(lastPlayedImage,       Point(135,-84)),
+					
+					TranslateImage(baseCapturesImage,     Point(345,-13)),
+                    TranslateImage(baseKillsImage,        Point(345,-38)),
+					TranslateImage(promotionAtImage,      Point(345,-60)),
+					TranslateImage(minutesPlayedImage,    Point(345,-84)),
+
+                    TranslateImage(killsImage,            Point(525,-13)),
+                    TranslateImage(deathsImage,           Point(525,-38)),
+					TranslateImage(winsImage,             Point(525,-60)),
+                    TranslateImage(lossesImage,           Point(525,-84))
+                    
+					
+                  ]) 
+    );
+    
+waterMarkPane    =
+    ImagePane(
+        civImage,
+        [ (statsPane, Point(0, 0))
+        ]
+    );
+
+
+
+//
+// Medals window
+//
+
+maxMedalBitmapSize = Point(80, 130); // (x, y) where x is width, y is height
+
+// This commented out code show an example of a custom horizontal scroll bar
+//
+//sbImage = ImportImage("scrollthumbbmp", false);
+//sbPane1 = ButtonPane(ImportImage("btncharinfo2zonebmp", false), ButtonNormal, false);
+//sbPane2 = ButtonPane(ImportImage("btncharinfo2zonebmp", false), ButtonNormal, false);
+//scrollBar  = CustomScrollBarHorizontalPane(Point(295, 50), sbPane1, sbPane2, sbImage);
+
+scrollBar  = ScrollBarHorizontalPane(Point(295, 10));
+
+medalsListPane = ListHorizontalWithScrollBarPane(Point(295, 130), scrollBar);
+
+medalNameImage        = StringImage(JustifyCenter, 230, medBoldVerdana,  Color(1, 1, 1), medalNameStr);
+medalDescriptionImage = StringImage(JustifyLeft, 230, medVerdana,  Color(1, 1, 1), medalDescriptionStr);
+
+medalNamePane =         AnimatedImagePaneRect(medalNameImage, Rect(0, -25, 230, 0));
+medalDescriptionPane =  AnimatedImagePaneRect(medalDescriptionImage, Rect(0, -100, 230, 0));
+
+
+
+//
+// Rollover tips
+//
+
+hoverSite = HoverSite(0);
+
+hoverString =
+    SwitchString(
+        HoverSiteGetID(hoverSite),
+        emptyString,
+        [
+            ( 1, "Takes you to the Allegiance Zone Main Menu"),
+            ( 2, "Takes you to the Squadrons Screen"),
+            ( 3, "Takes you to the Leaderboard"),
+            ( 4, "The current player's callsign.  "),
+            ( 5, "Edit your character description"),
+            ( 6, "Edit your character description"),
+            ( 7, "Your Medals Earned"),
+            ( 8, "Filter statistics by factions."),
+            ( 9, "Information about the current player."),
+            (10, "Message10"),
+            (11, "Message11"),
+            (12, "Message12"),
+            (13, "Message13"),
+            (14, "Message14"),
+            (15, "Message15"),
+            (16, "Message16"),
+            (17, "Message17"),
+            (18, "Message18"),
+            (19, "Message19"),
+            (20, "Message20"),
+            (21, "Message21"),
+            (22, "Message22"),
+            (23, "Takes you to the Zone Games List."),
+            (24, "Takes you to the Allegiance Web Page."),
+            (25, "When you became a pilot."),
+            (26, "Message26")
+        ]
+    );
+
+hoverImage = StringImage(JustifyLeft, 230, smallFont, white, hoverString);
+hoverPane  = AnimatedImagePaneRect(hoverImage, Rect(0, -35, 230, 0));
+
+//
+// Titles
+//
+
+yellowText			= Color(0.878, 0.573, 0);
+whiteText			= Color(1, 1, 1);
+titlePane			= StringPane("PLAYER PROFILE:", yellowText,	Point(400, 30), JustifyLeft, titleFont);
+captionPane         = StringPane("THE FOLLOWING INFORMATION DETAILS THE PILOT YOU HAVE SELECTED.", whiteText, Point(800, 30), JustifyLeft, promptFont);
+
+
+
+//
+// The background and control positions
+//
+
+screen =
+    ScreenPane(
+        ImportImage("charinfoscreenbmp", false),
+        [
+			(titlePane,					Point(15, 15)),
+			(captionPane,				Point(75, 50)),
+
+            (HoverPane(hoverSite, 25, AnimatedImagePaneRect(memberSinceImage, Rect(0, -25, 50, 0))),     Point(24, 100)),
+
+            (HoverPane(hoverSite,  1, zoneclubButtonPane),   Point(24, 523)),
+            (HoverPane(hoverSite,  2, squadsButtonPane),     Point(104, 523)),
+			(HoverPane(hoverSite,  2, squads2ButtonPane),    Point(281, 114)),
+
+            (HoverPane(hoverSite,  3, leaderboardButtonPane),Point(184, 523)),
+			(HoverPane(hoverSite, 24, webButtonPane),		 Point(264, 523)),
+
+            (HoverPane(hoverSite,  4, characterNameEditPane),Point(181, 70)),
+            (editButtonPane,								 Point(698, 109)),
+            (applyButtonPane,								 Point(698, 109)),
+            (HoverPane(hoverSite,  6, descriptionEditPane),  Point(358, 88)),
+            (descriptionPane,                                Point(358, 88)),
+            
+
+            (HoverPane(hoverSite,  7, medalsListPane),       Point(133, 340)),
+
+            (HoverPane(hoverSite,  8, civComboPane),         Point(242, 189)),
+
+            (HoverPane(hoverSite,  9, waterMarkPane),        Point(115, 208)),
+			
+            (squadsListPane,                                 Point(141, 114)),
+            (squadsScrollBar,                                Point(255, 115)),
+
+
+//            (HoverPane(hoverSite,  10, rankPane),  Point(320, 185)),
+//            (HoverPane(hoverSite,  11, rankPane),            Point(320, 215)),
+//            (HoverPane(hoverSite,  12, baseCapturesPane),   Point(320, 245)),
+//            (HoverPane(hoverSite,  13, scorePane),    Point(320, 277)),
+//            (HoverPane(hoverSite,  14, baseKillsPane), Point(320, 308)),
+//            (HoverPane(hoverSite,  15, gamesPlayedPane),     Point(320, 340)),
+//            (HoverPane(hoverSite,  16, killsPane),           Point(550, 185)),
+//            (HoverPane(hoverSite,  17, deathsPane),          Point(550, 215)),
+//            (HoverPane(hoverSite,  18, winsPane),            Point(550, 245)),
+//            (HoverPane(hoverSite,  19, lossesPane),          Point(550, 277)),
+//            (HoverPane(hoverSite,  20, promotionAtPane),     Point(550, 308)),
+
+//          (HoverPane(hoverSite,  21, squadsComboPane),        Point(550, 340)),
+
+            (medalNamePane,        Point(453,  357)),
+            (medalDescriptionPane, Point(453,  380)),
+
+            (scrollBar,  Point(139,  475)),
+
+            (hoverPane, Point( 555, 550)) // place the text
+        ]
+    );
+
+

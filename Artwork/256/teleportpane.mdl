@@ -1,0 +1,36 @@
+use "console";
+use "font";
+
+//
+// destination list
+//
+
+teleportPaneDestinationColumns    = [90, 176, 268, 324];
+teleportPaneDestinationListHeader = ButtonBarPane(ImportImage("teleportpaneheaderbmp", true), ButtonNormalCheckBox, teleportPaneDestinationColumns, false);
+teleportPaneDestinationScrollBar  = ScrollBarPane(Point(12, 145));
+teleportPaneDestinationListPane   = ListWithScrollBarPane(Point(324, 145), teleportPaneDestinationScrollBar);
+
+//
+// buttons
+//
+
+teleportTeleportButtonPane  = ButtonPane(ImportImage("btnteleportbmp", true), ButtonNormal, false);
+teleportBackButtonPane      = SoundButtonPane(ImportImage("btnclosepanebmp", true), ButtonNormal, false, negativeButtonClickSoundId);
+
+//
+// The background and control positions
+//
+
+TeleportPane =
+    ImagePane(
+        ImportImage("teleportpanebmp", false),
+        [
+            (teleportPaneDestinationListHeader,     Point(  2,  23)),
+            (teleportPaneDestinationListPane,       Point(  3,  39)),
+            (teleportPaneDestinationScrollBar,      Point(327,  39)),
+
+            (teleportTeleportButtonPane,            Point( 12, 184)),
+            (teleportBackButtonPane,                Point(312,   3))
+        ]
+    );
+

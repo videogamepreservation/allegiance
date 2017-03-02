@@ -1,0 +1,14 @@
+<Font|promptFont>FINDING A GAME<Font|smallFont><p><p>
+
+The Find feature allows you to find a <Secondary|hlpd_findplayer|specific player>
+in any game that is displayed in your Games List.<p><p>
+
+<Font|smallBoldFont>To find a specific player<Font|smallFont><p><p>
+
+<Bullet|hlpbullet|Click <Font|smallBoldFont>Find<Font|smallFont> in the Games List, enter a player
+name in the box, and then click <Font|smallBoldFont>OK.<Font|smallFont>><p><p>
+
+The servers will be searched for a player matching the specified name. If
+the player is located, the game that player is in will be highlighted in
+the Games List. If the player is not located, either he is not in a game
+at the moment or you may have typed the name wrong.

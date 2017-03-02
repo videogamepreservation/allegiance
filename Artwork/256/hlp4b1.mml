@@ -1,0 +1,88 @@
+<Font|promptFont>SHIPS<Font|smallFont><p><p>
+
+<Font|promptFont>Reviewing and Selecting Ships<Font|smallFont><p><p>
+
+<Font|smallBoldFont>To review and select a ship at your current station<Font|smallFont><p><p>
+
+<Bullet|hlpbullet|At the top of the Loadout, click <Font|smallBoldFont>Prev
+Ship<Font|smallFont> or <Font|smallBoldFont>Next Ship<Font|smallFont>
+until you find the ship you want.><p><p>
+
+<Bullet|hlpblank|To see a list of all ships available at this station, click the down
+arrow at the right of the current ship's name.><p><p>
+
+Over the course of a tech tree game and as new technology is researched,
+you'll have
+access to additional ships. You'll be able to select them from your Loadout
+by using the Prev Ship and Next Ship buttons.<p><p>
+
+If the ship you wish to fly is a capital ship, you must transport yourself
+to the Shipyard via the <Main|hlp4i|Teleport display.> The Shipyard is
+where the large capital ships are launched from. You also may need
+to buy the ship (see "Buying Ships," below).<p><p>
+
+<Font|promptFont>Understanding Ship Statistics<Font|smallFont><p><p>
+
+As you cycle through each ship available at your current
+station, its name, description, and statistics are displayed below
+its picture.<p><p>
+
+The Ship Statistics area not only shows the overall performance
+envelope of the selected ship but also how any weapon and equipment
+changes affect your ship. The statistics bars allow for the maximum
+limits of the various stats for the class of ship you are working with, so
+if a ship
+has a full statistics bar, it is the best ship in
+that class for that statistic.<p><p>
+
+<Font|smallBoldFont>Max Speed --<Font|smallFont>Shows your
+ship's maximum speed without using boosters.<p><p>
+
+<Font|smallBoldFont>Acceleration --<Font|smallFont>Shows how fast your
+ship will accelerate under full throttle without using boosters.<p><p>
+
+<Font|smallBoldFont>Turn Speed --<Font|smallFont>Shows how
+many degrees per second your ship will turn on its lateral axis.<p><p>
+
+<Font|smallBoldFont>Hit Points --<Font|smallFont>Shows the
+amount of damage your ship can sustain before being destroyed.<p><p>
+
+<Font|smallBoldFont>Energy --<Font|smallFont>Shows the
+amount of energy your ship carries.<p><p>
+
+<Font|smallBoldFont>Scan Range --<Font|smallFont>Shows how
+far your ship can detect other objects.<p><p>
+
+<Font|smallBoldFont>Signature --<Font|smallFont>Shows the
+size of the ship's signature. The higher the number, the easier it is for the ship to
+be detected by enemy forces.<p><p>
+
+<Font|smallBoldFont>Armor Class --<Font|smallFont>Shows the type of
+armor on the ship.<p><p>
+
+<Font|promptFont>Buying Ships<Font|smallFont><p><p>
+
+Most ships are "free" once your team has spent the money to pay for their
+research and manufacturing. A few ship classes, however, are extremely
+expensive to create. These ship types, which are the larger capital
+ships and the bombers, cost money per ship. When a ship is
+labeled with a price tag, you must have the corresponding sum of money in
+order to fly it. The amount of money you currently have is noted on the
+bottom of the Loadout.<p><p>
+
+<Font|smallBoldFont>To buy a ship<Font|smallFont><p><p>
+
+<Bullet|hlpbullet|Select the ship in the Loadout, and then click
+<Font|smallBoldFont>Buy Ship.<Font|smallFont>><p><p>
+
+<Bullet|hlpblank|The money is deducted from your account and tagged as your next launch
+vehicle. Your team members will also see your ship in the
+<Main|hlp4i|Teleport display,> allowing them to board it as a
+<Main|hlp6j|turret gunner.>><p><p>
+
+If you are <Main|hlp6d|autodonating> to another team member,
+you will have 0 credits.
+In this case, clicking Buy Ship will send a request for money to the
+person you are autodonating to. That person will be notified that you wish
+to purchase the craft, and he will either accept or deny the use of funds
+for buying the ship.

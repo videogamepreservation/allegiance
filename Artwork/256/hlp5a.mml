@@ -1,0 +1,123 @@
+<!Anyone who messes up the formatting of this file will be ... in ...
+trouble.>
+
+<Font|promptFont>KEYBOARD<Font|smallFont><p><p>
+
+<Font|promptFont>Flight<Font|smallFont><p><p>
+
+<Font|smallBoldFont>Action					
+		Keyboard<Font|smallFont><p>
+
+Pitch down						UP ARROW<p>
+Pitch up							DOWN
+ARROW<p>
+Turn left							LEFT
+ARROW<p> Turn right						RIGHT
+ARROW<p>
+Roll left							SHIFT+LEFT
+ARROW<p>
+Roll right		    				SHIFT+RIGHT
+ARROW<p> Fire boosters					TAB (hold)<p>
+Toggle autopilot				P<p>
+Toggle directional lock		L<p>
+Thrust left						Numpad 4<p>
+Thrust right						Numpad 6<p>
+Thrust up						Numpad 9<p>
+Thrust down					Numpad 7<p>
+Thrust forward					Numpad 8<p>
+Thrust backward				Numpad 5<p>
+Throttle to 0%					BACKSPACE<p>
+Throttle to 33%				[<p>
+Throttle to 66%				]<p>
+Throttle to 100%				\<p><p>
+
+<Font|promptFont>Combat<Font|smallFont><p><p>
+
+<Font|smallBoldFont>Action					
+		Keyboard<Font|smallFont><p>
+
+Fire weapon						SPACEBAR<p>
+Fire missile						CTRL+ SPACEBAR<p>
+Select next weapon			W<p>
+Select previous weapon		SHIFT+W<p>
+Toggle all-weapons fire		CTRL+W<p>
+Reload guns					CTRL+R<p>
+Drop mine or probe			D<p>
+Drop chaff						A<p>
+Toggle cloak					K<p>
+Next target						T<p>
+Match target's speed			M<p>
+Target nearest ship			CTRL+T<p>
+Target previous ship			SHIFT+T<p>
+Target next friendly			F<p>
+Target nearest friendly		CTRL+F<p>
+Target previous friendly		SHIFT+F<p>
+Target next enemy			E<p>
+Target nearest enemy		CTRL+E<p>
+Target previous enemy		SHIFT+E<p>
+Target next enemy base		Q<p>
+Target nearest enemy 		CTRL+Q<p>
+base<p>
+Target previous enemy		SHIFT+Q<p>
+base<p>
+Target next friendly base	B<p>
+Target nearest friendly 		CTRL+B<p>
+base<p>
+Target previous friendly		SHIFT+B<p>
+base<p>
+Target object nearest			C<p>
+center<p>
+Target hostile enemy			H<p>
+Target nothing					X<p><p>
+
+<Font|promptFont>View<Font|smallFont><p><p>
+
+<Font|smallBoldFont>Action					
+		Keyboard<Font|smallFont><p>
+Help display					F1<p>
+Combat HUD					F2<p>
+Cycle Combat HUD radar	I<p>
+modes<p>
+Command view					F3<p>
+Alternative Command view	SHIFT+F3<p>
+Inventory display				F4<p>
+Investments display			F5<p>
+Expanded Team display		F6<p>
+Mini Team display				SHIFT+F6<p>
+Expanded Map display		F7<p>
+Mini Map display				SHIFT+F7<p>
+Teleport display				F8<p>
+(hangar only)<p>
+Game State display			G<p>
+Missile view					F9<p>
+Remote Camera view			F10<p>
+Chase view						F11<p>
+Flyby view						F12<p>
+Orbit view						SHIFT+F12<p>
+Zoom in (Combat HUD)		Numpad +<p>
+Zoom out (Combat HUD)		Numpad -<p>
+Rotate view (Combat HUD)	<< or ><p><p>
+
+<Font|promptFont>Communications<Font|smallFont><p><p>
+
+<Font|smallBoldFont>Action					
+		Keyboard<Font|smallFont><p>
+Access chat/send chat		ENTER<p>
+Change chat recipient		TAB<p><p>
+
+<Font|promptFont>Miscellaneous<Font|smallFont><p><p>
+
+<Font|smallBoldFont>Action					
+		Keyboard<Font|smallFont><p>
+
+Accept command				INSERT<p>
+Clear command				DELETE<p>
+Swap command for<p>
+pending command				HOME<p>
+Target command object		END<p>
+Eject (turret gunner)			CTRL+SHIFT+D, D,
+D<p>
+Toggle grid display			CTRL+G<p>
+Teleport (or ripcord)			R (hold until completed)<p>
+Toggle collisions				CTRL+SHIFT+C<p>
+Access options menu			ESC

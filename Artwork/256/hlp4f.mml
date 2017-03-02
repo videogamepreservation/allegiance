@@ -1,0 +1,100 @@
+<Font|promptFont>INVESTMENTS DISPLAY<Font|smallFont><p><p>
+
+The Investments display is available in games where the tech tree is
+enabled. It
+is here where you get to spend your hard-earned cash. Whether you are the
+"official" <Main|hlp6i|investor> or each player on your team is handling
+his or her own investment portfolio, all tech tree research and
+development happens in the Investments display.<p><p>
+
+<Font|smallBoldFont>To toggle the Investments display<Font|smallFont><p><p>
+
+<Bullet|hlpbullet|Press F5.><p><p>
+
+If your team has an "official" investor for your game and you are automatically donating to him,
+then you will have no need to see this display unless you just want to see what has
+and has not been built, upgraded, researched, and developed.<p><p>
+
+<Font|promptFont>Investment Types<Font|smallFont><p><p>
+
+<Bullet|hlpbullet|<Font|smallBoldFont>Building:<Font|smallFont> When you build new
+structures, you gain new or enhanced game functionality. New buildings are available
+when you click the <Font|smallBoldFont>Construction<Font|smallFont>
+button. Note that you start out with one Garrison; all other building must be built.><p><p>
+
+<Bullet|hlpbullet|<Font|smallBoldFont>Upgrading:<Font|smallFont> Nearly every structure,
+ship, and piece of equipment can be upgraded to advanced versions. Upgrades are available when
+you click an available structure button.><p><p>
+
+<Bullet|hlpbullet|<Font|smallBoldFont>Researching Global Items:<Font|smallFont> Global items
+are technologies that affect all ships and stations on your team. These are items such as better
+boosters, better armor, and greater ammo capacity. After researching a global item, that item will
+automatically appear in the Loadout screen.><p><p>
+
+<Bullet|hlpbullet|<Font|smallBoldFont>Developing New Items:<Font|smallFont> Development of new
+items such as cloaking devices and weapons that take advantage of upgraded ships is available.
+You can even develop brand-new classes of ships such as frigates and cruisers. After developing
+a new item, that item will automatically appear in the Loadout screen of the appropriate ship.><p><p>
+
+<Font|promptFont>Investing<Font|smallFont><p><p>
+
+<Font|smallBoldFont>To invest your money in an item<Font|smallFont><p><p>
+
+<Bullet|hlpimg1|In the Investments display, click an available
+structure button, and then click the item you
+want to invest in.><p><p>
+
+<Bullet|hlpblank|A red frame appears around the item to show that it has
+been selected.><p><p>
+
+<Bullet|hlpimg2|Click <Font|smallBoldFont>Invest.<Font|smallFont>><p><p>
+
+<Bullet|hlpblank|If you have enough money in your account to cover the
+purchase,
+the correct amount will automatically be deducted from your account and
+the item immediately
+purchased, indicated by a yellow graphic covering the item. If you do not
+have enough money, then whatever money you do have will be applied to the
+item, the partial amount indicated by a proportionately sized graphic
+covering part of the item.><p><p>
+
+<Bullet|hlpblank|As the item is invested in, a green bar will slowly pass
+over the yellow
+graphic, signifying the amount of time to create the item.><p><p>
+
+<Font|promptFont>Building<Font|smallFont><p><p>
+
+There are five structures that you can build that offer new and unique investment opportunities.
+At the start of a tech tree game, you'll only have access to the Garrison and Construction
+buttons. Because your team automatically owns a Garrison when the game starts, you can
+immediately start researching and building items that the Garrison offers. To build your
+miners, tower layers, mine layers, and other building types, you use the Construction button.<p><p>
+
+As new structures are built, their corresponding buttons will become yellow, signifying that
+you now have access to that structure's technology.<p><p>
+
+When you fully invest in a new structure, a constructor is prepared. On the right side of the
+Investments display, the structure's button will note, "Preparing Constructor," and a progress
+bar proceeds across the graphic. Once the constructor is prepared, it is launched and you will
+see a "Constructor en Route" note on the structure's button. The constructor travels to an
+appropriate location for the structure.<p><p>
+
+Some structures require a specific <Main|hlp6l|asteroid> to build on. If the appropriate asteroid
+has been located in an enemy-controlled sector, the constructor will attempt to fly there and
+build the structure. To see what sectors contain the required asteroid,
+select the constructor, note the sectors with the red border around them
+in the Map display, and then command your constructor to build on the
+asteroid in that sector. Constructors are very weak and undefended, so a defensive force to support
+the constructor en route is probably a wise idea.<p><p>
+
+If you are not allowed to fully invest in a structure, you will probably
+receive a message stating, "No Asteroid Available." This means that you must locate the
+specific asteroid needed for the structure to be built.<p><p>
+
+Once the constructor has begun building the station, a progress bar proceeds across the
+graphic as the structure is built. You
+will also see a swirling mass around the asteroid as the constructor
+drills into the asteroid and converts it to the specific structure.<p><p>
+
+Once the structure is built, a number will appear on the structure's button showing how many of
+that structure are built.

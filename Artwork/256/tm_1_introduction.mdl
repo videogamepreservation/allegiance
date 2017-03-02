@@ -1,0 +1,153 @@
+use "SlideshowData";
+use "sounddef";
+use "font";
+use "gamepanes";
+
+//----------------------------------------------------------
+// data for the text slide images
+//----------------------------------------------------------
+slide_background = ImportImage("tm_slide_backgroundbmp", false);
+
+slide_text_position = Point(150, 450);
+
+//----------------------------------------------------------
+// text slide 1
+//----------------------------------------------------------
+slide_text_1 = "Welcome, Recruits, to the Iron Coalition’s Elgin Training Center, in the outer Neptune sector.";
+slide_text_1_image = StringImage(JustifyLeft, 500, largeFont, white, slide_text_1);
+slide_1_image = GroupImage
+([
+    TranslateImage(slide_text_1_image, slide_text_position),
+    slide_background
+]);
+
+//----------------------------------------------------------
+// text slide 2
+//----------------------------------------------------------
+slide_text_2 = "As you are aware, almost 10 years of strife have passed since the cataclysm that destroyed Earth.\n\nIt is a desperate time for us all: GigaCorp forces are exploiting their seemingly endless assets to dominate surviving humanity. The genetically mutated Bios have emerged to forcibly drag the human race into an evolutionary watershed. The cutthroat Belters are uniting to resist the order the Iron Coalition strives to bring.\n\nIt is humanity’s darkest hour. With your help and that of your teammates, we can restore order and discipline.";
+slide_text_2_image = StringImage(JustifyLeft, 500, largeFont, white, slide_text_2);
+slide_2_image = GroupImage
+([
+    TranslateImage(slide_text_2_image, slide_text_position),
+    slide_background
+]);
+
+//----------------------------------------------------------
+// text slide 3
+//----------------------------------------------------------
+slide_text_3 = "During your stay at the training center, you will be given several opportunities to master different aspects of space flight, combat, and command operations. We will begin with a basic tour of this space station.";
+slide_text_3_image = StringImage(JustifyLeft, 500, largeFont, white, slide_text_3);
+slide_3_image = GroupImage
+([
+    TranslateImage(slide_text_3_image, slide_text_position),
+    slide_background
+]);
+
+//----------------------------------------------------------
+// some more common images
+//----------------------------------------------------------
+hangar_background = ImportImage ("hangarbmp", false);
+circle_overlay = ImportImage ("tm_slide_circle_overlaybmp", true);
+teleport_overlay = ImportImage("tm_teleportbmp", false);
+
+//----------------------------------------------------------
+// all the slides in a list
+//----------------------------------------------------------
+slides =
+[
+	// tm_slide_1_01
+	// Welcome, Recruits, to the Iron Coalition?s Elgin Training 
+	// Center, in the outer Neptune sector.
+    (slide_1_image, tm_slide_1_01SoundId),
+
+	// tm_slide_1_02
+	// As you are aware, almost 10 years of strife have passed 
+	// since the cataclysm that destroyed Earth. It is a desperate 
+	// time for us all: GigaCorp forces are exploiting their 
+	// seemingly endless assets to dominate surviving humanity. 
+	// The genetically mutated Bios have emerged to forcibly drag 
+	// the human race into an evolutionary watershed. The 
+	// cutthroat Belters are uniting to resist the order the Iron 
+	// Coalition strives to bring. It is humanity?s darkest hour. 
+	// With your help and that of your teammates, we can restore 
+	// order and discipline.
+    (slide_2_image, tm_slide_1_02SoundId),
+
+	// tm_slide_1_03
+	// During your stay at the training center, you will be given 
+	// several opportunities to master different aspects of space 
+	// flight, combat, and command operations. We will begin with 
+	// a basic tour of this space station.
+    (slide_3_image, tm_slide_1_03SoundId),
+
+	// tm_slide_1_04a
+	// This is the hangar.
+    (hangar_background, tm_slide_1_04aSoundId),
+
+	// tm_slide_1_04b
+	// Clicking here, or pressing the F1 
+	// key,ÿ brings up the Help display systemÿ.
+    (GroupImage ([TranslateImage (circle_overlay, Point (205, 375)), hangar_background]), tm_slide_1_04bSoundId),
+
+	// tm_slide_1_05
+	// Use this system?it has excellent detailed information not 
+	// available anywhere else.
+    (GroupImage ([TranslateImage (ImportImage ("tm_helpbmp", false), Point (105, 125)), hangar_background]), tm_slide_1_05SoundId),
+
+	// tm_slide_1_06
+	// When operating as a combat pilot, you will primarily be 
+	// concerned with these two areas: launch and loadout.
+    (GroupImage ([TranslateImage (circle_overlay, Point (360, 285)), TranslateImage (circle_overlay, Point (536, 230)), hangar_background]), tm_slide_1_06SoundId),
+
+	// tm_slide_1_07
+	// Clicking here takes you directly to the hangar door for a 
+	// rapid launch.ÿ
+    (GroupImage ([TranslateImage (circle_overlay, Point (360, 285)), hangar_background]), tm_slide_1_07SoundId),
+
+	// tm_slide_1_08
+	// Clicking here, or pressing the F4 key, takes you to the 
+	// Loadout screen.
+    (GroupImage ([TranslateImage (circle_overlay, Point (536, 230)), hangar_background]), tm_slide_1_08SoundId),
+
+	// tm_slide_1_09
+	// The Loadout screen is where you choose your ship, its 
+	// weaponry, and its cargo. We'll cover the use of the Loadout 
+	// screen in training mission 3, Basic Weaponry.
+    (ImportImage ("tm_loadout_backgroundbmp", false), tm_slide_1_09SoundId),
+
+	// tm_slide_1_10
+	// These areas of the hangar are primarily for use by the team 
+	// commander. If you are not in line for officer duty, don't 
+	// worry about them. If you want to try your hand as an 
+	// officer, these topics will be covered in training mission 
+	// 5, Command View.ÿ
+    (GroupImage ([TranslateImage (circle_overlay, Point (542, 357)), TranslateImage (circle_overlay, Point (54, 370)), TranslateImage (circle_overlay, Point (84, 188)), hangar_background]), tm_slide_1_10SoundId),
+
+	// tm_slide_1_11
+	// Clicking here, or pressing the F8 key, brings up the 
+	// Teleport display.
+    (GroupImage ([TranslateImage (circle_overlay, Point (207, 231)), hangar_background]), tm_slide_1_11SoundId),
+
+	// tm_slide_1_12
+	// You use the Teleport display whenever you want to jump to a 
+	// different space station or to board another ship as a 
+	// turret gunner.
+    (GroupImage ([TranslateImage (teleport_overlay, Point (105, 320)), hangar_background]), tm_slide_1_12SoundId),
+
+	// tm_slide_1_13
+	// To join another ship as a turret gunner, you select the 
+	// ship you want to board and then click the Transport button. 
+	// The numbers on the right side of the display show you how 
+	// many turret slots are manned by players and how many total 
+	// turrets the ship has.
+    (GroupImage ([TranslateImage (teleport_overlay, Point (105, 320)), hangar_background]), tm_slide_1_13SoundId),
+
+	// tm_slide_1_14
+	// Got all that? ? Remember, you can bring up the Help display 
+	// at any time. Right now, they are waiting for you on the 
+	// hangar deck. Get your gear and proceed to training mission 
+	// 2, Basic Flight. Good luck.
+    (hangar_background, tm_slide_1_14SoundId)
+];
+
+//----------------------------------------------------------

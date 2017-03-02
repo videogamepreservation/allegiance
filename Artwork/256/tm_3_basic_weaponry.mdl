@@ -1,0 +1,92 @@
+use "SlideshowData";
+use "sounddef";
+use "font";
+use "gamepanes";
+
+
+//----------------------------------------------------------
+// some more common images
+//----------------------------------------------------------
+hangar_background = ImportImage ("hangarbmp", false);
+loadout_background = ImportImage ("tm_loadout_backgroundbmp", false);
+circle_overlay = ImportImage ("tm_slide_circle_overlaybmp", true);
+
+//----------------------------------------------------------
+// no slides in this list
+//----------------------------------------------------------
+slides =
+[
+	// tm_slide_3_01
+	// Before launching into a combat scenario, you should select 
+	// the ship you wish to fly and outfit it in the way best 
+	// suited to the operation you are planning.
+    (hangar_background, tm_slide_3_01SoundId),
+
+	// tm_slide_3_02
+	// Clicking here, or pressing the F4 key, takes you to the 
+	// Loadout screen to do just that.
+    (GroupImage ([TranslateImage (circle_overlay, Point (536, 230)), hangar_background]), tm_slide_3_02SoundId),
+
+	// tm_slide_3_03
+	// Here, you can select from the ships currently available to 
+	// your team.
+    (loadout_background, tm_slide_3_03SoundId),
+
+	// tm_slide_3_04
+	// Clicking here cycles through the ships that are available 
+	// to you at this station. 
+    (GroupImage ([TranslateImage (circle_overlay, Point (469, 444)), loadout_background]), tm_slide_3_04SoundId),
+
+	// tm_slide_3_05
+	// This is where you select which weapons you wish to use.
+    (GroupImage ([TranslateImage (circle_overlay, Point (16, 457)), loadout_background]), tm_slide_3_05SoundId),
+
+	// tm_slide_3_06
+	// This is where you select a shield.
+    (GroupImage ([TranslateImage (circle_overlay, Point (644, 448)), loadout_background]), tm_slide_3_06SoundId),
+
+	// tm_slide_3_07
+	// Clicking here allows you to select what type of expendables 
+	// this craft will be using, such as mines and probes and so 
+	// on. 
+    (GroupImage ([TranslateImage (circle_overlay, Point (648, 369)), loadout_background]), tm_slide_3_07SoundId),
+
+	// tm_slide_3_08
+	// This is where you select the type of missiles this ship 
+	// will use.
+    (GroupImage ([TranslateImage (circle_overlay, Point (14, 294)), loadout_background]), tm_slide_3_08SoundId),
+
+	// tm_slide_3_09
+	// All ship types vary in the types of weapons, equipment, 
+	// expendables, and missiles they can use. For example, the 
+	// scout cannot carry a tactical nuclear missile, so one won?t 
+	// be available to your scout in the Loadout screen. You would 
+	// need to fly a different type of ship, such as an Missile 
+	// Frigate to be able to use a nuclear missile.ÿ
+    (loadout_background, tm_slide_3_09SoundId),
+
+	// tm_slide_3_10
+	// You can put anything in your cargo, though. Be careful 
+	// putting things in cargo because their mass affects your 
+	// agility in space. If you load up expendables, like ammo, 
+	// fuel, missiles, and probes, in cargo, then the ship will 
+	// automatically use them when its current magazineÿ runs out.
+    (GroupImage ([TranslateImage (circle_overlay, Point (644, 226)), loadout_background]), tm_slide_3_10SoundId),
+
+	// tm_slide_3_11
+	// All of the items you select in loadout are shown in the 
+	// Inventory display while in flight.
+    (loadout_background, tm_slide_3_11SoundId),
+
+	// tm_slide_3_12
+	// You should pay attention to the changing characteristics of 
+	// the craft as it is outfitted?different configs can have a 
+	// significant effect on your ship?s performance.
+    (GroupImage ([TranslateImage (circle_overlay, Point (205, 137)), loadout_background]), tm_slide_3_12SoundId),
+
+	// tm_slide_3_13
+	// Click the Launch button when you are ready.
+    (GroupImage ([TranslateImage (circle_overlay, Point (458, 373)), loadout_background]), tm_slide_3_13SoundId)
+];
+
+//----------------------------------------------------------

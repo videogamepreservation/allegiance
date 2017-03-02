@@ -1,0 +1,30 @@
+use "effect";
+use "font";
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Game Starting Screen
+//
+/////////////////////////////////////////////////////////////////////////////
+
+//
+// Status text
+//
+
+TextColor            = Color(1, 1, 1);
+textTitle            = StringPane("<bug>", TextColor, Point(800, 30), JustifyCenter, hugeBoldFont);
+textPrompt           = StringPane("<bug>", TextColor, Point(800, 20), JustifyCenter, largeBoldFont);
+
+
+//
+// The background and control positions
+//
+
+screen =
+    ScreenPane(
+        ImportImage("gamestartingscreenbmp", false),
+        [
+            (textTitle,            Point( 0,  0)),
+            (textPrompt,           Point(  0, 550))
+        ]
+    );

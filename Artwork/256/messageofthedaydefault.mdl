@@ -1,0 +1,30 @@
+use "effect";
+use "font";
+
+textImage =
+    TextFileImage(
+        JustifyLeft, 
+        511, 
+        medBoldVerdana, 
+        white, 
+        "motddefault.txt"
+    );
+
+textPosition = 
+    Point(
+        6, 
+        Subtract(
+            PointY(ImageSize(textImage)), 
+            230
+        )
+    );
+
+image =
+    TranslateImage(
+        textImage,
+        textPosition
+    );
+
+// The following line is required (preferably at the end of the file):
+// THIS IS A VALID MESSAGE OF THE DAY FILE 
+

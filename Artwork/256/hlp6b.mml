@@ -1,0 +1,84 @@
+<Font|promptFont>PILOT ROLES<Font|smallFont><p><p>
+
+The pilot is the foundation in Allegiance. At one point or another,
+everyone, including the commander and investor, will have to pilot a ship
+and take the fight personally to the enemy.<p><p>
+
+The pilot needs to understand the different classes of ships
+he will fly as well as their inherit strengths and weaknesses.
+The pilot needs to be aware of his surroundings and the current situation
+as well as maintain constant contact with any wingmen around to deal
+swiftly with any hostile threats.<p><p>
+
+As the pilot flies about in a tech tree game with a commander, he will
+need to pay attention to the objectives set by his commander. When a
+commander orders an objective, it appears in the message stream at the
+top the Combat HUD, and the Objective Pending icon appears in the upper-left corner
+of the screen.<p><p>
+
+<Font|smallBoldFont>To accept a command<Font|smallFont><p><p>
+
+<Bullet|hlpbullet|Press INSERT.><p><p>
+
+<Bullet|hlpblank|The accepted command will be noted with the Objective
+Accepted icon in the upper-left corner of your screen, and your ship will
+automatically go into autopilot and proceed toward the command objective. You can
+turn off autopilot by pressing P.><p><p>
+
+<Font|smallBoldFont>To reject a pending or accomplished command<Font|smallFont><p><p>
+
+<Bullet|hlpbullet|Press DELETE.><p><p>
+
+<Bullet|hlpblank|The Objective Pending or Accepted icon will be removed
+from the upper-left corner of your screen.><p><p>
+
+<Font|promptFont>Wings<Font|smallFont><p><p>
+
+A wing is a subgroup of pilots within the overall team. Each team can
+support up to 10 wings. The purpose of a wing is to
+provide a communications channel for a specific group of ships that wish to accomplish
+goals such as patrols, scouting missions, defensive missions, or attacks.
+Pilots themselves may decide which wings they wish to join.<p><p>
+
+All ships have a wing ID. The default wing for all players upon
+joining a team is Wing Alpha. You can change your wing either before
+the game starts or during the game.<p><p>
+
+<Font|smallBoldFont>To change your wing before the game starts<Font|smallFont><p><p>
+
+<Bullet|hlpimg1|In the Team Lobby, click <Font|smallBoldFont>Change Wing.<Font|smallFont>><p><p>
+
+<Bullet|hlpimg2|On the drop-down menu, click the name of the wing you wish to join.><p><p>
+
+<Bullet|hlpblank|The Wing column in the Team Lobby will be updated with the name of the new
+wing you are on.><p><p>
+
+<Font|smallBoldFont>To change your wing during the game<Font|smallFont><p><p>
+
+<Bullet|hlpimg1|To access the expanded Team display, press F6.><p><p>
+
+<Bullet|hlpimg2|Select your name in the list, and then click
+<Font|smallBoldFont>Change Wing.<Font|smallFont>><p><p>
+
+<Bullet|hlpimg3|On the drop-down menu, click the name of the wing you wish
+to join.><p><p>
+
+<Bullet|hlpblank|The Wing column in the Team display will be
+updated with the name of the new wing you are on.><p><p>
+
+<Font|promptFont>Managing Turret Gunners<Font|smallFont><p><p>
+
+If you are flying a ship that supports turret gunners -- a bomber or a capital ship -- you
+will want gunners manning your turrets before launching. You can fly a destroyer into battle
+without any turret support, but your life expectancy is only a few minutes in a hotly
+contested war zone.<p><p>
+
+At any time, the pilot can promote a turrent gunner (that is, swap roles with). To do so, 
+the pilot must press Shift-Y, Shift-U, Shift-I, and Shift-O.<p><p>
+
+If you are disconnected from a turret gunner, it can take up to 2 minutes before the server
+recognizes the disconnection. During this time, as a pilot you will be unable to fly your ship;
+the gunners will be able to fire but will be unable to successfully destroy any targets. If
+your ship is destroyed during this time, the pilot and the gunners will take a death. Upon
+confirmation of the disconnection, the pilot and all turret gunners are ejected and the ship
+self-destructs.

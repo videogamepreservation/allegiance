@@ -1,0 +1,39 @@
+use "SlideshowData";
+use "sounddef";
+use "font";
+use "gamepanes";
+
+//----------------------------------------------------------
+// some more common images
+//----------------------------------------------------------
+hangar_background = ImportImage ("hangarbmp", false);
+circle_overlay = ImportImage ("tm_slide_circle_overlaybmp", true);
+
+//----------------------------------------------------------
+// the slides
+//----------------------------------------------------------
+slides =
+[
+	// tm_slide_5_post_01
+	// ? or you can click here.
+    (GroupImage ([TranslateImage (circle_overlay, Point (54, 370)), hangar_background]),   tm_slide_5_post_01SoundId),
+
+	// tm_slide_5_post_02
+	// The last thing I?ll touch on this time around is the Game 
+	// State display. Pressing G brings this up. This will tell 
+	// you if you are winning or losing. It looks like we?re 
+	// winning big, so let?s call it a day.
+    (GroupImage ([TranslateImage (ImportImage ("tm_gamestatebmp", false), Point (105, 125)), hangar_background]),   tm_slide_5_post_02SoundId),
+
+	// tm_slide_5_post_03
+	// The Help display has more detailed coverage of this 
+	// material. You can access it by pressing the F1 key while in 
+	// a mission. 
+    (GroupImage ([TranslateImage (circle_overlay, Point (205, 375)), hangar_background]),   tm_slide_5_post_03SoundId),
+
+	// tm_slide_5_post_04
+	// Now, I think it?s time you had some tense combat 
+	// experience. Proceed to mission 6, practice arena.
+    (hangar_background,   tm_slide_5_post_04SoundId)
+];
+

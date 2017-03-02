@@ -1,0 +1,112 @@
+<Font|promptFont>TEAM LOBBY<Font|smallFont><p><p>
+
+Once you have created or joined a game at its beginning, you are taken to the Team Lobby from
+the Games List. The Team Lobby is where all pregame strategy typically happens -- where you
+discuss what team you will play for, who the members are on each team, and what roles the different
+players will be playing.<p><p>
+
+At the top of the Team Lobby, your player status and that of your team are shown. If you have not
+joined a team, a message here states that you need to do so.<p><p>
+
+<Font|promptFont>Teams Section<Font|smallFont><p><p>
+
+The teams section shows the names and number of teams in the game. The two numbers separated by
+a "/" beside each team's faction choice represent the current and the maximum number of players
+allowed on that team. A minimum of 2 teams is needed to start a game, with no more than 6 teams
+allowed.<p><p>
+
+To see the players that make up a team, click that team's name to see its team roster. All team
+and player information is updated as players join and quit teams.<p><p>
+
+If a player is "not on a team," he must join a team by the time the game starts, or he will not
+enter the game when it is launched. Players who are not assigned yet do have chat access so that
+they can chat with other players in the lobby.<p><p>
+
+If a team is labeled Available, no one is on that team yet and it is waiting to be formed. The
+first player to join such a team automatically becomes that team's leader.<p><p>
+
+Once you decide which team you want to join, click the <Font|smallBoldFont>Join Team<Font|smallFont>
+button. The team leader for that team will either accept or reject you.<p><p>
+
+<Font|promptFont>Team Roster<Font|smallFont><p><p>
+
+The team roster lists all the players on a specific team as well as their details.<p><p>
+
+<Font|smallBoldFont>Pilot --<Font|smallFont>Shows the player's name.<p><p>
+
+<Font|smallBoldFont>Role --<Font|smallFont>Indicates if the player is the
+game owner or the team leader.<p><p>
+
+<Font|smallBoldFont>Rank --<Font|smallFont>Indicates the player's rank as
+a member of the Allegiance Zone.<p><p>
+
+<Font|smallBoldFont>State --<Font|smallFont>Indicates whether the player
+is ready, away from the keyboard (AFK), or requesting to be added to the
+team. To change
+your own status to AFK, click the <Font|smallBoldFont>AFK<Font|smallFont>
+check box directly above the chat section.<p><p>
+
+<Font|smallBoldFont>Wing --<Font|smallFont>Indicates what wing the player is on. To change to a
+<Secondary|hlpd_wings|different wing,> click <Font|smallBoldFont>Change Wing<Font|smallFont> to
+the right of the team roster, and then click the wing you want to be on.<p><p>
+
+<Font|promptFont>Team Leader Options<Font|smallFont><p><p>
+
+If you are a team leader, you have access to additional functionality that the other players do
+not see.<p><p>
+
+<Font|smallBoldFont>Team Settings --<Font|smallFont>Click to display the Team Settings screen,
+where the team leader can modify the team name and select which faction the team will
+represent.<p><p>
+
+<Font|smallBoldFont>Team Ready --<Font|smallFont>Select to let everyone on all teams know that
+your team is ready. This can be selected even if a player is away from the keyboard (AFK). Once
+all team leaders have selected the Team Ready option, the game will begin.<p><p>
+
+<Font|smallBoldFont>Auto Accept --<Font|smallFont>Select to accept automatically all players who
+request to be on your team.<p><p>
+
+<Font|smallBoldFont>Accept Pilot --<Font|smallFont>Click to accept a player who is requesting to
+join your team. When a player tries to join your team and Auto Accept is not selected, that
+player's name will flash and his status will change to "requesting."<p><p>
+
+<Font|smallBoldFont>Reject Pilot --<Font|smallFont>Click to reject a player who is requesting
+to join your team. When a player tries to join your team and Auto Accept is not selected, that
+player's name will flash and his status will change to "requesting." When a player is rejected,
+he is booted back to the "not on a team" roster, from where he can try to join another team.<p><p>
+
+<Font|smallBoldFont>Make Leader --<Font|smallFont>Click to make the selected player the team
+leader. The first person to join a team is considered the team leader at the creation or setting
+of a game. The team leader is always placed at the top of the team roster.<p><p>
+
+<Font|promptFont>Game Owner Options<Font|smallFont><p><p>
+
+The game owner has access to two options that no one else does.<p><p>
+
+<Font|smallBoldFont>Lock Lobby --<Font|smallFont>Select to prevent new players from joining the
+game.<p><p>
+
+<Font|smallBoldFont>Lock Sides --<Font|smallFont>Select to prevent team leaders from making changes
+to their team settings.<p><p>
+
+<Font|promptFont>Chat Section<Font|smallFont><p><p>
+
+The chat section gives you two main communications channels, and a third
+one if you are a team leader.<p><p>
+
+<Font|smallBoldFont>All Players --<Font|smallFont>Select when you want to
+communicate to all players in the game. It is often used for all players to discuss what
+game styles they want to play and who will be on what team.<p><p>
+
+<Font|smallBoldFont>Team Only --<Font|smallFont>Select when you want to
+communicate only to your team members. It is the best channel to use to decide among
+your team members your team's strategy and tactics, who will play exactly what roles, and
+so on.<p><p>
+
+<Font|smallBoldFont>Leaders Only --<Font|smallFont>Select when you want to
+communicate only to the team leaders of all teams in your game. This option only appears
+if you are a team leader.<p><p>
+
+If the icon beside a communications channel flashes, it means that a new message has been
+entered into that channel. It will continue to flash until you access that communications
+channel.

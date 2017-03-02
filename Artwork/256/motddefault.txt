@@ -1,0 +1,49 @@
+
+
+
+
+Allegiance Beta 0
+
+Welcome to the Allegiance Beta Test
+
+If there is any message of high importance that we feel the Beta Testers need to know, it will be located here in the Zone Message window. Please report all bugs and features ideas to the Report Bugs link on the Game Rooms page at the Allegiance web site (http://www.zone.com/allegiance).\n\nWe urge you to go through Training Missions 1, 2 & 5 before playing online.  They will help you get a feel for the game and answer some of the most commonly asked questions.\n\nAfter you've been through the training missions, try your hand at a Brawl Arena where there are lots of players, no techs, no resources, and just two ships to choose from.  Arenas are all about Combat.\n\nOnce you're comfortable fighting other humans, you can get some buddies together and create your own game.  Here is a list of the two most common games and the settings for each:
+
+_____________________________________________________________
+
+DEATHMATCH - the first team with ten kills wins the game
+
+SETTINGS: map BRAWL, development OFF, invulnerable stations ON, conquest N/A, deathmatch 10 (or however many kills you want)
+
+_____________________________________________________________
+
+CONQUEST - the first team to take over or destroy all of the other teams' bases wins.
+
+SETTINGS: map BIG RING or SINGLE RING, development ON, invulnerable stations OFF, conquest 100%, deathmatch N/A
+
+_____________________________________________________________
+
+Have Fun!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

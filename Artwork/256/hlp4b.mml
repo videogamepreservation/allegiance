@@ -1,0 +1,13 @@
+<Font|promptFont>LOADOUT SCREEN<Font|smallFont><p><p>
+
+The Loadout screen gives you access to all the ships you can launch from
+the current station you are located at as well as the available weapons
+and equipment for each ship.<p><p>
+
+<Font|smallBoldFont>To access the Loadout screen<Font|smallFont><p><p>
+
+<Bullet|hlpbullet|In the hangar, click the Loadout location, or press F4.><p><p>
+
+<Bullet|hlpblank|Note that while in your ship pressing F4
+will toggle your <Main|hlp4l|Inventory display,> essentially your
+in-flight Loadout.>

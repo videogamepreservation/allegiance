@@ -1,0 +1,40 @@
+<Font|promptFont>WIN CONDITIONS<Font|smallFont><p><p>
+
+There are a number of win conditions, or game styles, in Allegiance. The game owner can select
+just one win condition or combine various win conditions to create unique games and allow the
+opportunity for many game styles to be tried. When you start to
+combine your win conditions, the game is considered a Custom game.<p><p>
+
+<Font|smallBoldFont>Conquest --<Font|smallFont>The first team that owns
+all other enemy stations wins. If a Conquest game is played with a Countdown setting as well,
+whichever team makes the most progress toward the goal of Conquest by the time the Countdown
+has expired is the winner.<p><p>
+
+<Font|smallBoldFont>Countdown --<Font|smallFont>The winner is based on the victory conditions
+picked for the game. The first conditions in the game state pane are the first tested to 
+determine a winner, and so on in order of the conditions. Most number of kills and least
+number of deaths are always used if no other game condition determines a winner.<p><p>
+
+<Font|smallBoldFont>Deathmatch --<Font|smallFont>The first team that reaches the specified
+number of kills wins. The required kills can be set in increments from 5 to 100.<p><p>
+
+<Font|smallBoldFont>Prosperity --<Font|smallFont>The first team that gathers a specified
+amount of money, invests in the Reinforcement tech item, and survives the
+wait for reinforcements wins.<p><p>
+
+<Font|smallBoldFont>Territory --<Font|smallFont>The game ends when one side has sole control
+over 75% of the map's sectors. Sole control is defined as having a station in the sector while
+the other side does not.<p><p>
+
+<Font|smallBoldFont>Artifacts --<Font|smallFont>The first team that retrieves the most artifacts
+scattered throughout the sectors and returns them to their bases wins. Once an artifact has been
+returned to a team's base, a new artifact randomly appears somewhere on the map. Any team can
+pick up any artifact, so if you kill an enemy and he drops an artifact, be sure to grab it and
+return it to base.<p><p>
+
+<Font|smallBoldFont>Capture the Flag --<Font|smallFont>The first team that retrieves the
+specified number of enemy-colored flags and returns them to their own home sector wins. The
+flags are found in various sectors, usually enemy sectors. Be sure that while you are collecting
+the enemy flags you are protecting your own team's flags. You can only pick up an enemy flag, so
+if you find one of your own or kill an enemy who drops one of yours, you must defend it where it
+lay.

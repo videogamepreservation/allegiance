@@ -1,0 +1,107 @@
+<Font|promptFont>HUD INSTRUMENTS<Font|smallFont><p><p>
+
+<Font|promptFont>Central HUD Area<Font|smallFont><p><p>
+
+The central HUD area gives you all relative information about your ship and its current
+status.<p><p>
+
+<Font|smallBoldFont>Thrust Gauge --<Font|smallFont>Shows a relative scale
+of how much thrust you are currently using. Your throttle setting controls the amount
+of thrust.<p><p>
+
+<Font|smallBoldFont>Fuel Gauge --<Font|smallFont>Shows the amount of
+fuel you are currently
+carrying. Fuel is not used by your thrusters but by firing your boosters.
+The more often you fire your boosters, the quicker your fuel will be depleted.<p><p>
+
+<Font|smallBoldFont>Ammo Gauge --<Font|smallFont>Shows how much ammunition
+you have. Projectile weaponry such as machine guns require ammunition. Once your
+ammunition is depleted, you'll need to reload. If you are carrying spare ammunition in your
+cargo, it will automatically be reloaded into your guns as needed. For more information on
+reloading ammunition, access In-Game Screens: <Main|hlp4l|Inventory Display.><p><p>
+
+<Font|smallBoldFont>Energy Gauge --<Font|smallFont>Shows how much energy you have.
+Energy is needed for energy weapons. Once you run out of energy, you will have to wait until the
+energy replenishes itself to get the full force of your energy weaponry.<p><p>
+
+<Font|smallBoldFont>Shield Meter --<Font|smallFont>Shows the current status of your shields.
+When reduced, your shields will slowly replenish themselves as long as you are not being
+attacked. If your shields are eliminated and you are still being attacked, your armor will
+then start being depleted.<p><p>
+
+<Font|smallBoldFont>Armor Meter --<Font|smallFont>Shows the current status of your armor.
+If you run out of armor, your ship will explode and, depending on the game settings, you'll
+either find yourself in an eject pod or back at the closest station wondering "What the ... ."<p><p>
+
+<Font|smallBoldFont>MPS --<Font|smallFont>Shows the speed of your craft in meters per second.<p><p>
+
+<Font|smallBoldFont>Kill (or Attack) Bonus --<Font|smallFont>Shows
+the percentage of extra damage you are inflicting on an enemy. This
+bonus increases each time you score a kill. If you are killed in an
+eject pod, you lose your bonus. The only time you should kill an
+enemy in an eject pod is when he has a high kill bonus. If the game
+is set to not allow eject pods, you will lose your kill bonus every
+time your ship is shot down.<p><p>
+
+<Font|promptFont>Indicators and Pointers<Font|smallFont><p><p>
+
+<Font|smallBoldFont>Motion Indicator --<Font|smallFont>Shows the
+direction your ship is moving. This
+small gray set of brackets will swing to the side of your screen when you turn and then
+gradually return to the center of your Combat HUD as your ship straightens
+out. It is very
+important to use the motion indicator when you are maneuvering through asteroids, turning
+quickly into an aleph, or trying to set up a landing into a hangar.
+To lock your course, turn your directional lock on by pressing L on
+your keyboard or button 5 on your joystick.<p><p>
+
+<Font|smallBoldFont>Target in Range Indicator --<Font|smallFont>Appears once you are within weapons
+range of your intended target. When the target is not in correct alignment, this indicator is gray;
+once the target is in correct alignment and your shots will actually hit the target, the gray
+indicator will become green. The same applies to the turret gunner. The HUD for the turret
+gunner is essentially a stripped version of the standard Combat HUD.<p><p>
+
+<Font|smallBoldFont>Missile Lock on Target Indicator --<Font|smallFont>Centers on your target
+when you are within missile range. Once you are within range, your missile system will attempt
+to lock onto the target. You'll be able to tell if you have a missile lock by the strong
+green/yellow indicator locked on the target. You'll now have your best chance of hitting
+the target when firing your missile with a missile lock made.<p><p>
+
+<Font|smallBoldFont>Target/Command Pointers --<Font|smallFont>Appear around the edge of your
+central HUD and point at your target and/or command. A target pointer
+is red, a command pointer green, and a target/command pointer yellow.<p><p>
+
+An objective is usually assigned by a commander. All you need to do is turn toward the arrow to
+keep headed toward the target. Once you are lined up with it, the arrow will disappear.
+It will reappear if you turn too far off alignment.<p><p>
+
+<Font|promptFont>Piloting Indicators<Font|smallFont><p><p>
+
+<Font|smallBoldFont>Autopilot --<Font|smallFont>Indicates that
+your autopilot is on. To toggle autopilot, press P. To disengage
+autopilot at any time, simply move your joystick. If you have a
+joystick that is not self-centering, make sure it stays centered
+while in autopilot; otherwise, autopilot will automatically
+disengage.<p><p>
+
+<Font|smallBoldFont>Cloak --<Font|smallFont>Indicates that your cloak is
+on. You need to be piloting a ship that has the cloak ability and one
+equipped in their inventory. To toggle your cloak, press K. When your
+cloak is on, you'll drain energy from your energy reserves but you'll
+nearly be invisible to the enemy's radar. <Color|white><p><p>
+
+<Font|smallBoldFont>Detected by Enemy --<Font|smallFont>Indicates
+that you are being scanned by an enemy.<p><p>
+
+<Font|smallBoldFont>Directional Lock --<Font|smallFont>Indicates
+that your directional lock is on, which locks your course on the current
+location of the motion indicator. To toggle directional lock, press
+L on your keyboard or press button 5 on your joystick.<p><p>
+
+Directional lock allows you to keep heading on course while pointing
+your guns at a target for straffing.<p><p>
+
+A number of ships have the ability to use side thrusters for lateral and up and down
+movement. These are engaged by pressing NUMLOCK on and then turning directional lock
+to lock the NUMLOCK keypad on and keep the thrusters firing. When you want to disengage
+the thrusters, turn directional lock off.

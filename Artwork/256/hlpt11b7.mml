@@ -1,0 +1,160 @@
+<Font|promptFont>MISSILES<Font|smallFont><p><p>
+
+<Bullet|hlpbullet|SRM Dumbfire 1<p><p>
+
+A short-range combat missile with basic tracking ability and a medium warhead.<p><p>
+
+Hit Damage -- 100 <p>
+Area Damage -- 0<p>
+Range -- 900<p>
+Locktime -- 0<p>
+Accuracy -- <p>
+Defense Bonus -- Utility><p><p>
+
+<Bullet|hlpbullet|MRM Seeker Missile 1<p><p>
+
+A medium-range combat missile with good tracking ability but a small warhead.<p><p>
+
+Hit Damage -- 60 <p>
+Area Damage -- 0<p>
+Range -- 1230<p>
+Locktime -- 2<p>
+Accuracy -- <p>
+Defense Bonus -- Utility><p><p>
+
+<Bullet|hlpbullet|SRM Anti-Base Missile 1<p><p>
+
+A short-range anti-base missile with almost no tracking ability but a large warhead.<p><p>
+
+Hit Damage -- 400<p>
+Area Damage -- 0<p>
+Range -- 1000<p>
+Locktime -- 2<p>
+Accuracy -- <p>
+Defense Bonus -- Ship Shield><p><p>
+
+<Bullet|hlpbullet|LRM Hunter Missile 1<p><p>
+
+A long-range small-payload missile with great tracking ability.<p><p>
+
+Hit Damage -- 120<p>
+Area Damage -- 0<p>
+Range -- 1665<p>
+Locktime -- 1<p>
+Accuracy -- <p>
+Defense Bonus -- Utility><p><p>
+
+<Bullet|hlpbullet|SRM Anti-Base Mk2 -- $5000<p><p>
+
+A short-range anti-base missile with almost no tracking ability but a large warhead.<p><p>
+
+Hit Damage -- 500 <p>
+Area Damage -- 0<p>
+Range -- 1000<p>
+Locktime -- 0<p>
+Accuracy -- <p>
+Defense Bonus -- Ship><p><p>
+
+<Bullet|hlpbullet|SRM Dumbfire Mk2 -- $5000<p><p>
+
+A short-range combat missile with basic tracking ability and a medium warhead.<p><p>
+
+Hit Damage -- 125<p>
+Area Damage -- 0<p>
+Range -- 1125<p>
+Locktime -- 0<p>
+Accuracy -- <p>
+Defense Bonus -- Utility><p><p>
+
+<Bullet|hlpbullet|MRM Seeker Mk2 -- $5000<p><p>
+
+A medium-range combat missile with good tracking ability but a small warhead.<p><p>
+
+Hit Damage -- 60<p>
+Area Damage -- 0<p>
+Range -- 1230<p>
+Locktime -- 2<p>
+Accuracy -- <p>
+Defense Bonus -- Utility><p><p>
+
+<Bullet|hlpbullet|LRM Hunter Killer Mk2 -- $5,000<p><p>
+
+Hit Damage -- <p>
+Area Damage -- <p>
+Range -- <p>
+Locktime -- <p>
+Accuracy -- <p>
+Defense Bonus -- ><p><p>
+
+<Bullet|hlpbullet|MRM Seeker Mk3 -- $5,000<p><p>
+
+A medium-range combat missile with good tracking ability but a small warhead.<p><p>
+
+Hit Damage -- 60<p>
+Area Damage -- 0<p>
+Range -- 1645<p>
+Locktime -- 1<p>
+Accuracy -- <p>
+Defense Bonus -- Utility><p><p>
+
+<Bullet|hlpbullet|MRM Seismic Missile -- $5000<p><p>
+
+A medium-range asteroid-destroying missile.<p><p>
+
+Hit Damage -- 1000<p>
+Area Damage -- 0<p>
+Range -- 1320<p>
+Locktime -- 0<p>
+Accuracy -- <p>
+Defense Bonus -- Base Shield><p><p>
+
+<Bullet|hlpbullet|XRM Cruise Mk2 -- $5000<p><p>
+
+Develops an enhanced very long-range anti-base missile with a better warhead.<p><p>
+
+Hit Damage -- 225<p>
+Area Damage -- 0<p>
+Range -- 3300<p>
+Locktime -- 0<p>
+Accuracy -- <p>
+Defense Bonus -- Ship Shield><p><p>
+
+<Bullet|hlpbullet|SRM Tacticl Nuke Mk2 -- $5000<p><p>
+
+A short-range anti-base missile with almost no tracking ability but a massive warhead.<p><p>
+
+Hit Damage -- 1000<p>
+Area Damage -- 0<p>
+Range -- 1680<p>
+Locktime -- 0<p>
+Accuracy -- <p>
+Defense Bonus -- Ship Shield><p><p>
+
+<Bullet|hlpbullet|XRM Cruise Mk3 -- $5000<p><p>
+
+Develops an advanced very long-range anti-base missile with a better warhead.<p><p>
+
+Hit Damage -- 225<p>
+Area Damage -- 0<p>
+Range -- 4200<p>
+Locktime -- 0<p>
+Accuracy -- <p>
+Defense Bonus -- Ship Shield><p><p>
+
+<Bullet|hlpbullet|SRM Seeker Mk3 --<p><p>
+
+Hit Damage -- <p>
+Area Damage -- <p>
+Range -- <p>
+Locktime -- <p>
+Accuracy -- <p>
+Defense Bonus -- ><p><p>
+
+<Bullet|hlpbullet|MRM Ranger Mk1 -- <p><p>
+
+Hit Damage -- <p>
+Area Damage -- <p>
+Range -- <p>
+Locktime -- <p>
+Accuracy -- <p>
+Defense Bonus -- >

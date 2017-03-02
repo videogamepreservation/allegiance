@@ -1,0 +1,44 @@
+use "effect";
+use "font";
+
+
+font = medVerdana;
+
+offset = 0.1;//Subtract(Mod(Multiply(time, 0.1), 2), 1);
+
+image =
+    PaneImage(
+        BlackPane(
+            AnimatedImagePaneRect(
+                GroupImage([
+                    //TranslateImage(StringImage(JustifyLeft, 75, font, white, "T"), PointV( 0, Add( 0, offset))),
+                    //TranslateImage(StringImage(JustifyLeft, 75, font, white, "T"), PointV(10, Add(-1, offset))),
+                    TranslateImage(StringImage(JustifyLeft, 75, font, white, "T"), PointV(20, Add(-2, offset))),
+                    TranslateImage(StringImage(JustifyLeft, 75, font, white, "R"), PointV(30, Add(-3, offset)))/*,
+                    
+                    TranslateImage(
+                        StringImage(
+                            JustifyLeft, 
+                            75, 
+                            font, 
+                            white, 
+                            NumberString(
+                                Multiply(offset, 10)
+                            )
+                        ), 
+                        PointV(40, Add(-3, offset))
+                    )*/
+                ]),
+                Rect(0, -14, 100, 0)
+            )
+        ),
+        false,
+        true
+    );
+
+test =
+    TranslateImage(
+        image,
+        Point(50, 50)
+    );
+

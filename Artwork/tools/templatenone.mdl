@@ -1,0 +1,5 @@
+use "effect";
+
+frame = ModifiableNumber(initialFrame);
+
+object = ImportXFile("name.x", frame);

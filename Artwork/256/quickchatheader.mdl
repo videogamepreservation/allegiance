@@ -1,0 +1,27 @@
+use "effect";
+
+struct SonicChatVoice {
+	sound  : Sound;
+	string : String;
+};
+
+struct SonicChat {
+    voices : [ SonicChatVoice ];
+};
+
+struct QuickChatCommand extends QuickChatNode {
+	sonicChat   : SonicChat;
+    commandID   : Number;
+    targetType  : Number;
+    abilityMask : Number;
+};
+
+struct QuickChatMenuItem {
+    char   : Number;
+	string : String;
+	node   : QuickChatNode;
+};
+ 
+struct QuickChatMenu extends QuickChatNode {
+    items : [ QuickChatMenuItem ];
+};

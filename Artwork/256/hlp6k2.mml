@@ -1,0 +1,188 @@
+<!If you touch this file, be prepared to correct all tabbing errors that
+result.>
+
+<Font|promptFont>VOICE COMMS<Font|smallFont><p><p>
+
+The Allegiance Voice-Comm System provides an effective way for quickly
+communicating with other players with just a few keystrokes. Some of these
+comms serve as a way to immediately command and to accept or reject
+commands, whereas others simply let you encourage a teammate or taunt an
+enemy.<p><p>
+
+<Font|promptFont>Basics<Font|smallFont><p><p>
+
+<Font|smallBoldFont>Comm			
+							Keyboard<Font|smallFont><p>
+Access Voice-Comm						~ <p>
+Affirmative!									
+~,
+1<p> Negative!									
+~,
+2<p> Shhhooot!									
+~,
+3<p> Yee-haaaw!									
+~, 4<p> Attack my target!<Secondary|hlpd_asterisk|*>						
+~, 5<p> I need help!
+~, 6<p> Donate your money to the investor!	~, 7<p>
+I need turret gunners NOW!				~, 8<p>
+I'll be on your turret in a few<p>
+seconds.									
+~, 9<p> Oops, wrong voice chat ...				~, 0<p><p>
+
+<Font|promptFont>Commands<Font|smallFont><p><p>
+
+<Font|smallBoldFont>Comm									
+	Keyboard<Font|smallFont><p>
+We need a scout to find an aleph!		~, C, A<p>
+Found enemy constructor. Request<p>
+assistance!<Secondary|hlpd_asterisk|*>								~,
+C, B<p> Constructor launching now.				~, C, C<p>
+Defend out miners. They are<p>
+getting hammered.						~, C, D<p>
+Find their freakin' base.					~, C, F<p>
+Go Go Go!									
+~, C, G<p> Go miner hunting.							
+~, C, H<p>
+Stay together.								~,
+C, I<p>
+Ripcord home.								~,
+C, J<p> Lay low and go for constructors.		~, C, L<p>
+Found enemy miners. Request<p>
+assistance!<Secondary|hlpd_asterisk|*>								~,
+C, M<p> Our base is under attack. Request<p>
+assistance!<Secondary|hlpd_asterisk|*>								~,
+C, O<p> Deploy probes.								
+~, C, P<p> Wait for signal.							
+	~, C, Q<p>
+Retreat!									
+	~,
+C, R<p> Deploy mines.								
+~, C, T<p> Repair the station.							
+~, C, U<p>
+Follow me.									
+~, C, X<p>
+Stay on target.								~,
+C, Y<p><p>
+
+<Font|promptFont>Respond<Font|smallFont><p><p>
+
+<Font|smallBoldFont>Comm									
+	Keyboard<Font|smallFont><p>
+Acknowledged!							~, R, A<p>
+Cool.										
+	~, R, C<p> I don't have enough money.				~, R, D<p>
+I'm on it.									
+~, R, I<p>
+On my own.									
+~, R, M<p> Objective complete.						~,
+R, O<p> Surely you're joking.						~,
+R, S<p>
+Hell yeah!									
+~, R, Y<p>
+You're crazy.								~,
+R, Z<p><p>
+
+<Font|promptFont>Find<Font|smallFont><p><p>
+
+<Font|smallBoldFont>Comm									
+	Keyboard<Font|smallFont><p>
+Find alephs.									
+~, F, A<p> Find carbonaceous asteroid.			~, F, C<p>
+Find enemy.									
+~, F, E<p> Find helium asteroid.						
+~, F, H<p> Find their miners.							
+~, F, M<p> Find silicon asteroid.						
+~,
+F, S<p> Find uranium asteroid.					~,
+F, U<p><p>
+
+<Font|promptFont>General<Font|smallFont><p><p>
+
+<Font|smallBoldFont>Comm									
+	Keyboard<Font|smallFont><p>
+Steady tiger.								~,
+G, A<p> Aaaargh ... real life wants me.			~, G, B<p>
+Make me commander.					~, G, C<p>
+Sorry folks, got dropped by my ISP.	~, G, D<p>
+Everyone ready.							~, G, E<p>
+What are you saving up 	for.			~, G, F<p>
+Start the game already?					~, G, G<p>
+Hold your horses ...						~, G, H<p>
+It'll be a couple more minutes.			~, G, I<p>
+Just a sec ... waiting for a<p>
+couple more people.						~, G, J<p>
+So, nice weather ... how's the<p>
+kids? Erm ... LET'S PLAY THIS<p>
+THING!										
+~, G, K<p> Who wants to be commander?			~, G, L<p>
+Change the map.							~, G, M<p>
+I'm new, and I'm clueless.				~, G, N<p>
+It's late ... gotta go. G'night.			~, G, O<p>
+Gotta take a pit stop ... hold up.		~, G, P<p>
+Great game. How about a rematch?	~, G, R<p>
+Settings have changed.					~, G, S<p>
+Go to team-only comms.					~, G, T<p>
+Shall we begin?							~, G, V<p>
+Check your wing assignment.			~, G, W<p><p>
+
+<Font|promptFont>Attack (A), Defend (D), Need (N)<Font|smallFont><p><p>
+
+<Font|smallBoldFont>Comm									
+	Keyboard<Font|smallFont><p>
+Base.										
+	~; A, D, or N; B<p>
+Constructor.								~;
+A, D, or N; C<p>
+Defenders.									
+~; A, D, or N; D<p>
+Better fighters.								
+~, N, E<p>
+Fighters.									
+	~; A, D, or N; F<p>
+Fuel.										
+	~, N, G<p>
+Interceptors.								~;
+A, D,
+or N; I<p> Objective.								
+	~, N, J<p>
+Capital ship.								~;
+A, D, or N; L<p>
+Miners.										
+~; A, D, or N; M<p>
+Bombers.									
+~; A, D, or N; O<p>
+Ripcord.									
+	~; A, D, or N; R<p>
+Stealths.									
+~; A, D, or N; S<p>
+Transport.									
+~; A, D, or N; T<p>
+Scouts.										
+~; A, D, or N; U<p>
+Towers.										
+~; A, D, or N; V<p>
+Better weapons.							~, N, W<p>
+Repairs.									
+	~, N, X<p>
+Money.									
+	~, N, Y<p><p>
+
+<Font|promptFont>Taunts<Font|smallFont><p><p>
+
+<Font|smallBoldFont>Comm									
+	Keyboard<Font|smallFont><p>
+Almost had you.							~,
+T, A<p> Come back and fight!						~, T, C<p>
+Death becomes you.						~, T, D<p>
+How did that feel?							~, T, F<p>
+Oooh ... looked like that hurt!			~,
+T, H<p> Someone slap the investor!				~,
+T, I<p> Like lambs to the slaughter.				~,
+T, L<p> You have no honor.						~, T, N<p> Oooh ... sorry about that one.			~,
+T, O<p> Ripcord ... last resort for the<p>
+desperate.									
+~, T, R<p> Someone shoot the commander.		~, T, S<p>
+You died with dignity.						~, T, T<p>
+You'll be sorry you did that.				~, T, V<p>
+Yesss!										
+~, T, Y

@@ -1,0 +1,555 @@
+use "console";
+use "font";
+use "teampane";
+
+TextColor = Color(1, 1, 1);
+
+AmmoWeaponDisplay =                         
+    (
+        ImagePane(
+            ImportImage("conweaponsdisplaybmp", false),
+            [
+                (
+                    StringPane(
+                        GetPartName(SelectedWeapon, OnSelectedWeaponChange),
+                        TextColor,
+                        Point(153,10)
+                    ),
+                    Point(69,2)
+                ),
+                (
+                    StringPane(
+                        NumberString(GetWeaponRange(SelectedWeapon, OnSelectedWeaponChange)),
+                        TextColor,
+                        Point(35,10)
+                    ),
+                    Point(43,16)
+                ),
+                (
+                    StringPane(
+                        NumberString(GetAmmo(Me, OnEveryFrame)),
+                        TextColor,
+                        Point(26,10)
+                    ),
+                    Point(137,16)
+                )
+            ]
+        )
+    );
+
+EnergyWeaponDisplay = 
+    (
+        ImagePane(
+            ImportImage("conenergyweaponsdisplaybmp", false),
+            [
+                (
+                    StringPane(
+                        GetPartName(SelectedWeapon, OnSelectedWeaponChange),
+                        TextColor,
+                        Point(153,10)
+                    ),
+                    Point(69,2)
+                ),
+                (
+                    StringPane(
+                        NumberString(GetWeaponRange(SelectedWeapon, OnSelectedWeaponChange)),
+                        TextColor,
+                        Point(35,10)
+                    ),
+                    Point(43,16)
+                ),
+                (
+                    GaugePane(
+                        ImportImage("hudgaugebmp", false),
+                        GetPercentEnergy(Me, OnEveryFrame),
+                        Color(1, 0, 0),
+                        Color(0, 1, 0)
+                    ),
+                    Point(123,18)
+                )
+            ]
+        )
+    );
+
+WeaponsPane =
+    SwitchPane(
+        IsEnergyWeapon(SelectedWeapon, OnSelectedWeaponChange),
+        [
+            (
+                AmmoWeaponDisplay,
+                0
+            ),
+            (
+                EnergyWeaponDisplay,
+                1
+            )
+        ]
+    );
+
+OrdersPane =
+    ImagePane(
+        ImportImage("conordersdisplaybmp", false),
+        [
+
+            (
+                StringPane(
+                    Objective,
+                    TextColor
+                ),
+                Point(64, 1)
+            ),
+            (
+
+                StringPane(
+                    GetName(ObjectiveTarget, OnObjectiveTargetChange),
+                    TextColor
+                ),
+                Point(128, 1)
+            ),
+            (
+                StringPane(
+                    NumberString(GetRange(ObjectiveTarget, OnEveryFrame)),
+                    TextColor
+                ),
+                Point(132,14)
+            ),
+            (
+
+                StringPane(
+                    GetName(ObjectiveIssuer, OnObjectiveIssuerChange),
+                    TextColor
+                ),
+                Point(40, 14)
+            )
+        ]
+
+    );
+
+MissilesPane =
+    ImagePane(
+        ImportImage("conmissilesdisplaybmp", false),
+        [
+            (
+                StringPane(
+                    GetPartName(SelectedMissile, OnSelectedMissileChange),
+                    TextColor,
+                    Point(153,13)
+                ),
+                Point(69,2)
+            ),
+            (
+                StringPane(
+                    NumberString(GetMissileCount(SelectedMissile, OnEveryFrame)),
+                    TextColor,
+                    Point(29,10)
+                ),
+                Point(143,16)
+            ),
+            (
+                StringPane(
+                    NumberString(GetMissileRange(SelectedMissile, OnSelectedMissileChange)),
+                    TextColor,
+                    Point(35,10)
+                ),
+                Point(75,16)
+            )
+        ]
+
+    );
+
+SelectionPane =
+    ImagePane(
+        ImportImage("conselectiondisplaybmp", false),
+        [
+            (
+                SelectionPane(OnSelectionChange),
+                Point(2,15)
+            )
+        ]
+
+    );
+
+ComposeChatPane = ImagePane(ImportImage("chatformationbmp", false), []);
+
+CmdBarPane = CmdButtonBarPane(CommandMask, []);
+
+
+ComposeCmdPane =  ImagePane(
+                        ImportImage("cmdformationbmp", false),
+                        [
+                            (
+                                StringPane( 
+                                    ComposedVerb, 
+                                    TextColor
+                                ),
+                                Point(2, 16)
+                            ),
+                            (
+                                StringPane( 
+                                    ComposedObjectName, 
+                                    TextColor
+                                ),
+                                Point(35,35)
+                            )
+                        ]
+                    );
+
+NotComposingPane = ImagePane(ImportImage("conshrunkcmdbardisplaybmp", false), []);
+                    
+ComposingPane =
+    ImagePane(
+        ImportImage("concmdbardisplaybmp", false),
+        [
+            (
+                StringPane(
+                    ComposedMsg,
+                    TextColor,
+                    Point(168,12),
+                    JustifyLeft,
+                    smallFont,
+                    true
+                ),
+                Point(4,5)
+            ),
+            (
+                SwitchPane(
+                    ComposeState,
+                    [
+                        (
+                            CmdBarPane,
+                            0
+                        ),
+                        (
+                            ComposeChatPane,
+                            1
+                        ),
+                        (
+                            ComposeChatPane,
+                            2
+                        ),
+                        (
+                            CmdBarPane,
+                            3
+                        ),
+                        (
+                            ComposeCmdPane,
+                            4
+                        ),
+                        (
+                            ComposeCmdPane,
+                            5
+                        ),
+                        (
+                            ComposeCmdPane,
+                            6
+                        )
+                    ]
+                ),
+                Point(2,20)
+            )
+        ]
+    );
+
+
+CmdBarPane =
+    SwitchPane(
+        ComposeState,
+        [
+            (NotComposingPane, 0),
+            (ComposingPane, 1),
+            (ComposingPane, 2),
+            (ComposingPane, 3),
+            (ComposingPane, 4),
+            (ComposingPane, 5),
+            (ComposingPane, 6)
+        ]
+    );
+
+TargetPane =
+    ImagePane(
+        ImportImage("contargetdisplaybmp", false),
+        [
+            (
+                StringPane(
+                    GetName(Target, OnTargetChange),
+                    TextColor
+                ),
+                Point(84,2)
+            ),
+            (
+                GaugePane(
+                    ImportImage("hudgaugebmp", false),
+                    GetPercentHitPoints(Target, OnEveryFrame),
+                    Color(1, 0, 0),
+                    Color(0, 1, 0)
+                ),
+                Point(42,16)
+            ),
+            (
+                StringPane(
+                    NumberString(GetRange(Target, OnEveryFrame)),
+                    TextColor
+                ),
+                Point(45,28)
+            ),
+            (
+                StringPane(
+                    GetModelTypeDesc(Target, OnTargetChange),
+                    TextColor,
+                    Point(36,10)
+                ),
+                Point(45,41)
+            ),
+            (
+                GaugePane(
+                    ImportImage("hudgaugebmp", false),
+                    GetPercentShields(Target, OnEveryFrame),
+                    Color(1, 0, 0),
+                    Color(0, 1, 0)
+                ),
+                Point(126,16)
+            ),
+            (
+                StringPane(
+                    NumberString(GetSpeed(Target, OnEveryFrame)),
+                    TextColor
+                ),
+                Point(127,28)
+            ),
+            (
+                StringPane(
+                    GetSideName(Target, OnTargetChange),
+                    TextColor
+                ),
+                Point(127,41)
+            )
+        ]
+
+    );
+
+ShipPane =
+    ImagePane(
+        ImportImage("conshipdisplaybmp", false),
+        [
+            (
+                GaugePane(
+                    ImportImage("hudgaugebmp", false),
+                    GetPercentHitPoints(Me, OnEveryFrame),
+                    Color(1, 0, 0),
+                    Color(0, 1, 0)
+                ),
+                Point(39,6)
+            ),
+            (
+                GaugePane(
+                    ImportImage("hudgaugebmp", false),
+                    GetPercentShields(Me, OnEveryFrame),
+                    Color(1, 0, 0),
+                    Color(0, 1, 0)
+                ),
+                Point(125,6)
+            ),
+            (
+                StringPane(
+                    NumberString(GetFuel(Me, OnEveryFrame)),
+                    TextColor
+                ),
+                Point(39,18)
+            ),
+            (
+                StringPane(
+                    NumberString(GetSpeed(Me, OnEveryFrame)),
+                    TextColor
+                ),
+                Point(125,18)
+            ),
+            (
+                StringPane(
+                    GetSectorName(Me, OnEveryFrame),
+                    TextColor
+                ),
+                Point(87,31)
+            )
+        ]
+    );
+
+StationPane =
+    ImagePane(
+        ImportImage("constationdisplaybmp", false),
+        [
+            (
+                GaugePane(
+                    ImportImage("hudgaugebmp", false),
+                    GetPercentHitPoints(MyStation, OnEveryFrame),
+                    Color(1, 0, 0),
+                    Color(0, 1, 0)
+                ),
+                Point(39,6)
+            ),
+            (
+                GaugePane(
+                    ImportImage("hudgaugebmp", false),
+                    GetPercentShields(MyStation, OnEveryFrame),
+                    Color(1, 0, 0),
+                    Color(0, 1, 0)
+                ),
+                Point(125,6)
+            )
+        ]
+    );
+
+CommPane =
+    ImagePane(
+        ImportImage("concommdisplaybmp", false),
+        [
+            (
+                ChatListPane(
+                    Point(232,66)
+                ),
+                Point(1,16)
+            )
+        ]
+    );
+
+SectorNameImage = StringImage(JustifyLeft, 153, largeFont, TextColor, SectorName);
+
+SectorPickPane = ImageComboPane(ImportImage("btnpicksectorbmp", false), largeFont);
+
+SectorInfoPaneX = SectorInfoPane([]);
+
+SectorPane = SectorMapPane(SectorInfoPaneX, OverlayFlags, 4, []);
+
+InvestmentsInfoPane = PartInfoPane();
+InvestmentsPane = PurchasesPane(InvestmentsInfoPane);
+
+VectorLockOn = ImagePane(ImportImage("convectorlockbmp", false), []);
+
+VectorLockPane =
+    SwitchPane(
+        GetVectorLock(Me, OnEveryFrame),
+        [
+            (VectorLockOn, 1),
+
+        ]
+    );
+
+AutopilotOnPane = ImagePane(ImportImage("conautopilotbmp", false), []);
+
+AutopilotPane =
+    SwitchPane(
+        AutopilotOn,
+        [
+            (AutopilotOnPane, 1),
+
+        ]
+    );
+
+CloakOnPane = ImagePane(ImportImage("concloakbmp", false), []);
+
+CloakPane =
+    SwitchPane(
+        IsCloaked(Me, OnEveryFrame),
+        [
+            (CloakOnPane, 1),
+
+        ]
+    );
+
+SideColorPane =
+    StringPane(
+        GetSideName(Me, OnEveryFrame),
+        TextColor,
+        Point(153,10)
+    );
+
+RadarModePane =
+    SwitchPane(
+        RadarMode,
+        [
+            ( ImagePane(ImportImage("conradarallbmp",       false),   [] ), 0),
+            ( ImagePane(ImportImage("conradardefaultbmp",   false),   [] ), 1),
+            ( ImagePane(ImportImage("conradartargetbmp",    false),   [] ), 2),
+            ( ImagePane(ImportImage("conradarshipsbmp",     false),   [] ), 3),
+            ( ImagePane(ImportImage("conradarstationsbmp",  false),   [] ), 4),
+            ( ImagePane(ImportImage("conradartreasuresbmp", false),   [] ), 5),
+            ( ImagePane(ImportImage("conradarasteroidsbmp", false),   [] ), 6)
+        ]
+    );
+
+EjectPodDisplayOn = ImagePane(ImportImage("conejectpoddisplaybmp", false), []);
+
+EjectPodPane =
+    SwitchPane(
+        IsEjectPod(Me, OnEveryFrame),
+        [
+            (EjectPodDisplayOn,1)
+        ]
+
+    );
+
+TipTextPane  =
+    ImagePane(
+        ImportImage("helpboxbmp", false),
+        [
+            (
+                StringPane(
+                    TipText,
+                    GetSideColor(Me, OnMeChange),
+                    Point(620,14),
+                    JustifyCenter
+                ),
+                Point(0,0)
+            )
+        ]
+    );
+
+CriticalTipPane =
+    ImagePane(
+        ImportImage("helpboxbmp", false),
+        [
+            (
+                StringPane(
+                    CriticalTipText,
+                    Color(1, 0, 0),
+                    Point(620,20),
+                    JustifyCenter,
+                    largeBoldFont
+                ),
+                Point(0,0)
+            )
+        ]
+    );
+
+backButtonPane = ButtonPane(ImportImage("btnbackbmp", false), ButtonNormal, false);
+
+// PaneImage(pane, bZBuffer, bColorKey)
+
+dialogs =
+    [
+        // (image, side, off point, on point, transition time, consoles modes)
+        (SectorNameImage,                             SideLeft,        Point( -400,   25), Point(  57,   25), .5, 256),
+        (PaneImage(TeamPanePane,        false, true), SideTopLeft,     Point( -620, -296), Point(  16, -296), .5,  96),
+        (PaneImage(WeaponsPane,         false, true), SideTopLeft,     Point( -500, -460), Point(  57, -138), .5,   1),
+        (PaneImage(OrdersPane,          false, true), SideTopRight,    Point(  100,  -80), Point(-227,  -80), .5, 259),
+        (PaneImage(MissilesPane,        false, true), SideTopLeft,     Point( -500, -460), Point(  57, -170), .5,   1),
+        (PaneImage(SelectionPane,       false, true), SideBottomLeft,  Point( -500,   20), Point(  60,   50), .5, 263),
+        (PaneImage(CmdBarPane,          false, true), SideBottomLeft,  Point(  188, -400), Point( 228,   54), .5, 511),
+        (PaneImage(TargetPane,          false, true), SideTopLeft,     Point( -400,  -73), Point(  57, -118), .5,   1),
+        (PaneImage(ShipPane,            false, true), SideTop,         Point(  -90,  520), Point( -90,  -94), .5,   1),
+        (PaneImage(StationPane,         false, true), SideTop,         Point(  -90,   70), Point( -90,  -25), .5, 128),
+        (PaneImage(CommPane,            false, true), SideBottomRight, Point( -277, -400), Point(-310,   50), .5, 511),
+        (PaneImage(SectorPickPane,      false, true), SideLeft,        Point( -400,  -73), Point(  57,   -5), .5, 256),
+        (PaneImage(SectorInfoPaneX,     false, true), SideCenter,      Point( 1680, -143), Point(  96, -143), .5,   4),
+        (PaneImage(SectorPane,          false, true), SideCenter,      Point(-2320, -143), Point(-304, -143), .5,   4),
+        (PaneImage(InvestmentsInfoPane, false, true), SideCenter,      Point( 1680, -130), Point(  40, -130), .5,  16),
+        (PaneImage(InvestmentsPane,     false, true), SideCenter,      Point(-2320, -130), Point(-212, -130), .5,  16),
+        (PaneImage(VectorLockPane,      false, true), SideCenter,      Point(    0,    0), Point(   0,    0), .5,   7),
+        (PaneImage(AutopilotPane,       false, true), SideCenter,      Point(  -91,   48), Point( -91,   48), .5,   7),
+        (PaneImage(CloakPane,           false, true), SideTop,         Point(   20,  480), Point(  20, -147), .5,   1),
+        (PaneImage(SideColorPane,       false, true), SideTop,         Point(  -60,  520), Point( -60, -107), .5, 511),
+        (PaneImage(EjectPodPane,        false, true), SideCenter,      Point( -181,   15), Point(-181,   15), .5,   7),
+        (PaneImage(RadarModePane,       false, true), SideTop,         Point(  -20,  480), Point( -20, -147), .5,   1),
+        (PaneImage(TipTextPane,         false, true), SideBottom,      Point( -310,  -40), Point(-310,    5), .5, 511),
+        (PaneImage(CriticalTipPane,     false, true), SideBottom,      Point( -310,  -20), Point(-310,  145), .5, 511),
+        (PaneImage(backButtonPane,      false, true), SideBottomLeft,  Point( -200,   17), Point(  20,   17), .5, 382)
+    ];

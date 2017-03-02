@@ -1,0 +1,281 @@
+<html>
+<head>
+<META HTTP-EQUIV="Content-Type" content="text/html; charset=Windows-1252">
+</head>
+<body>
+<pre>
+<table width=100% bgcolor=#CFCFE5><tr> <td> <font face=arial size=+3>
+Build Log
+</font></table><table width=* cellspacing=0 cellpadding=0><tr><td width=0 bgcolor=#EDEDF5>&nbsp;</td><td width=0 bgcolor=#FFFFFF>&nbsp;</td><td width=*><pre>
+<h3>------- Build started: Project: mdledit, Configuration: Debug|Win32 -------
+</h3>
+</pre></table><table width=100% bgcolor=#DFDFE5><tr><td><font face=arial size=+2>
+Command Lines
+</font></table><table width=* cellspacing=0 cellpadding=0><tr><td width=0 bgcolor=#EDEDF5>&nbsp;</td><td width=0 bgcolor=#FFFFFF>&nbsp;</td><td width=*><pre>Creating temporary file "s:\Fed\src\mdledit\Debug\RSP000001.rsp" with contents
+[
+/Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /Gm /EHsc /RTC1 /MLd /Fo"Debug/" /Fd"Debug/vc70.pdb" /W3 /c /Wp64 /ZI /TP
+.\texture.cpp
+.\string.cpp
+.\sphere.cpp
+.\sound.cpp
+.\pch.cpp
+.\network.cpp
+.\mdledit.cpp
+.\geos.cpp
+]
+Creating command line "cl.exe @s:\Fed\src\mdledit\Debug\RSP000001.rsp /nologo"
+</pre></table><table width=100% bgcolor=#DFDFE5><tr><td><font face=arial size=+2>
+Output Window
+</font></table><table width=* cellspacing=0 cellpadding=0><tr><td width=0 bgcolor=#EDEDF5>&nbsp;</td><td width=0 bgcolor=#FFFFFF>&nbsp;</td><td width=*><pre>Compiling...
+texture.cpp
+s:\Fed\src\mdledit\texture.cpp(3) : error C2504: 'Image' : base class undefined
+s:\Fed\src\mdledit\texture.cpp(5) : error C2143: syntax error : missing ';' before '<'
+s:\Fed\src\mdledit\texture.cpp(5) : error C2501: 'TextureTestImage::TVector' : missing storage-class or type specifiers
+s:\Fed\src\mdledit\texture.cpp(5) : error C2238: unexpected token(s) preceding ';'
+s:\Fed\src\mdledit\texture.cpp(7) : error C2143: syntax error : missing ')' before '*'
+s:\Fed\src\mdledit\texture.cpp(7) : error C2143: syntax error : missing ';' before '*'
+s:\Fed\src\mdledit\texture.cpp(7) : error C2460: 'TextureTestImage::Engine' : uses 'TextureTestImage', which is being defined
+        s:\Fed\src\mdledit\texture.cpp(3) : see declaration of 'TextureTestImage'
+s:\Fed\src\mdledit\texture.cpp(7) : error C2059: syntax error : ')'
+s:\Fed\src\mdledit\texture.cpp(8) : error C3861: 'm_vecSurfaces': identifier not found, even with argument-dependent lookup
+s:\Fed\src\mdledit\texture.cpp(9) : error C2501: 'TextureTestImage::pengine' : missing storage-class or type specifiers
+s:\Fed\src\mdledit\texture.cpp(10) : error C2143: syntax error : missing ';' before '<'
+s:\Fed\src\mdledit\texture.cpp(10) : error C2501: 'TextureTestImage::TRef' : missing storage-class or type specifiers
+s:\Fed\src\mdledit\texture.cpp(20) : error C2238: unexpected token(s) preceding ';'
+s:\Fed\src\mdledit\texture.cpp(23) : error C2864: 'pch' : only const static integral data members can be initialized inside a class or struct
+s:\Fed\src\mdledit\texture.cpp(23) : error C2501: 'TextureTestImage::pch' : missing storage-class or type specifiers
+s:\Fed\src\mdledit\texture.cpp(25) : error C2059: syntax error : 'for'
+s:\Fed\src\mdledit\texture.cpp(25) : error C2143: syntax error : missing ')' before ';'
+s:\Fed\src\mdledit\texture.cpp(25) : error C2238: unexpected token(s) preceding ';'
+s:\Fed\src\mdledit\texture.cpp(25) : error C2143: syntax error : missing ';' before '<'
+s:\Fed\src\mdledit\texture.cpp(25) : error C2501: 'TextureTestImage::index' : missing storage-class or type specifiers
+s:\Fed\src\mdledit\texture.cpp(25) : error C2238: unexpected token(s) preceding ';'
+s:\Fed\src\mdledit\texture.cpp(25) : error C2143: syntax error : missing ';' before '++'
+s:\Fed\src\mdledit\texture.cpp(25) : error C2501: 'TextureTestImage::index' : missing storage-class or type specifiers
+s:\Fed\src\mdledit\texture.cpp(25) : error C2059: syntax error : ')'
+s:\Fed\src\mdledit\texture.cpp(25) : error C2334: unexpected token(s) preceding '{'; skipping apparent function body
+s:\Fed\src\mdledit\texture.cpp(45) : error C2628: 'TextureTestImage' followed by 'void' is illegal (did you forget a ';'?)
+s:\Fed\src\mdledit\texture.cpp(45) : error C2065: 'Context' : undeclared identifier
+s:\Fed\src\mdledit\texture.cpp(45) : error C2065: 'pcontext' : undeclared identifier
+s:\Fed\src\mdledit\texture.cpp(46) : error C2448: 'DrawTextures' : function-style initializer appears to be a function definition
+s:\Fed\src\mdledit\texture.cpp(68) : error C3861: 'Context': identifier not found, even with argument-dependent lookup
+s:\Fed\src\mdledit\texture.cpp(68) : error C3861: 'pcontext': identifier not found, even with argument-dependent lookup
+s:\Fed\src\mdledit\texture.cpp(69) : error C2448: 'BltTextures' : function-style initializer appears to be a function definition
+s:\Fed\src\mdledit\texture.cpp(81) : error C3861: 'Context': identifier not found, even with argument-dependent lookup
+s:\Fed\src\mdledit\texture.cpp(81) : error C3861: 'pcontext': identifier not found, even with argument-dependent lookup
+s:\Fed\src\mdledit\texture.cpp(82) : error C2448: 'DrawText' : function-style initializer appears to be a function definition
+s:\Fed\src\mdledit\texture.cpp(88) : error C3861: 'Context': identifier not found, even with argument-dependent lookup
+s:\Fed\src\mdledit\texture.cpp(88) : error C3861: 'pcontext': identifier not found, even with argument-dependent lookup
+s:\Fed\src\mdledit\texture.cpp(89) : error C2448: 'Render' : function-style initializer appears to be a function definition
+s:\Fed\src\mdledit\texture.cpp(99) : error C2059: syntax error : '}'
+s:\Fed\src\mdledit\texture.cpp(99) : error C2143: syntax error : missing ';' before '}'
+s:\Fed\src\mdledit\texture.cpp(99) : error C2059: syntax error : '}'
+s:\Fed\src\mdledit\texture.cpp(103) : error C2065: 'm_pgroupImage' : undeclared identifier
+s:\Fed\src\mdledit\texture.cpp(103) : error C2227: left of '->AddImage' must point to class/struct/union
+        type is ''unknown-type''
+s:\Fed\src\mdledit\texture.cpp(103) : error C3861: 'GetEngine': identifier not found, even with argument-dependent lookup
+string.cpp
+s:\Fed\src\mdledit\string.cpp(7) : error C2504: 'IObject' : base class undefined
+s:\Fed\src\mdledit\string.cpp(9) : error C2143: syntax error : missing ';' before '<'
+s:\Fed\src\mdledit\string.cpp(9) : error C2501: 'StringItem::TRef' : missing storage-class or type specifiers
+s:\Fed\src\mdledit\string.cpp(9) : error C2238: unexpected token(s) preceding ';'
+s:\Fed\src\mdledit\string.cpp(10) : error C2146: syntax error : missing ';' before identifier 'm_str'
+s:\Fed\src\mdledit\string.cpp(10) : error C2501: 'StringItem::ZString' : missing storage-class or type specifiers
+s:\Fed\src\mdledit\string.cpp(10) : error C2501: 'StringItem::m_str' : missing storage-class or type specifiers
+s:\Fed\src\mdledit\string.cpp(13) : error C2226: syntax error : unexpected type 'StringItem'
+s:\Fed\src\mdledit\string.cpp(13) : error C2334: unexpected token(s) preceding ':'; skipping apparent function body
+s:\Fed\src\mdledit\string.cpp(24) : error C2143: syntax error : missing ';' before '&'
+s:\Fed\src\mdledit\string.cpp(25) : error C2501: 'StringItem::GetString' : missing storage-class or type specifiers
+s:\Fed\src\mdledit\string.cpp(27) : warning C4183: 'GetString': missing return type; assumed to be a member function returning 'int'
+s:\Fed\src\mdledit\string.cpp(30) : error C2504: 'List' : base class undefined
+s:\Fed\src\mdledit\string.cpp(32) : error C2143: syntax error : missing ';' before '<'
+s:\Fed\src\mdledit\string.cpp(32) : error C2501: 'StringList::TRef' : missing storage-class or type specifiers
+s:\Fed\src\mdledit\string.cpp(32) : error C2238: unexpected token(s) preceding ';'
+s:\Fed\src\mdledit\string.cpp(33) : error C2143: syntax error : missing ';' before '<'
+s:\Fed\src\mdledit\string.cpp(33) : error C2501: 'StringList::TRef' : missing storage-class or type specifiers
+s:\Fed\src\mdledit\string.cpp(33) : error C2238: unexpected token(s) preceding ';'
+s:\Fed\src\mdledit\string.cpp(43) : error C2143: syntax error : missing ',' before '&'
+s:\Fed\src\mdledit\string.cpp(60) : error C2146: syntax error : missing ';' before identifier 'GetItem'
+s:\Fed\src\mdledit\string.cpp(60) : error C2501: 'StringList::ItemID' : missing storage-class or type specifiers
+s:\Fed\src\mdledit\string.cpp(76) : warning C4183: 'GetItem': missing return type; assumed to be a member function returning 'int'
+s:\Fed\src\mdledit\string.cpp(78) : error C2061: syntax error : identifier 'ItemID'
+s:\Fed\src\mdledit\string.cpp(94) : error C2146: syntax error : missing ';' before identifier 'GetNext'
+s:\Fed\src\mdledit\string.cpp(94) : error C2501: 'StringList::ItemID' : missing storage-class or type specifiers
+s:\Fed\src\mdledit\string.cpp(94) : error C2061: syntax error : identifier 'ItemID'
+s:\Fed\src\mdledit\string.cpp(97) : warning C4183: 'GetNext': missing return type; assumed to be a member function returning 'int'
+s:\Fed\src\mdledit\string.cpp(99) : error C2143: syntax error : missing ';' before '*'
+s:\Fed\src\mdledit\string.cpp(99) : error C2501: 'StringList::IEventSource' : missing storage-class or type specifiers
+s:\Fed\src\mdledit\string.cpp(100) : error C2501: 'StringList::GetChangedEvent' : missing storage-class or type specifiers
+s:\Fed\src\mdledit\string.cpp(102) : warning C4183: 'GetChangedEvent': missing return type; assumed to be a member function returning 'int'
+s:\Fed\src\mdledit\string.cpp(105) : error C2504: 'ItemPainter' : base class undefined
+s:\Fed\src\mdledit\string.cpp(117) : error C2061: syntax error : identifier 'ItemID'
+sphere.cpp
+s:\Fed\src\mdledit\sphere.cpp(7) : error C2146: syntax error : missing ';' before identifier 'Index'
+s:\Fed\src\mdledit\sphere.cpp(7) : error C2501: 'Index' : missing storage-class or type specifiers
+s:\Fed\src\mdledit\sphere.cpp(11) : error C2146: syntax error : missing ';' before identifier 'v0'
+s:\Fed\src\mdledit\sphere.cpp(11) : error C2501: 'Edge::Index' : missing storage-class or type specifiers
+s:\Fed\src\mdledit\sphere.cpp(11) : error C2501: 'Edge::v0' : missing storage-class or type specifiers
+s:\Fed\src\mdledit\sphere.cpp(12) : error C2146: syntax error : missing ';' before identifier 'v1'
+s:\Fed\src\mdledit\sphere.cpp(12) : error C2501: 'Edge::Index' : missing storage-class or type specifiers
+s:\Fed\src\mdledit\sphere.cpp(12) : error C2501: 'Edge::v1' : missing storage-class or type specifiers
+s:\Fed\src\mdledit\sphere.cpp(16) : error C2146: syntax error : missing ')' before identifier 'v0In'
+s:\Fed\src\mdledit\sphere.cpp(16) : error C2146: syntax error : missing ';' before identifier 'v0In'
+s:\Fed\src\mdledit\sphere.cpp(16) : error C2460: 'Edge::Index' : uses 'Edge', which is being defined
+        s:\Fed\src\mdledit\sphere.cpp(9) : see declaration of 'Edge'
+s:\Fed\src\mdledit\sphere.cpp(16) : error C2501: 'Edge::v0In' : missing storage-class or type specifiers
+s:\Fed\src\mdledit\sphere.cpp(16) : error C2146: syntax error : missing ';' before identifier 'v1In'
+s:\Fed\src\mdledit\sphere.cpp(16) : error C2501: 'Edge::Index' : missing storage-class or type specifiers
+s:\Fed\src\mdledit\sphere.cpp(16) : error C2059: syntax error : ')'
+s:\Fed\src\mdledit\sphere.cpp(17) : error C2065: 'v0In' : undeclared identifier
+s:\Fed\src\mdledit\sphere.cpp(17) : error C3861: 'v0': identifier not found, even with argument-dependent lookup
+s:\Fed\src\mdledit\sphere.cpp(17) : error C2501: 'Edge::v1In' : missing storage-class or type specifiers
+s:\Fed\src\mdledit\sphere.cpp(18) : error C2061: syntax error : identifier 'v1In'
+s:\Fed\src\mdledit\sphere.cpp(20) : error C2143: syntax error : missing ';' before '{'
+s:\Fed\src\mdledit\sphere.cpp(20) : error C2334: unexpected token(s) preceding '{'; skipping apparent function body
+s:\Fed\src\mdledit\sphere.cpp(31) : error C2146: syntax error : missing ';' before identifier 'edge'
+s:\Fed\src\mdledit\sphere.cpp(31) : error C2501: 'Edge::Triangle::Index' : missing storage-class or type specifiers
+s:\Fed\src\mdledit\sphere.cpp(31) : error C2501: 'Edge::Triangle::edge' : missing storage-class or type specifiers
+s:\Fed\src\mdledit\sphere.cpp(35) : error C2146: syntax error : missing ')' before identifier 'e0'
+s:\Fed\src\mdledit\sphere.cpp(35) : error C2146: syntax error : missing ';' before identifier 'e0'
+s:\Fed\src\mdledit\sphere.cpp(35) : error C2460: 'Edge::Triangle::Index' : uses 'Edge::Triangle', which is being defined
+        s:\Fed\src\mdledit\sphere.cpp(29) : see declaration of 'Edge::Triangle'
+s:\Fed\src\mdledit\sphere.cpp(35) : error C2501: 'Edge::Triangle::e0' : missing storage-class or type specifiers
+s:\Fed\src\mdledit\sphere.cpp(35) : error C2146: syntax error : missing ';' before identifier 'e1'
+s:\Fed\src\mdledit\sphere.cpp(35) : error C2501: 'Edge::Triangle::Index' : missing storage-class or type specifiers
+s:\Fed\src\mdledit\sphere.cpp(35) : error C2501: 'Edge::Triangle::e1' : missing storage-class or type specifiers
+s:\Fed\src\mdledit\sphere.cpp(35) : error C2146: syntax error : missing ';' before identifier 'e2'
+s:\Fed\src\mdledit\sphere.cpp(35) : error C2501: 'Edge::Triangle::Index' : missing storage-class or type specifiers
+s:\Fed\src\mdledit\sphere.cpp(35) : error C2059: syntax error : ')'
+s:\Fed\src\mdledit\sphere.cpp(35) : error C2501: 'Edge::Triangle::e2' : missing storage-class or type specifiers
+s:\Fed\src\mdledit\sphere.cpp(37) : error C2065: 'e0' : undeclared identifier
+s:\Fed\src\mdledit\sphere.cpp(37) : error C2864: 'edge' : only const static integral data members can be initialized inside a class or struct
+s:\Fed\src\mdledit\sphere.cpp(37) : error C2501: 'Edge::Triangle::edge' : missing storage-class or type specifiers
+s:\Fed\src\mdledit\sphere.cpp(38) : error C2065: 'e1' : undeclared identifier
+s:\Fed\src\mdledit\sphere.cpp(38) : error C2864: 'edge' : only const static integral data members can be initialized inside a class or struct
+s:\Fed\src\mdledit\sphere.cpp(38) : error C2501: 'Edge::Triangle::edge' : missing storage-class or type specifiers
+s:\Fed\src\mdledit\sphere.cpp(39) : error C2065: 'e2' : undeclared identifier
+s:\Fed\src\mdledit\sphere.cpp(39) : error C2864: 'edge' : only const static integral data members can be initialized inside a class or struct
+s:\Fed\src\mdledit\sphere.cpp(39) : error C2501: 'Edge::Triangle::edge' : missing storage-class or type specifiers
+s:\Fed\src\mdledit\sphere.cpp(50) : error C2504: 'IObject' : base class undefined
+s:\Fed\src\mdledit\sphere.cpp(52) : error C2143: syntax error : missing ';' before '<'
+s:\Fed\src\mdledit\sphere.cpp(52) : error C2501: 'TriangleMesh::TVector' : missing storage-class or type specifiers
+s:\Fed\src\mdledit\sphere.cpp(52) : error C2238: unexpected token(s) preceding ';'
+s:\Fed\src\mdledit\sphere.cpp(53) : error C2143: syntax error : missing ';' before '<'
+s:\Fed\src\mdledit\sphere.cpp(53) : error C2501: 'TriangleMesh::TVector' : missing storage-class or type specifiers
+s:\Fed\src\mdledit\sphere.cpp(53) : error C2238: unexpected token(s) preceding ';'
+s:\Fed\src\mdledit\sphere.cpp(54) : error C2143: syntax error : missing ';' before '<'
+s:\Fed\src\mdledit\sphere.cpp(54) : error C2501: 'TriangleMesh::TVector' : missing storage-class or type specifiers
+s:\Fed\src\mdledit\sphere.cpp(54) : error C2238: unexpected token(s) preceding ';'
+s:\Fed\src\mdledit\sphere.cpp(57) : error C2062: type 'int' unexpected
+s:\Fed\src\mdledit\sphere.cpp(57) : error C2334: unexpected token(s) preceding ':'; skipping apparent function body
+s:\Fed\src\mdledit\sphere.cpp(68) : error C2226: syntax error : unexpected type 'Edge'
+s:\Fed\src\mdledit\sphere.cpp(68) : error C2334: unexpected token(s) preceding ':'; skipping apparent function body
+s:\Fed\src\mdledit\sphere.cpp(79) : error C2143: syntax error : missing ';' before '<'
+s:\Fed\src\mdledit\sphere.cpp(80) : error C2334: unexpected token(s) preceding '{'; skipping apparent function body
+s:\Fed\src\mdledit\sphere.cpp(203) : error C2143: syntax error : missing ';' before '<'
+s:\Fed\src\mdledit\sphere.cpp(203) : error C2501: 'TriangleMesh::TRef' : missing storage-class or type specifiers
+s:\Fed\src\mdledit\sphere.cpp(204) : error C2334: unexpected token(s) preceding '{'; skipping apparent function body
+s:\Fed\src\mdledit\sphere.cpp(249) : error C2143: syntax error : missing ';' before '<'
+s:\Fed\src\mdledit\sphere.cpp(249) : error C2086: 'int TriangleMesh::TRef' : redefinition
+        s:\Fed\src\mdledit\sphere.cpp(79) : see declaration of 'TriangleMesh::TRef'
+s:\Fed\src\mdledit\sphere.cpp(250) : error C2334: unexpected token(s) preceding '{'; skipping apparent function body
+s:\Fed\src\mdledit\sphere.cpp(342) : error C2143: syntax error : missing ';' before '<'
+s:\Fed\src\mdledit\sphere.cpp(342) : error C2501: 'TRef' : missing storage-class or type specifiers
+s:\Fed\src\mdledit\sphere.cpp(343) : error C2143: syntax error : missing ';' before '{'
+s:\Fed\src\mdledit\sphere.cpp(343) : error C2447: '{' : missing function header (old-style formal list?)
+sound.cpp
+s:\Fed\src\mdledit\pch.h(38) : fatal error C1083: Cannot open include file: 'zlib.h': No such file or directory
+pch.cpp
+s:\Fed\src\mdledit\pch.h(38) : fatal error C1083: Cannot open include file: 'zlib.h': No such file or directory
+network.cpp
+s:\Fed\src\mdledit\pch.h(38) : fatal error C1083: Cannot open include file: 'zlib.h': No such file or directory
+mdledit.cpp
+s:\Fed\src\mdledit\pch.h(38) : fatal error C1083: Cannot open include file: 'zlib.h': No such file or directory
+geos.cpp
+s:\Fed\src\mdledit\geos.cpp(7) : error C2504: 'WrapGeo' : base class undefined
+s:\Fed\src\mdledit\geos.cpp(17) : error C2143: syntax error : missing ';' before '<'
+s:\Fed\src\mdledit\geos.cpp(17) : error C2501: 'StripGeo::StripData::TRef' : missing storage-class or type specifiers
+s:\Fed\src\mdledit\geos.cpp(17) : error C2238: unexpected token(s) preceding ';'
+s:\Fed\src\mdledit\geos.cpp(18) : error C2143: syntax error : missing ';' before '<'
+s:\Fed\src\mdledit\geos.cpp(18) : error C2501: 'StripGeo::StripData::TRef' : missing storage-class or type specifiers
+s:\Fed\src\mdledit\geos.cpp(18) : error C2238: unexpected token(s) preceding ';'
+s:\Fed\src\mdledit\geos.cpp(19) : error C2143: syntax error : missing ';' before '<'
+s:\Fed\src\mdledit\geos.cpp(19) : error C2501: 'StripGeo::StripData::TRef' : missing storage-class or type specifiers
+s:\Fed\src\mdledit\geos.cpp(19) : error C2238: unexpected token(s) preceding ';'
+s:\Fed\src\mdledit\geos.cpp(25) : error C2061: syntax error : identifier 'Number'
+s:\Fed\src\mdledit\geos.cpp(70) : error C2143: syntax error : missing ';' before '<'
+s:\Fed\src\mdledit\geos.cpp(70) : error C2238: unexpected token(s) preceding ';'
+s:\Fed\src\mdledit\geos.cpp(78) : error C2146: syntax error : missing ';' before identifier 'm_listStrips'
+s:\Fed\src\mdledit\geos.cpp(78) : error C2501: 'StripGeo::StripList' : missing storage-class or type specifiers
+s:\Fed\src\mdledit\geos.cpp(78) : error C2501: 'StripGeo::m_listStrips' : missing storage-class or type specifiers
+s:\Fed\src\mdledit\geos.cpp(79) : error C2143: syntax error : missing ';' before '<'
+s:\Fed\src\mdledit\geos.cpp(79) : error C2501: 'StripGeo::TRef' : missing storage-class or type specifiers
+s:\Fed\src\mdledit\geos.cpp(79) : error C2238: unexpected token(s) preceding ';'
+s:\Fed\src\mdledit\geos.cpp(81) : error C2143: syntax error : missing ';' before '*'
+s:\Fed\src\mdledit\geos.cpp(81) : error C2501: 'StripGeo::Number' : missing storage-class or type specifiers
+s:\Fed\src\mdledit\geos.cpp(81) : error C2501: 'StripGeo::GetTime' : missing storage-class or type specifiers
+s:\Fed\src\mdledit\geos.cpp(81) : warning C4183: 'GetTime': missing return type; assumed to be a member function returning 'int'
+s:\Fed\src\mdledit\geos.cpp(84) : error C2143: syntax error : missing ')' before '*'
+s:\Fed\src\mdledit\geos.cpp(84) : error C2143: syntax error : missing ';' before '*'
+s:\Fed\src\mdledit\geos.cpp(84) : error C2460: 'StripGeo::Modeler' : uses 'StripGeo', which is being defined
+        s:\Fed\src\mdledit\geos.cpp(7) : see declaration of 'StripGeo'
+s:\Fed\src\mdledit\geos.cpp(84) : error C2501: 'StripGeo::pmodeler' : missing storage-class or type specifiers
+s:\Fed\src\mdledit\geos.cpp(84) : error C2143: syntax error : missing ';' before '*'
+s:\Fed\src\mdledit\geos.cpp(84) : error C2501: 'StripGeo::Number' : missing storage-class or type specifiers
+s:\Fed\src\mdledit\geos.cpp(84) : error C2059: syntax error : ')'
+s:\Fed\src\mdledit\geos.cpp(85) : error C2653: 'Geo' : is not a class or namespace name
+s:\Fed\src\mdledit\geos.cpp(85) : error C2065: 'ptime' : undeclared identifier
+s:\Fed\src\mdledit\geos.cpp(85) : error C3861: 'WrapGeo': identifier not found, even with argument-dependent lookup
+s:\Fed\src\mdledit\geos.cpp(85) : error C3861: 'GetEmpty': identifier not found, even with argument-dependent lookup
+s:\Fed\src\mdledit\geos.cpp(86) : error C2501: 'StripGeo::ptime' : missing storage-class or type specifiers
+s:\Fed\src\mdledit\geos.cpp(87) : error C2653: 'GroupGeo' : is not a class or namespace name
+s:\Fed\src\mdledit\geos.cpp(87) : error C3861: 'Create': identifier not found, even with argument-dependent lookup
+s:\Fed\src\mdledit\geos.cpp(87) : error C2864: 'm_pgroup' : only const static integral data members can be initialized inside a class or struct
+s:\Fed\src\mdledit\geos.cpp(87) : error C2501: 'StripGeo::m_pgroup' : missing storage-class or type specifiers
+s:\Fed\src\mdledit\geos.cpp(88) : error C2061: syntax error : identifier 'm_pgroup'
+s:\Fed\src\mdledit\geos.cpp(88) : warning C4183: 'SetGeo': missing return type; assumed to be a member function returning 'int'
+s:\Fed\src\mdledit\geos.cpp(90) : error C2059: syntax error : 'for'
+s:\Fed\src\mdledit\geos.cpp(90) : error C2143: syntax error : missing ')' before ';'
+s:\Fed\src\mdledit\geos.cpp(90) : error C2238: unexpected token(s) preceding ';'
+s:\Fed\src\mdledit\geos.cpp(90) : error C2143: syntax error : missing ';' before '<'
+s:\Fed\src\mdledit\geos.cpp(90) : error C2501: 'StripGeo::index' : missing storage-class or type specifiers
+s:\Fed\src\mdledit\geos.cpp(90) : error C2238: unexpected token(s) preceding ';'
+s:\Fed\src\mdledit\geos.cpp(90) : error C2143: syntax error : missing ';' before '++'
+s:\Fed\src\mdledit\geos.cpp(90) : error C2501: 'StripGeo::index' : missing storage-class or type specifiers
+s:\Fed\src\mdledit\geos.cpp(90) : error C2059: syntax error : ')'
+s:\Fed\src\mdledit\geos.cpp(90) : error C2334: unexpected token(s) preceding '{'; skipping apparent function body
+s:\Fed\src\mdledit\geos.cpp(95) : error C2628: 'StripGeo' followed by 'void' is illegal (did you forget a ';'?)
+s:\Fed\src\mdledit\geos.cpp(97) : error C2065: 'm_listStrips' : undeclared identifier
+s:\Fed\src\mdledit\geos.cpp(97) : error C2228: left of '.PushFront' must have class/struct/union type
+        type is ''unknown-type''
+s:\Fed\src\mdledit\geos.cpp(98) : error C2228: left of '.GetFront' must have class/struct/union type
+        type is ''unknown-type''
+s:\Fed\src\mdledit\geos.cpp(98) : error C2228: left of '.Initialize' must have class/struct/union type
+s:\Fed\src\mdledit\geos.cpp(98) : error C3861: 'm_listStrips': identifier not found, even with argument-dependent lookup
+s:\Fed\src\mdledit\geos.cpp(98) : error C3861: 'GetTime': identifier not found, even with argument-dependent lookup
+s:\Fed\src\mdledit\geos.cpp(99) : error C2065: 'm_pgroup' : undeclared identifier
+s:\Fed\src\mdledit\geos.cpp(99) : error C2227: left of '->AddGeo' must point to class/struct/union
+        type is ''unknown-type''
+s:\Fed\src\mdledit\geos.cpp(99) : error C2228: left of '.GetFront' must have class/struct/union type
+        type is ''unknown-type''
+s:\Fed\src\mdledit\geos.cpp(99) : error C2228: left of '.m_pgeo' must have class/struct/union type
+s:\Fed\src\mdledit\geos.cpp(99) : error C3861: 'm_listStrips': identifier not found, even with argument-dependent lookup
+s:\Fed\src\mdledit\geos.cpp(104) : error C2227: left of '->GetValue' must point to class/struct/union
+        type is ''unknown-type''
+s:\Fed\src\mdledit\geos.cpp(104) : error C3861: 'GetTime': identifier not found, even with argument-dependent lookup
+s:\Fed\src\mdledit\geos.cpp(106) : error C2653: 'StripList' : is not a class or namespace name
+s:\Fed\src\mdledit\geos.cpp(106) : error C2065: 'Iterator' : undeclared identifier
+s:\Fed\src\mdledit\geos.cpp(106) : error C2146: syntax error : missing ';' before identifier 'iter'
+s:\Fed\src\mdledit\geos.cpp(106) : error C3861: 'iter': identifier not found, even with argument-dependent lookup
+s:\Fed\src\mdledit\geos.cpp(106) : error C3861: 'm_listStrips': identifier not found, even with argument-dependent lookup
+s:\Fed\src\mdledit\geos.cpp(108) : error C2228: left of '.End' must have class/struct/union type
+        type is ''unknown-type''
+s:\Fed\src\mdledit\geos.cpp(108) : error C3861: 'iter': identifier not found, even with argument-dependent lookup
+s:\Fed\src\mdledit\geos.cpp(108) : fatal error C1903: unable to recover from previous error(s); stopping compilation
+Generating Code...
+</pre></table><table width=100% bgcolor=#DFDFE5><tr><td><font face=arial size=+2>
+Results
+</font></table><table width=* cellspacing=0 cellpadding=0><tr><td width=0 bgcolor=#EDEDF5>&nbsp;</td><td width=0 bgcolor=#FFFFFF>&nbsp;</td><td width=*><pre>
+Build log was saved at "file://s:\Fed\src\mdledit\Debug\BuildLog.htm"
+mdledit - 219 error(s), 6 warning(s)</pre></table><table   width=100% height=20 bgcolor=#CFCFE5><tr><td><font face=arial size=+2>
+</font></table></body></html>

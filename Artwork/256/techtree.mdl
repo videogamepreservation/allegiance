@@ -1,0 +1,185 @@
+use "mission";
+
+
+///////////////////////////////////////////////////////////////////////////////
+// afterburnerType = CreateAfterburnerType(
+//        price, modelname, name, desc, [], [],
+//        mass, signature, treasureChance, drain,
+//        BurnRate, MaxThrust, rateOn, rateOff, HullThrustMultiplier
+//        interiorSound, exteriorSound);
+atBooster1 = CreateAfterburnerType(
+        500, "Acs48", "Booster", "Booster Mk1", [], [],
+        2, 2, 5, 1,
+        0.001, 4000.0, 0.4, 0.5, 2.0, 
+        680, 700);
+atBooster2 = CreateAfterburnerType(
+        500, "Acs48", "Booster 2", "Booster Mk2", [], [],
+        2, 2, 5, 1,
+        0.001, 5000.0, 0.5, 0.5, 3.0,
+        680, 700);
+
+///////////////////////////////////////////////////////////////////////////////
+// packType = CreateProjectileType(
+//        price, modelname, name, desc, [], [],
+//        mass, signature, treasureChance, drain,
+//        quantity, type);
+
+packAmmo  = 0;
+packFuel  = 1;
+packMoney = 2;
+
+packAmmo1 = CreatePackType(
+        150, "acs29", "Ammo Pack", "Required for Particle Weapons", [], [],
+        1, 1, 55, 0,
+        1000, packAmmo);
+
+packFuel1 = CreatePackType(
+        100, "acs36", "Booster Fuel (1 Min)", "Required for Boosters", [], [],
+        1, 1, 55, 0,
+        240, packFuel);
+
+
+////////////////////////////////////////////////////////////////////////////////
+// projectileType = CreateProjectileType(
+//        radius, rotation, modelname, texturename, 
+//        power, blastpower, blastradius, speed, lifespan, damagetype, absolute, directional, width, ambientSound);
+
+dtEnergy = 1;
+dtParticle = 2;
+
+ptEnergy1 = CreateProjectileType(
+        5, 2.8, "", "f03", 
+        10, 0, 0, 540, 1.5, dtEnergy, true, false, 1, -1);
+
+ptParticle1 = CreateProjectileType(
+        2.5, 2.8, "", "f05", 
+        16, 25, 100, 390, 2.0, dtParticle, false, false, 1, -1);
+
+
+////////////////////////////////////////////////////////////////////////////////
+// weaponType = CreateWeaponType(
+//        price, modelname, name, desc, [], [],
+//        mass, signature, treasureChance, drain,
+//        timeready, timeburst, energupershot, dispersion, 
+//        ammopershot, projectiletype, activateSound, shotSound, burstSound);
+
+wtEnergy1 = CreateWeaponType(
+        100, "wep01", "Pulse Laser Mk1", "", [], [],
+        1, .25, 5, 1,
+        .25, .25, 35, .025, 
+        0, ptEnergy1, 80, 1, 41);
+
+wtParticle1 = CreateWeaponType(
+        100, "wep05", "Double Particle Accelerator", "", [], [],
+        1, .25, 5, 1,
+        .25, .5, 0, .01, 
+        1, ptParticle1, 80, 6, -1);
+
+////////////////////////////////////////////////////////////////////////////////
+// missileType = CreateMissileType(
+//        radius, rotation, modelname, texturename, 
+//        loadtime, lifespan, signature, hitpoints,
+//        ld.price, ld.modelname, ld.name, ld.desc, ld.[], ld.[],
+//        ld.signature, ld.mass, ld.drain,
+//        acceleration,turnRate, initialSpeed, armTime, lockTime, 
+//        readyTime, dispersion, lockAngle, power, blastPower,
+//        blastRadius, width, damageType, bDirectional, launchSound, flightSound);
+        
+mtTitan = CreateMissileType(
+        4, 0, "mis05", "", 
+        2, 6, 5, 20,
+        50, "mis12", "Titan missile", "Big & painful", [], [],
+        .5, 2, 5,
+        50, .125, 25, .25, 5, 
+        .5, .05, .13, 500, 1000,
+        100, 1, dtEnergy, false, 500, 540);
+
+
+////////////////////////////////////////////////////////////////////////////////
+// missileLauncherType = CreateMissileLauncherType(
+//        missiletype, amount, treasurechance
+
+mtlTitan100 = CreateMissileLauncherType(mtTitan, 100, 5);
+
+
+////////////////////////////////////////////////////////////////////////////////
+// stationType = CreateStationType();
+
+stDefault = CreateStationType();
+
+
+////////////////////////////////////////////////////////////////////////////////
+// hullType = CreateHullType(
+//        price, modelname, name, desc, [], [],
+//        mass, signature, speed, yawrate, pitchrate, rollrate, yawtorque, pitchtorque, rolltorque, 
+//        thrust, sidemult, backmult, scannerrange, maxenergy, rechargerate, maxweapons,
+//        maxturrets, hitpoints, capacity, length, hullabilitities, tecturename, class, 
+//        interiorSound, exteriorSound, thrustInteriorSnd, thrustExteriorSnd, turnIntS, turnExtS,
+//        [animationdata]);
+//        [hardpointdata]);
+
+
+htFighter = CreateHullType(
+        2000, "fig12", "Stinger", "Stinger", [], [],
+        100, 1, 200, 2, 2, 2, 600, 600, 600, 
+        20000, 1, 1, 3000, 2000, 100, 2,
+        0, 2500, 35, 15, 0, "", 0, 
+        140, 180, 220, 260, 300, 340, 
+        [(1,15), (16,75), (121,133), (120,91), (76, 90)],
+        [("lwepemt1X", 0),("wepattX", 99)]);
+
+htBomber = CreateHullType(
+        2000, "bom01a", "Bomber", "Bomber", [], [],
+        100, 1, 200, 2, 2, 2, 600, 600, 600, 
+        10000, 1, 1, 3000, 2000, 100, 2,
+        0, 2500, 35, 15, 0, "", 0, 
+        140, 180, 220, 260, 300, 340, 
+        [(1,15), (16,43), (44,59), (76,91), (60, 75)],
+        [("lwepemt2X", 0),("lwepemt2X", 0)]);
+
+htScarab = CreateHullType(
+        2000, "fig04", "Scarab", "Scarab", [], [],
+        100, 1, 150, 2, 2, 2, 600, 600, 600, 
+        6000, 1, 1, 3000, 2000, 100, 2,
+        0, 2500, 35, 15, 0, "", 0, 
+        140, 180, 220, 260, 300, 340, 
+        [(1,15), (16,56), (57,71), (57,71), (57, 71)],
+        [("lwepmnt1X", 100),("rwepmnt1X", 100)]);
+
+htFox = CreateHullType(
+        2000, "fig12", "Fox", "Fox", [], [],
+        100, 1, 100, 1, 1, 1, 150, 150, 150, 
+        4000, 1, 1, 3000, 2000, 100, 2,
+        0, 250, 35, 15, 0, "", 0, 
+        140, 180, 220, 260, 300, 340, 
+        [(1,15), (16,94), (57,62), (57,62), (57, 62)],
+        [("lwepattX", 99),("rwepattX", 99)]);
+
+htFighterDrone = CreateHullType(
+        2000, "fig12", "Stinger", "Stinger", [], [],
+        100, 1, 100, 1, 1, 1, 150, 150, 150, 
+        3000, 1, 1, 3000, 2000, 100, 2,
+        0, 250, 35, 15, 0, "", 0, 
+        140, 180, 220, 260, 300, 340, 
+        [(1,15), (16,75), (121,133), (120,91), (76, 90)],
+        [("lwepemt1X", 0),("wepattX", 99)]);
+
+htMinerDrone = CreateHullType(
+        2000, "utl19", "Mining", "Miner", [], [],
+        500, 1, 50, .25, .25, .25, 50, 50, 50, 
+        1000, 1, 1, 1000, 2000, 100, 0,
+        0, 20, 35, 35, 0, "", 0, 
+        140, 180, 220, 260, 300, 340, 
+        [(1,15), (0,0), (1,15), (0,0), (0, 0)],
+        [("wepatt", 99),("wepemt", 0)]);
+
+
+loadoutFighter = [htFighter, [wtEnergy1, wtParticle1, mtlTitan100, atBooster1]];
+loadoutBomber = [htBomber, [wtEnergy1, wtParticle1, mtlTitan100]];
+loadoutScarab = [htScarab, [wtEnergy1, wtParticle1, mtlTitan100]];
+loadoutFox = [htFox, [wtEnergy1, wtParticle1, mtlTitan100]];
+
+loadoutFighterDrone = [htFighterDrone, [wtEnergy1, wtParticle1, mtlTitan100]];
+loadoutMinerDrone = [htMinerDrone, []];
+
+             

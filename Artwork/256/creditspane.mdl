@@ -1,0 +1,60 @@
+use "effect";
+use "font";
+use "gamepanes";
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Team Credits Pane
+//
+/////////////////////////////////////////////////////////////////////////////
+
+paneSizeY = 254;
+paneSizeX = 475;
+
+messageImage = MDLFileImage("creditstext");
+imageSize    = Max(PointY(ImageSize(messageImage)), paneSizeY);
+delta        = Subtract(imageSize, paneSizeY);
+
+creditsTime = WrapNumber(0);
+
+y =
+    Subtract(
+        Mod(
+            Multiply(10, creditsTime), 
+            delta
+        ),
+        delta
+    );
+
+messagePane =        
+    AnimatedImagePaneRect(
+        PaneImage(
+            BlackPane(
+                AnimatedImagePaneRect(
+                    TranslateImage(
+                        messageImage,
+                        PointV(0, y)
+                    ),
+                    Rect(0, 0, paneSizeX, paneSizeY)
+                )
+            ),
+            false,
+            true
+        ),
+        Rect(0, 0, paneSizeX, paneSizeY)
+    );
+
+closeButtonPane = ButtonPane(ImportImage("btnclosepanebmp", true), ButtonNormal, false);
+
+//
+// The background and control positions
+//
+
+screen =
+    ScreenPane(
+        ImportImage("creditspanebmp", false),
+        [
+            (messagePane,     Point( 20, 38)),
+			(closeButtonPane, Point(475, 10))
+        ]
+    );

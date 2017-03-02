@@ -1,0 +1,304 @@
+TextColor = Color(1, 1, 1);
+
+SelectionDisplay =
+        (
+            ImagePane(
+                ImportImage("conselectiondisplay.bmp"),
+                [
+                    (
+                        SelectionPane(OnSelectionChange),
+                        Point(2,15)
+                    )
+                ]                    
+
+            ),
+            Point(-500,20), Point(20,20),
+            .5, 7
+        );
+
+
+CmdBarPane = CmdButtonBarPane( CommandMask );
+
+
+ComposeCmdPane =  ImagePane(
+                        ImportImage("cmdformation.bmp"),
+                        [
+                            (
+                                StringPane( 
+                                    ComposedVerb, 
+                                    TextColor
+                                ),
+                                Point(2, 16)
+                            ),
+                            (
+                                StringPane( 
+                                    GetName(ComposedObject, OnComposedObjectChange), 
+                                    TextColor
+                                ),
+                                Point(35,35)
+                            )
+                        ]
+                    );
+
+NotComposingPane = ImagePane(ImportImage("conshrunkcmdbardisplay.bmp"));
+                    
+ComposingPane = ImagePane(
+                    ImportImage("concmdbardisplay.bmp"),
+                    [
+                        (
+                            StringPane( 
+                                ComposedMsg, 
+                                TextColor
+                            ),
+                            Point(4,5)
+                        ),
+                        (
+                            SwitchPane(
+                                ComposeState,
+                                [
+                                    (
+                                        CmdBarPane,
+                                        0
+                                    ),
+                                    (
+                                        ImagePane( ImportImage("chatformation.bmp") ),
+                                        1
+                                    ),
+                                    (
+                                        ImagePane( ImportImage("chatformation.bmp") ),
+                                        2
+                                    ),
+                                    (
+                                        CmdBarPane,
+                                        3
+                                    ),
+                                    (
+                                        ComposeCmdPane,
+                                        4
+                                    ),
+                                    (
+                                        ComposeCmdPane,
+                                        5
+                                    )
+                                ]
+                            ),
+                            Point(2,20)
+                        )
+                    ]                    
+                );
+
+
+CmdBarDisplay =
+        (
+            SwitchPane(
+                ComposeState,
+                [
+                    (NotComposingPane, 0),
+                    (ComposingPane, 1),
+                    (ComposingPane, 2),
+                    (ComposingPane, 3),
+                    (ComposingPane, 4),
+                    (ComposingPane, 5),
+                ]
+            ),
+            Point(188,-400), Point(188,24),
+            .5, 7
+        );
+
+
+TargetDisplay =
+        (
+            ImagePane(
+                ImportImage("contargetdisplay.bmp"),
+                [
+                    (
+                        StringPane( 
+                            GetName(Target, OnTargetChange), 
+                            TextColor
+                        ),
+                        Point(84,2)
+                    ),
+                    (
+                        GaugePane( 
+                            ImportImage("hudgauge.bmp"),
+                            GetPercentHitPoints(Target, OnEveryFrame), 
+                            Color(1, 0, 0),
+                            Color(0, 1, 0)
+                        ),
+                        Point(42,16)
+                    ),
+                    (
+                        StringPane( 
+                            NumberString(GetRange(Target, OnEveryFrame)), 
+                            TextColor
+                        ),
+                        Point(45,28)
+                    ),
+                    (
+                        StringPane( 
+                            GetModelTypeDesc(Target, OnTargetChange), 
+                            TextColor
+                        ),
+                        Point(45,41)
+                    ),
+                    (
+                        GaugePane( 
+                            ImportImage("hudgauge.bmp"),
+                            GetPercentShields(Target, OnEveryFrame), 
+                            Color(1, 0, 0),
+                            Color(0, 1, 0)
+                        ),
+                        Point(126,16)
+                    ),
+                    (
+                        StringPane( 
+                            NumberString(GetSpeed(Target, OnEveryFrame)), 
+                            TextColor
+                        ),
+                        Point(127,28)
+                    ),
+                    (
+                        StringPane( 
+                            GetSideName(Target, OnTargetChange), 
+                            TextColor
+                        ),
+                        Point(127,41)
+                    )
+                ]                    
+
+            ),
+            Point(-400,407), Point(17,392),
+            .5, 1
+        );
+
+ShipDisplay =
+        (
+            ImagePane(
+                ImportImage("conshipdisplay.bmp"),
+                [
+                    (
+                        GaugePane( 
+                            ImportImage("hudgauge.bmp"),
+                            GetPercentHitPoints(Me, OnEveryFrame), 
+                            Color(1, 0, 0),
+                            Color(0, 1, 0)
+                        ),
+                        Point(39,6)
+                    ),
+                    (
+                        GaugePane( 
+                            ImportImage("hudgauge.bmp"),
+                            GetPercentShields(Me, OnEveryFrame), 
+                            Color(1, 0, 0),
+                            Color(0, 1, 0)
+                        ),
+                        Point(125,6)
+                    ),
+                    (
+                        StringPane( 
+                            NumberString(GetFuel(Me, OnEveryFrame)), 
+                            TextColor
+                        ),
+                        Point(39,18)
+                    ),
+                    (
+                        StringPane( 
+                            NumberString(GetSpeed(Me, OnEveryFrame)), 
+                            TextColor
+                        ),
+                        Point(125,18)
+                    ),
+                    (
+                        StringPane( 
+                            GetSectorName(Me, OnEveryFrame), 
+                            TextColor
+                        ),
+                        Point(87,31)
+                    )                ]                    
+
+            ),
+            Point(230,1000), Point(230,416),
+            .5, 1
+        );
+
+
+CommDisplay =
+        (
+            ImagePane(ImportImage("concommdisplay.bmp")),
+            Point(363,-400),Point(363,21),
+           .5, 7
+        );
+
+
+
+SectorInfo = SectorInfoPane();
+
+SectorMapDisplay =
+        (
+            SectorMapPane(SectorInfo),
+            Point(-2000,97),Point(16,97),
+            .5, 4
+        );
+
+SectorInfoDisplay =
+        (
+            SectorInfo,
+            Point(2000,97),Point(416,97),
+            .5, 4
+        );
+
+
+InvestmentsInfo = PartInfoPane();
+Investments = PurchasesPane(InvestmentsInfo);
+
+InvestmentsDisplay =
+        (
+            Investments,
+            Point(-2000,110),Point(108,110),
+            .5, 16
+        );
+
+InvestmentsInfoDisplay =
+        (
+            InvestmentsInfo,
+            Point(2000,110),Point(360,110),
+            .5, 16
+        );
+
+InventoryInfo = PartInfoPane();
+Inventory = InventoryPane(InventoryInfo);
+
+InventoryDisplay =
+        (
+            Inventory,
+            Point(2000,110),Point(360,110),
+            .5, 8
+        );
+
+InventoryInfoDisplay =
+        (
+            InventoryInfo,
+            Point(-2000,110),Point(108,110),
+            .5, 8
+        );
+
+
+dialogs =
+    [
+        SelectionDisplay,
+        CmdBarDisplay,
+        TargetDisplay,
+        ShipDisplay,
+        CommDisplay,
+        SectorInfoDisplay,
+        SectorMapDisplay,
+        InvestmentsInfoDisplay,
+        InvestmentsDisplay,
+        InventoryInfoDisplay,
+        InventoryDisplay
+    ];
+
+nodialogs =
+    [
+    ];
+

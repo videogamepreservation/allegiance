@@ -1,0 +1,53 @@
+use "gamepanes";
+use "font";
+use "logondata";
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Logon Dialog
+//
+/////////////////////////////////////////////////////////////////////////////
+
+//
+// Controls
+//
+
+logonButtonPane        = ButtonPane(ImportImage("btnlogonbmp",        true), ButtonNormal,         false);
+abortButtonPane        = SoundButtonPane(ImportImage("btnabortbmp",   true), ButtonNormal,    false, negativeButtonClickSoundId);
+cdKeyButtonPane        = ButtonPane(ImportImage("btncdkeybmp",        true), ButtonNormal,    false);
+signUpButtonPane       = ButtonPane(ImportImage("btnsignup2bmp",      true), ButtonNormal,    false);
+savePasswordButtonPane = ButtonPane(ImportImage("btnsavepasswordbmp", true), ButtonNormalCheckBox, true );
+nameEditPane           = EditPane(Point(172, 22), largeFont);
+passwordEditPane       = EditPane(Point(172, 22), largeFont);
+passwordPane           = ImagePane(ImportImage("logonpwbmp", false), [(passwordEditPane, Point(125, 8))]);
+promptImage            = StringImage(JustifyLeft, 460, largeFont, white, promptText);
+promptPane             = AnimatedImagePaneRect(promptImage, Rect(0, -50, 460, 0));
+callsignPane           = SwitchPane(
+                            logonNameType,
+                            [
+                                (ImagePane(ImportImage("logoncallsignbmp", false), []), Callsign),
+                                (ImagePane(ImportImage("logonzoneidbmp", false), []), ZoneID),
+                                (ImagePane(ImportImage("logonpassportidbmp", false), []), PassportID)
+                            ]
+                         );
+
+
+//
+// The background and control positions
+//
+
+popup =
+    ImagePane(
+        ImportImage("logonbkbmp", false),
+        [
+            (promptPane,             Point( 20,  20)),
+            (logonButtonPane,        Point( 60, 194)),
+            (abortButtonPane,        Point(155, 194)),
+            (cdKeyButtonPane,        Point(255, 194)),
+            (signUpButtonPane,       Point(355, 194)),
+            (savePasswordButtonPane, Point(181, 145)),
+            (nameEditPane,           Point(220,  77)),
+            (passwordPane,           Point( 95, 115)),
+            (callsignPane,           Point(  0,  76))
+        ]
+    );

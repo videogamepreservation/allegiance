@@ -1,0 +1,15 @@
+use "gamepanes";
+
+gameScreenMusicSound        = GainSound(MusicGain, LoopingSound(ImportWave("Prolog")));
+flightMusic1ASound          = GainSound(MusicGain, ImportWave("AllegianceA"));
+flightMusic1BSound          = GainSound(MusicGain, ImportWave("AllegianceB"));
+flightMusic1CSound          = GainSound(MusicGain, ImportWave("AllegianceC"));
+deathMusicSound             = GainSound(MusicGain, ImportWave("deathmusic"));
+flightMusic2ASound          = GainSound(MusicGain, ImportWave("TechnoA"));
+flightMusic2BSound          = GainSound(MusicGain, ImportWave("TechnoB"));
+flightMusic2CSound          = GainSound(MusicGain, ImportWave("TechnoC"));
+flightMusic3ASound          = GainSound(MusicGain, ImportWave("Techno2A"));
+flightMusic3BSound          = GainSound(MusicGain, ImportWave("Techno2B"));
+flightMusic3CSound          = GainSound(MusicGain, ImportWave("Techno2C"));
+gameOverLostMusicSound      = GainSound(MusicGain, ImportWave("military"));
+gameOverWonMusicSound       = GainSound(MusicGain, ImportWave("gameovermusic"));

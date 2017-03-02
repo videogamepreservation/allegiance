@@ -1,0 +1,531 @@
+use "loadoutinclude";
+use "font";
+
+//////////////////////////////////////////////////////////////////////////////
+//
+// Part Description images
+//
+//////////////////////////////////////////////////////////////////////////////
+
+//
+// Values shared between all of the part descriptions
+//
+
+width  = 262;
+height = -44;
+color  = Color(1, 1, 1);
+point1 = Point(8,  -8);
+point2 = Point(8, -22);
+
+//
+// If a specific part image isn't found the default will be used.
+//
+
+partDefault =
+    GroupImage(
+        [
+            TranslateImage(
+                StringImage(JustifyCenter, width, medBoldVerdana, color, partNameString),
+                point1
+            ),
+            TranslateImage(
+                StringImage(JustifyCenter, width, smallFont, color, partDescriptionString),
+                point2
+            )
+        ]
+    );
+
+//
+// There should be one definition per part type
+//
+
+part33 =
+    GroupImage(
+        [
+            TranslateImage(
+                StringImage(JustifyCenter, width, medBoldVerdana, color, partNameString),
+                point1
+            ),
+            TranslateImage(
+                StringImage(JustifyCenter, width, smallFont, color, "Requires Ammo"),
+                point2
+            )
+        ]
+    );
+
+//////////////////////////////////////////////////////////////////////////////
+//
+// Description images for each slot type
+//
+//////////////////////////////////////////////////////////////////////////////
+
+slotCargo =
+    GroupImage(
+        [
+            TranslateImage(
+                StringImage(JustifyCenter, width, medBoldVerdana, color, "Cargo Slot"),
+                point1
+            ),
+            TranslateImage(
+                StringImage(JustifyCenter, width, smallFont, color, "Can hold any type of part"),
+                point2
+            )
+        ]
+    );
+
+slotWeapon =
+    GroupImage(
+        [
+            TranslateImage(
+                StringImage(JustifyCenter, width, medBoldVerdana, color, "Weapon Slot"),
+                point1
+            ),
+            TranslateImage(
+                StringImage(JustifyCenter, width, smallFont, color, "Can hold either a projectile or energy weapon"),
+                point2
+            )
+        ]
+    );
+
+slotMissile =
+    GroupImage(
+        [
+            TranslateImage(
+                StringImage(JustifyCenter, width, medBoldVerdana, color, "Missile Slot"),
+                point1
+            ),
+            TranslateImage(
+                StringImage(JustifyCenter, width, smallFont, color, "Holds one pack of missiles"),
+                point2
+            )
+        ]
+    );
+
+slotDespencer =
+    GroupImage(
+        [
+            TranslateImage(
+                StringImage(JustifyCenter, width, medBoldVerdana, color, "Dispenser Slot"),
+                point1
+            ),
+            TranslateImage(
+                StringImage(JustifyCenter, width, smallFont, color, "Can hold probes and mines"),
+                point2
+            )
+        ]
+    );
+
+slotShield =
+    GroupImage(
+        [
+            TranslateImage(
+                StringImage(JustifyCenter, width, medBoldVerdana, color, "Shield Slot"),
+                point1
+            ),
+            TranslateImage(
+                StringImage(JustifyCenter, width, smallFont, color, "Holds one ship shield"),
+                point2
+            )
+        ]
+    );
+
+slotCloak =
+    GroupImage(
+        [
+            TranslateImage(
+                StringImage(JustifyCenter, width, medBoldVerdana, color, "Cloak Slot"),
+                point1
+            ),
+            TranslateImage(
+                StringImage(JustifyCenter, width, smallFont, color, "Can hold a cloaking device"),
+                point2
+            )
+        ]
+    );
+
+slotAfterburner =
+    GroupImage(
+        [
+            TranslateImage(
+                StringImage(JustifyCenter, width, medBoldVerdana, color, "Afterburner Slot"),
+                point1
+            ),
+            TranslateImage(
+                StringImage(JustifyCenter, width, smallFont, color, "Can hold an afterburner"),
+                point2
+            )
+        ]
+    );
+
+slotChaff =
+    GroupImage(
+        [
+            TranslateImage(
+                StringImage(JustifyCenter, width, medBoldVerdana, color, "Chaff Slot"),
+                point1
+            ),
+            TranslateImage(
+                StringImage(JustifyCenter, width, smallFont, color, "Can hold a chaff"),
+                point2
+            )
+        ]
+    );
+
+
+
+
+//////////////////////////////////////////////////////////////////////////////
+//
+// Put all of the individual part images together
+//
+//////////////////////////////////////////////////////////////////////////////
+
+partDescriptionPosition = Point(176, 28);
+
+partDescriptionImage =
+    SwitchImage(
+        partID,
+        partDefault,
+        [
+            (  0, emptyImage     ), // not over a slot
+            ( -1, slotCargo      ), // cargo slot
+            (-11, slotWeapon     ), // empty slots have partID = -(10 + equipmentType)
+            (-12, slotMissile    ),
+            (-13, slotDespencer  ),
+            (-14, slotShield     ),
+            (-15, slotCloak      ),
+            (-17, slotAfterburner),
+            (-10, slotChaff      ),
+            ( 33, part33         )
+        ]
+    );
+
+/* !!! remove
+partDescriptionPane =
+    AnimatedImagePaneRect(
+        partDescriptionImage,
+        Rect(0, height, width, 0)
+    );
+*/
+
+/* !!! remove
+partImagePane =
+    AnimatedImagePaneRect(
+        partImage,
+       Rect(0, -37, 133, 0)
+   );
+*/
+
+//////////////////////////////////////////////////////////////////////////////
+//
+// Part Info Pane
+//
+//////////////////////////////////////////////////////////////////////////////
+
+//
+// Maximum part values used by the exe
+//
+
+maxWeaponRate     = 15;
+maxWeaponPower    = 50;
+
+maxWeaponRange    = 2000;
+maxWeaponSpeed    = 1250;
+
+maxShieldRegen    = 10;
+maxShieldHitPts   = 400;
+maxCloakEnergy    = 150;
+maxPartSignature  = 2;
+maxPartMass       = 50;
+maxMagazineHitDamage	= 1000;
+maxMagazineAreaDamage	= 1000;
+maxMagazineRange		= 6000;
+maxMagazineLockTime		= 2;
+maxMagazineMaxLock		= 100; 
+maxAfterburnerMaxThrust = 1125;
+maxAfterburnerBurnRate	= .0012;
+maxAfterburnerOnRate	= 1; 
+maxChaffStrength = 0.9;
+maxPackQuantity = 1000;
+
+maxMineDamage = 600;
+maxMineRadius = 100;
+maxMineLifespan = 25;
+
+maxProbeScanRange = 5000;
+maxProbeHitPts = 200;
+maxProbeLifespan = 3600;
+
+//maxMineDamage = 3000;
+//maxMineRadius = 1000;
+//maxMineLifespan = 2000;
+
+// maxTowerAccuracy = 100;
+
+//////////////////////////////////////////////////////////////////////////////
+//
+// These are the locations of the six gauges relative to the info background.
+//
+//////////////////////////////////////////////////////////////////////////////
+
+infoPoint1 = Point(515, -9);
+infoPoint2 = Point(515, -27);
+infoPoint3 = Point(515, -45);
+
+infoPoint4 = Point(673, -9);
+infoPoint5 = Point(673, -27);
+infoPoint6 = Point(673, -45);
+
+numberPoint1 = Point(553,   0);
+numberPoint2 = Point(553, -18);
+numberPoint3 = Point(553, -37);
+
+numberPoint4 = Point(711,   0);
+numberPoint5 = Point(711, -18);
+numberPoint6 = Point(711, -37);
+
+BkgBmpPoint = Point(455, 8);
+partImagePoint = Point(10, 30);
+
+gaugeBmp = ImportImage("loadoutgaugebmp", false);
+
+//////////////////////////////////////////////////////////////////////////////
+//
+// The individual part info images
+//
+//////////////////////////////////////////////////////////////////////////////
+
+//
+// default
+//
+
+partInfoDefault =
+    GroupImage(
+        [
+            TranslateImage(GaugeImage(JustifyLeft, gaugeBmp, partSignature ), infoPoint3),
+            //TranslateImage(GaugeImage(JustifyLeft, gaugeBmp, partMass      ), infoPoint6),
+			TranslateImage(ImportImageLR("partinfodefaultbmp", false), BkgBmpPoint)
+			
+        ]
+    );
+
+//
+// weapon
+//
+
+weaponDamageClassString =
+	SwitchString(
+        weaponDamageClassNumber,
+        "NA",
+        [
+			(1, "anti-utility"),
+			(2, "light"),
+			(3, "heavy"),
+			(4, "light-medium"),
+			(5, "very light"),
+			(6, "medium-heavy"),
+			(7, "medium-heavy"),
+			(8, "stations"),
+			(9, "asteroids"),
+            (10, "repair"),
+            (11, "very light"),
+            (12, "heavy shields"),
+            (13, "light shields"),
+            (14, "special"),
+            (15, "heavy"),
+            (16, "very light"),
+            (17, "stations"),
+            (18, "light & medium")
+        ]
+    );
+
+partInfoWeapon =
+    GroupImage(
+        [   
+            TranslateImage(StringImage(JustifyRight,  50, medVerdana, color, NumberString(weaponDamageNumber    )), numberPoint1),
+            TranslateImage(StringImage(JustifyRight,  50, medVerdana, color, NumberString(weaponRateNumber      )), numberPoint2),
+            TranslateImage(StringImage(JustifyRight,  50, medVerdana, color, ConcatinatedString(NumberString(partSignatureNumber   ), "%")), numberPoint3),
+            TranslateImage(StringImage(JustifyRight,  50, medVerdana, color, NumberString(weaponRangeNumber     )), numberPoint4),
+            TranslateImage(StringImage(JustifyRight,  50, medVerdana, color, NumberString(weaponSpeedNumber     )), numberPoint5),
+            TranslateImage(StringImage(JustifyRight,  100, medVerdana, color, weaponDamageClassString), Point(664, -36)),
+            TranslateImage(GaugeImage(JustifyLeft, gaugeBmp, weaponDamage  ), Point(525, -10)),
+            TranslateImage(GaugeImage(JustifyLeft, gaugeBmp, weaponRate    ), Point(525, -28)),
+            TranslateImage(GaugeImage(JustifyLeft, gaugeBmp, partSignature ), infoPoint3),
+            TranslateImage(GaugeImage(JustifyLeft, gaugeBmp, weaponRange   ), infoPoint4),
+            TranslateImage(GaugeImage(JustifyLeft, gaugeBmp, weaponSpeed   ), infoPoint5),
+            //TranslateImage(GaugeImage(JustifyLeft, gaugeBmp, partMass      ), infoPoint6),
+			TranslateImage(ImportImageLR("partinfoweaponbmp", false), BkgBmpPoint)	
+        ]
+    );
+
+//
+// shield
+//
+
+shieldDefenseTypeString =
+	SwitchString(
+        shieldDefenseClassNumber,
+        "NA",
+        [(8, "normal")]
+    );
+
+
+partInfoShield =
+    GroupImage(
+        [
+            TranslateImage(StringImage(JustifyRight,  50, medVerdana, color, NumberString(shieldHitPtsNumber     )), numberPoint1),
+			TranslateImage(StringImage(JustifyRight,  50, medVerdana, color, NumberString(shieldRegenNumber     )), numberPoint2),
+			TranslateImage(StringImage(JustifyRight,  50, medVerdana, color, ConcatinatedString(NumberString(partSignatureNumber   ), "%")), numberPoint3),
+            TranslateImage(StringImage(JustifyRight,  100, medVerdana, color, shieldDefenseTypeString), Point(661, 1)),
+
+			TranslateImage(GaugeImage(JustifyLeft, gaugeBmp, shieldHitPts  ), infoPoint1),
+            TranslateImage(GaugeImage(JustifyLeft, gaugeBmp, shieldRegen   ), infoPoint2),
+			TranslateImage(GaugeImage(JustifyLeft, gaugeBmp, partSignature ), infoPoint3),
+			TranslateImage(ImportImageLR("partinfoshieldbmp", false), BkgBmpPoint)	
+        ]
+    );
+
+//
+// Cloak
+//
+
+cloakDurationString =
+	SwitchString(
+        cloakDurationNumber,
+        NumberString(cloakDurationNumber),
+        [(-1, "unlimited")]
+    ); 
+
+partInfoCloak =
+    GroupImage(
+        [   
+            TranslateImage(StringImage(JustifyRight,  50, medVerdana, color, ConcatinatedString(NumberString(cloakCloakingNumber), "%")), numberPoint1),
+			TranslateImage(StringImage(JustifyRight,  50, medVerdana, color, cloakDurationString), numberPoint2),
+            TranslateImage(GaugeImage(JustifyLeft, gaugeBmp, cloakCloaking ), infoPoint1),
+			TranslateImage(GaugeImage(JustifyLeft, gaugeBmp, cloakDuration ), infoPoint2),
+			TranslateImage(ImportImageLR("partinfocloakbmp", false), BkgBmpPoint)	
+        ]
+    );
+
+magazineDamageClassString =
+ 
+	SwitchString(
+        magazineDamageClassNumber,
+        "NA",
+        [
+            (1, "anti-utility"),
+			(2, "light"),
+			(3, "heavy"),
+			(4, "light-medium"),
+			(5, "very light"),
+			(6, "medium-heavy"),
+			(8, "stations"),
+			(9, "asteroids")
+        ]
+    );
+
+partInfoMagazine =
+    GroupImage(
+	       [  
+            TranslateImage(StringImage(JustifyRight,  50, medVerdana, color, NumberString(magazineDamageNumber    )), numberPoint1),
+            TranslateImage(StringImage(JustifyRight,  50, medVerdana, color, ConcatinatedString(NumberString(partSignatureNumber   ), "%")), numberPoint2),
+            TranslateImage(StringImage(JustifyRight,  50, medVerdana, color, NumberString(magazineRangeNumber   )), numberPoint3),
+            TranslateImage(StringImage(JustifyRight,  50, medVerdana, color, NumberString(magazineLockTimeNumber     )), numberPoint4),
+            TranslateImage(StringImage(JustifyRight,  50, medVerdana, color, ConcatinatedString(NumberString(magazineMaxLockNumber     ), "%")), numberPoint5),
+            TranslateImage(StringImage(JustifyRight,  100, medVerdana, color, magazineDamageClassString        ), Point(664, -36)),
+            TranslateImage(GaugeImage(JustifyLeft, gaugeBmp, magazineDamage      ), infoPoint1),
+            TranslateImage(GaugeImage(JustifyLeft, gaugeBmp, partSignature ), infoPoint2),
+            TranslateImage(GaugeImage(JustifyLeft, gaugeBmp, magazineRange          ), infoPoint3),
+            TranslateImage(GaugeImage(JustifyLeft, gaugeBmp, magazineLockTime       ), infoPoint4),
+            TranslateImage(GaugeImage(JustifyLeft, gaugeBmp, magazineMaxLock        ), infoPoint5),
+			TranslateImage(ImportImageLR("partinfomagazinebmp", false), BkgBmpPoint)    
+        ]
+    );
+
+partInfoAfterburner = 
+	GroupImage(
+		[
+			TranslateImage(StringImage(JustifyRight,  50, medVerdana, color, NumberString(afterburnerMaxSpeedNumber)), numberPoint1),
+            TranslateImage(StringImage(JustifyRight,  50, medVerdana, color, NumberString(afterburnerBurnRateNumber)),     numberPoint2),
+            TranslateImage(StringImage(JustifyRight,  50, medVerdana, color, ConcatinatedString(NumberString(partSignatureNumber   ), "%")), numberPoint3),
+            TranslateImage(GaugeImage(JustifyLeft, gaugeBmp, afterburnerMaxSpeed   ), Point(527, -10)),
+            TranslateImage(GaugeImage(JustifyLeft, gaugeBmp, afterburnerBurnRate    ),    Point(527, -28)),
+            TranslateImage(GaugeImage(JustifyLeft, gaugeBmp, partSignature          ), infoPoint3),
+			TranslateImage(ImportImageLR("partinfoafterburnerbmp", false), BkgBmpPoint)
+		]
+	);
+
+partInfoChaff = 
+	GroupImage(
+		[
+			TranslateImage(StringImage(JustifyRight,  50, medVerdana, color, ConcatinatedString(NumberString(chaffStrengthNumber  ), "%")), numberPoint1),
+            TranslateImage(GaugeImage(JustifyLeft, gaugeBmp, chaffStrength   ), infoPoint1),
+			TranslateImage(ImportImageLR("partinfochaffbmp", false), BkgBmpPoint)
+		]
+	);
+
+partInfoProbe = 
+	GroupImage(
+		[
+            TranslateImage(StringImage(JustifyRight,  50, medVerdana, color,                    NumberString(probeHitPtsNumber    )      ), numberPoint1),
+            TranslateImage(StringImage(JustifyRight,  50, medVerdana, color,                    NumberString(probeLifespanNumber  )      ), numberPoint2),
+            TranslateImage(StringImage(JustifyRight,  50, medVerdana, color, ConcatinatedString(NumberString(probeVisibilityNumber), "%")), numberPoint3),
+			TranslateImage(StringImage(JustifyRight,  50, medVerdana, color,                    NumberString(probeScanRangeNumber )      ), numberPoint4),
+            TranslateImage(GaugeImage(JustifyLeft, gaugeBmp, probeHitPts    ), infoPoint1),
+            TranslateImage(GaugeImage(JustifyLeft, gaugeBmp, probeLifespan  ), infoPoint2), 
+            TranslateImage(GaugeImage(JustifyLeft, gaugeBmp, probeVisibility), infoPoint3), 
+            TranslateImage(GaugeImage(JustifyLeft, gaugeBmp, probeScanRange ), infoPoint4), 
+			TranslateImage(ImportImageLR("partinfoprobebmp", false), BkgBmpPoint)
+		]
+	);
+
+partInfoMine = 
+	GroupImage(
+		[
+			TranslateImage(StringImage(JustifyRight,  50, medVerdana, color,                    NumberString(mineDamageNumber   )      ), numberPoint1),
+            TranslateImage(StringImage(JustifyRight,  50, medVerdana, color,                    NumberString(mineLifespanNumber )      ), numberPoint2),
+            TranslateImage(StringImage(JustifyRight,  50, medVerdana, color, ConcatinatedString(NumberString(mineVisibilityNumber), "%")), numberPoint3),
+            TranslateImage(StringImage(JustifyRight,  50, medVerdana, color,                    NumberString(mineRadiusNumber   )      ), numberPoint4),
+            TranslateImage(GaugeImage(JustifyLeft, gaugeBmp, mineDamage    ), infoPoint1),
+            TranslateImage(GaugeImage(JustifyLeft, gaugeBmp, mineLifespan  ), infoPoint2),
+            TranslateImage(GaugeImage(JustifyLeft, gaugeBmp, mineVisibility), infoPoint3),
+            TranslateImage(GaugeImage(JustifyLeft, gaugeBmp, mineRadius    ), infoPoint4),
+			TranslateImage(ImportImageLR("partinfominebmp", false), BkgBmpPoint)
+		]
+	);
+            
+
+//////////////////////////////////////////////////////////////////////////////
+//
+// Put all of the individual part info images together
+//
+//////////////////////////////////////////////////////////////////////////////
+
+partInfoPosition = Point(0, 500);
+
+partInfoImage =
+    SwitchImage(
+        equipmentType,
+        emptyImage,
+        [
+            (equipmentTypeWeapon     , partInfoWeapon      ),
+            (equipmentTypeShield     , partInfoShield      ),
+            (equipmentTypeMagazine   , partInfoMagazine    ),
+            (equipmentTypeDispenser  , partInfoProbe       ),
+            (equipmentTypeCloak      , partInfoCloak       ),
+            (equipmentTypeAfterburner, partInfoAfterburner ),
+            (equipmentTypeChaff      , partInfoChaff       ),
+            (equipmentTypeMine       , partInfoMine        )
+        ]
+    );
+
+partInfo =
+    GroupImage(
+        [
+            TranslateImage(partInfoImage,        Point(-1, 32)),
+			TranslateImage(partDescriptionImage, partDescriptionPosition),
+            TranslateImage(partImage,            Point(20, -10))
+        ]
+    );
+
+partInfoPane = AnimatedImagePaneRect(partInfo, Rect(0, -29, 800, 37));

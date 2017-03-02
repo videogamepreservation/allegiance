@@ -1,0 +1,181 @@
+<Font|promptFont>SQUAD PROFILES<Font|smallFont><p><p>
+
+The Squad Profiles screen shows all information related to each squad. All squad creation and
+management are handled through this screen, including membership maintenance.<p><p>
+
+<Font|promptFont>Squad View<Font|smallFont><p><p>
+
+You have one of three options for viewing exactly what squads you want to
+see.<p><p>
+
+<Font|smallBoldFont>All Squads --<Font|smallFont>Displays all squads on the Allegiance Zone.
+This is the default when you come to the Squad Profiles screen from the Allegiance Zone screen.<p><p>
+
+<Font|smallBoldFont>My Squads --<Font|smallFont>Displays only squads that you are a member of.<p><p>
+
+<Font|smallBoldFont>[Player Squads] --<Font|smallFont>Displays a player's Zone ID and only the
+squads he is the creator of.<p><p>
+
+<Font|promptFont>Squads List<Font|smallFont><p><p>
+
+The default order of the Squads List is based on
+<Font|smallBoldFont>Score.<Font|smallFont> To reorder
+the list, click the heading in which you want the list to be
+ordered. A red arrow to the right of a heading indicates that
+category as the order the list is currently sorted in.<p><p>
+
+<Font|smallBoldFont># --<Font|smallFont>Shows the squad's position
+in the list of squads based on the current sort order of the list.<p><p>
+
+<Font|smallBoldFont>Squad Name --<Font|smallFont>Shows the squad's name.<p><p>
+
+<Font|smallBoldFont>Score --<Font|smallFont>Shows the squad's overall score.<p><p>
+
+<Font|smallBoldFont>Wins --<Font|smallFont>Shows how many wins the squad has acquired over the
+course of its history as a squad.<p><p>
+
+<Font|smallBoldFont>Losses --<Font|smallFont>Shows how many losses the squad has acquired over
+the course of its history as a squad.<p><p>
+
+
+<Font|promptFont>Finding Specific Squads<Font|smallFont><p><p>
+
+<Font|smallBoldFont>To search for a squad<Font|smallFont><p><p>
+
+<Bullet|hlpbullet|In the <Font|smallBoldFont>Find Squad<Font|smallFont> box,
+type the name of the squad you are looking for, and then click the arrow or
+press ENTER.><p><p>
+
+<Bullet|hlpblank|You can use a partial match to find the squad
+you're looking for, as long as you enter the beginning part of the
+name, not the middle or the end part.><p><p>
+
+<Bullet|hlpblank|If the squad is found, it will be highlighted in the
+Squads List. If the squad is not found, a message will indicate
+this.><p><p>
+
+<Font|promptFont>Squad Profile Area<Font|smallFont><p><p>
+
+The Squad Profile area gives you all information regarding the
+origin and history of a squad selected in the Squads List.<p><p>
+
+<Font|smallBoldFont>Squad Name --<Font|smallFont>Shows the squad's
+name.<p><p>
+
+<Font|smallBoldFont>Faction --<Font|smallFont>Shows the faction
+the squad last played as.<p><p>
+
+<Font|smallBoldFont>Ranking --<Font|smallFont>Shows the squad's
+overall ranking out of all the squads in the Allegiance Zone
+database.<p><p>
+
+<Font|smallBoldFont>Wins/Losses --<Font|smallFont>Shows how many
+games the squad has won and lost.<p><p>
+
+<Font|smallBoldFont>Created --<Font|smallFont>Shows the date the squad
+was created.<p><p>
+
+<Font|smallBoldFont>URL --<Font|smallFont>Shows the Web site address for the squad if they have
+one created. To view the Web site, click <Font|smallBoldFont>Go<Font|smallFont> to the right of
+the URL. Once you are finished viewing the Web site, return to Allegiance by locating Allegiance
+on your taskbar or by pressing ALT+TAB until Allegiance appears.<p><p>
+
+<Font|smallBoldFont>Squad Public Statement --<Font|smallFont>Shows the squad owner's brief
+statement about the squad.<p><p>
+
+<Font|promptFont>Squad Profile Buttons<Font|smallFont><p><p>
+
+The availability of the Squad Profile buttons will vary from squad to
+squad, depending on your status with that squad.<p><p>
+
+<Font|smallBoldFont>Request Join --<Font|smallFont>Click to request
+the squad's owner to allow you to become a squad member. The next time the squad
+owner logs on, he will either accept your request, making you a squad member,
+or reject your request.<p><p>
+
+<Font|smallBoldFont>Cancel Request --<Font|smallFont>Click if you want
+to cancel your pending request to join the squad.<p><p>
+
+<Font|smallBoldFont>Quit Squad --<Font|smallFont>Click if you
+want to quit the squad.<p><p>
+
+<Font|smallBoldFont>Create Squad --<Font|smallFont>Click to create and
+manage a new squad. You may not own more than 10 squads at a time.<p><p>
+
+<Font|smallBoldFont>To create a squad<Font|smallFont><p><p>
+
+<Bullet|hlpimg1|Click <Font|smallBoldFont>Create Squad,<Font|smallFont> and then type a name in
+the <Font|smallBoldFont>Squad Name<Font|smallFont> box.><p><p>
+
+<Bullet|hlpimg2|Enter your squad's Web site address if you have one and a brief
+description of your squad, and then click
+<Font|smallBoldFont>Save.<Font|smallFont>><p><p>
+
+<Font|smallBoldFont>To edit your squad's profile<Font|smallFont><p><p>
+
+<Bullet|hlpimg1|Select your squad in the Squads List, and then click
+<Font|smallBoldFont>Edit Profile.<Font|smallFont>><p><p>
+
+<Bullet|hlpimg2|Make the changes you want, and then click
+<Font|smallBoldFont>Save.<Font|smallFont>><p><p>
+
+<Font|smallBoldFont>Owner Log --<Font|smallFont>Click to open the
+Ownership Log screen, where a record of your squad's games is kept. You
+can only access the Owner Log if you are the squad's owner.<p><p>
+
+<Font|promptFont>Squad Member Roster<Font|smallFont><p><p>
+
+The squad member roster shows all the members of the selected squad and
+their basic stats in regard to that squad.<p><p>
+
+<Font|smallBoldFont>Name --<Font|smallFont>Shows the name of each
+squad member.<p><p>
+
+<Font|smallBoldFont>Rank --<Font|smallFont>Shows the rank of each
+squad member.<p><p>
+
+<Font|smallBoldFont>Position --<Font|smallFont>Shows the current position
+of each squad member, such as Leader or ASL (assistant squad
+leader), or the current status of a player.<p><p>
+
+<Bullet|hlpblank|<Font|smallBoldFont>Member:<Font|smallFont> A member of
+this squad.><p><p>
+
+<Bullet|hlpblank|<Font|smallBoldFont>Pending:<Font|smallFont> Waiting to
+receive acceptance to this squad. If accepted, the player will be shown as
+Member. If not accepted, the player will not be listed.><p><p>
+
+<Bullet|hlpblank|<Font|smallBoldFont>Owner:<Font|smallFont> The owner of
+this squad.><p><p>
+
+<Font|smallBoldFont>Joined --<Font|smallFont>Shows the date that member
+joined the squad.<p><p>
+
+<Font|promptFont>Squad Member Roster Buttons<Font|smallFont><p><p>
+
+The Squad Member Roster buttons are available only to the squad owner for
+managing the roster.<p><p>
+
+<Font|smallBoldFont>Accept Player --<Font|smallFont>Click if you want
+to accept the selected player as a member of your squad. Players requesting
+membership will be shown with a Pending status in the Squad Member
+Roster.<p><p>
+
+<Font|smallBoldFont>Reject Player --<Font|smallFont>Click if you want
+to reject the selected player as a member of your squad. Players requesting
+membership will be shown with a Pending status in the Squad Member
+Roster.<p><p>
+
+<Font|smallBoldFont>Boot Player --<Font|smallFont>Click to remove the
+selected player from your squad.<p><p>
+
+<Font|smallBoldFont>Commission Player --<Font|smallFont>Click to
+promote the selected player.<p><p>
+
+<Font|smallBoldFont>Demote Player --<Font|smallFont>Click to demote the
+position (ASL or Leader) of the selected player.<p><p>
+
+<Font|smallBoldFont>Transfer Control --<Font|smallFont>Click to
+transfer squad ownership to the selected player. You will no longer
+be able to access the Owner Log or any of the Squad Member Roster
+buttons.

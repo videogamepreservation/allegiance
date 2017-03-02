@@ -1,0 +1,20 @@
+use "SlideshowData";
+use "sounddef";
+use "font";
+use "gamepanes";
+
+		// tm_slide_2_post_01
+		// Now that you?ve learned some flight basics, it?s time to 
+		// learn about the weapon systems carried by your craft. 
+		// Proceed to training mission 3, Basic Weaponry.
+
+//----------------------------------------------------------
+// all the slides in a list
+//----------------------------------------------------------
+slides =
+[
+    // post mission slides
+    (ImportImage("hangarbmp", false), tm_slide_2_post_01SoundId)
+];
+
+//----------------------------------------------------------

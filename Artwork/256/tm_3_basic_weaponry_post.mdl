@@ -1,0 +1,19 @@
+use "SlideshowData";
+use "sounddef";
+use "font";
+use "gamepanes";
+
+		// tm_slide_3_post_01
+		// Okay, Cadet, you?ve learned how to use your weapons and 
+		// control you?re inventory. Now it?s time to go over a 
+		// typical mission. Proceed to training mission 4, Enemy 
+		// Engagement.
+//
+// The slides
+//
+
+slides =
+[
+    (ImportImage("hangarbmp", false), tm_slide_3_post_01SoundId)
+];
+

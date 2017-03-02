@@ -1,0 +1,99 @@
+use "effect";
+use "zoneclubdata";
+use "font";
+use "gamepanes";
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Zone Public Screen
+//
+/////////////////////////////////////////////////////////////////////////////
+
+paneSizeY = 238;
+paneSizeX = 523;
+
+messageImage = MDLFileImage("messageofthedaydefault");
+imageSize = Max(PointY(ImageSize(messageImage)), paneSizeY);
+delta     = Subtract(imageSize, paneSizeY);
+
+y =
+    Subtract(
+        Mod(
+            Multiply(10, Subtract(time, timeStart)), 
+            delta
+        ),
+        delta
+    );
+
+messagePane =        
+    AnimatedImagePaneRect(
+        PaneImage(
+            BlackPane(
+                AnimatedImagePaneRect(
+                    TranslateImage(
+                        messageImage,
+                        PointV(0, y)
+                    ),
+                    Rect(0, 0, paneSizeX, paneSizeY)
+                )
+            ),
+            false,
+            true
+        ),
+        Rect(0, 0, paneSizeX, paneSizeY)
+    );
+
+//
+// Normal buttons
+//
+
+gamesButtonPane = ButtonPane(ImportImage("btnzone2gamesbmp", true), ButtonNormal, false);
+gamesBigButtonPane = ButtonPane(ImportImage("btnzone2games2bmp", true), ButtonNormal, false);
+mainmenuButtonPane = SoundButtonPane(ImportImage("btnzone2mainmenubmp", true), ButtonNormal, false, negativeButtonClickSoundId);
+            
+//
+// Titles
+//
+
+yellowText          = Color(0.878, 0.573, 0);
+whiteText           = Color(1, 1, 1);
+titlePane           = StringPane("FREE GAMES - ZONE MATCHMAKING SERVICE", yellowText, Point(600, 30), JustifyLeft, titleFont);
+captionPane         = StringPane("CONNECT TO OTHER SERVERS ON THE INTERNET", whiteText, Point(800, 30), JustifyLeft, promptFont);
+
+//
+// Rollover tips
+//
+
+hoverSite = HoverSite(0);
+
+hoverString =
+    SwitchString(
+        HoverSiteGetID(hoverSite),
+        emptyString,
+        [
+            ( 1, "Return to the Allegiance main menu."),
+            ( 2, "See a list of games currently available on public servers.")
+        ]
+    );
+
+hoverImage = StringImage(JustifyLeft, 240, smallFont, white, hoverString);
+hoverPane  = AnimatedImagePaneRect(hoverImage, Rect(0, -35, 240, 0));
+
+//
+// The background and control positions
+//
+
+screen =
+    ScreenPane(
+        ImportImage("zonepublicscreenbmp", false),
+        [   
+            (titlePane,                 Point(15, 15)),
+            (captionPane,               Point(75, 50)),
+            (HoverPane(hoverSite,  1, mainmenuButtonPane        ), Point(24, 523)),
+            (HoverPane(hoverSite,  2, gamesButtonPane           ), Point(104, 523)),
+            (HoverPane(hoverSite,  2, gamesBigButtonPane        ), Point(200, 382)),
+            (messagePane,               Point(136, 139)),
+            (hoverPane, Point( 565, 550))// place the text
+        ]
+    );

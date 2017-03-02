@@ -1,0 +1,94 @@
+<Font|promptFont>HANGAR<Font|smallFont><p><p>
+
+You begin a game in your team's Garrison hangar. The hangar
+is the same in all landable stations. When you die in combat, and
+<Secondary|hlpd_eject|eject pods> are disabled, you will find yourself back at your Garrison
+hangar unless there is another station closer to your point of death.<p><p>
+
+Your Garrison, as all other stations that you can build, has armor
+protecting it, shown in the upper-left corner of your hangar. In
+the upper center of your hangar is the name of the station and sector
+you are currently in. If the station you are in is destroyed, then you'll be ejected
+in the last ship type that you flew before landing at that station. If you
+happened to
+have just entered the game and the station you're in is destroyed,
+you'll be
+ejected in the first default ship in that station's Loadout screen.<p><p>
+
+The message stream in the upper center of your
+hangar is the same message stream you'll see while flying any ship.<p><p>
+
+All the various in-game displays that you can access while flying your
+ship can also be accessed from within your hangar, by either clicking
+their <Secondary|hlpd_locations|location> in the hangar or pressing the
+corresponding key. In addition, the hangar is where you access your Loadout screen and
+Teleport display.<p><p>
+
+<Bullet|hlpbullet|<Main|hlp4j|Help display (F1)>>
+<Bullet|hlpbullet|<Main|hlp4d|Command view (F3)>>
+<Bullet|hlpbullet|<Main|hlp4b|Loadout screen (F4)>>
+<Bullet|hlpbullet|<Main|hlp4f|Investments display (F5)>>
+<Bullet|hlpbullet|<Main|hlp4e|Team display (F6)>>
+<Bullet|hlpbullet|<Main|hlp4i|Teleport display (F8)>><p><p>
+
+<Font|promptFont>Launching<Font|smallFont><p><p>
+
+<Font|smallBoldFont>To launch your ship from a station hangar<Font|smallFont><p><p>
+
+<Bullet|hlpbullet|In the hangar, click the Quick Launch hangar
+door.><p><p>
+
+<Bullet|hlpblank|If this is your first time to launch into the game,
+you
+will launch in the default ship and loadout, often the Scout. If this is
+not your first time, you will launch in the same ship and loadout you
+previously launched with.><p><p>
+
+<Bullet|hlpblank|-or-><p><p>
+
+<Bullet|hlpimg1|In the hangar, click the Loadout screen, or press
+F4.><p><p>
+
+<Bullet|hlpimg2|Select the ship you wish to fly, and then modify your
+weapons and equipment if you desire.><p><p>
+
+<Bullet|hlpimg3|To launch, click
+<Font|smallBoldFont>Launch.<Font|smallFont>><p><p>
+
+<Bullet|hlpblank|If you modified your weapons and equipment but then
+decide you want to launch with the default loadout configuration, click
+<Font|smallBoldFont>Default Loadout.<Font|smallFont>><p><p>
+
+<Font|promptFont>Landing<Font|smallFont><p><p>
+
+There are two ways to land your ship at a station: in autopilot and
+manually.<p><p>
+
+<Font|smallBoldFont>To dock at a station hangar in autopilot<Font|smallFont><p><p>
+
+<Bullet|hlpbullet|Press B to target your base, and then press P to engage
+autopilot.><p><p>
+
+<Bullet|hlpblank|Autopilot will take your craft all the way home and actually dock in
+the proper hangar opening.><p><p>
+
+It is not advisable to use autopilot to land in the midst of enemy bogies. Autopilot
+will still work, but it is rather slow as it turns you into your hangar,
+making you a sitting duck.<p><p>
+
+<Font|smallBoldFont>To dock at a station hangar manually<Font|smallFont><p><p>
+
+<Bullet|hlpimg1|Approach a station and look for a green hangar
+opening.><p><p>
+
+<Bullet|hlpblank|Make sure the hangar has flashing green lights. If
+the lights are flashing red, move away as quickly as possible, as this
+is an exit hangar and you might get a face full of launched ship.><p><p>
+
+<Bullet|hlpblank|If your ship is a capital ship, you'll need to land at a
+Shipyard,
+as it is the only station that can handle these large craft.><p><p>
+
+<Bullet|hlpimg2|Make sure your motion indicator is pointing directly
+at the hangar, and then fly into the hangar opening. Pointing in your true
+flight direction is more important than your speed.>

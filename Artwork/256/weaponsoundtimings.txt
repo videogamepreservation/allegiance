@@ -1,0 +1,71 @@
+====================================================================================================================
+NESTED LOOP FILES & LOOP END POINTS
+
+Note: all loop points start at 0.0 seconds
+
+Sound Forge Note: The loop end points are based on the info provided by Sound Forge, however the "length" field in 
+SF does not exactly match the loop "end". Since the loops start at zero, they should match - But they always 
+disagree by tens of thousandths of a second (?). I don't know which is more right, but I'm going with the loop "end" 
+field rather than the loop "length" field.
+
+=====================================================================================================================
+FILE NAME                                       LOOP END (sec) 
+=====================================================================================================================
+Cannon1 	               			0.249002
+Cannon2 					0.249728
+
+MachineGun1					0.100658
+MachineGun2					0.100317
+MachineGun3					0.100385
+
+MiniGun1					0.079864
+MiniGun2					0.078118
+MiniGun3	 				0.082313
+
+PlasmaRifle1 					0.160703
+PlasmaRifle2					0.157664
+PlasmaRifle3					0.164558
+
+SniperRifle1					0.249478
+SniperRifle2					0.247687
+
+TurretCannon1					0.237279
+TurretCannon2	 				0.237506
+TurretCannon3					0.142812
+
+TurretGun1	 				0.082404
+TurretGun2					0.083084
+TurretGun3					0.083220
+
+===========================================================================
+POWERUP FILES
+
+(the ends of these dovetail with the start of the respective loops above)
+===========================================================================
+
+Cannon1PWRUP
+Cannon2PWRUP
+
+MachineGun1PWRUP
+MachineGun2PWRUP
+MachineGun3PWRUP
+ 
+MiniGun1PWRUP
+MiniGun2PWRUP
+MiniGun3PWRUP
+
+PlasmaRifle1PWRUP
+PlasmaRifle2PWRUP
+PlasmaRifle3PWRUP
+
+SniperRifle1PWRUP
+SniperRifle2PWRUP
+SniperRifle3PWRUP
+
+TurretCannon1PWRUP
+TurretCannon1PWRUP
+TurretCannon1PWRUP
+
+TurretGun1PWRUP
+TurretGun2PWRUP
+TurretGun3PWRUP

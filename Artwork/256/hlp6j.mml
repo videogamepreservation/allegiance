@@ -1,0 +1,54 @@
+<Font|promptFont>THE TURRET GUNNER<Font|smallFont><p><p>
+
+Playing as a turret gunner in the bomber or in a capital ship is an
+excellent way for a new Allegiance player to learn the game.<p><p>
+
+As a turret gunner, you'll man a virtual turret that has a 360-degree
+field of fire. Your job is to protect your ship by driving off or, more
+effectively, shooting down the enemy fighters trying to destroy your
+craft. Note that when an enemy goes down, the gunner who made the
+final hit receives credit for that kill.<p><p>
+
+Turrets have a finite amount of ammo, so target accordingly -- don't waste
+it on a fleeing crippled enemy or on probes, pods, outposts, and utility
+craft unless explicitly ordered to do so by your pilot and/or wing commander.
+Also be aware that firing turrets increases your ship's signature, making
+it more visible to the enemy.<p><p>
+
+<Font|smallBoldFont>To become a turret gunner<Font|smallFont><p><p>
+
+<Bullet|hlpimg1|In the hangar, click the Teleport location, or press F8.><p><p>
+
+<Bullet|hlpimg2|Click a ship that has a turret opening, and then
+click <Font|smallBoldFont>Transfer/Board.<Font|smallFont>><p><p>
+
+<Bullet|hlpblank|When the pilot launches the ship, you will be launched
+along with the ship.><p><p>
+
+If you are disconnected from your pilot, it can take up to 2 minutes before the server
+recognizes the disconnection. During this time, the pilot will be unable
+to fly the ship; the gunners will be able to fire but will be unable to
+successfully destroy any targets. If the ship is destroyed during
+this time, all turret gunners and the pilot will take a death. Upon
+confirmation of the disconnection, all turret gunners and the pilot are ejected and the
+ship self-destructs.<p><p>
+
+If a pilot quits the game, the first turrent will be promoted to pilot.<p><p>
+
+When a pilot docks at a station, the turret gunners remain on board
+unless they remove themselves from the ship.<p><p>
+
+<Font|smallBoldFont>To remove yourself from a ship as a turret gunner<Font|smallFont><p><p>
+
+<Bullet|hlpbullet|In the hangar, click the Teleport location (F8),
+click a station, and then click <Font|smallBoldFont>Transfer/Board.<Font|smallFont>><p><p>
+
+<Bullet|hlpblank|-or-><p><p>
+
+<Bullet|hlpblank|In the hangar, click the Loadout location (F4), click a ship you want to pilot,
+and then click <Font|smallBoldFont>Confirm Change.<Font|smallFont>><p><p>
+
+<Bullet|hlpblank|-or-><p><p>
+
+<Bullet|hlpblank|In flight, press CTRL+SHIFT+D, D, D to escape in an
+eject pod.>

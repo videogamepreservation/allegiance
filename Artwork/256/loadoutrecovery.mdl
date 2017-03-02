@@ -1,0 +1,14 @@
+use "loadout";
+
+slots =
+    [
+        (SlotTypeShield,      0, cargoPrefix,   shieldImage,      Point( 15,  56)),
+        (SlotTypeDispenser,   0, cargoPrefix,   dispenserImage,   Point( 15,  98)),
+        (SlotTypeChaff,       0, cargoPrefix,   chaffImage,       Point( 15, 140)),
+        (SlotTypeCargo,       0, cargoPrefix,   cargoImage,       Point( 18, 236)),
+        (SlotTypeCargo,       1, cargoPrefix,   cargoImage,       Point( 78, 236)),
+        (SlotTypeCargo,       2, cargoPrefix,   cargoImage,       Point(137, 236)),
+        (SlotTypeCargo,       3, cargoPrefix,   cargoImage,       Point(196, 236)),
+        (SlotTypeCargo,       4, cargoPrefix,   cargoImage,       Point(254, 236))
+    ];
+

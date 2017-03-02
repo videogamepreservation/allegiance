@@ -1,0 +1,217 @@
+use "effect";
+use "font";
+use "gamepanes";
+use "helpdata";
+
+//////////////////////////////////////////////////////////////////////////////
+//
+// type Topic = (String, String, String, [Topic]);
+//
+// ("text", "main page", "secondary page", [sub topics])
+//
+//////////////////////////////////////////////////////////////////////////////
+
+topics =
+    [
+    (
+            "ABOUT", "hlp12", "hlp12main",
+            []
+
+        ),
+	(
+            "OVERVIEW", "hlp1", "hlp1main",
+            [
+                ("About Allegiance", "hlp1a", "hlp1adef", []),
+                ("Training Missions", "hlp1c", "hlp1cdef", []),
+		("Jump Start", "hlp1b", "hlp1bdef", [])
+            ]
+    	),
+	(
+            "CONNECT & START", "hlp2", "hlp2main",
+            [
+                ("Allegiance Main Menu", "hlp2a", "hlp2adef", []),
+                ("Allegiance Zone Games", "hlp2b", "hlp2bdef", []),
+		("Free Games", "hlp2d", "hlp2ddef", []),
+		("LAN Games", "hlp2c", "hlp2cdef", []),
+		("Games List", "hlp2e", "hlp2edef",
+                                                        [
+                 				   	("Finding a Game", "hlp2e1", "hlp2e1def", []),
+		 				   	("Filtering the List", "hlp2e2", "hlp2e2def", [])
+                                                        ]),
+		("Creating a Game", "hlp2f", "hlp2fdef", []),
+                ("Game Settings", "hlp2i", "hlp2idef",
+                                                        [
+                 				   	("Win Conditions", "hlp2i1", "hlp2i1def", []),
+		 				   	("Game Options", "hlp2i2", "hlp2i2def", []),
+                                                        ("Map Types", "hlp2i3", "hlp2i3def", [])
+                                                        ]),
+		("Joining a Game", "hlp2g", "hlp2gdef", []),
+		("Team Lobby", "hlp2h", "hlp2hdef", [])
+            ]
+    	),
+	(
+            "ALLEGIANCE ZONE", "hlp3", "hlp3main",
+            [
+                ("Leader Board", "hlp3a", "hlp3adef", []),
+                ("Squad Profiles", "hlp3b", "hlp3bdef", []),
+		("Player Profiles", "hlp3c", "hlp3cdef", []),
+    		("Allegiance Zone Events", "hlp3d", "hlp3ddef", []),
+		("MSN Gaming Zone", "hlp3e", "hlp3edef", []),
+                ("Code of Conduct", "hlp3f", "hlp3fdef", [])
+		
+            ]
+    	),
+	 (
+            "IN-GAME SCREENS", "hlp4", "hlp4main",
+            [
+                ("Hangar", "hlp4a", "hlp4adef", []),
+                ("Help Display", "hlp4j", "hlp4jadef", []),
+                ("Loadout Screen", "hlp4b", "hlp4bdef", [
+                                                        ("Ships", "hlp4b1", "hlp4b1def", []),
+		 				   	("Weapons & Equipment", "hlp4b2", "hlp4b2def", [])
+                                                        ]),
+	   	("Combat HUD", "hlp4c", "hlp4cdef", [
+                                                        ("HUD Instruments", "hlp4c1", "hlp4c1def", []),
+		 				   	("Target HUD", "hlp4c2", "hlp4c2def", []),
+                                                        ("Peripheral Radar", "hlp4c3", "hlp4c3def", [])
+                                                        ]),
+                ("Inventory Display", "hlp4l", "hlp4ldef", []),
+                ("Command View", "hlp4d", "hlp4ddef", []),
+                ("Map Display", "hlp4k", "hlp4kdef", []),
+   		("Team Display", "hlp4e", "hlp4edef", []),
+                ("Investments Display", "hlp4f", "hlp4fdef", []),
+                ("Game State Display", "hlp4h", "hlp4hdef", []),
+                ("Teleport Display", "hlp4i", "hlp4idef", []),
+                ("Win Game Screen", "hlp4g", "hlp4gdef", [])
+            ]
+    	),
+	(
+            "CONTROLS", "hlp5", "hlp5main",
+            [
+                ("Keyboard", "hlp5a", "hlp5adef", []),
+                ("Joystick", "hlp5b", "hlp5bdef", []),
+                ("Configure Controls", "hlp5c", "hlp5cdef", []),
+                ("Options", "hlp5d", "hlp5ddef", [])
+            ]
+    	),
+	(
+            "GAMEPLAY", "hlp6", "hlp6main",
+            [
+                ("Basics", "hlp6a", "hlp6adef", []),
+                ("Communications", "hlp6k", "hlp6kdef", [
+                 				   	("Chat", "hlp6k1", "hlp6kdef", []),
+		 				   	("Voice-Comms", "hlp6k2", "hlp6kdef", [])
+                                                        ]),
+                ("Pilot Roles", "hlp6b", "hlp6bdef", []),
+                ("The Turret Gunner", "hlp6j", "hlp6jdef", []),
+		("The Commander", "hlp6c", "hlp6cdef", []),
+                ("The Investor", "hlp6i", "hlp6idef", []),
+                ("Economics", "hlp6d", "hlp6ddef", []),
+                ("Mining", "hlp6g", "hlp6gdef", []),
+                ("Building", "hlp6l", "hlp6ldef", []),
+                ("Faction Attributes", "hlp6m", "hlp6mdef", [
+                                                        ("The Iron Coalition", "hlp6m1", "hlp6mdef", []),
+		 				   	("GigaCorp", "hlp6m2", "hlp6mdef", []),
+		 					("The Bios", "hlp6m3", "hlp6mdef", [])
+                                                        ]),
+                 ("Faction Ranks", "hlp6n", "hlp6ndef", [])
+            ]
+    	),
+
+
+	 (
+            "STORY", "hlp7", "hlp7main",
+            [
+                ("Timeline", "hlp7a", "hlp7adef", [
+                 				   	("2000-2034", "hlp7a1", "hlp7adef", []),
+		 				   	("2035-2059", "hlp7a2", "hlp7adef", []),
+		 					("2060-2069", "hlp7a3", "hlp7adef", []),
+		 					("2070-2079", "hlp7a4", "hlp7adef", []),
+		 					("2080-2114", "hlp7a5", "hlp7adef", []),
+		 					("2115-2129", "hlp7a6", "hlp7adef", []),
+                 					("2130-Present", "hlp7a7", "hlp7adef", [])
+            					  ]),
+                ("The Factions", "hlp7b", "hlp7bdef", [
+                                                        ("The Iron Coalition", "hlp7b1", "hlp7bdef", []),
+		 				   	("GigaCorp", "hlp7b2", "hlp7bdef", []),
+		 					("The Bios", "hlp7b3", "hlp7bdef", [])
+            					  ])
+            ]
+    	),
+        (
+            "TECH SUPPORT", "hlp8", "hlp8main",
+            [
+                ("Product Support", "hlp8a", "hlp8adef", []),
+                ("MSN Gaming Zone","hlp8b", "hlp8bdef", [])
+            ]
+     	),
+     	(
+            "INDEX", "hlp9", "hlp9main",
+            [
+                 ("3, A - C", "hlp9a", "hlp9adef", []),
+                 ("D - H", "hlp9b", "hlp9adef", []),
+                 ("I - L", "hlp9c", "hlp9adef", []),
+                 ("M - Q", "hlp9d", "hlp9adef", []),
+                 ("R - S", "hlp9e", "hlp9adef", []),
+                 ("T - Z", "hlp9f", "hlp9adef", [])
+            ]
+     	)
+    ];
+
+//////////////////////////////////////////////////////////////////////////////
+//
+// Colors
+//
+//////////////////////////////////////////////////////////////////////////////
+
+//////////////////////////////////////////////////////////////////////////////
+//
+// Default values
+//
+//////////////////////////////////////////////////////////////////////////////
+
+helpFont           = smallFont;
+helpColor          = white;
+mainLinkColor      = red;
+secondaryLinkColor = Color(1, 0.65, 0.10);
+highlightColor     = yellow;
+
+//////////////////////////////////////////////////////////////////////////////
+//
+// The pane
+//
+//////////////////////////////////////////////////////////////////////////////
+
+navPane                =
+    NavPane(
+        topics,
+        Point(130, 316),
+        Color(1, 0, 0.2),    //blue 0,0,1
+        Color(1, 1, 1),    //white 1,1,1
+        Color(1, 0.65, 0.10),    //red 1,0,0
+        promptFont
+    );
+
+mainPageScrollBar      = ScrollBarPane(Point(16, 231));
+mainPage               = PagePane(Point(309, 231), mainPageScrollBar);
+secondaryPageScrollBar = ScrollBarPane(Point(16, 62));
+secondaryPage          = PagePane(Point(309, 62), secondaryPageScrollBar);
+backButton             = SoundButtonPane(ImportImage("btnprevioustopicbmp",  true), ButtonNormal, false, negativeButtonClickSoundId);
+closeButton            = SoundButtonPane(ImportImage("btnclosepanebmp", true), ButtonNormal, false, negativeButtonClickSoundId);
+
+titlePane			= StringPane("HELP", white,	Point(100, 30), JustifyCenter, titleFont);
+
+helpPane =
+    ImagePane(
+        ImportImage("helppanebmp", false),
+        [
+            (navPane,                Point(  25,  23)),
+            (mainPageScrollBar,      Point( 504,  50)),
+            (mainPage,               Point( 196,  50)),
+            (secondaryPage,          Point( 196, 294)),
+            (secondaryPageScrollBar, Point( 504, 294)),
+            (backButton,             Point(  25, 360)),
+            (closeButton,            Point( 501,  12)),
+			(titlePane,				 Point( 298,  18))
+        ]
+    );
